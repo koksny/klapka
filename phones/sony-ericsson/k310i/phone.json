@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/k310i",
+  "brand": "Sony Ericsson",
+  "model": "K310i",
+  "year": 2006,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 100,
+    "depth": 17
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.72,
+      "y": 17.1,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the spec diagonal at the native aspect, centred; vertical centre measured"
+    },
+    "keypad": {
+      "x": 4.0,
+      "y": 68.5,
+      "w": 36.5,
+      "h": 26.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.productindetail.com/pm/sony-ericsson-k310i",
+      "https://www.phonearena.com/phones/compare/Sony-Ericsson-K300,Sony-Ericsson-K320/phones/1061,1765"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k310-00.jpg",
+      "license": "",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      109,
+      206,
+      332,
+      415
+    ],
+    "mm": [
+      9.08,
+      17.17,
+      27.67,
+      34.58
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        111,
+        108,
+        136
+      ]
+    }
+  }
+}

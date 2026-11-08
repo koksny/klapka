@@ -180,16 +180,19 @@
       "tilt_deg": 0.139,
       "jitter_px": 0.44,
       "symmetry_iou": 0.9941,
-      "screen_aspect_error_pct": 0.0
+      "screen_aspect_error_pct": 0.0,
+      "screen_centre_x_pct": 0.45
     },
     "pass": {
       "aspect_error_pct": true,
       "lean_deg": true,
-      "screen_aspect_error_pct": true
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
     },
     "manual": {
       "text_ok": true,
-      "approved": true
+      "approved": true,
+      "screen_ok": true
     }
   },
   "added": "2026-11-08"

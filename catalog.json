@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 12,
+  "count": 18,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -243,6 +243,54 @@
       }
     },
     {
+      "id": "sony-ericsson/k300i",
+      "brand": "Sony Ericsson",
+      "model": "K300i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 45.2,
+        "height": 99.9,
+        "depth": 19.4
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.6,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          91,
+          227,
+          380,
+          380
+        ],
+        "mm": [
+          7.58,
+          18.92,
+          31.67,
+          31.67
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k300i/skin.png",
+        "body.png": "phones/sony-ericsson/k300i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k300i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k300i/preview.png",
+        "phone.json": "phones/sony-ericsson/k300i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k750i",
       "brand": "Sony Ericsson",
       "model": "K750i",
@@ -387,6 +435,150 @@
       }
     },
     {
+      "id": "sony-ericsson/k310i",
+      "brand": "Sony Ericsson",
+      "model": "K310i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 44,
+        "height": 100,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          109,
+          206,
+          332,
+          415
+        ],
+        "mm": [
+          9.08,
+          17.17,
+          27.67,
+          34.58
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k310i/skin.png",
+        "body.png": "phones/sony-ericsson/k310i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k310i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k310i/preview.png",
+        "phone.json": "phones/sony-ericsson/k310i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k510i",
+      "brand": "Sony Ericsson",
+      "model": "K510i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 44,
+        "height": 101,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          92,
+          208,
+          351,
+          439
+        ],
+        "mm": [
+          7.67,
+          17.33,
+          29.25,
+          36.58
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k510i/skin.png",
+        "body.png": "phones/sony-ericsson/k510i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k510i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k510i/preview.png",
+        "phone.json": "phones/sony-ericsson/k510i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k610i",
+      "brand": "Sony Ericsson",
+      "model": "K610i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 45.2,
+        "height": 102,
+        "depth": 16.9
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          95,
+          162,
+          366,
+          458
+        ],
+        "mm": [
+          7.92,
+          13.5,
+          30.5,
+          38.17
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k610i/skin.png",
+        "body.png": "phones/sony-ericsson/k610i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k610i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k610i/preview.png",
+        "phone.json": "phones/sony-ericsson/k610i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k800i",
       "brand": "Sony Ericsson",
       "model": "K800i",
@@ -480,6 +672,102 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w810i/preview.png",
         "phone.json": "phones/sony-ericsson/w810i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k550i",
+      "brand": "Sony Ericsson",
+      "model": "K550i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 46,
+        "height": 102,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          102,
+          121,
+          390,
+          487
+        ],
+        "mm": [
+          8.5,
+          10.08,
+          32.5,
+          40.58
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k550i/skin.png",
+        "body.png": "phones/sony-ericsson/k550i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k550i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k550i/preview.png",
+        "phone.json": "phones/sony-ericsson/k550i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k810i",
+      "brand": "Sony Ericsson",
+      "model": "K810i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 48,
+        "height": 106,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          105,
+          191,
+          389,
+          519
+        ],
+        "mm": [
+          8.75,
+          15.92,
+          32.42,
+          43.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k810i/skin.png",
+        "body.png": "phones/sony-ericsson/k810i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k810i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k810i/preview.png",
+        "phone.json": "phones/sony-ericsson/k810i/phone.json"
       }
     },
     {

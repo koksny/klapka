@@ -34,7 +34,8 @@ MASTER_PX_PER_MM = 12
 MAX_PX = 1_048_576
 SCREEN_GLASS = (11, 13, 16)
 STANDARD_KEYS = [["1", "2 ABC", "3 DEF"], ["4 GHI", "5 JKL", "6 MNO"], ["7 PQRS", "8 TUV", "9 WXYZ"], ["* a/A", "0 +", "#"]]
-THRESHOLDS = {"aspect_error_pct": 3.0, "lean_deg": 0.3, "screen_aspect_error_pct": 0.2}
+THRESHOLDS = {"aspect_error_pct": 3.0, "lean_deg": 0.3, "screen_aspect_error_pct": 0.2,
+              "screen_centre_x_pct": 1.3}
 # measured and recorded, not pass/fail (Koks, 2026-11-08): rounded or tapering sides and one-sided buttons are design
 INFO_ONLY = ("taper_deg", "tilt_deg", "jitter_px", "symmetry_iou", "deskew_deg")
 
@@ -337,6 +338,7 @@ def cmd_finish(a):
     d, w = pdir(a.id), wdir(a.id); P = phone(a.id); b = build(a.id); T = load(w / "template.json")
     wm, hm = P["size_mm"]["width"], P["size_mm"]["height"]
     rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", hm, "--width-mm", wm, "--px-per-mm", MASTER_PX_PER_MM, "--deskew"))
+    prev_source = dict(b.get("screen_source", {}))
     x0, y0, x1, y1 = alpha_bbox(w / "final.png"); k = hm * MASTER_PX_PER_MM / (y1 - y0 + 1); pad = MASTER_PX_PER_MM
     if not a.screen and b.get("screen_source", {}).get("manual"):   # keep a rectangle given earlier
         a.screen = ",".join(map(str, b["screen_source"]["final_px"]))
@@ -346,10 +348,10 @@ def cmd_finish(a):
         bx = T["body_px"]; tw, th = bx[2] - bx[0] + 1, bx[3] - bx[1] + 1; rw, rh = x1 - x0 + 1, y1 - y0 + 1
         sx0, sy0, sx1, sy1 = [x0 + (T["screen_px"][0] - bx[0]) * rw / tw, y0 + (T["screen_px"][1] - bx[1]) * rh / th,
                               x0 + (T["screen_px"][2] - bx[0]) * rw / tw, y0 + (T["screen_px"][3] - bx[1]) * rh / th]
-        snap = "near"
+        snap = a.snap
     approx = f"{round((sx0 - x0) * k + pad)},{round((sy0 - y0) * k + pad)},{round((sx1 - sx0 + 1) * k)},{round((sy1 - sy0 + 1) * k)}"
     nw, nh = P["display"]["native_px"]
-    scr = last_json(run("mark_screen.py", d / "body.png", "--approx", approx, "--native", f"{nw}x{nh}", "--search", 0.06, "--fit-native",
+    scr = last_json(run("mark_screen.py", d / "body.png", "--approx", approx, "--native", f"{nw}x{nh}", "--search", 0.12 if snap == "combo" else 0.08, "--fit-native",
                         "--snap", snap, "--fill-border", "--px-per-mm", MASTER_PX_PER_MM, "--out-skin", d / "skin.png", "--out-overlay", w / "screen_overlay.png"))
     b["screen_source"] = {"final_px": [round(v) for v in (sx0, sy0, sx1, sy1)], "snap": snap, "manual": bool(a.screen)}
     sx, sy, sw, sh = scr["screen_px"]
@@ -377,21 +379,33 @@ def cmd_finish(a):
            "lean_deg": round(abs(sum(rep["side_tilt_deg"]) / 2), 3), "taper_deg": round(abs(rep["side_tilt_deg"][1] - rep["side_tilt_deg"][0]) / 2, 3),
            "deskew_deg": rep.get("deskew_deg", 0.0),
            "tilt_deg": max(abs(t) for t in rep["side_tilt_deg"]), "jitter_px": max(rep["side_jitter_px"]),
-           "symmetry_iou": rep["lr_symmetry_iou"], "screen_aspect_error_pct": abs(scr["aspect_error_pct"])}
+           "symmetry_iou": rep["lr_symmetry_iou"], "screen_aspect_error_pct": abs(scr["aspect_error_pct"]),
+           "screen_centre_x_pct": scr["checks"]["centre_x_pct"]}
     ok = {"aspect_error_pct": abs(acc["aspect_error_pct"]) <= THRESHOLDS["aspect_error_pct"], "lean_deg": acc["lean_deg"] <= THRESHOLDS["lean_deg"],
-          "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"]}
+          "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"],
+          "screen_centre_x_pct": acc["screen_centre_x_pct"] <= THRESHOLDS["screen_centre_x_pct"]}
     manual = b.get("acceptance", {}).get("manual", {"text_ok": False, "approved": False})
+    if b.get("screen_source", {}) != prev_source: manual["screen_ok"] = False   # a new hole needs a new look
     b["acceptance"] = {"measured": acc, "pass": ok, "manual": manual}; save_build(a.id, b)
+    # screen check: the hole drawn translucent on the uncut body, for the visual check (mark --screen-ok)
+    from PIL import ImageDraw as _D
+    bodyim = Image.open(d / "body.png").convert("RGBA"); sc = Image.new("RGBA", bodyim.size, (120, 120, 120, 255)); sc.alpha_composite(bodyim)
+    ov = Image.new("RGBA", bodyim.size, (0, 0, 0, 0)); _D.Draw(ov).rectangle([sx, sy, sx + sw - 1, sy + sh - 1], fill=(255, 0, 255, 90), outline=(255, 0, 255, 255), width=2)
+    sc.alpha_composite(ov); pad = 4 * MASTER_PX_PER_MM
+    sc.crop((max(0, sx - pad), max(0, sy - pad), min(sc.width, sx + sw + pad), min(sc.height, sy + sh + pad))).convert("RGB").save(w / "screen_check.png")
     # check sheet: skin + the text-fix areas, for the visual read
     S = with_glass(d / "skin.png"); S.thumbnail((10000, 900)); S.save(w / "check_sheet.png")
     for kx, v in acc.items(): print(f"{kx:26s} {v!s:>8}  {'info' if kx in INFO_ONLY or kx not in ok else ('ok' if ok[kx] else 'FAIL')}")
     print("PASS" if all(ok.values()) else "FAIL: see the lines above")
-    print(f"text_ok={manual['text_ok']} approved={manual['approved']}  -> read every text on {d / 'skin.png'}, then: mark {a.id} --text-ok")
+    print(f"text_ok={manual['text_ok']} screen_ok={manual.get('screen_ok', False)} approved={manual['approved']}")
+    print(f"look at {w / 'screen_check.png'} (the hole must sit centred in the display, covering only the display) -> mark {a.id} --screen-ok")
+    print(f"read every text on {d / 'skin.png'} -> mark {a.id} --text-ok")
 
 
 def cmd_mark(a):
     b = build(a.id); m = b.setdefault("acceptance", {}).setdefault("manual", {"text_ok": False, "approved": False})
     if a.text_ok: m["text_ok"] = True
+    if a.screen_ok: m["screen_ok"] = True
     if a.approved: m["approved"] = True
     save_build(a.id, b); print(m)
 
@@ -612,8 +626,8 @@ def main():
     p = sp.add_parser("textfix"); p.add_argument("id"); p.add_argument("--keypad", action="store_true"); p.add_argument("--row", type=int, help="one row of keys (1 = top), labels from phone.json"); p.add_argument("--text"); p.add_argument("--box"); p.add_argument("--seed", type=int, default=1)
     p = sp.add_parser("rows"); p.add_argument("id")
     p = sp.add_parser("restore"); p.add_argument("id"); p.add_argument("--rows", type=int, nargs="*", default=[]); p.add_argument("--box"); p.add_argument("--feather", type=int, default=6, help="soft edge in px (use 1-2 for thin strips)")
-    p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--screen", help="display rectangle on work/final.png: x0,y0,x1,y1 (when the automatic one misses)")
-    p = sp.add_parser("mark"); p.add_argument("id"); p.add_argument("--text-ok", action="store_true"); p.add_argument("--approved", action="store_true")
+    p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--screen", help="display rectangle on work/final.png: x0,y0,x1,y1 (when the automatic one misses)"); p.add_argument("--snap", default="near", choices=["near", "combo"], help="automatic display finding: near (default) or combo (four-edge search)")
+    p = sp.add_parser("mark"); p.add_argument("id"); p.add_argument("--text-ok", action="store_true"); p.add_argument("--screen-ok", action="store_true"); p.add_argument("--approved", action="store_true")
     sp.add_parser("pages")
     sp.add_parser("header")
     a = ap.parse_args()

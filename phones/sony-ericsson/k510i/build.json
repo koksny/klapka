@@ -1,0 +1,321 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.7,
+    "body_px": [
+      35,
+      60,
+      637,
+      1443
+    ],
+    "screen_px": [
+      141,
+      302,
+      531,
+      790
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k510-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      167,
+      362
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.84,
+        "screen_rel_iou": 0.8993,
+        "screen_centre_error_pct": -0.83,
+        "mirror": 0.6184,
+        "body_aspect": 0.4277,
+        "template_body_aspect": 0.4357,
+        "body": [
+          34,
+          55,
+          636,
+          1464
+        ],
+        "screen": [
+          124,
+          278,
+          536,
+          796
+        ],
+        "score": 1.0334,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.04,
+        "screen_rel_iou": 0.8758,
+        "screen_centre_error_pct": -0.95,
+        "mirror": 0.6222,
+        "body_aspect": 0.4224,
+        "template_body_aspect": 0.4357,
+        "body": [
+          46,
+          46,
+          625,
+          1418
+        ],
+        "screen": [
+          128,
+          260,
+          532,
+          767
+        ],
+        "score": 0.9399,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.13,
+        "screen_rel_iou": 0.8441,
+        "screen_centre_error_pct": -1.41,
+        "mirror": 0.554,
+        "body_aspect": 0.4221,
+        "template_body_aspect": 0.4357,
+        "body": [
+          51,
+          82,
+          616,
+          1422
+        ],
+        "screen": [
+          123,
+          289,
+          528,
+          783
+        ],
+        "score": 0.8234,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.3,
+        "screen_rel_iou": 0.8567,
+        "screen_centre_error_pct": -0.98,
+        "mirror": 0.5321,
+        "body_aspect": 0.417,
+        "template_body_aspect": 0.4357,
+        "body": [
+          57,
+          76,
+          616,
+          1418
+        ],
+        "screen": [
+          137,
+          283,
+          525,
+          770
+        ],
+        "score": 0.8097,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 1",
+      "text": "'1', '2 ABC', '3 DEF'. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+      "box": [
+        48,
+        1015,
+        624,
+        1105
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        48,
+        1179,
+        624,
+        1269
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 4",
+      "text": "'* a/A', '0 +', '#'. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+      "box": [
+        48,
+        1264,
+        624,
+        1354
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [
+        1,
+        4
+      ],
+      "boxes": [
+        [
+          69,
+          1018,
+          603,
+          1102
+        ],
+        [
+          69,
+          1268,
+          603,
+          1350
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "'1' with a small envelope and voicemail icon",
+      "box": [
+        70,
+        1018,
+        262,
+        1102
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "text",
+      "text": "'*' with 'a/A' and a small key-lock symbol",
+      "box": [
+        70,
+        1267,
+        262,
+        1351
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [
+        1,
+        4
+      ],
+      "boxes": [
+        [
+          69,
+          1018,
+          603,
+          1102
+        ],
+        [
+          69,
+          1268,
+          603,
+          1350
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "area": "key row 1",
+      "text": "a single key: a large digit '1' on the left and a small envelope-and-voicemail icon on the right",
+      "box": [
+        70,
+        1018,
+        262,
+        1102
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 9,
+      "area": "key row 4",
+      "text": "a single key: a large asterisk '*' on the left, and on the right the small letters 'a/A' with a small key-lock symbol",
+      "box": [
+        70,
+        1267,
+        262,
+        1351
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "final_px": [
+      140,
+      301,
+      529,
+      798
+    ],
+    "snap": "near",
+    "manual": false
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4275,
+      "spec_aspect": 0.4356,
+      "aspect_error_pct": -1.87,
+      "lean_deg": 0.004,
+      "taper_deg": 0.004,
+      "deskew_deg": -0.003,
+      "tilt_deg": 0.007,
+      "jitter_px": 0.44,
+      "symmetry_iou": 0.9971,
+      "screen_aspect_error_pct": 0.06,
+      "screen_centre_x_pct": 0.58
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-08"
+}

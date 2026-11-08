@@ -140,6 +140,10 @@ icons (they differ between models). Check `work/fixN_check.png` (before above, a
 - **A label that keeps coming back wrong** (the edit tends to keep the glyph shape it sees, so two or
   three tries give the same wrong letter): switch to another seed that passed step 6,
   `pass2 <id> --from-seed N`, and read again.
+- **One key wrong:** fix just that key with the row prompt and a description, never with `--text` alone
+  (that prompt writes a description out literally):
+  `textfix <id> --row 4 --box x0,y0,x1,y1 --text "a single key: a large '*' on the left, and on the right the small letters 'a/A' with a small key-lock symbol"`.
+  Give the key's box (the row from `rows_check.png`, one column of the keypad).
 - **A fix went wrong:** `pass2 <id> --reuse` starts the text fixes over from the clean cutout (no new
   render), or try `--seed 2`.
 - Do not erase letters and ask the model to write them on an empty key: it gets the letters right
@@ -152,6 +156,12 @@ python tools/klapka.py finish sony-ericsson/k750i
 It must end with `PASS` (lines marked `info` are recorded but not pass/fail; thresholds in
 [docs/PIPELINE.md](docs/PIPELINE.md#acceptance)). If the automatic screen hole misses the display, give the display rectangle
 on `work/final.png` yourself: `finish <id> --screen x0,y0,x1,y1` (read it off `work/final_grid.png`; it is remembered).
+Then look at `work/screen_check.png`: the hole (magenta) must cover the lit display only, centred in its
+window, not the frame or the bezel. If it does not, run `finish <id> --snap combo` (a four-edge search) or
+give the display rectangle yourself with `--screen x0,y0,x1,y1`, and look again. Only when it sits right:
+```
+python tools/klapka.py mark sony-ericsson/k750i --screen-ok
+```
 Then read every text on `skin.png` once more and, only if all of it is right:
 ```
 python tools/klapka.py mark sony-ericsson/k750i --text-ok

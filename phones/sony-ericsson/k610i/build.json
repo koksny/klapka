@@ -1,0 +1,199 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 13.277,
+    "body_px": [
+      36,
+      59,
+      635,
+      1412
+    ],
+    "screen_px": [
+      136,
+      232,
+      535,
+      731
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_K610i_(Urban_Silver)_-_Front.jpg (perspective-corrected)",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      479,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.98,
+        "screen_rel_iou": 0.9317,
+        "screen_centre_error_pct": -0.42,
+        "mirror": 0.71,
+        "body_aspect": 0.4388,
+        "template_body_aspect": 0.4431,
+        "body": [
+          38,
+          60,
+          632,
+          1415
+        ],
+        "screen": [
+          124,
+          225,
+          541,
+          734
+        ],
+        "score": 1.1957,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.96,
+        "screen_rel_iou": 0.856,
+        "screen_centre_error_pct": -0.79,
+        "mirror": 0.4036,
+        "body_aspect": 0.4389,
+        "template_body_aspect": 0.4431,
+        "body": [
+          51,
+          84,
+          621,
+          1384
+        ],
+        "screen": [
+          126,
+          254,
+          537,
+          764
+        ],
+        "score": 0.9312,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 4.66,
+        "screen_rel_iou": 0.9104,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.3553,
+        "body_aspect": 0.4638,
+        "template_body_aspect": 0.4431,
+        "body": [
+          34,
+          69,
+          641,
+          1379
+        ],
+        "screen": [
+          126,
+          235,
+          546,
+          746
+        ],
+        "score": 0.8305,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 5.93,
+        "screen_rel_iou": 0.9772,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.4864,
+        "body_aspect": 0.4694,
+        "template_body_aspect": 0.4431,
+        "body": [
+          33,
+          57,
+          638,
+          1347
+        ],
+        "screen": [
+          134,
+          229,
+          538,
+          695
+        ],
+        "score": 0.9157,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "K610i",
+      "box": [
+        212,
+        1307,
+        462,
+        1402
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "final_px": [
+      138,
+      234,
+      536,
+      733
+    ],
+    "snap": "near",
+    "manual": false
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4425,
+      "spec_aspect": 0.4431,
+      "aspect_error_pct": -0.14,
+      "lean_deg": 0.007,
+      "taper_deg": 0.222,
+      "deskew_deg": -0.185,
+      "tilt_deg": 0.229,
+      "jitter_px": 1.35,
+      "symmetry_iou": 0.9921,
+      "screen_aspect_error_pct": 0.11,
+      "screen_centre_x_pct": 0.56
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-08"
+}

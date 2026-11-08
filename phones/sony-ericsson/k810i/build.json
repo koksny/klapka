@@ -1,0 +1,238 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.776,
+    "body_px": [
+      45,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      157,
+      243,
+      545,
+      761
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k810-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      225,
+      489
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.24,
+        "screen_rel_iou": 0.844,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.7733,
+        "body_aspect": 0.4538,
+        "template_body_aspect": 0.4527,
+        "body": [
+          38,
+          48,
+          661,
+          1422
+        ],
+        "screen": [
+          135,
+          241,
+          563,
+          804
+        ],
+        "score": 1.2106,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.2,
+        "screen_rel_iou": 0.8548,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.7923,
+        "body_aspect": 0.4582,
+        "template_body_aspect": 0.4527,
+        "body": [
+          52,
+          73,
+          648,
+          1375
+        ],
+        "screen": [
+          146,
+          255,
+          555,
+          784
+        ],
+        "score": 1.1825,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.54,
+        "screen_rel_iou": 0.8514,
+        "screen_centre_error_pct": -0.15,
+        "mirror": 0.7217,
+        "body_aspect": 0.4597,
+        "template_body_aspect": 0.4527,
+        "body": [
+          26,
+          26,
+          675,
+          1439
+        ],
+        "screen": [
+          127,
+          223,
+          572,
+          801
+        ],
+        "score": 1.1201,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.62,
+        "screen_rel_iou": 0.8432,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.7658,
+        "body_aspect": 0.4409,
+        "template_body_aspect": 0.4527,
+        "body": [
+          56,
+          61,
+          648,
+          1405
+        ],
+        "screen": [
+          149,
+          253,
+          554,
+          800
+        ],
+        "score": 1.0869,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 1",
+      "text": "Three keys; each key is a large grey digit on the left, a round brushed-silver button in the middle and small grey letters on the right: '1' with a small envelope and voicemail icon; '2' with 'ABC'; '3' with 'DEF'.",
+      "box": [
+        72,
+        1045,
+        648,
+        1135
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 2",
+      "text": "Three keys; each key is a large grey digit on the left, a round brushed-silver button in the middle and small grey letters on the right: '4' with 'GHI'; '5' with 'JKL'; '6' with 'MNO'.",
+      "box": [
+        72,
+        1131,
+        648,
+        1221
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 3",
+      "text": "Three keys; each key is a large grey digit on the left, a round brushed-silver button in the middle and small grey letters on the right: '7' with 'PQ' above 'RS'; '8' with 'TUV'; '9' with 'WX' above 'YZ'.",
+      "box": [
+        72,
+        1213,
+        648,
+        1303
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 4",
+      "text": "Three keys; each key is a large grey digit on the left, a round brushed-silver button in the middle and small grey letters on the right: '*' with 'a/A' and a small key-lock symbol; '0' with '+'; '#' with a space symbol and a small silent-mode symbol.",
+      "box": [
+        72,
+        1298,
+        648,
+        1388
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "final_px": [
+      135,
+      241,
+      562,
+      801
+    ],
+    "snap": "none",
+    "manual": true
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4597,
+      "spec_aspect": 0.4528,
+      "aspect_error_pct": 1.52,
+      "lean_deg": 0.018,
+      "taper_deg": 0.018,
+      "deskew_deg": 0.018,
+      "tilt_deg": 0.036,
+      "jitter_px": 1.82,
+      "symmetry_iou": 0.9808,
+      "screen_aspect_error_pct": 0.06,
+      "screen_centre_x_pct": 0.26
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-08"
+}

@@ -76,6 +76,8 @@ Pass/fail (`finish` prints `PASS` only when all of these hold):
 | body aspect vs spec | within ±3% (Koks, 2026-11-08: renders land 2–4% off; ≤3% is acceptable) |
 | lean (mean angle of the two sides, after the automatic straightening) | ≤ 0.3° |
 | screen hole aspect vs native | error ≤ 0.2% |
+| screen hole centred on the body's axis | ≤ 1.3% of the body width (rows with side buttons ignored) |
+| screen hole placement | covers the lit display only, centred in its window: visual check of `work/screen_check.png`, `mark --screen-ok` |
 | printed text | every letter right, icons plausible (`mark --text-ok`) |
 | text-pass seams | none visible at 2× |
 | maintainer | visual approval (`mark --approved`) |
@@ -117,6 +119,21 @@ one side are part of the design, so these are not pass/fail.
   not reliable enough (keypads with arched rows, icons), so this stays a visual check.
 - Pixels the model left semi-transparent inside the body carry the matte colour (magenta/purple);
   `clean_alpha` now refills them from the nearest opaque pixel (P1i side button).
+
+## What the K batch taught (2026-11-08)
+
+- Fixing a whole row while `key_icons` lists icons for several keys can scatter icons onto the wrong
+  keys (an envelope on 0, a lock on 2). Fix only the wrong key, describing that key alone.
+- `--text` alone uses the word prompt and renders a description literally ("1' with a small
+  envelope…" printed on the key). Single keys go through the row prompt with `--row N --box … --text`.
+- A tiny press image (under ~300 px tall) makes the model invent details (a "SONY" badge, doubled
+  digits); a sharper photo of the same phone fixes it, even a cropped one, since the template sets the
+  geometry.
+
+- Screen holes can land off the display: snapped to the outer frame on one side and the picture on the
+  other (K310i: low and to the right), or to a weak edge when the render moved the display (K300i: too
+  low). `finish` now checks the hole's centre against the body's axis and writes `work/screen_check.png`;
+  a person or agent must confirm it (`--screen-ok`). `--snap combo` and `--screen` fix misses.
 
 ## Open items
 

@@ -1,0 +1,268 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      38,
+      59,
+      633,
+      1412
+    ],
+    "screen_px": [
+      143,
+      292,
+      528,
+      773
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k310-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      189,
+      431
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.81,
+        "screen_rel_iou": 0.8367,
+        "screen_centre_error_pct": -0.51,
+        "mirror": 0.6603,
+        "body_aspect": 0.4322,
+        "template_body_aspect": 0.4402,
+        "body": [
+          39,
+          55,
+          631,
+          1426
+        ],
+        "screen": [
+          115,
+          274,
+          549,
+          768
+        ],
+        "score": 1.0259,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.41,
+        "screen_rel_iou": 0.8118,
+        "screen_centre_error_pct": -0.41,
+        "mirror": 0.5597,
+        "body_aspect": 0.4296,
+        "template_body_aspect": 0.4402,
+        "body": [
+          32,
+          47,
+          635,
+          1452
+        ],
+        "screen": [
+          109,
+          249,
+          553,
+          790
+        ],
+        "score": 0.9299,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.36,
+        "screen_rel_iou": 0.8898,
+        "screen_centre_error_pct": 1.63,
+        "mirror": 0.6245,
+        "body_aspect": 0.4298,
+        "template_body_aspect": 0.4402,
+        "body": [
+          30,
+          24,
+          644,
+          1454
+        ],
+        "screen": [
+          130,
+          257,
+          564,
+          777
+        ],
+        "score": 0.9212,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.25,
+        "screen_rel_iou": 0.8716,
+        "screen_centre_error_pct": 2.02,
+        "mirror": 0.7115,
+        "body_aspect": 0.4215,
+        "template_body_aspect": 0.4402,
+        "body": [
+          54,
+          58,
+          622,
+          1407
+        ],
+        "screen": [
+          147,
+          276,
+          552,
+          764
+        ],
+        "score": 0.8129,
+        "seed": 1
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        50,
+        1128,
+        626,
+        1209
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "'* a/A', '0 +', '#'. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+      "box": [
+        50,
+        1204,
+        626,
+        1285
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [
+        4
+      ],
+      "boxes": [
+        [
+          78,
+          1207,
+          599,
+          1281
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "'*' with 'a/A' and a small key-lock symbol",
+      "box": [
+        67,
+        1206,
+        279,
+        1282
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [
+        4
+      ],
+      "boxes": [
+        [
+          78,
+          1207,
+          599,
+          1281
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "key row 4",
+      "text": "a single key: a large black asterisk '*' on the left, and on the right the small letters 'a/A' with a small key-lock symbol",
+      "box": [
+        67,
+        1206,
+        279,
+        1282
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "final_px": [
+      139,
+      275,
+      526,
+      744
+    ],
+    "snap": "none",
+    "manual": true
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4435,
+      "spec_aspect": 0.44,
+      "aspect_error_pct": 0.8,
+      "lean_deg": 0.059,
+      "taper_deg": 0.421,
+      "deskew_deg": -0.094,
+      "tilt_deg": 0.481,
+      "jitter_px": 1.84,
+      "symmetry_iou": 0.9951,
+      "screen_aspect_error_pct": 0.0,
+      "screen_centre_x_pct": 0.48
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-08"
+}

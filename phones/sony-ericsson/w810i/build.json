@@ -169,16 +169,19 @@
       "tilt_deg": 0.373,
       "jitter_px": 2.57,
       "symmetry_iou": 0.9911,
-      "screen_aspect_error_pct": 0.0
+      "screen_aspect_error_pct": 0.0,
+      "screen_centre_x_pct": 0.0
     },
     "pass": {
       "aspect_error_pct": true,
       "lean_deg": true,
-      "screen_aspect_error_pct": true
+      "screen_aspect_error_pct": true,
+      "screen_centre_x_pct": true
     },
     "manual": {
       "text_ok": true,
-      "approved": true
+      "approved": true,
+      "screen_ok": true
     }
   },
   "screen_source": {
