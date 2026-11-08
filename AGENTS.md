@@ -191,6 +191,7 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | `finish` fails on the screen aspect | check `layout_mm.screen.y` and `display` in `phone.json` |
 | model ignores the photo and draws a flat grey phone | the template is fine; try other seeds or a clearer photo |
 | the phone looks turned or lopsided (one side panel showing, screen off-centre) | the photo was taken at an angle: the render keeps a little of it. Use a more frontal photo |
+| keypad rows are tilted while the body is straight | the photo was at an angle; use an orthographic press render or a straight-on photo and render again |
 | the key rows in `rows_check.png` sit on the wrong keys | the keypad block in `phone.json` is off; measure it on this model's photo, not a sister model's |
 | the screen hole misses the display in `work/screen_overlay.png` | `finish <id> --screen x0,y0,x1,y1` from `work/final_grid.png` |
 | a photo shows an operator logo or sticker (e.g. "vodafone") | use another photo: it ends up on the skin |

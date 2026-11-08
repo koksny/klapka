@@ -111,6 +111,12 @@ one side are part of the design, so these are not pass/fail.
   `--screen` gives it by hand.
 - Rounded or tapering sides and one-sided buttons are design, so taper, edge jitter and symmetry are
   recorded but not pass/fail (Koks).
+- A photo held at an angle can leave the keypad rows tilted even after perspective correction (P1i,
+  1.5–2°): the render copies it. Prefer an orthographic press render or a straight-on photo, and
+  check the rows against level lines before finishing. An automatic tilt measure was tried and was
+  not reliable enough (keypads with arched rows, icons), so this stays a visual check.
+- Pixels the model left semi-transparent inside the body carry the matte colour (magenta/purple);
+  `clean_alpha` now refills them from the nearest opaque pixel (P1i side button).
 
 ## Open items
 

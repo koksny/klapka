@@ -10,7 +10,7 @@
     "height": 106,
     "depth": 17
   },
-  "size_note": "Layout measured on a perspective-corrected photo (the phone was held at an angle).",
+  "size_note": "Layout measured on an orthographic press render (Ceneo).",
   "corner_radius_mm": 4.0,
   "display": {
     "native_px": [
@@ -23,21 +23,22 @@
   "layout_mm": {
     "screen": {
       "x": 7.69,
-      "y": 13.5,
+      "y": 14.0,
       "w": 39.62,
       "h": 52.83,
-      "note": "w/h from 2.6in at 240:320, centred; y measured on a rectified photo"
+      "note": "w/h from 2.6in at 240:320, centred; y measured on an orthographic press render"
     },
     "keypad": {
-      "x": 2.5,
-      "y": 74.0,
-      "w": 50.0,
-      "h": 29.5
+      "x": 3.5,
+      "y": 77.5,
+      "w": 48.0,
+      "h": 27.0
     },
     "seams": []
   },
   "texts": [
-    "Sony Ericsson"
+    "Sony Ericsson",
+    "P1i"
   ],
   "keys": [
     [
@@ -77,23 +78,24 @@
       "https://www.productindetail.com/pm/sony-ericsson-p1i"
     ],
     "geometry_photo": {
-      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P1i_-_Front.jpg",
-      "license": "CC BY-SA 4.0",
-      "author": "Beamish4"
+      "url": "https://image.ceneostatic.pl/data/products/786175/f61cf1cf-57cd-4ce3-830d-f9c5ae144f27_i-sony-ericsson-p1i-srebrny.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
     }
   },
   "screen": {
     "skin_px": [
-      105,
-      182,
-      468,
-      624
+      120,
+      191,
+      462,
+      616
     ],
     "mm": [
-      8.75,
-      15.17,
-      39.0,
-      52.0
+      10.0,
+      15.92,
+      38.5,
+      51.33
     ],
     "native_px": [
       240,
@@ -108,10 +110,10 @@
         490
       ],
       "screen_px": [
-        33,
-        119,
-        126,
-        168
+        37,
+        123,
+        123,
+        164
       ]
     }
   }

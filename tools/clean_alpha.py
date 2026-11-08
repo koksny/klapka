@@ -50,6 +50,13 @@ sizes = ndi.sum(np.ones_like(lab), lab, range(1, n + 1))
 body = ndi.binary_fill_holes(lab == int(np.argmax(sizes)) + 1)
 rep["components_ge128"] = int(n)
 A[~ndi.binary_dilation(body, iterations=a.rim + 1)] = 0              # stray islands / far haze
+# pixels the model left (semi-)transparent inside the body carry the matte colour under them
+# (often magenta/purple): give them the colour of the nearest truly opaque pixel before they go solid
+was_opaque = A >= 250
+_, (jy, jx) = ndi.distance_transform_edt(~was_opaque, return_indices=True)
+fill = ndi.binary_erosion(body, iterations=a.rim) & ~was_opaque
+im[..., :3][fill] = im[..., :3][jy[fill], jx[fill]]
+rep["interior_refilled_px"] = int(fill.sum())
 A[ndi.binary_erosion(body, iterations=a.rim)] = 255                   # solid interior
 
 if a.deskew:

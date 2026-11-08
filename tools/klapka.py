@@ -288,7 +288,9 @@ def cmd_textfix(a):
         T = load(w / "template.json"); s = b["template"]["px_per_mm"]; m = round(2 * s); x0, y0, x1, y1 = T["keypad_px"]
         box = f"{x0 - m},{y0 - m},{x1 + m},{y1 + m}"
     else: raise SystemExit("--box is required for --text")
-    if a.row:
+    if a.row and a.text:          # a row with its own wording (keys carrying several labels)
+        row_text = a.text
+    elif a.row:
         keys = P["keys"][a.row - 1]; row_text = ", ".join(f"'{k}'" for k in keys) + "."
         if P.get("key_icons") and any(k.split()[0] in ("1", "*", "#") for k in keys):
             row_text += " " + P["key_icons"]

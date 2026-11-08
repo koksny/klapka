@@ -15,7 +15,7 @@
 | Type | candybar |
 | Size | 55 × 106 mm |
 | Display | 2.6″, 240 × 320 |
-| Screen hole in `skin.png` | x 105, y 182, 468 × 624 px |
+| Screen hole in `skin.png` | x 120, y 191, 462 × 616 px |
 
 ## Download
 
@@ -29,14 +29,14 @@ Click **Download**; the file saves straight away.
 | `phone.json` | sizes and the screen position, for your own tools | [Download](phone.json?raw=true) |
 
 **Mi Band 7 / 8 / 9:** use `mi-band-192x490.png` as the background and put the clock inside
-the screen: x 33, y 119, 126 × 168 px.
+the screen: x 37, y 123, 123 × 164 px.
 
 ## How it was made
 
 Standard v1 ([docs/PIPELINE.md](../../../docs/PIPELINE.md)): measured to scale, re-rendered straight
 and clean from a photo, every printed label checked.
-Body aspect 0.5139 (spec 0.5189), screen at the exact 240:320 aspect.
+Body aspect 0.5199 (spec 0.5189), screen at the exact 240:320 aspect.
 
-**Credits:** appearance from a [photo](https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P1i_-_Front.jpg) by Beamish4, CC BY-SA 4.0; geometry measured on a [photo](https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P1i_-_Front.jpg) by Beamish4, CC BY-SA 4.0; specs: [wikiwand.com](https://wikiwand.com/EN/SONY_ERICSSON_P1i), [productindetail.com](https://www.productindetail.com/pm/sony-ericsson-p1i).
+**Credits:** appearance from a [photo](https://image.ceneostatic.pl/data/products/786175/f61cf1cf-57cd-4ce3-830d-f9c5ae144f27_i-sony-ericsson-p1i-srebrny.jpg (press render, via Koks)); geometry measured on a [photo](https://image.ceneostatic.pl/data/products/786175/f61cf1cf-57cd-4ce3-830d-f9c5ae144f27_i-sony-ericsson-p1i-srebrny.jpg); specs: [wikiwand.com](https://wikiwand.com/EN/SONY_ERICSSON_P1i), [productindetail.com](https://www.productindetail.com/pm/sony-ericsson-p1i).
 
 <sub>Trademarks belong to their owners. KLAPKA is a fan project and is not affiliated with any phone maker.</sub>
