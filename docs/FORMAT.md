@@ -26,7 +26,7 @@ Validated by [schema/phone.schema.json](../schema/phone.schema.json).
 | `id` | `<brand>/<model>`, the folder name |
 | `brand`, `model`, `year` | as sold |
 | `form` | `candybar`, `slider`, `flip`, `swivel` or `other` |
-| `view` | `front` (candybar) or `open` (sliders and flips are always shown open) |
+| `view` | `front` (candybar), `open` (sliders and flips) or `closed` (keypad flips over a touchscreen, e.g. the Sony Ericsson P series) |
 | `size_mm` | width, height, depth of the shown state (open size for sliders and flips) |
 | `size_closed_mm` | for sliders and flips: the closed size from the spec sheet |
 | `size_note` | how a size was measured when it is not in a spec sheet |

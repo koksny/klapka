@@ -10,7 +10,7 @@ The phones we grew up with, as clean skins with a see-through screen.<br>
 Free, measured to scale, ready for your watch face, wallpaper or emulator.
 
 <!-- COUNT:START -->
-**7 phones** from 1 brand, 2003–2009
+**12 phones** from 1 brand, 2002–2009
 <!-- COUNT:END -->
 
 <p><a href="#browse">Browse</a> · <a href="#get-a-skin-no-git-needed">Download</a> · <a href="https://github.com/koksny/klapka/issues/new?template=request-a-phone.yml">Request a phone</a> · <a href="AGENTS.md">For AI agents</a></p>
@@ -22,9 +22,9 @@ Free, measured to scale, ready for your watch face, wallpaper or emulator.
 ## Browse
 
 <!-- BROWSE:START -->
-- **[By year](catalog/years.md)**: [2003](catalog/years/2003.md) · [2004](catalog/years/2004.md) · [2005](catalog/years/2005.md) · [2006](catalog/years/2006.md) · [2009](catalog/years/2009.md)
+- **[By year](catalog/years.md)**: [2002](catalog/years/2002.md) · [2003](catalog/years/2003.md) · [2004](catalog/years/2004.md) · [2005](catalog/years/2005.md) · [2006](catalog/years/2006.md) · [2007](catalog/years/2007.md) · [2009](catalog/years/2009.md)
 - **[By brand](catalog/brands.md)**: [Sony Ericsson](phones/sony-ericsson/)
-- **[By type](catalog/types.md)**: [Candybar](catalog/types/candybar.md) · [Slider](catalog/types/slider.md)
+- **[By type](catalog/types.md)**: [Candybar](catalog/types/candybar.md) · [Flip / clamshell](catalog/types/flip.md) · [Slider](catalog/types/slider.md)
 - **[All phones](catalog/all.md)** in one table, or [catalog.json](catalog.json) for your own tools
 <!-- BROWSE:END -->
 
@@ -34,8 +34,8 @@ Click a phone to see it big and download it.
 
 <!-- RECENT:START -->
 <table>
-<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w995/"><img src="phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>Sony Ericsson · 2009</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k800i/"><img src="phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w810i/"><img src="phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k750i/"><img src="phones/sony-ericsson/k750i/thumb.png" height="160" alt="Sony Ericsson K750i"></a><br><b>K750i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
-<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w800i/"><img src="phones/sony-ericsson/w800i/thumb.png" height="160" alt="Sony Ericsson W800i"></a><br><b>W800i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k700i/"><img src="phones/sony-ericsson/k700i/thumb.png" height="160" alt="Sony Ericsson K700i"></a><br><b>K700i</b><br><sub>Sony Ericsson · 2004</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/t610/"><img src="phones/sony-ericsson/t610/thumb.png" height="160" alt="Sony Ericsson T610"></a><br><b>T610</b><br><sub>Sony Ericsson · 2003</sub></td></tr>
+<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w995/"><img src="phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>Sony Ericsson · 2009</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/p1i/"><img src="phones/sony-ericsson/p1i/thumb.png" height="160" alt="Sony Ericsson P1i"></a><br><b>P1i</b><br><sub>Sony Ericsson · 2007</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k800i/"><img src="phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w810i/"><img src="phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>Sony Ericsson · 2006</sub></td></tr>
+<tr><td align="center" width="25%"><a href="phones/sony-ericsson/k750i/"><img src="phones/sony-ericsson/k750i/thumb.png" height="160" alt="Sony Ericsson K750i"></a><br><b>K750i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/p990i/"><img src="phones/sony-ericsson/p990i/thumb.png" height="160" alt="Sony Ericsson P990i"></a><br><b>P990i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w800i/"><img src="phones/sony-ericsson/w800i/thumb.png" height="160" alt="Sony Ericsson W800i"></a><br><b>W800i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k700i/"><img src="phones/sony-ericsson/k700i/thumb.png" height="160" alt="Sony Ericsson K700i"></a><br><b>K700i</b><br><sub>Sony Ericsson · 2004</sub></td></tr>
 </table>
 <!-- RECENT:END -->
 
@@ -59,7 +59,8 @@ Every phone comes in the same format, so they work together:
 
 The screen hole always has the phone's real screen proportions (for example 240 × 320 → 3:4),
 so anything you put behind it fits the way it did on the original phone. Phones with a slider or a
-flip are always shown **open**. Details: [docs/FORMAT.md](docs/FORMAT.md).
+flip are shown **open**, except phones whose keypad flip closes over a touchscreen (the Sony Ericsson
+P series), which are shown closed, the way they were used. Details: [docs/FORMAT.md](docs/FORMAT.md).
 
 ## Mi Band in two steps
 

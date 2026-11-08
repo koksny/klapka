@@ -1,0 +1,117 @@
+{
+  "id": "sony-ericsson/p800",
+  "brand": "Sony Ericsson",
+  "model": "P800",
+  "year": 2002,
+  "form": "flip",
+  "view": "closed",
+  "size_mm": {
+    "width": 59,
+    "height": 117,
+    "depth": 27
+  },
+  "size_note": "Shown closed (keypad flip over the touchscreen). Visible display with the flip closed: 208x144 of the 208x320 panel; pixel pitch from the P900 manual (208 px = 40 mm). The keypad flip is translucent blue plastic; the screen shows faintly through its lower part.",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      208,
+      144
+    ],
+    "diagonal_in": 1.915,
+    "type": "TFT touchscreen"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.5,
+      "y": 29.0,
+      "w": 39.99,
+      "h": 27.69,
+      "note": "visible part above the closed flip; w/h from the panel pitch at 208x144, centred; y measured"
+    },
+    "keypad": {
+      "x": 13.5,
+      "y": 61.5,
+      "w": 30.0,
+      "h": 30.0
+    },
+    "seams": [
+      {
+        "y": 58.0,
+        "note": "top edge of the closed keypad flip (translucent)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Small oval silver keys on a translucent light-blue flip: the top row reads 'OK', a back arrow, 'C' and a menu symbol; the 1 key also shows a small envelope and voicemail icon; the # key shows only '#'.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_P800",
+      "https://m.gsmarena.com/sony_ericsson_p800-326.php",
+      "https://www.theregister.com/2003/12/03/sony_ericsson_p900_smartphone/"
+    ],
+    "geometry_photo": {
+      "url": "",
+      "license": "",
+      "author": "",
+      "note": "press-style front photo supplied by Koks"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      122,
+      347,
+      496,
+      343
+    ],
+    "mm": [
+      10.17,
+      28.92,
+      41.33,
+      28.58
+    ],
+    "native_px": [
+      208,
+      144
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        35,
+        153,
+        124,
+        86
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "sony-ericsson/p910i",
+  "brand": "Sony Ericsson",
+  "model": "P910i",
+  "year": 2004,
+  "form": "flip",
+  "view": "closed",
+  "size_mm": {
+    "width": 57,
+    "height": 115,
+    "depth": 26
+  },
+  "size_note": "Shown closed. Visible display with the flip closed: 208x208 = 40x40 mm, as the P900 (same flip design). Screen, flip and keypad positions measured on the P900 (same 115 x 57 mm body and flip design).",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      208,
+      208
+    ],
+    "diagonal_in": 2.227,
+    "type": "TFT touchscreen"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.5,
+      "y": 25.5,
+      "w": 40.0,
+      "h": 40.0,
+      "note": "visible part above the closed flip; w/h from the diagonal at the native aspect, centred; y measured"
+    },
+    "keypad": {
+      "x": 5.5,
+      "y": 75.0,
+      "w": 42.0,
+      "h": 24.5
+    },
+    "seams": [
+      {
+        "y": 66.5,
+        "note": "top edge of the closed keypad flip"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.manualsdir.com/manuals/149794/sony-ericsson-p910i.html?page=197",
+      "https://m.gsmarena.com/sony_ericsson_p910-846.php"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P900.png",
+      "license": "CC BY-SA 4.0",
+      "author": "GtrxAC"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      111,
+      292,
+      503,
+      503
+    ],
+    "mm": [
+      9.25,
+      24.33,
+      41.92,
+      41.92
+    ],
+    "native_px": [
+      208,
+      208
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        33,
+        140,
+        129,
+        129
+      ]
+    }
+  }
+}

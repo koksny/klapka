@@ -7,8 +7,10 @@ A phone needs two kinds of photo; one photo can serve both.
 - **Geometry photo**: the most frontal photo available, used only to measure where the screen,
   keypad and seams sit (and the open length of sliders and flips).
 
-Photos are input only: they stay out of the published repo (`refs/` is not published) and each
-phone's `phone.json` records the source URL and licence.
+Photos are input only: the image model redraws the phone from them, and the photos themselves stay
+out of the published repo (`refs/` is not published). **Any photo that shows the phone well can be
+used, whatever its licence** (Koks, 2026-11-08): press shots, shop photos, reviews, video frames.
+Record where it came from in `build.json` (`photo`) anyway, so the phone can be made again.
 
 Pick the appearance photo in this order:
 
@@ -16,8 +18,8 @@ Pick the appearance photo in this order:
    "QuickShare"), no operator stickers or logos, no aftermarket covers, no plugs, caps or straps
    sticking out, no protective film. A sharper photo of a modified unit loses to a softer photo of an
    original one.
-2. **Sliders and flips photographed open**, since the skin shows them open.
+2. **Sliders and flips photographed open** (keypad flips over a touchscreen: closed), the way the skin
+   shows them.
 3. **Whole front visible**, labels and logos large and readable (the text pass fixes what is not,
    but readable text means fewer fixes).
 4. **Resolution and sharpness.**
-5. **Licence:** public domain / CC0 first, then CC BY / CC BY-SA.

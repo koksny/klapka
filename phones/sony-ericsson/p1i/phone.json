@@ -1,0 +1,118 @@
+{
+  "id": "sony-ericsson/p1i",
+  "brand": "Sony Ericsson",
+  "model": "P1i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 55,
+    "height": 106,
+    "depth": 17
+  },
+  "size_note": "Layout measured on a perspective-corrected photo (the phone was held at an angle).",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.6,
+    "type": "TFT touchscreen"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.69,
+      "y": 13.5,
+      "w": 39.62,
+      "h": 52.83,
+      "note": "w/h from 2.6in at 240:320, centred; y measured on a rectified photo"
+    },
+    "keypad": {
+      "x": 2.5,
+      "y": 74.0,
+      "w": 50.0,
+      "h": 29.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "Q W",
+      "E 1 R",
+      "T 2 Y",
+      "U 3 I",
+      "O P"
+    ],
+    [
+      "A S",
+      "D 4 F",
+      "G 5 H",
+      "J 6 K",
+      "L ←"
+    ],
+    [
+      ", Z",
+      "X 7 C",
+      "V 8 B",
+      "N 9 M",
+      ". OK"
+    ],
+    [
+      "⇧",
+      "* ←",
+      "0 +",
+      "# ⇄",
+      "ALT"
+    ]
+  ],
+  "key_icons": "A QWERTY keyboard of 5 x 4 black keys: each key has two white letters, one on the left and one on the right; the keys of the middle three columns also carry a large red digit between the letters; small white punctuation marks sit above the letters.",
+  "keypad_labels": "QWERTY keyboard with red digits 1-9, * and 0 + on the middle keys",
+  "sources": {
+    "specs": [
+      "https://wikiwand.com/EN/SONY_ERICSSON_P1i",
+      "https://www.productindetail.com/pm/sony-ericsson-p1i"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P1i_-_Front.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Beamish4"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      105,
+      182,
+      468,
+      624
+    ],
+    "mm": [
+      8.75,
+      15.17,
+      39.0,
+      52.0
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        33,
+        119,
+        126,
+        168
+      ]
+    }
+  }
+}

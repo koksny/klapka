@@ -10,7 +10,7 @@
     "model": { "type": "string" },
     "year": { "type": ["integer", "null"], "minimum": 1983, "maximum": 2015 },
     "form": { "enum": ["candybar", "slider", "flip", "swivel", "other"] },
-    "view": { "enum": ["front", "open"] },
+    "view": { "enum": ["front", "open", "closed"] },
     "size_mm": { "$ref": "#/$defs/size" },
     "size_closed_mm": { "$ref": "#/$defs/size" },
     "size_note": { "type": "string" },

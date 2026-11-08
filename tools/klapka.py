@@ -14,7 +14,8 @@
   python tools/klapka.py restore  sony-ericsson/k750i --rows 1 4    # put correct rows back from p2.png after a keypad redraw
   python tools/klapka.py finish   sony-ericsson/k750i              # master, screen hole, exports, acceptance
   python tools/klapka.py mark     sony-ericsson/k750i --text-ok     # after reading every printed text
-  python tools/klapka.py pages                                      # phone pages, galleries, catalog.json
+  python tools/klapka.py pages                                      # phone pages, catalog, catalog.json
+  python tools/klapka.py header                                     # README header from assets/header.json (maintainer)
 
 State lives in phones/<brand>/<model>/: phone.json (data), build.json (provenance, scores,
 acceptance), work/ (renders, crops, sheets; not committed). Steps can be re-run; pass1 skips
@@ -140,7 +141,8 @@ def cmd_measure(a):
     screen top edge, keypad block and seams straight off it."""
     P = phone(a.id); wm, hm = P["size_mm"]["width"], P["size_mm"]["height"]
     if not (wm and hm): raise SystemExit("fill size_mm in phone.json first")
-    im = ImageOps.exif_transpose(Image.open(a.photo)).convert("RGB"); rgb = np.asarray(im)
+    im = ImageOps.exif_transpose(Image.open(a.photo)).convert("RGBA")
+    flat = Image.new("RGBA", im.size, (255, 255, 255, 255)); flat.alpha_composite(im); im = flat.convert("RGB"); rgb = np.asarray(im)
     box = [int(v) for v in a.bbox.split(",")] if a.bbox else body_bbox_grabcut(rgb)
     pre = im.copy(); ImageDraw.Draw(pre).rectangle(box, outline=(255, 0, 255), width=max(3, im.width // 300)); pre.thumbnail((1000, 1000))
     pre.save(wdir(a.id) / "measure_bbox.png")
@@ -170,7 +172,9 @@ def cmd_template(a):
 
 
 def cmd_photo(a):
-    im = ImageOps.exif_transpose(Image.open(a.path)).convert("RGB"); im.thumbnail((1024, 1024), Image.LANCZOS)
+    im = ImageOps.exif_transpose(Image.open(a.path)).convert("RGBA")
+    flat = Image.new("RGBA", im.size, (255, 255, 255, 255)); flat.alpha_composite(im)   # transparent photos -> white
+    im = flat.convert("RGB"); im.thumbnail((1024, 1024), Image.LANCZOS)
     im.save(wdir(a.id) / "photo.png")
     b = build(a.id); b["photo"] = {"url": a.source, "license": a.license, "author": a.author or "", "size_used": list(im.size)}; save_build(a.id, b)
     print(f"photo.png {im.size}")
@@ -319,7 +323,7 @@ def cmd_restore(a):
     from PIL import ImageFilter
     src, cur = Image.open(w / "p2.png").convert("RGBA"), Image.open(w / "final.png").convert("RGBA")
     for bx in boxes:
-        patch = src.crop(bx); mask = Image.new("L", patch.size, 0); f = 6
+        patch = src.crop(bx); mask = Image.new("L", patch.size, 0); f = a.feather
         mask.paste(255, (f, f, patch.width - f, patch.height - f)); mask = mask.filter(ImageFilter.GaussianBlur(f / 2))
         cur.paste(Image.composite(patch, cur.crop(bx), mask), (bx[0], bx[1]))
     cur.save(w / "final.png")
@@ -414,8 +418,8 @@ def credit(src):
 def phone_page(d):
     P, B = load(d / "phone.json"), load(d / "build.json")
     name = f"{P['brand']} {P['model']}"; s = P["size_mm"]; dsp = P["display"]; sc = P["screen"]; ex = P["exports"]["mi-band-192x490.png"]["screen_px"]
-    form = P["form"] + (", shown open" if P.get("view") == "open" else "")
-    size = f"{s['width']} × {s['height']} mm" + (" (open)" if P.get("view") == "open" else "")
+    form = P["form"] + {"open": ", shown open", "closed": ", shown closed"}.get(P.get("view"), "")
+    size = f"{s['width']} × {s['height']} mm" + {"open": " (open)", "closed": " (closed)"}.get(P.get("view"), "")
     if P.get("size_closed_mm"): size += f", {P['size_closed_mm']['width']} × {P['size_closed_mm']['height']} mm closed"
     srcs = P.get("sources", {}); specs = ", ".join(f"[{host(u)}]({u})" for u in srcs.get("specs", []))
     acc = B["acceptance"]["measured"]
@@ -506,6 +510,15 @@ def plural(n, word):
     return f"{n} {word}{'' if n == 1 else 's'}"
 
 
+def cmd_header(a):
+    """README header animation from the hand-picked list in assets/header.json."""
+    cfg = load(ROOT / "assets" / "header.json")
+    dirs = [PHONES / p for p in cfg["phones"]]
+    missing = [str(d) for d in dirs if not (d / "skin.png").exists()]
+    if missing: raise SystemExit(f"not finished yet: {missing}")
+    print(run("make_header.py", ROOT / "assets" / "header.png", *dirs, "--style", cfg.get("style", "amber")).strip())
+
+
 def cmd_pages(a):
     import datetime
     dirs = phones_done(); catalog = []; today = datetime.date.today().isoformat()
@@ -555,7 +568,7 @@ def cmd_pages(a):
     write(PHONES / "README.md", GEN + "# Phones\n\n" + browse_nav("phones") + "\n\n" + "\n".join(
         f"- [{load(ds[0] / 'phone.json')['brand']}]({bd.name}/) ({len(ds)})" for bd, ds in sorted(by_brand.items())) + "\n")
     # by type
-    write(cat / "types.md", GEN + "# Phones by type\n\n" + browse_nav("catalog") + "\n\nSliders and flips are shown open.\n\n| Type | Phones |\n|---|---|\n"
+    write(cat / "types.md", GEN + "# Phones by type\n\n" + browse_nav("catalog") + "\n\nSliders and flips are shown open; keypad flips over a touchscreen (Sony Ericsson P series) closed.\n\n| Type | Phones |\n|---|---|\n"
           + "\n".join(f"| [{FORM_NAMES.get(fm, fm)}](types/{fm}.md) | {len(ds)} |" for fm, ds in sorted(by_form.items())) + "\n")
     for fm, ds in by_form.items():
         write(cat / "types" / f"{fm}.md", GEN + f"# {FORM_NAMES.get(fm, fm)}\n\n{browse_nav('catalog/types')}\n\n{plural(len(ds), 'phone')}, oldest first.\n\n{gallery(ds, 'catalog/types')}\n")
@@ -570,9 +583,6 @@ def cmd_pages(a):
 
     # front page: the header animation, counts, browse links and the newest additions only
     recent = sorted(dirs, key=lambda d: (load(d / "build.json")["added"], load(d / "phone.json").get("year") or 0), reverse=True)[:8]
-    featured = dirs if len(dirs) <= 12 else [dirs[round(i * (len(dirs) - 1) / 11)] for i in range(12)]
-    (ROOT / "assets").mkdir(exist_ok=True)
-    run("make_header.py", ROOT / "assets" / "header.png", *featured, "--style", a.style)
     readme = ROOT / "README.md"
     if readme.exists():
         t = readme.read_text(encoding="utf-8"); ny = [y for y in years if y]
@@ -584,7 +594,7 @@ def cmd_pages(a):
             "- **[By type](catalog/types.md)**: " + " · ".join(f"[{FORM_NAMES.get(fm, fm)}](catalog/types/{fm}.md)" for fm in sorted(by_form)),
             "- **[All phones](catalog/all.md)** in one table, or [catalog.json](catalog.json) for your own tools"]))
         readme.write_text(t, encoding="utf-8")
-    print(f"{len(dirs)} phone pages, {len(by_brand)} brands, {len(years)} years, {len(by_form)} types, catalog/, catalog.json, assets/header.png")
+    print(f"{len(dirs)} phone pages, {len(by_brand)} brands, {len(years)} years, {len(by_form)} types, catalog/, catalog.json")
 
 
 # ---------------------------------------------------------------- cli
@@ -599,13 +609,14 @@ def main():
     p = sp.add_parser("grid"); p.add_argument("id")
     p = sp.add_parser("textfix"); p.add_argument("id"); p.add_argument("--keypad", action="store_true"); p.add_argument("--row", type=int, help="one row of keys (1 = top), labels from phone.json"); p.add_argument("--text"); p.add_argument("--box"); p.add_argument("--seed", type=int, default=1)
     p = sp.add_parser("rows"); p.add_argument("id")
-    p = sp.add_parser("restore"); p.add_argument("id"); p.add_argument("--rows", type=int, nargs="*", default=[]); p.add_argument("--box")
+    p = sp.add_parser("restore"); p.add_argument("id"); p.add_argument("--rows", type=int, nargs="*", default=[]); p.add_argument("--box"); p.add_argument("--feather", type=int, default=6, help="soft edge in px (use 1-2 for thin strips)")
     p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--screen", help="display rectangle on work/final.png: x0,y0,x1,y1 (when the automatic one misses)")
     p = sp.add_parser("mark"); p.add_argument("id"); p.add_argument("--text-ok", action="store_true"); p.add_argument("--approved", action="store_true")
-    p = sp.add_parser("pages"); p.add_argument("--style", default="amber", choices=["green", "blue", "amber"], help="header LCD colour")
+    sp.add_parser("pages")
+    sp.add_parser("header")
     a = ap.parse_args()
     {"new": cmd_new, "measure": cmd_measure, "template": cmd_template, "photo": cmd_photo, "pass1": cmd_pass1, "pass2": cmd_pass2, "grid": cmd_grid,
-     "textfix": cmd_textfix, "rows": cmd_rows, "restore": cmd_restore, "finish": cmd_finish, "mark": cmd_mark, "pages": cmd_pages}[a.cmd](a)
+     "textfix": cmd_textfix, "rows": cmd_rows, "restore": cmd_restore, "finish": cmd_finish, "mark": cmd_mark, "pages": cmd_pages, "header": cmd_header}[a.cmd](a)
 
 
 if __name__ == "__main__":

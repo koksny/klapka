@@ -1,0 +1,182 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      736,
+      1376
+    ],
+    "px_per_mm": 11.943,
+    "body_px": [
+      40,
+      55,
+      696,
+      1320
+    ],
+    "screen_px": [
+      132,
+      216,
+      604,
+      846
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P1i_-_Front.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      559,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.2,
+        "screen_rel_iou": 0.9589,
+        "screen_centre_error_pct": -0.47,
+        "mirror": 0.3818,
+        "body_aspect": 0.5127,
+        "template_body_aspect": 0.519,
+        "body": [
+          46,
+          62,
+          690,
+          1319
+        ],
+        "screen": [
+          126,
+          228,
+          604,
+          847
+        ],
+        "score": 1.0432,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.88,
+        "screen_rel_iou": 0.9345,
+        "screen_centre_error_pct": -0.46,
+        "mirror": 0.3913,
+        "body_aspect": 0.5235,
+        "template_body_aspect": 0.519,
+        "body": [
+          39,
+          58,
+          694,
+          1310
+        ],
+        "screen": [
+          126,
+          185,
+          601,
+          844
+        ],
+        "score": 1.0402,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.67,
+        "screen_rel_iou": 0.904,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.296,
+        "body_aspect": 0.5103,
+        "template_body_aspect": 0.519,
+        "body": [
+          60,
+          78,
+          679,
+          1292
+        ],
+        "screen": [
+          144,
+          206,
+          594,
+          868
+        ],
+        "score": 0.9604,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.99,
+        "screen_rel_iou": 0.9419,
+        "screen_centre_error_pct": -0.61,
+        "mirror": 0.3307,
+        "body_aspect": 0.5293,
+        "template_body_aspect": 0.519,
+        "body": [
+          38,
+          60,
+          697,
+          1306
+        ],
+        "screen": [
+          125,
+          192,
+          602,
+          840
+        ],
+        "score": 0.9473,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "screen_source": {
+    "final_px": [
+      136,
+      222,
+      600,
+      847
+    ],
+    "snap": "near",
+    "manual": false
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.5139,
+      "spec_aspect": 0.5189,
+      "aspect_error_pct": -0.96,
+      "lean_deg": 0.002,
+      "taper_deg": 0.002,
+      "deskew_deg": -0.001,
+      "tilt_deg": 0.003,
+      "jitter_px": 0.1,
+      "symmetry_iou": 0.9966,
+      "screen_aspect_error_pct": 0.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true
+    }
+  },
+  "added": "2026-11-08"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "sony-ericsson/p990i",
+  "brand": "Sony Ericsson",
+  "model": "P990i",
+  "year": 2005,
+  "form": "flip",
+  "view": "closed",
+  "size_mm": {
+    "width": 57,
+    "height": 114,
+    "depth": 25
+  },
+  "size_note": "Shown closed. Visible display with the flip closed: 240x256 of the 240x320 panel (GSMArena, All About Symbian); pixel pitch from the 2.76in panel. The visible window measures about 37.5 mm wide on a frontal photo, narrower than the 2.76in panel spec gives (42 mm); the measurement is used.",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      256
+    ],
+    "diagonal_in": 2.159,
+    "type": "TFT touchscreen"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.75,
+      "y": 14.0,
+      "w": 37.51,
+      "h": 40.01,
+      "note": "visible part above the closed flip; w/h from the diagonal at the native aspect, centred; y measured"
+    },
+    "keypad": {
+      "x": 8.0,
+      "y": 66.5,
+      "w": 42.0,
+      "h": 22.0
+    },
+    "seams": [
+      {
+        "y": 55.5,
+        "note": "top edge of the closed keypad flip"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/p990i/",
+      "https://m.gsmarena.com/sony_ericsson_p990-review-101p3.php",
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_P990"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:P990i-closed.JPG",
+      "license": "Public domain",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      110,
+      207,
+      479,
+      511
+    ],
+    "mm": [
+      9.17,
+      17.25,
+      39.92,
+      42.58
+    ],
+    "native_px": [
+      240,
+      256
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        33,
+        119,
+        123,
+        131
+      ]
+    }
+  }
+}

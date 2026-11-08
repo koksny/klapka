@@ -3,9 +3,9 @@
 
 <a href="../years.md">By year</a> · <a href="../brands.md">By brand</a> · <a href="../types.md">By type</a> · <a href="../all.md">All phones</a>
 
-6 phones, oldest first.
+7 phones, oldest first.
 
 <table>
 <tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/t610/"><img src="../../phones/sony-ericsson/t610/thumb.png" height="160" alt="Sony Ericsson T610"></a><br><b>T610</b><br><sub>Sony Ericsson · 2003</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/k700i/"><img src="../../phones/sony-ericsson/k700i/thumb.png" height="160" alt="Sony Ericsson K700i"></a><br><b>K700i</b><br><sub>Sony Ericsson · 2004</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/k750i/"><img src="../../phones/sony-ericsson/k750i/thumb.png" height="160" alt="Sony Ericsson K750i"></a><br><b>K750i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w800i/"><img src="../../phones/sony-ericsson/w800i/thumb.png" height="160" alt="Sony Ericsson W800i"></a><br><b>W800i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
-<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/k800i/"><img src="../../phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w810i/"><img src="../../phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>Sony Ericsson · 2006</sub></td></tr>
+<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/k800i/"><img src="../../phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w810i/"><img src="../../phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/p1i/"><img src="../../phones/sony-ericsson/p1i/thumb.png" height="160" alt="Sony Ericsson P1i"></a><br><b>P1i</b><br><sub>Sony Ericsson · 2007</sub></td></tr>
 </table>

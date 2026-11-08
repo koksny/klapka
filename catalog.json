@@ -1,7 +1,103 @@
 {
   "standard": "v1",
-  "count": 7,
+  "count": 12,
   "phones": [
+    {
+      "id": "sony-ericsson/p800",
+      "brand": "Sony Ericsson",
+      "model": "P800",
+      "year": 2002,
+      "form": "flip",
+      "view": "closed",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 59,
+        "height": 117,
+        "depth": 27
+      },
+      "display": {
+        "native_px": [
+          208,
+          144
+        ],
+        "diagonal_in": 1.915,
+        "type": "TFT touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          122,
+          347,
+          496,
+          343
+        ],
+        "mm": [
+          10.17,
+          28.92,
+          41.33,
+          28.58
+        ],
+        "native_px": [
+          208,
+          144
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/p800/skin.png",
+        "body.png": "phones/sony-ericsson/p800/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/p800/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/p800/preview.png",
+        "phone.json": "phones/sony-ericsson/p800/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/p900",
+      "brand": "Sony Ericsson",
+      "model": "P900",
+      "year": 2003,
+      "form": "flip",
+      "view": "closed",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 57,
+        "height": 115,
+        "depth": 24
+      },
+      "display": {
+        "native_px": [
+          208,
+          208
+        ],
+        "diagonal_in": 2.227,
+        "type": "TFT touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          100,
+          324,
+          491,
+          491
+        ],
+        "mm": [
+          8.33,
+          27.0,
+          40.92,
+          40.92
+        ],
+        "native_px": [
+          208,
+          208
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/p900/skin.png",
+        "body.png": "phones/sony-ericsson/p900/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/p900/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/p900/preview.png",
+        "phone.json": "phones/sony-ericsson/p900/phone.json"
+      }
+    },
     {
       "id": "sony-ericsson/t610",
       "brand": "Sony Ericsson",
@@ -99,6 +195,54 @@
       }
     },
     {
+      "id": "sony-ericsson/p910i",
+      "brand": "Sony Ericsson",
+      "model": "P910i",
+      "year": 2004,
+      "form": "flip",
+      "view": "closed",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 57,
+        "height": 115,
+        "depth": 26
+      },
+      "display": {
+        "native_px": [
+          208,
+          208
+        ],
+        "diagonal_in": 2.227,
+        "type": "TFT touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          111,
+          292,
+          503,
+          503
+        ],
+        "mm": [
+          9.25,
+          24.33,
+          41.92,
+          41.92
+        ],
+        "native_px": [
+          208,
+          208
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/p910i/skin.png",
+        "body.png": "phones/sony-ericsson/p910i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/p910i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/p910i/preview.png",
+        "phone.json": "phones/sony-ericsson/p910i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k750i",
       "brand": "Sony Ericsson",
       "model": "K750i",
@@ -144,6 +288,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/k750i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k750i/preview.png",
         "phone.json": "phones/sony-ericsson/k750i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/p990i",
+      "brand": "Sony Ericsson",
+      "model": "P990i",
+      "year": 2005,
+      "form": "flip",
+      "view": "closed",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 57,
+        "height": 114,
+        "depth": 25
+      },
+      "display": {
+        "native_px": [
+          240,
+          256
+        ],
+        "diagonal_in": 2.159,
+        "type": "TFT touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          110,
+          207,
+          479,
+          511
+        ],
+        "mm": [
+          9.17,
+          17.25,
+          39.92,
+          42.58
+        ],
+        "native_px": [
+          240,
+          256
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/p990i/skin.png",
+        "body.png": "phones/sony-ericsson/p990i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/p990i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/p990i/preview.png",
+        "phone.json": "phones/sony-ericsson/p990i/phone.json"
       }
     },
     {
@@ -288,6 +480,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w810i/preview.png",
         "phone.json": "phones/sony-ericsson/w810i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/p1i",
+      "brand": "Sony Ericsson",
+      "model": "P1i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 55,
+        "height": 106,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          105,
+          182,
+          468,
+          624
+        ],
+        "mm": [
+          8.75,
+          15.17,
+          39.0,
+          52.0
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/p1i/skin.png",
+        "body.png": "phones/sony-ericsson/p1i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/p1i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/p1i/preview.png",
+        "phone.json": "phones/sony-ericsson/p1i/phone.json"
       }
     },
     {

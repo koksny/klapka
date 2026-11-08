@@ -3,9 +3,10 @@
 
 <a href="./years.md">By year</a> · <a href="./brands.md">By brand</a> · <a href="./types.md">By type</a> · <a href="./all.md">All phones</a>
 
-Sliders and flips are shown open.
+Sliders and flips are shown open; keypad flips over a touchscreen (Sony Ericsson P series) closed.
 
 | Type | Phones |
 |---|---|
-| [Candybar](types/candybar.md) | 6 |
+| [Candybar](types/candybar.md) | 7 |
+| [Flip / clamshell](types/flip.md) | 4 |
 | [Slider](types/slider.md) | 1 |

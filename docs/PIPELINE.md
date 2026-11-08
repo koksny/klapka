@@ -23,6 +23,11 @@ but they stay experiments until he approves them.
 
 1. **Sliders and flips are always shown open** (keypad slid out, clamshell unfolded):
    `view: "open"`, `size_mm` is the open size, `layout_mm.seams` marks where the parts meet.
+   **Exception (Koks, 2026-11-08): phones whose keypad sits on a flip that closes over the
+   touchscreen** (Sony Ericsson P800, P900, P910i, P990i) are shown **closed**, because that is how
+   the keypad was seen: `view: "closed"`, `size_mm` is the closed size, the screen is the part of the
+   display visible above the closed flip (`display.native_px` = that visible area), and
+   `layout_mm.seams` marks the flip's edges.
 2. **Reference photos** follow `docs/REFERENCES.md` (factory configuration first). Any reasonable
    angle works; nothing has to be frontal. Photos are input only: never published, source and licence
    recorded in `phone.json`.
@@ -56,7 +61,8 @@ what to look at after each step is [AGENTS.md](../AGENTS.md).
 | 5 | `grid <id>`, `rows <id>`, `textfix <id> --row N` / `--keypad` / `--text T --box …` | every printed text read; only the wrong areas (a row of keys, preferred; the whole keypad only when most rows are wrong; a word) cut out, enlarged to an exact multiple of 32, redrawn with the exact wording (`fix_key_row` / `fix_keypad_tpl` / `fix_text`), pasted back colour-matched, alpha untouched | `fix_text.py`, `cgi_edit.py` |
 | 6 | `finish <id>` | master `body.png` (12 px/mm), screen hole at the exact native aspect (`skin.png`), Mi Band export, preview, thumbnail, measured acceptance | `clean_alpha.py`, `mark_screen.py` |
 | 7 | `mark <id> --text-ok` (and `--approved` by the maintainer) | the visual checks recorded in `build.json` | – |
-| 8 | `pages` | phone pages; the catalog (`catalog/`: by year, by brand, by type, all phones); the front page (newest additions, browse links); `catalog.json`; the header animation `assets/header.png` | `make_header.py` |
+| 8 | `pages` | phone pages; the catalog (`catalog/`: by year, by brand, by type, all phones); the front page (newest additions, browse links); `catalog.json` | – |
+| – | `header` (maintainer) | the README header animation from the hand-picked line-up in `assets/header.json` | `make_header.py` |
 
 If no seed passes (white background, aspect within 3%), run `pass1 <id> --seeds 1,2,3,4,5,6,7,8`.
 To restart the text fixes from the clean cutout: `pass2 <id> --reuse`.

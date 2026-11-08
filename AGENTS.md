@@ -12,10 +12,13 @@ step by step.
 
 1. **Follow the standard.** Do not change it in a pull request that adds or fixes phones; propose
    changes in an issue first.
-2. **Sliders and flips are shown open** (keypad slid out, clamshell unfolded).
+2. **Sliders and flips are shown open** (keypad slid out, clamshell unfolded). Exception: a keypad
+   flip that closes over a touchscreen (Sony Ericsson P800, P900, P910i, P990i) is shown closed;
+   see [docs/PIPELINE.md](docs/PIPELINE.md#rules).
 3. **Photos:** prefer photos of original, unmodified phones (no operator stickers, no aftermarket
-   covers), see [docs/REFERENCES.md](docs/REFERENCES.md). Photos are input only: keep them in `refs/`,
-   which is never committed, and record each photo's URL, licence and author.
+   covers), see [docs/REFERENCES.md](docs/REFERENCES.md). Photos are input only and are never
+   committed (keep them in `refs/`), so any source works, whatever its licence: press shots, shops,
+   reviews. Record each photo's URL (and author, when known).
 4. **Never trust printed text from the image model.** Read every label on the final image letter by
    letter. Run `klapka.py mark <id> --text-ok` only after you have done that.
 5. **Use only the prompts in `tools/prompts.json`**, through `tools/klapka.py`. One image request at a
@@ -50,7 +53,8 @@ Example id: `sony-ericsson/k750i` (`<brand>/<model>`, lowercase, dashes).
   measurements, but measure the keypad on the model itself: it can sit differently.
 - An **appearance photo**: a photo of an original unit. It does not need to be perfectly frontal,
   but the closer to straight-on the better: the render keeps a little of the photo's angle. Readable
-  labels mean fewer text fixes. Wikimedia Commons is a good start because licences are stated.
+  labels mean fewer text fixes. Any source works: Wikimedia Commons, press shots, shop and review
+  photos.
 - Save downloads under `refs/<brand>/<model>/`.
 
 **3. Create and fill `phone.json`.**
@@ -87,7 +91,7 @@ at the real proportions. If something is clearly off, fix `phone.json` and run i
 
 **5. Photo.**
 ```
-python tools/klapka.py photo sony-ericsson/k750i refs/sony-ericsson/k750i/photo.jpg --source "https://commons.wikimedia.org/wiki/File:..." --license "CC BY-SA 4.0" --author "Name"
+python tools/klapka.py photo sony-ericsson/k750i refs/sony-ericsson/k750i/photo.jpg --source "https://commons.wikimedia.org/wiki/File:..." --license "CC BY-SA 4.0" --author "Name"   # licence and author only if known
 ```
 
 **6. Pass 1: four renders, ranked by geometry.**
@@ -158,7 +162,7 @@ python tools/klapka.py pages
 - `phones/<brand>/<model>/`: `README.md`, `phone.json`, `build.json`, `skin.png`, `body.png`,
   `mi-band-192x490.png`, `preview.png`, `thumb.png`
 - everything `pages` regenerated: `README.md`, `phones/README.md`, `phones/<brand>/README.md`,
-  `catalog/`, `catalog.json`, `assets/header.png`
+  `catalog/`, `catalog.json` (not `assets/header.png`: the header is a fixed line-up the maintainer picks)
 
 Fill in the pull request template. A maintainer looks at the result before it is merged.
 
@@ -173,8 +177,7 @@ Fill in the pull request template. A maintainer looks at the result before it is
 ## Workflow C: a "Request a phone" issue
 
 1. Check `catalog.json`; if the phone exists, link it in the issue.
-2. Otherwise run workflow A. Use photos the requester linked when they are of an original unit and
-   their licence allows it.
+2. Otherwise run workflow A. Use photos the requester linked when they show an original unit.
 3. Link the pull request in the issue.
 
 ## When something goes wrong

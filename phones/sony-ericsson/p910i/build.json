@@ -1,0 +1,248 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      736,
+      1408
+    ],
+    "px_per_mm": 11.264,
+    "body_px": [
+      47,
+      56,
+      688,
+      1350
+    ],
+    "screen_px": [
+      143,
+      344,
+      592,
+      793
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_P910i_-_Front_(Closed).jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      769,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.37,
+        "screen_rel_iou": 0.8675,
+        "screen_centre_error_pct": 0.41,
+        "mirror": 0.6648,
+        "body_aspect": 0.4939,
+        "template_body_aspect": 0.4958,
+        "body": [
+          125,
+          208,
+          613,
+          1197
+        ],
+        "screen": [
+          186,
+          407,
+          556,
+          770
+        ],
+        "score": 1.1408,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.55,
+        "screen_rel_iou": 0.8646,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6568,
+        "body_aspect": 0.5034,
+        "template_body_aspect": 0.4958,
+        "body": [
+          109,
+          175,
+          624,
+          1199
+        ],
+        "screen": [
+          174,
+          382,
+          559,
+          767
+        ],
+        "score": 1.1157,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.35,
+        "screen_rel_iou": 0.8876,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6486,
+        "body_aspect": 0.4841,
+        "template_body_aspect": 0.4958,
+        "body": [
+          62,
+          65,
+          670,
+          1322
+        ],
+        "screen": [
+          138,
+          329,
+          595,
+          787
+        ],
+        "score": 1.0862,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.63,
+        "screen_rel_iou": 0.8499,
+        "screen_centre_error_pct": 0.34,
+        "mirror": 0.5969,
+        "body_aspect": 0.5039,
+        "template_body_aspect": 0.4958,
+        "body": [
+          74,
+          123,
+          661,
+          1289
+        ],
+        "screen": [
+          151,
+          355,
+          588,
+          803
+        ],
+        "score": 1.0326,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        240,
+        288,
+        496,
+        328
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 1",
+      "text": "'1', '2 ABC', '3 DEF'. The 1 key also shows a small envelope and voicemail icon; the # key also shows a space symbol.",
+      "box": [
+        148,
+        853,
+        596,
+        909
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "QuickShare",
+      "box": [
+        243,
+        1118,
+        499,
+        1178
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          178,
+          853,
+          567,
+          909
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "2 ABC",
+      "box": [
+        293,
+        852,
+        452,
+        909
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "final_px": [
+      195,
+      428,
+      540,
+      771
+    ],
+    "snap": "near",
+    "manual": false
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.499,
+      "spec_aspect": 0.4957,
+      "aspect_error_pct": 0.68,
+      "lean_deg": 0.046,
+      "taper_deg": 0.216,
+      "deskew_deg": 0.157,
+      "tilt_deg": 0.262,
+      "jitter_px": 0.93,
+      "symmetry_iou": 0.9912,
+      "screen_aspect_error_pct": 0.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true
+    }
+  },
+  "added": "2026-11-08"
+}

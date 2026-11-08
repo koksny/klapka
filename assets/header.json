@@ -1,0 +1,12 @@
+{
+  "note": "The README header animation. A fixed, hand-picked line-up: edit this list and run `python tools/klapka.py header`. `pages` does not touch the header.",
+  "style": "amber",
+  "phones": [
+    "sony-ericsson/t610",
+    "sony-ericsson/k700i",
+    "sony-ericsson/k750i",
+    "sony-ericsson/w810i",
+    "sony-ericsson/k800i",
+    "sony-ericsson/w995"
+  ]
+}
