@@ -1,0 +1,21 @@
+name: Report a mistake
+description: Something is wrong on a phone that is already in KLAPKA
+title: "Fix: <brand> <model>"
+labels: ["fix"]
+body:
+  - type: input
+    id: phone
+    attributes: { label: Phone, placeholder: sony-ericsson/w995 }
+    validations: { required: true }
+  - type: dropdown
+    id: what
+    attributes:
+      label: What is wrong
+      options: [A printed label or logo, The size or proportions, The screen position or shape, A button or detail, Something else]
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What it should be, with a link or a picture that shows it.
+    validations: { required: true }

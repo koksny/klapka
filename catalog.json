@@ -1,0 +1,335 @@
+{
+  "standard": "v1",
+  "count": 7,
+  "phones": [
+    {
+      "id": "sony-ericsson/k700i",
+      "brand": "Sony Ericsson",
+      "model": "K700i",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 46,
+        "height": 99,
+        "depth": 19.6
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          114,
+          213,
+          348,
+          435
+        ],
+        "mm": [
+          9.5,
+          17.75,
+          29.0,
+          36.25
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k700i/skin.png",
+        "body.png": "phones/sony-ericsson/k700i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k700i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k700i/preview.png",
+        "phone.json": "phones/sony-ericsson/k700i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k750i",
+      "brand": "Sony Ericsson",
+      "model": "K750i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 20.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          116,
+          140,
+          352,
+          440
+        ],
+        "mm": [
+          9.67,
+          11.67,
+          29.33,
+          36.67
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k750i/skin.png",
+        "body.png": "phones/sony-ericsson/k750i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k750i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k750i/preview.png",
+        "phone.json": "phones/sony-ericsson/k750i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k800i",
+      "brand": "Sony Ericsson",
+      "model": "K800i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 47,
+        "height": 105,
+        "depth": 22
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          115,
+          196,
+          367,
+          489
+        ],
+        "mm": [
+          9.58,
+          16.33,
+          30.58,
+          40.75
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k800i/skin.png",
+        "body.png": "phones/sony-ericsson/k800i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k800i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k800i/preview.png",
+        "phone.json": "phones/sony-ericsson/k800i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t610",
+      "brand": "Sony Ericsson",
+      "model": "T610",
+      "year": 2003,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 44,
+        "height": 102,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          103,
+          199,
+          350,
+          437
+        ],
+        "mm": [
+          8.58,
+          16.58,
+          29.17,
+          36.42
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t610/skin.png",
+        "body.png": "phones/sony-ericsson/t610/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t610/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t610/preview.png",
+        "phone.json": "phones/sony-ericsson/t610/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w800i",
+      "brand": "Sony Ericsson",
+      "model": "W800i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 20.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          120,
+          143,
+          345,
+          431
+        ],
+        "mm": [
+          10.0,
+          11.92,
+          28.75,
+          35.92
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w800i/skin.png",
+        "body.png": "phones/sony-ericsson/w800i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w800i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w800i/preview.png",
+        "phone.json": "phones/sony-ericsson/w800i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w810i",
+      "brand": "Sony Ericsson",
+      "model": "W810i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 19.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          109,
+          133,
+          368,
+          460
+        ],
+        "mm": [
+          9.08,
+          11.08,
+          30.67,
+          38.33
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w810i/skin.png",
+        "body.png": "phones/sony-ericsson/w810i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w810i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w810i/preview.png",
+        "phone.json": "phones/sony-ericsson/w810i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w995",
+      "brand": "Sony Ericsson",
+      "model": "W995",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "size_mm": {
+        "width": 49,
+        "height": 130,
+        "depth": 15
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          68,
+          136,
+          482,
+          643
+        ],
+        "mm": [
+          5.67,
+          11.33,
+          40.17,
+          53.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w995/skin.png",
+        "body.png": "phones/sony-ericsson/w995/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w995/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w995/preview.png",
+        "phone.json": "phones/sony-ericsson/w995/phone.json"
+      }
+    }
+  ]
+}

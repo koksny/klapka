@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/k800i",
+  "brand": "Sony Ericsson",
+  "model": "K800i",
+  "year": 2006,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 47,
+    "height": 105,
+    "depth": 22
+  },
+  "corner_radius_mm": 2.5,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.26,
+      "y": 15.1,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "size from 2.0in at 3:4 (exact native aspect), centred; top edge measured on e_se2_pd"
+    },
+    "keypad": {
+      "x": 4.6,
+      "y": 78.75,
+      "w": 37.8,
+      "h": 22.1,
+      "note": "measured on e_se2_pd, centred"
+    }
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Cyber-shot"
+  ],
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "text_layout_mm": [
+    {
+      "text": "Sony Ericsson",
+      "cy": 12.4,
+      "h": 2.4,
+      "note": "measured on e_se2_pd: centre 12.4 mm from top, ~19 mm wide"
+    },
+    {
+      "text": "Cyber-shot",
+      "cy": 61.1,
+      "h": 2.6,
+      "note": "measured on e_se2_pd: centre 61.1 mm from top, ~17 mm wide"
+    }
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_ericsson_k800-1485.php",
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_K800i"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:SE_K800i_2.jpg",
+      "license": "Public domain",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      115,
+      196,
+      367,
+      489
+    ],
+    "mm": [
+      9.58,
+      16.33,
+      30.58,
+      40.75
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        40,
+        107,
+        113,
+        151
+      ]
+    }
+  }
+}

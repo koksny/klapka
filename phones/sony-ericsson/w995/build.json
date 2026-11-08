@@ -1,0 +1,195 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 11.5,
+    "body_px": [
+      38,
+      68,
+      601,
+      1562
+    ],
+    "screen_px": [
+      92,
+      192,
+      547,
+      799
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W995_(Progressive_Black)_-_Front_(Open).jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      768,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.55,
+        "screen_rel_iou": 0.9116,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.5873,
+        "body_aspect": 0.3752,
+        "template_body_aspect": 0.3773,
+        "body": [
+          43,
+          69,
+          598,
+          1550
+        ],
+        "screen": [
+          83,
+          175,
+          556,
+          801
+        ],
+        "score": 1.1596,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.03,
+        "screen_rel_iou": 0.95,
+        "screen_centre_error_pct": -0.72,
+        "mirror": 0.6097,
+        "body_aspect": 0.3811,
+        "template_body_aspect": 0.3773,
+        "body": [
+          42,
+          70,
+          599,
+          1533
+        ],
+        "screen": [
+          86,
+          179,
+          547,
+          790
+        ],
+        "score": 1.1316,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.02,
+        "screen_rel_iou": 0.8941,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.5511,
+        "body_aspect": 0.3734,
+        "template_body_aspect": 0.3773,
+        "body": [
+          44,
+          68,
+          599,
+          1556
+        ],
+        "screen": [
+          81,
+          173,
+          561,
+          805
+        ],
+        "score": 1.1096,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.85,
+        "screen_rel_iou": 0.9131,
+        "screen_centre_error_pct": -0.92,
+        "mirror": 0.4813,
+        "body_aspect": 0.3741,
+        "template_body_aspect": 0.3773,
+        "body": [
+          52,
+          79,
+          596,
+          1535
+        ],
+        "screen": [
+          90,
+          181,
+          548,
+          803
+        ],
+        "score": 1.0195,
+        "seed": 1
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 3,
+    "note": "used seed passes every gate; it was chosen before the symmetry check was added and kept (approved by Koks)"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1182,
+        560,
+        1497
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.382,
+      "spec_aspect": 0.3769,
+      "aspect_error_pct": 1.35,
+      "lean_deg": 0.05,
+      "taper_deg": 0.05,
+      "deskew_deg": 0.072,
+      "tilt_deg": 0.1,
+      "jitter_px": 0.32,
+      "symmetry_iou": 0.9972,
+      "screen_aspect_error_pct": 0.05
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      95,
+      191,
+      545,
+      786
+    ],
+    "snap": "near",
+    "manual": false
+  }
+}

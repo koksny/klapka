@@ -1,0 +1,182 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      159,
+      194,
+      545,
+      677
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W800i_-_Front.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      767,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.37,
+        "screen_rel_iou": 0.8519,
+        "screen_centre_error_pct": -0.35,
+        "mirror": 0.653,
+        "body_aspect": 0.4584,
+        "template_body_aspect": 0.4601,
+        "body": [
+          62,
+          94,
+          640,
+          1356
+        ],
+        "screen": [
+          163,
+          195,
+          535,
+          705
+        ],
+        "score": 1.1256,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.33,
+        "screen_rel_iou": 0.9226,
+        "screen_centre_error_pct": -0.42,
+        "mirror": 0.5676,
+        "body_aspect": 0.454,
+        "template_body_aspect": 0.4601,
+        "body": [
+          54,
+          61,
+          650,
+          1375
+        ],
+        "screen": [
+          160,
+          205,
+          539,
+          675
+        ],
+        "score": 1.098,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.94,
+        "screen_rel_iou": 0.903,
+        "screen_centre_error_pct": -0.55,
+        "mirror": 0.4951,
+        "body_aspect": 0.4512,
+        "template_body_aspect": 0.4601,
+        "body": [
+          80,
+          126,
+          620,
+          1324
+        ],
+        "screen": [
+          178,
+          252,
+          516,
+          704
+        ],
+        "score": 0.9983,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 2.01,
+        "screen_rel_iou": 0.9179,
+        "screen_centre_error_pct": 1.74,
+        "mirror": 0.5217,
+        "body_aspect": 0.4694,
+        "template_body_aspect": 0.4601,
+        "body": [
+          68,
+          102,
+          642,
+          1326
+        ],
+        "screen": [
+          178,
+          225,
+          552,
+          674
+        ],
+        "score": 0.9041,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 1,
+    "note": "used seed passes every gate; it was chosen before the symmetry check was added and kept"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4677,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": 1.67,
+      "lean_deg": 0.003,
+      "taper_deg": 0.42,
+      "deskew_deg": -0.099,
+      "tilt_deg": 0.423,
+      "jitter_px": 2.76,
+      "symmetry_iou": 0.9856,
+      "screen_aspect_error_pct": 0.06
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      160,
+      205,
+      540,
+      677
+    ],
+    "snap": "none",
+    "manual": true
+  }
+}

@@ -1,0 +1,28 @@
+name: Request a phone
+description: Ask for a phone that is not in KLAPKA yet
+title: "Request: <brand> <model>"
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Check the phone list on the front page first. Sliders and flips are always shown open.
+  - type: input
+    id: brand
+    attributes: { label: Brand, placeholder: Sony Ericsson }
+    validations: { required: true }
+  - type: input
+    id: model
+    attributes: { label: Model, placeholder: K750i }
+    validations: { required: true }
+  - type: input
+    id: variant
+    attributes: { label: Colour or variant (optional), placeholder: "Oxidant White" }
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos (optional, but they help a lot)
+      description: Links to clear photos of an original, unmodified phone (no operator stickers, no replacement covers). You can also drop your own photo here and say we may use it.
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else }

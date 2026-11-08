@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w800i",
+  "brand": "Sony Ericsson",
+  "model": "W800i",
+  "year": 2005,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 100,
+    "depth": 20.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 3,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 10.0,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, centred; y measured"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 66.5,
+      "w": 36,
+      "h": 29.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.telepolis.pl/telefony/pojedynki/sony-ericsson-k750i-vs-sony-ericsson-w800i",
+      "https://www.teltarif.de/h/sony-ericsson/w800i/"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W800i_-_Front.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Beamish4"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      120,
+      143,
+      345,
+      431
+    ],
+    "mm": [
+      10.0,
+      11.92,
+      28.75,
+      35.92
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        42,
+        97,
+        108,
+        135
+      ]
+    }
+  }
+}

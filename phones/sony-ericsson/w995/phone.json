@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w995",
+  "brand": "Sony Ericsson",
+  "model": "W995",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 130,
+    "depth": 15
+  },
+  "size_closed_mm": {
+    "width": 49,
+    "height": 97,
+    "depth": 15
+  },
+  "size_note": "open height measured on c_red_open (front, open) relative to the 49 mm width, corrected for ~3% vertical foreshortening; two estimates gave 126-132 mm",
+  "corner_radius_mm": 2.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.6,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 4.69,
+      "y": 10.8,
+      "w": 39.62,
+      "h": 52.83,
+      "note": "size from 2.6in at 3:4 (exact native aspect), centred in the measured glass window"
+    },
+    "seams": [
+      {
+        "y": 95.2,
+        "note": "lower edge of the sliding top part"
+      }
+    ],
+    "keypad": {
+      "x": 6.4,
+      "y": 99.0,
+      "w": 36.2,
+      "h": 23.6,
+      "note": "measured on c_red_open, centred"
+    }
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "screen": {
+    "skin_px": [
+      68,
+      136,
+      482,
+      643
+    ],
+    "mm": [
+      5.67,
+      11.33,
+      40.17,
+      53.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "key_icons": "The 1 key also shows a small voicemail icon (two circles joined by a line); the # key also shows a space symbol and a silent-mode symbol.",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_ericsson_w995-2682.php",
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_W995"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W995_(Energetic_Red)_-_Front_(Open).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Beamish4"
+    }
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        25,
+        51,
+        142,
+        190
+      ]
+    }
+  }
+}

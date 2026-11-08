@@ -1,0 +1,194 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      148,
+      188,
+      556,
+      698
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:SonyEricssonW810i-001.jpg",
+    "license": "CC BY 2.5",
+    "author": "Rich Niewiroski Jr.",
+    "size_used": [
+      585,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.29,
+        "screen_rel_iou": 0.8798,
+        "screen_centre_error_pct": -0.46,
+        "mirror": 0.6641,
+        "body_aspect": 0.4542,
+        "template_body_aspect": 0.4601,
+        "body": [
+          87,
+          142,
+          626,
+          1330
+        ],
+        "screen": [
+          170,
+          232,
+          538,
+          721
+        ],
+        "score": 1.1009,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.88,
+        "screen_rel_iou": 0.8542,
+        "screen_centre_error_pct": -0.42,
+        "mirror": 0.6591,
+        "body_aspect": 0.4515,
+        "template_body_aspect": 0.4601,
+        "body": [
+          59,
+          72,
+          649,
+          1380
+        ],
+        "screen": [
+          152,
+          162,
+          551,
+          722
+        ],
+        "score": 1.0476,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.74,
+        "screen_rel_iou": 0.8328,
+        "screen_centre_error_pct": -0.46,
+        "mirror": 0.6803,
+        "body_aspect": 0.4521,
+        "template_body_aspect": 0.4601,
+        "body": [
+          86,
+          125,
+          628,
+          1325
+        ],
+        "screen": [
+          167,
+          214,
+          542,
+          729
+        ],
+        "score": 1.0401,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.31,
+        "screen_rel_iou": 0.8794,
+        "screen_centre_error_pct": -0.43,
+        "mirror": 0.6856,
+        "body_aspect": 0.4403,
+        "template_body_aspect": 0.4601,
+        "body": [
+          63,
+          60,
+          648,
+          1390
+        ],
+        "screen": [
+          153,
+          164,
+          553,
+          711
+        ],
+        "score": 0.9639,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        96,
+        1104,
+        608,
+        1200
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4693,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": 2.02,
+      "lean_deg": 0.048,
+      "taper_deg": 0.325,
+      "deskew_deg": 0.048,
+      "tilt_deg": 0.373,
+      "jitter_px": 2.57,
+      "symmetry_iou": 0.9911,
+      "screen_aspect_error_pct": 0.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      175,
+      255,
+      538,
+      701
+    ],
+    "snap": "near",
+    "manual": false
+  }
+}

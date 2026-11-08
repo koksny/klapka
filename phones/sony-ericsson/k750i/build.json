@@ -1,0 +1,224 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      159,
+      194,
+      545,
+      677
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_K750i_-_Front.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      768,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.32,
+        "screen_rel_iou": 0.8561,
+        "screen_centre_error_pct": 0.44,
+        "mirror": 0.664,
+        "body_aspect": 0.4586,
+        "template_body_aspect": 0.4601,
+        "body": [
+          68,
+          88,
+          638,
+          1332
+        ],
+        "screen": [
+          169,
+          188,
+          542,
+          680
+        ],
+        "score": 1.1282,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.96,
+        "screen_rel_iou": 0.8627,
+        "screen_centre_error_pct": 0.88,
+        "mirror": 0.6907,
+        "body_aspect": 0.4557,
+        "template_body_aspect": 0.4601,
+        "body": [
+          70,
+          98,
+          635,
+          1339
+        ],
+        "screen": [
+          173,
+          197,
+          542,
+          685
+        ],
+        "score": 1.0719,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.01,
+        "screen_rel_iou": 0.87,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.6734,
+        "body_aspect": 0.4463,
+        "template_body_aspect": 0.4601,
+        "body": [
+          54,
+          56,
+          647,
+          1386
+        ],
+        "screen": [
+          159,
+          158,
+          538,
+          688
+        ],
+        "score": 1.0227,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.35,
+        "screen_rel_iou": 0.823,
+        "screen_centre_error_pct": 1.03,
+        "mirror": 0.606,
+        "body_aspect": 0.4401,
+        "template_body_aspect": 0.4601,
+        "body": [
+          64,
+          62,
+          647,
+          1388
+        ],
+        "screen": [
+          164,
+          165,
+          559,
+          692
+        ],
+        "score": 0.8056,
+        "seed": 2
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3,
+    "note": "seed 3 ranked first, but its '8 TUV' came out merged and three text fixes kept the same glyph; seed 4 passes every gate and has clean labels"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        195,
+        160,
+        515,
+        210
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        932,
+        624,
+        1272
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [
+        1
+      ],
+      "boxes": [
+        [
+          95,
+          960,
+          609,
+          1032
+        ]
+      ]
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4651,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": 1.11,
+      "lean_deg": 0.019,
+      "taper_deg": 0.353,
+      "deskew_deg": -0.019,
+      "tilt_deg": 0.372,
+      "jitter_px": 1.56,
+      "symmetry_iou": 0.9943,
+      "screen_aspect_error_pct": 0.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      172,
+      227,
+      536,
+      689
+    ],
+    "snap": "none",
+    "manual": true
+  }
+}

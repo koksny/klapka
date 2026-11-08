@@ -1,0 +1,112 @@
+{
+  "id": "sony-ericsson/k700i",
+  "brand": "Sony Ericsson",
+  "model": "K700i",
+  "year": 2004,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 99,
+    "depth": 19.6
+  },
+  "size_note": "",
+  "corner_radius_mm": 4,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 17.0,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, centred; y measured"
+    },
+    "keypad": {
+      "x": 5.25,
+      "y": 70,
+      "w": 35.5,
+      "h": 23
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "QuickShare"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://phonescoop.com/phones/phone.php?p=498",
+      "https://m.gsmarena.com/phone692.php",
+      "https://www.teltarif.de/handy/sony-ericsson/k700i/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.phonescoop.com/phones/photos.php?p=498",
+      "license": "press image (measured only, not used for appearance)",
+      "author": "Sony Ericsson"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      114,
+      213,
+      348,
+      435
+    ],
+    "mm": [
+      9.5,
+      17.75,
+      29.0,
+      36.25
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        119,
+        111,
+        138
+      ]
+    }
+  }
+}

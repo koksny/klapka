@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/koksny/klapka/schema/phone.schema.json",
+  "title": "KLAPKA phone",
+  "type": "object",
+  "required": ["id", "brand", "model", "form", "view", "size_mm", "display", "layout_mm", "texts", "keys", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9-]+$" },
+    "brand": { "type": "string" },
+    "model": { "type": "string" },
+    "year": { "type": ["integer", "null"], "minimum": 1983, "maximum": 2015 },
+    "form": { "enum": ["candybar", "slider", "flip", "swivel", "other"] },
+    "view": { "enum": ["front", "open"] },
+    "size_mm": { "$ref": "#/$defs/size" },
+    "size_closed_mm": { "$ref": "#/$defs/size" },
+    "size_note": { "type": "string" },
+    "corner_radius_mm": { "type": "number", "minimum": 0 },
+    "display": {
+      "type": "object",
+      "required": ["native_px", "diagonal_in"],
+      "properties": {
+        "native_px": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "minItems": 2, "maxItems": 2 },
+        "diagonal_in": { "type": "number", "exclusiveMinimum": 0 },
+        "type": { "type": "string" }
+      }
+    },
+    "layout_mm": {
+      "type": "object",
+      "required": ["screen"],
+      "properties": {
+        "screen": { "$ref": "#/$defs/rect" },
+        "keypad": { "$ref": "#/$defs/rect" },
+        "seams": { "type": "array", "items": { "type": "object", "required": ["y"], "properties": { "y": { "type": "number" }, "note": { "type": "string" } } } }
+      }
+    },
+    "texts": { "type": "array", "items": { "type": "string" } },
+    "keys": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } },
+    "key_icons": { "type": "string" },
+    "keypad_labels": { "type": "string" },
+    "screen": {
+      "type": ["object", "null"],
+      "properties": {
+        "skin_px": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 },
+        "mm": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4 },
+        "native_px": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 }
+      }
+    },
+    "exports": { "type": "object" },
+    "sources": {
+      "type": "object",
+      "required": ["specs"],
+      "properties": {
+        "specs": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "geometry_photo": { "$ref": "#/$defs/photo" }
+      }
+    }
+  },
+  "$defs": {
+    "size": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": { "width": { "type": "number", "exclusiveMinimum": 0 }, "height": { "type": "number", "exclusiveMinimum": 0 }, "depth": { "type": ["number", "null"] } }
+    },
+    "rect": {
+      "type": "object",
+      "properties": { "x": { "type": ["number", "null"] }, "y": { "type": ["number", "null"] }, "w": { "type": ["number", "null"] }, "h": { "type": ["number", "null"] }, "note": { "type": "string" } }
+    },
+    "photo": {
+      "type": "object",
+      "properties": { "url": { "type": "string" }, "license": { "type": "string" }, "author": { "type": "string" } }
+    }
+  }
+}

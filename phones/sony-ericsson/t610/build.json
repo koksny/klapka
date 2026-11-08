@@ -1,0 +1,209 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.565,
+    "body_px": [
+      38,
+      60,
+      634,
+      1443
+    ],
+    "screen_px": [
+      143,
+      249,
+      529,
+      732
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_T610_(Aluminium_Haze)_-_Front.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      767,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.39,
+        "screen_rel_iou": 0.8285,
+        "screen_centre_error_pct": -0.4,
+        "mirror": 0.7433,
+        "body_aspect": 0.4297,
+        "template_body_aspect": 0.4314,
+        "body": [
+          87,
+          165,
+          587,
+          1330
+        ],
+        "screen": [
+          155,
+          303,
+          515,
+          717
+        ],
+        "score": 1.1407,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.7,
+        "screen_rel_iou": 0.8099,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.7928,
+        "body_aspect": 0.424,
+        "template_body_aspect": 0.4314,
+        "body": [
+          101,
+          242,
+          580,
+          1373
+        ],
+        "screen": [
+          172,
+          375,
+          512,
+          820
+        ],
+        "score": 1.0901,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.15,
+        "screen_rel_iou": 0.8711,
+        "screen_centre_error_pct": -0.6,
+        "mirror": 0.648,
+        "body_aspect": 0.4264,
+        "template_body_aspect": 0.4314,
+        "body": [
+          84,
+          139,
+          587,
+          1320
+        ],
+        "screen": [
+          154,
+          292,
+          511,
+          701
+        ],
+        "score": 1.078,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.18,
+        "screen_rel_iou": 0.8614,
+        "screen_centre_error_pct": 0.19,
+        "mirror": 0.6056,
+        "body_aspect": 0.3918,
+        "template_body_aspect": 0.4314,
+        "body": [
+          84,
+          89,
+          597,
+          1400
+        ],
+        "screen": [
+          154,
+          258,
+          529,
+          729
+        ],
+        "score": 0.6859,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 3,
+    "note": "used seed passes every gate; it was chosen before the symmetry check was added and kept"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 2",
+      "text": "'4 GHI', '5 JKL', '6 MNO'.",
+      "box": [
+        87,
+        1002,
+        599,
+        1082
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        87,
+        1079,
+        599,
+        1159
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4336,
+      "spec_aspect": 0.4314,
+      "aspect_error_pct": 0.52,
+      "lean_deg": 0.004,
+      "taper_deg": 0.013,
+      "deskew_deg": 0.349,
+      "tilt_deg": 0.017,
+      "jitter_px": 0.76,
+      "symmetry_iou": 0.9955,
+      "screen_aspect_error_pct": 0.11
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      168,
+      337,
+      505,
+      749
+    ],
+    "snap": "none",
+    "manual": true
+  }
+}

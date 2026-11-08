@@ -1,0 +1,290 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.898,
+    "body_px": [
+      49,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      156,
+      254,
+      548,
+      777
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:SE_K800i_2.jpg",
+    "license": "Public domain",
+    "author": "",
+    "size_used": [
+      513,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.46,
+        "screen_rel_iou": 0.9571,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.5869,
+        "body_aspect": 0.4455,
+        "template_body_aspect": 0.4476,
+        "body": [
+          67,
+          78,
+          634,
+          1352
+        ],
+        "screen": [
+          162,
+          263,
+          541,
+          759
+        ],
+        "score": 1.2181,
+        "seed": 6
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.05,
+        "screen_rel_iou": 0.9235,
+        "screen_centre_error_pct": 0.36,
+        "mirror": 0.6341,
+        "body_aspect": 0.4384,
+        "template_body_aspect": 0.4476,
+        "body": [
+          64,
+          76,
+          632,
+          1373
+        ],
+        "screen": [
+          158,
+          257,
+          543,
+          776
+        ],
+        "score": 1.1021,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.16,
+        "screen_rel_iou": 0.957,
+        "screen_centre_error_pct": -0.35,
+        "mirror": 0.5402,
+        "body_aspect": 0.4379,
+        "template_body_aspect": 0.4476,
+        "body": [
+          67,
+          71,
+          630,
+          1358
+        ],
+        "screen": [
+          157,
+          255,
+          537,
+          754
+        ],
+        "score": 1.0842,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.08,
+        "screen_rel_iou": 0.9024,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.6291,
+        "body_aspect": 0.4383,
+        "template_body_aspect": 0.4476,
+        "body": [
+          58,
+          54,
+          639,
+          1381
+        ],
+        "screen": [
+          152,
+          220,
+          542,
+          748
+        ],
+        "score": 1.079,
+        "seed": 8
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.83,
+        "screen_rel_iou": 0.9545,
+        "screen_centre_error_pct": -0.51,
+        "mirror": 0.5961,
+        "body_aspect": 0.4349,
+        "template_body_aspect": 0.4476,
+        "body": [
+          63,
+          60,
+          643,
+          1395
+        ],
+        "screen": [
+          157,
+          252,
+          544,
+          777
+        ],
+        "score": 1.0596,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.06,
+        "screen_rel_iou": 0.9543,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.65,
+        "body_aspect": 0.4338,
+        "template_body_aspect": 0.4476,
+        "body": [
+          66,
+          69,
+          629,
+          1368
+        ],
+        "screen": [
+          157,
+          257,
+          537,
+          756
+        ],
+        "score": 1.109,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.15,
+        "screen_rel_iou": 0.946,
+        "screen_centre_error_pct": -0.52,
+        "mirror": 0.5635,
+        "body_aspect": 0.4335,
+        "template_body_aspect": 0.4476,
+        "body": [
+          66,
+          64,
+          635,
+          1378
+        ],
+        "screen": [
+          154,
+          254,
+          542,
+          763
+        ],
+        "score": 1.0181,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.31,
+        "screen_rel_iou": 0.9026,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.692,
+        "body_aspect": 0.4283,
+        "template_body_aspect": 0.4476,
+        "body": [
+          64,
+          60,
+          636,
+          1397
+        ],
+        "screen": [
+          149,
+          250,
+          551,
+          778
+        ],
+        "score": 1.0246,
+        "seed": 1
+      }
+    ],
+    "best_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        64,
+        1161,
+        640,
+        1233
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4526,
+      "spec_aspect": 0.4476,
+      "aspect_error_pct": 1.11,
+      "lean_deg": 0.009,
+      "taper_deg": 0.284,
+      "deskew_deg": 0.393,
+      "tilt_deg": 0.293,
+      "jitter_px": 1.79,
+      "symmetry_iou": 0.9836,
+      "screen_aspect_error_pct": 0.07
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      168,
+      261,
+      539,
+      754
+    ],
+    "snap": "near",
+    "manual": false
+  }
+}

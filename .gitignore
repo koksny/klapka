@@ -1,0 +1,12 @@
+# reference photos are input only and are never published
+refs/
+# per-phone working files (renders, crops, overlays); provenance lives in build.json
+phones/**/work/
+# scratch
+tmp/
+__pycache__/
+*.pyc
+# local machine settings (server address, KLIF path)
+klapka.local.json
+# local previews of the GitHub pages
+*.preview.html

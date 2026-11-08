@@ -1,0 +1,8 @@
+{
+  "koks_template": "Straight perfect rectangular phone. Remove any perspective, remove any skew. Phone sides aligned to grid-lines. Phone, phone screen aligned to grid, straight vertical top-view, professional technical product photo.\n\n{texts}. {keys}",
+  "cutout": "This is an RGBA image with transparency. Keep exactly the same mobile phone, change only the background: remove the background completely. Centered, isolated object. The image has alpha channel and the background is transparent.",
+  "fix_keypad_tpl": "Keep exactly the same image: the same keys, shapes, colours, lighting, font and positions. Change only the printed key labels so they read exactly, row by row: {key_rows}. {key_icons}",
+  "fix_text": "Keep exactly the same image. Change only the text so it reads exactly '{text}', in the same font, size, colour and position.",
+  "fix_key_row": "Keep exactly the same image: the same keys, shapes, colours, lighting, font and positions. Change only the printed labels on the keys so they read exactly, from left to right: {text}",
+  "fix_key_letters": "Keep exactly the same image, including the digit, its size and position. Add only the small printed letters '{text}' on the empty area to the right of the digit, in the same font and colour as the digit, about 55% of the digit's height, vertically centred on the digit. Change nothing else."
+}

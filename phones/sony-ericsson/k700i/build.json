@@ -1,0 +1,207 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.679,
+    "body_px": [
+      37,
+      59,
+      665,
+      1412
+    ],
+    "screen_px": [
+      156,
+      292,
+      546,
+      780
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_K700i_2.JPG",
+    "license": "Public domain",
+    "author": "J Di at English Wikipedia",
+    "size_used": [
+      491,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.17,
+        "screen_rel_iou": 0.834,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6455,
+        "body_aspect": 0.4638,
+        "template_body_aspect": 0.4645,
+        "body": [
+          42,
+          44,
+          662,
+          1382
+        ],
+        "screen": [
+          139,
+          254,
+          566,
+          776
+        ],
+        "score": 1.1404,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.61,
+        "screen_rel_iou": 0.8238,
+        "screen_centre_error_pct": -0.16,
+        "mirror": 0.5816,
+        "body_aspect": 0.4617,
+        "template_body_aspect": 0.4645,
+        "body": [
+          41,
+          59,
+          667,
+          1416
+        ],
+        "screen": [
+          135,
+          265,
+          571,
+          795
+        ],
+        "score": 1.068,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.31,
+        "screen_rel_iou": 0.8588,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.5403,
+        "body_aspect": 0.4706,
+        "template_body_aspect": 0.4645,
+        "body": [
+          34,
+          64,
+          666,
+          1408
+        ],
+        "screen": [
+          136,
+          281,
+          563,
+          800
+        ],
+        "score": 1.0556,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.64,
+        "screen_rel_iou": 0.7875,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.5324,
+        "body_aspect": 0.4477,
+        "template_body_aspect": 0.4645,
+        "body": [
+          62,
+          60,
+          664,
+          1406
+        ],
+        "screen": [
+          148,
+          275,
+          575,
+          815
+        ],
+        "score": 0.8471,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 2",
+      "text": "'4 GHI', '5 JKL', '6 MNO'.",
+      "box": [
+        95,
+        1073,
+        607,
+        1145
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 3",
+      "text": "'7 PQRS', '8 TUV', '9 WXYZ'.",
+      "box": [
+        95,
+        1144,
+        607,
+        1216
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4632,
+      "spec_aspect": 0.4646,
+      "aspect_error_pct": -0.31,
+      "lean_deg": 0.004,
+      "taper_deg": 0.066,
+      "deskew_deg": -0.004,
+      "tilt_deg": 0.07,
+      "jitter_px": 1.74,
+      "symmetry_iou": 0.9966,
+      "screen_aspect_error_pct": 0.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": false
+    }
+  },
+  "screen_source": {
+    "final_px": [
+      159,
+      274,
+      545,
+      758
+    ],
+    "snap": "near",
+    "manual": false
+  }
+}

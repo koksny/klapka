@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w810i",
+  "brand": "Sony Ericsson",
+  "model": "W810i",
+  "year": 2006,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 100,
+    "depth": 19.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 4,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.93,
+      "y": 9.6,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, centred; y measured"
+    },
+    "keypad": {
+      "x": 5.8,
+      "y": 66,
+      "w": 34.4,
+      "h": 23.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_ericsson_w810-1402.php",
+      "https://fr.ifixit.com/Device/Modifier/Sony_Ericsson_W810i"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:SonyEricssonW810i-001.jpg",
+      "license": "CC BY 2.5",
+      "author": "Rich Niewiroski Jr."
+    }
+  },
+  "screen": {
+    "skin_px": [
+      109,
+      133,
+      368,
+      460
+    ],
+    "mm": [
+      9.08,
+      11.08,
+      30.67,
+      38.33
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        95,
+        114,
+        143
+      ]
+    }
+  }
+}
