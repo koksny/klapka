@@ -56,7 +56,7 @@ what to look at after each step is [AGENTS.md](../AGENTS.md).
 | 5 | `grid <id>`, `rows <id>`, `textfix <id> --row N` / `--keypad` / `--text T --box …` | every printed text read; only the wrong areas (a row of keys, preferred; the whole keypad only when most rows are wrong; a word) cut out, enlarged to an exact multiple of 32, redrawn with the exact wording (`fix_key_row` / `fix_keypad_tpl` / `fix_text`), pasted back colour-matched, alpha untouched | `fix_text.py`, `cgi_edit.py` |
 | 6 | `finish <id>` | master `body.png` (12 px/mm), screen hole at the exact native aspect (`skin.png`), Mi Band export, preview, thumbnail, measured acceptance | `clean_alpha.py`, `mark_screen.py` |
 | 7 | `mark <id> --text-ok` (and `--approved` by the maintainer) | the visual checks recorded in `build.json` | – |
-| 8 | `pages` | phone pages, brand galleries, the front-page gallery, `catalog.json`, `assets/lineup.png` | – |
+| 8 | `pages` | phone pages; the catalog (`catalog/`: by year, by brand, by type, all phones); the front page (newest additions, browse links); `catalog.json`; the header animation `assets/header.png` | `make_header.py` |
 
 If no seed passes (white background, aspect within 3%), run `pass1 <id> --seeds 1,2,3,4,5,6,7,8`.
 To restart the text fixes from the clean cutout: `pass2 <id> --reuse`.

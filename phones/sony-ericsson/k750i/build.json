@@ -208,7 +208,7 @@
     },
     "manual": {
       "text_ok": true,
-      "approved": false
+      "approved": true
     }
   },
   "screen_source": {
@@ -220,5 +220,6 @@
     ],
     "snap": "none",
     "manual": true
-  }
+  },
+  "added": "2026-11-08"
 }

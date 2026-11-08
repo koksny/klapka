@@ -1,38 +1,47 @@
 <div align="center">
 
-<img src="assets/lineup.png" alt="The phones in KLAPKA, side by side at their real sizes" width="100%">
+<img src="assets/header.png" alt="Phones stepping past the letters K L A P K A, one letter in each see-through screen" width="100%">
 
 # KLAPKA
 
-**Koksny Legacy Archive of Phones, Keypads & Assets**
+**Koksny's Legacy Archive of Phones Keypads Assets**
 
 The phones we grew up with, as clean skins with a see-through screen.<br>
 Free, measured to scale, ready for your watch face, wallpaper or emulator.
 
 <!-- COUNT:START -->
-**7 phones** so far
-<!-- COUNT:END --> · [Browse](#phones) · [Download](#get-a-skin-no-git-needed) · [Request a phone](https://github.com/koksny/klapka/issues/new?template=request-a-phone.yml) · [For AI agents](AGENTS.md)
+**7 phones** from 1 brand, 2003–2009
+<!-- COUNT:END -->
+
+<p><a href="#browse">Browse</a> · <a href="#get-a-skin-no-git-needed">Download</a> · <a href="https://github.com/koksny/klapka/issues/new?template=request-a-phone.yml">Request a phone</a> · <a href="AGENTS.md">For AI agents</a></p>
 
 </div>
 
 ---
 
-## Phones
+## Browse
+
+<!-- BROWSE:START -->
+- **[By year](catalog/years.md)**: [2003](catalog/years/2003.md) · [2004](catalog/years/2004.md) · [2005](catalog/years/2005.md) · [2006](catalog/years/2006.md) · [2009](catalog/years/2009.md)
+- **[By brand](catalog/brands.md)**: [Sony Ericsson](phones/sony-ericsson/)
+- **[By type](catalog/types.md)**: [Candybar](catalog/types/candybar.md) · [Slider](catalog/types/slider.md)
+- **[All phones](catalog/all.md)** in one table, or [catalog.json](catalog.json) for your own tools
+<!-- BROWSE:END -->
+
+### Recently added
 
 Click a phone to see it big and download it.
 
-<!-- GALLERY:START -->
+<!-- RECENT:START -->
 <table>
-<tr><td align="center" width="25%"><a href="phones/sony-ericsson/k700i/"><img src="phones/sony-ericsson/k700i/thumb.png" height="160" alt="Sony Ericsson K700i"></a><br><b>K700i</b><br><sub>2004</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k750i/"><img src="phones/sony-ericsson/k750i/thumb.png" height="160" alt="Sony Ericsson K750i"></a><br><b>K750i</b><br><sub>2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k800i/"><img src="phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/t610/"><img src="phones/sony-ericsson/t610/thumb.png" height="160" alt="Sony Ericsson T610"></a><br><b>T610</b><br><sub>2003</sub></td></tr>
-<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w800i/"><img src="phones/sony-ericsson/w800i/thumb.png" height="160" alt="Sony Ericsson W800i"></a><br><b>W800i</b><br><sub>2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w810i/"><img src="phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w995/"><img src="phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>2009</sub></td></tr>
+<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w995/"><img src="phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>Sony Ericsson · 2009</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k800i/"><img src="phones/sony-ericsson/k800i/thumb.png" height="160" alt="Sony Ericsson K800i"></a><br><b>K800i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/w810i/"><img src="phones/sony-ericsson/w810i/thumb.png" height="160" alt="Sony Ericsson W810i"></a><br><b>W810i</b><br><sub>Sony Ericsson · 2006</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k750i/"><img src="phones/sony-ericsson/k750i/thumb.png" height="160" alt="Sony Ericsson K750i"></a><br><b>K750i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
+<tr><td align="center" width="25%"><a href="phones/sony-ericsson/w800i/"><img src="phones/sony-ericsson/w800i/thumb.png" height="160" alt="Sony Ericsson W800i"></a><br><b>W800i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/k700i/"><img src="phones/sony-ericsson/k700i/thumb.png" height="160" alt="Sony Ericsson K700i"></a><br><b>K700i</b><br><sub>Sony Ericsson · 2004</sub></td><td align="center" width="25%"><a href="phones/sony-ericsson/t610/"><img src="phones/sony-ericsson/t610/thumb.png" height="160" alt="Sony Ericsson T610"></a><br><b>T610</b><br><sub>Sony Ericsson · 2003</sub></td></tr>
 </table>
-<!-- GALLERY:END -->
-
-All phones by brand: [phones/](phones/)
+<!-- RECENT:END -->
 
 ## Get a skin (no Git needed)
 
-1. Click a phone above.
+1. Find your phone through [Browse](#browse) and click it.
 2. On its page, click **Download** next to the file you want. That's it.
 
 Want everything at once? Click the green **Code** button at the top of this page, then **Download ZIP**.

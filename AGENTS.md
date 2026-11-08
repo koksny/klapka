@@ -157,8 +157,8 @@ python tools/klapka.py pages
 **10. Commit and open a pull request.** Commit only:
 - `phones/<brand>/<model>/`: `README.md`, `phone.json`, `build.json`, `skin.png`, `body.png`,
   `mi-band-192x490.png`, `preview.png`, `thumb.png`
-- the regenerated `README.md`, `phones/README.md`, `phones/<brand>/README.md`, `catalog.json`,
-  `assets/lineup.png`
+- everything `pages` regenerated: `README.md`, `phones/README.md`, `phones/<brand>/README.md`,
+  `catalog/`, `catalog.json`, `assets/header.png`
 
 Fill in the pull request template. A maintainer looks at the result before it is merged.
 

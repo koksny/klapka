@@ -3,12 +3,61 @@
   "count": 7,
   "phones": [
     {
+      "id": "sony-ericsson/t610",
+      "brand": "Sony Ericsson",
+      "model": "T610",
+      "year": 2003,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 44,
+        "height": 102,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          103,
+          199,
+          350,
+          437
+        ],
+        "mm": [
+          8.58,
+          16.58,
+          29.17,
+          36.42
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t610/skin.png",
+        "body.png": "phones/sony-ericsson/t610/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t610/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t610/preview.png",
+        "phone.json": "phones/sony-ericsson/t610/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k700i",
       "brand": "Sony Ericsson",
       "model": "K700i",
       "year": 2004,
       "form": "candybar",
       "view": "front",
+      "added": "2026-11-08",
       "size_mm": {
         "width": 46,
         "height": 99,
@@ -56,6 +105,7 @@
       "year": 2005,
       "form": "candybar",
       "view": "front",
+      "added": "2026-11-08",
       "size_mm": {
         "width": 46,
         "height": 100,
@@ -97,106 +147,13 @@
       }
     },
     {
-      "id": "sony-ericsson/k800i",
-      "brand": "Sony Ericsson",
-      "model": "K800i",
-      "year": 2006,
-      "form": "candybar",
-      "view": "front",
-      "size_mm": {
-        "width": 47,
-        "height": 105,
-        "depth": 22
-      },
-      "display": {
-        "native_px": [
-          240,
-          320
-        ],
-        "diagonal_in": 2.0,
-        "type": "TFT 262k"
-      },
-      "screen": {
-        "skin_px": [
-          115,
-          196,
-          367,
-          489
-        ],
-        "mm": [
-          9.58,
-          16.33,
-          30.58,
-          40.75
-        ],
-        "native_px": [
-          240,
-          320
-        ],
-        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
-      },
-      "files": {
-        "skin.png": "phones/sony-ericsson/k800i/skin.png",
-        "body.png": "phones/sony-ericsson/k800i/body.png",
-        "mi-band-192x490.png": "phones/sony-ericsson/k800i/mi-band-192x490.png",
-        "preview.png": "phones/sony-ericsson/k800i/preview.png",
-        "phone.json": "phones/sony-ericsson/k800i/phone.json"
-      }
-    },
-    {
-      "id": "sony-ericsson/t610",
-      "brand": "Sony Ericsson",
-      "model": "T610",
-      "year": 2003,
-      "form": "candybar",
-      "view": "front",
-      "size_mm": {
-        "width": 44,
-        "height": 102,
-        "depth": 19
-      },
-      "display": {
-        "native_px": [
-          128,
-          160
-        ],
-        "diagonal_in": 1.8,
-        "type": "TFT"
-      },
-      "screen": {
-        "skin_px": [
-          103,
-          199,
-          350,
-          437
-        ],
-        "mm": [
-          8.58,
-          16.58,
-          29.17,
-          36.42
-        ],
-        "native_px": [
-          128,
-          160
-        ],
-        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
-      },
-      "files": {
-        "skin.png": "phones/sony-ericsson/t610/skin.png",
-        "body.png": "phones/sony-ericsson/t610/body.png",
-        "mi-band-192x490.png": "phones/sony-ericsson/t610/mi-band-192x490.png",
-        "preview.png": "phones/sony-ericsson/t610/preview.png",
-        "phone.json": "phones/sony-ericsson/t610/phone.json"
-      }
-    },
-    {
       "id": "sony-ericsson/w800i",
       "brand": "Sony Ericsson",
       "model": "W800i",
       "year": 2005,
       "form": "candybar",
       "view": "front",
+      "added": "2026-11-08",
       "size_mm": {
         "width": 46,
         "height": 100,
@@ -238,12 +195,61 @@
       }
     },
     {
+      "id": "sony-ericsson/k800i",
+      "brand": "Sony Ericsson",
+      "model": "K800i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-08",
+      "size_mm": {
+        "width": 47,
+        "height": 105,
+        "depth": 22
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          115,
+          196,
+          367,
+          489
+        ],
+        "mm": [
+          9.58,
+          16.33,
+          30.58,
+          40.75
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k800i/skin.png",
+        "body.png": "phones/sony-ericsson/k800i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k800i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k800i/preview.png",
+        "phone.json": "phones/sony-ericsson/k800i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w810i",
       "brand": "Sony Ericsson",
       "model": "W810i",
       "year": 2006,
       "form": "candybar",
       "view": "front",
+      "added": "2026-11-08",
       "size_mm": {
         "width": 46,
         "height": 100,
@@ -291,6 +297,7 @@
       "year": 2009,
       "form": "slider",
       "view": "open",
+      "added": "2026-11-08",
       "size_mm": {
         "width": 49,
         "height": 130,

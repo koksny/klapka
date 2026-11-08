@@ -8,7 +8,7 @@ records in `build.json`. The other scripts are what it calls; they also work on 
 
 | Script | Used in | What it does |
 |---|---|---|
-| `klapka.py` | all steps | `new`, `measure`, `template`, `photo`, `pass1`, `pass2`, `grid`, `textfix`, `finish`, `mark`, `pages` |
+| `klapka.py` | all steps | `new`, `measure`, `template`, `photo`, `pass1`, `pass2`, `grid`, `rows`, `textfix`, `restore`, `finish`, `mark`, `pages` |
 | `make_template.py` | template | layout drawn from `phone.json`: body, seams, screen at the exact native aspect, keypad block |
 | `cgi_edit.py` | pass1, pass2, textfix | one Qwen-Image 2.1 edit; fills prompt placeholders from `phone.json`; writes a JSON sidecar |
 | `backend.py` | – | finds the image server (`KLAPKA_SD_URL`, `klapka.local.json` or KLIF) |
@@ -16,6 +16,7 @@ records in `build.json`. The other scripts are what it calls; they also work on 
 | `fix_text.py` | textfix | cut, enlarge to an exact multiple of 32, paste back colour-matched with a feathered edge; alpha untouched |
 | `clean_alpha.py` | finish | alpha cleanup, edge colour clean-up, 12 px/mm master with 1 mm padding; measures tilt, jitter, symmetry |
 | `mark_screen.py` | finish | screen hole: the template's rectangle snapped to the glass edges, then the largest exact-aspect rectangle inside |
+| `make_header.py` | pages | the README header animation: letters of KLAPKA on lit LCDs, phones stepping past one place per second (animated PNG) |
 | `contact_sheet.py` | – | images side by side on a checkerboard, for looking |
 
 Standard prompts (`tools/prompts.json`): `koks_template` (pass 1), `cutout` (pass 2),
