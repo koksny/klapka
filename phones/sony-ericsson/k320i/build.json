@@ -1,0 +1,249 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.7,
+    "body_px": [
+      35,
+      60,
+      637,
+      1443
+    ],
+    "screen_px": [
+      130,
+      264,
+      542,
+      779
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k320-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      179,
+      404
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.85,
+        "screen_rel_iou": 0.9475,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.7614,
+        "body_aspect": 0.4394,
+        "template_body_aspect": 0.4357,
+        "body": [
+          40,
+          57,
+          637,
+          1417
+        ],
+        "screen": [
+          136,
+          271,
+          541,
+          755
+        ],
+        "score": 1.2858,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.17,
+        "screen_rel_iou": 0.944,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.6092,
+        "body_aspect": 0.4365,
+        "template_body_aspect": 0.4357,
+        "body": [
+          36,
+          58,
+          636,
+          1434
+        ],
+        "screen": [
+          134,
+          273,
+          536,
+          767
+        ],
+        "score": 1.2232,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.46,
+        "screen_rel_iou": 0.9384,
+        "screen_centre_error_pct": 0.58,
+        "mirror": 0.6332,
+        "body_aspect": 0.4337,
+        "template_body_aspect": 0.4357,
+        "body": [
+          33,
+          55,
+          637,
+          1449
+        ],
+        "screen": [
+          124,
+          270,
+          553,
+          775
+        ],
+        "score": 1.1742,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.28,
+        "screen_rel_iou": 0.9785,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.7591,
+        "body_aspect": 0.4127,
+        "template_body_aspect": 0.4357,
+        "body": [
+          69,
+          77,
+          621,
+          1416
+        ],
+        "screen": [
+          156,
+          269,
+          530,
+          773
+        ],
+        "score": 1.0579,
+        "seed": 1
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 1",
+      "text": "a single key: a large black digit '1' on the left and a small envelope-and-voicemail icon on the right",
+      "box": [
+        79,
+        984,
+        303,
+        1056
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "a single key: a large black asterisk '*' on the left, and on the right the small letters 'a/A' with a small key-lock symbol",
+      "box": [
+        85,
+        1201,
+        297,
+        1277
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      95,
+      202,
+      451,
+      627
+    ],
+    "manual": true,
+    "window_px": [
+      99,
+      204,
+      359,
+      430
+    ],
+    "checks": {
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.08,
+        "right": 1.0,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.28,
+      "window_mm": [
+        29.92,
+        35.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.992,
+        0.951
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4445,
+      "spec_aspect": 0.4356,
+      "aspect_error_pct": 2.03,
+      "lean_deg": 0.004,
+      "taper_deg": 0.204,
+      "deskew_deg": -0.225,
+      "tilt_deg": 0.208,
+      "jitter_px": 1.81,
+      "symmetry_iou": 0.9912,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.08,
+      "window_centre_x_pct": 0.28,
+      "window_vs_spec_min": 0.951,
+      "window_vs_spec_max": 0.992,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "hole_centre_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

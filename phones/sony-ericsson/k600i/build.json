@@ -1,0 +1,231 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.266,
+    "body_px": [
+      38,
+      60,
+      634,
+      1443
+    ],
+    "screen_px": [
+      147,
+      324,
+      525,
+      797
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_K600i,_front,_switched_off.JPG (keystone-corrected)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      458,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.4,
+        "screen_rel_iou": 0.8888,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.6777,
+        "body_aspect": 0.4253,
+        "template_body_aspect": 0.4314,
+        "body": [
+          44,
+          61,
+          624,
+          1426
+        ],
+        "screen": [
+          137,
+          316,
+          529,
+          809
+        ],
+        "score": 1.1406,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.4,
+        "screen_rel_iou": 0.831,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6402,
+        "body_aspect": 0.4331,
+        "template_body_aspect": 0.4314,
+        "body": [
+          39,
+          59,
+          630,
+          1425
+        ],
+        "screen": [
+          127,
+          317,
+          542,
+          825
+        ],
+        "score": 1.1313,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.83,
+        "screen_rel_iou": 0.8345,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.817,
+        "body_aspect": 0.4105,
+        "template_body_aspect": 0.4314,
+        "body": [
+          67,
+          88,
+          605,
+          1400
+        ],
+        "screen": [
+          148,
+          316,
+          521,
+          808
+        ],
+        "score": 0.9735,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.95,
+        "screen_rel_iou": 0.8198,
+        "screen_centre_error_pct": -0.39,
+        "mirror": 0.6252,
+        "body_aspect": 0.4014,
+        "template_body_aspect": 0.4314,
+        "body": [
+          75,
+          93,
+          593,
+          1385
+        ],
+        "screen": [
+          152,
+          318,
+          512,
+          810
+        ],
+        "score": 0.7466,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        178,
+        194,
+        498,
+        234
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "window_px": [
+      83,
+      202,
+      399,
+      495
+    ],
+    "checks": {
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.25,
+        "right": 1.17,
+        "top": 1.33,
+        "bottom": 1.33
+      },
+      "window_centre_x_pct": 0.28,
+      "window_mm": [
+        33.25,
+        41.25
+      ],
+      "edge_strength": {
+        "left": 14.5,
+        "right": 15.3,
+        "top": 103.3,
+        "bottom": 32.5
+      },
+      "window_vs_spec": [
+        1.164,
+        1.155
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4301,
+      "spec_aspect": 0.4314,
+      "aspect_error_pct": -0.31,
+      "lean_deg": 0.011,
+      "taper_deg": 0.247,
+      "deskew_deg": 0.217,
+      "tilt_deg": 0.258,
+      "jitter_px": 1.01,
+      "symmetry_iou": 0.992,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.08,
+      "window_centre_x_pct": 0.28,
+      "window_vs_spec_min": 1.155,
+      "window_vs_spec_max": 1.164,
+      "window_edge_min": 14.5
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "hole_centre_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

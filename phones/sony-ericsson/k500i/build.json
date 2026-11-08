@@ -1,0 +1,268 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.277,
+    "body_px": [
+      47,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      163,
+      274,
+      541,
+      747
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:SE_K500i.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      492,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.13,
+        "screen_rel_iou": 0.8035,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.592,
+        "body_aspect": 0.4416,
+        "template_body_aspect": 0.4513,
+        "body": [
+          46,
+          54,
+          654,
+          1432
+        ],
+        "screen": [
+          132,
+          241,
+          569,
+          751
+        ],
+        "score": 0.9845,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.79,
+        "screen_rel_iou": 0.7826,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.676,
+        "body_aspect": 0.4387,
+        "template_body_aspect": 0.4513,
+        "body": [
+          44,
+          53,
+          651,
+          1438
+        ],
+        "screen": [
+          129,
+          237,
+          565,
+          743
+        ],
+        "score": 0.9729,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.54,
+        "screen_rel_iou": 0.7806,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6487,
+        "body_aspect": 0.4263,
+        "template_body_aspect": 0.4513,
+        "body": [
+          63,
+          59,
+          643,
+          1421
+        ],
+        "screen": [
+          145,
+          238,
+          562,
+          764
+        ],
+        "score": 0.8195,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": false,
+        "aspect_error_pct": 5.98,
+        "screen_rel_iou": 0.8941,
+        "screen_centre_error_pct": 3.05,
+        "mirror": 0.6672,
+        "body_aspect": 0.4783,
+        "template_body_aspect": 0.4513,
+        "body": [
+          0,
+          0,
+          703,
+          1471
+        ],
+        "screen": [
+          147,
+          237,
+          599,
+          743
+        ],
+        "score": -9.3769,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 4",
+      "text": "a single key: a small grey '#' on the left, then a small space symbol and a small silent-mode symbol",
+      "box": [
+        420,
+        1224,
+        604,
+        1312
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "a plain translucent grey badge, smooth and completely empty, with no text and no letters at all",
+      "box": [
+        178,
+        1318,
+        538,
+        1414
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          205,
+          1318,
+          510,
+          1414
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "bottom badge",
+      "note": "ghost letters smoothed out (blur inside the badge)",
+      "box": [
+        232,
+        1332,
+        488,
+        1398
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "window_px": [
+      82,
+      163,
+      393,
+      467
+    ],
+    "checks": {
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.17,
+        "right": 1.25,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.75,
+      "window_mm": [
+        32.75,
+        38.92
+      ],
+      "edge_strength": {
+        "left": 155.8,
+        "right": 119.3,
+        "top": 164.4,
+        "bottom": 9.0
+      },
+      "window_vs_spec": [
+        1.147,
+        1.09
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4424,
+      "spec_aspect": 0.451,
+      "aspect_error_pct": -1.9,
+      "lean_deg": 0.003,
+      "taper_deg": 0.162,
+      "deskew_deg": 0.173,
+      "tilt_deg": 0.164,
+      "jitter_px": 2.31,
+      "symmetry_iou": 0.9953,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "window_centre_x_pct": 0.75,
+      "window_vs_spec_min": 1.09,
+      "window_vs_spec_max": 1.147,
+      "window_edge_min": 9.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "hole_centre_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

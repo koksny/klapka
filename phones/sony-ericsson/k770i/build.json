@@ -1,0 +1,379 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.898,
+    "body_px": [
+      49,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      165,
+      240,
+      538,
+      738
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k770-00.jpg (perspective-corrected)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      467,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.49,
+        "screen_rel_iou": 0.9133,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.2666,
+        "body_aspect": 0.4454,
+        "template_body_aspect": 0.4476,
+        "body": [
+          56,
+          61,
+          654,
+          1405
+        ],
+        "screen": [
+          173,
+          203,
+          536,
+          737
+        ],
+        "score": 1.0136,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.54,
+        "screen_rel_iou": 0.8438,
+        "screen_centre_error_pct": -0.94,
+        "mirror": 0.5062,
+        "body_aspect": 0.4407,
+        "template_body_aspect": 0.4476,
+        "body": [
+          63,
+          75,
+          649,
+          1406
+        ],
+        "screen": [
+          167,
+          217,
+          534,
+          781
+        ],
+        "score": 0.9265,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.17,
+        "screen_rel_iou": 0.8536,
+        "screen_centre_error_pct": -1.83,
+        "mirror": 0.5132,
+        "body_aspect": 0.4423,
+        "template_body_aspect": 0.4476,
+        "body": [
+          51,
+          58,
+          652,
+          1418
+        ],
+        "screen": [
+          149,
+          205,
+          532,
+          759
+        ],
+        "score": 0.8689,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.71,
+        "screen_rel_iou": 0.8679,
+        "screen_centre_error_pct": -1.37,
+        "mirror": 0.1972,
+        "body_aspect": 0.4265,
+        "template_body_aspect": 0.4476,
+        "body": [
+          63,
+          56,
+          648,
+          1429
+        ],
+        "screen": [
+          163,
+          200,
+          532,
+          758
+        ],
+        "score": 0.5946,
+        "seed": 2
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 1",
+      "text": "a small white phone-book icon at the far left, then Three wide brown keys; each key has a large white digit and small white letters: '1' with a small envelope-and-voicemail icon; '2' with 'ABC'; '3' with 'DEF'; a small white magnifier icon at the far right",
+      "box": [
+        36,
+        1009,
+        676,
+        1089
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 2",
+      "text": "a small white people icon at the far left, then Three wide brown keys; each key has a large white digit and small white letters: '4' with 'GHI'; '5' with 'JKL'; '6' with 'MNO'; a small white magnifier icon at the far right",
+      "box": [
+        36,
+        1086,
+        676,
+        1166
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 3",
+      "text": "a small white four-squares icon at the far left, then Three wide brown keys; each key has a large white digit and small white letters: '7' with 'PQRS'; '8' with 'TUV'; '9' with 'WXYZ'; a small white circular-arrow icon at the far right",
+      "box": [
+        36,
+        1161,
+        676,
+        1241
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 3",
+      "text": "a single wide brown key: a small white four-squares icon at the far left, a large white digit '7', and the small white letters 'PQRS'",
+      "box": [
+        68,
+        1163,
+        280,
+        1239
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "key row 3",
+      "text": "a single wide brown key: a large white digit '8' and the small white letters 'TUV'",
+      "box": [
+        253,
+        1163,
+        465,
+        1239
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          268,
+          1160,
+          452,
+          1242
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "area": "key row 3",
+      "text": "one wide brown key that fills the whole image from edge to edge, keep its size, colour and edges: a large white digit '8' on the left half and the small white letters 'TUV' on the right half",
+      "box": [
+        264,
+        1159,
+        456,
+        1243
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    },
+    {
+      "n": 8,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          64,
+          1160,
+          649,
+          1242
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        161,
+        1186,
+        287,
+        1216
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 10,
+      "area": "text",
+      "text": "TUV",
+      "box": [
+        332,
+        1186,
+        436,
+        1216
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 11,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        479,
+        1186,
+        607,
+        1216
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 12,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        173,
+        1262,
+        267,
+        1292
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      74,
+      140,
+      487,
+      670
+    ],
+    "manual": true,
+    "window_px": [
+      81,
+      141,
+      413,
+      536
+    ],
+    "checks": {
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 1.58,
+        "right": 1.58,
+        "top": 1.5,
+        "bottom": 1.5
+      },
+      "window_centre_x_pct": 0.54,
+      "window_mm": [
+        34.42,
+        44.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.188,
+        1.157
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4419,
+      "spec_aspect": 0.4476,
+      "aspect_error_pct": -1.28,
+      "lean_deg": 0.002,
+      "taper_deg": 0.002,
+      "deskew_deg": 0.001,
+      "tilt_deg": 0.003,
+      "jitter_px": 0.08,
+      "symmetry_iou": 0.9986,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "window_centre_x_pct": 0.54,
+      "window_vs_spec_min": 1.157,
+      "window_vs_spec_max": 1.188,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "hole_centre_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

@@ -77,7 +77,7 @@ Pass/fail (`finish` prints `PASS` only when all of these hold):
 | lean (mean angle of the two sides, after the automatic straightening) | ≤ 0.3° |
 | screen hole aspect vs native | error ≤ 0.2% |
 | screen hole centred on the body's axis | ≤ 1.3% of the body width (rows with side buttons ignored) |
-| screen hole placement | covers the lit display only, centred in its window: visual check of `work/screen_check.png`, `mark --screen-ok` |
+| screen hole placement | the hole is centred in the display window (the inside edge of the bezel; ≤ 0.15 mm difference between opposite margins), the window is on the body's axis (≤ 1.3%) and 0.9–1.4× the spec screen size; the window itself is confirmed visually on `work/screen_check.png` (`mark --screen-ok`) |
 | printed text | every letter right, icons plausible (`mark --text-ok`) |
 | text-pass seams | none visible at 2× |
 | maintainer | visual approval (`mark --approved`) |
@@ -134,6 +134,17 @@ one side are part of the design, so these are not pass/fail.
   other (K310i: low and to the right), or to a weak edge when the render moved the display (K300i: too
   low). `finish` now checks the hole's centre against the body's axis and writes `work/screen_check.png`;
   a person or agent must confirm it (`--screen-ok`). `--snap combo` and `--screen` fix misses.
+
+- Keystone (photo taken from above): the K600i photo was 16% wider at the bottom than the top; the
+  render came out 6% too wide. Rectifying the four corners first fixed it.
+- On phones whose display shows dark content, the edge finder can stop on an inner UI line (K530i,
+  K770i): the screen check catches it; give the lit display with `--screen`.
+
+- Screen holes must sit centred in the display window, not on the rendered picture: renders place the
+  picture off-centre in the glass. `finish` now finds the window (inside edge of the bezel), paints it
+  all as dark glass and centres the hole in it. The automatic window finder is unreliable (it caught
+  the bezel ring or the screen content on most early phones), so the window is checked on
+  `screen_check.png` and usually given by hand with `--window`.
 
 ## Open items
 

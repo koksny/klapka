@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/k320i",
+  "brand": "Sony Ericsson",
+  "model": "K320i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 101,
+    "depth": 18
+  },
+  "size_note": "Display: sources give 1.7in, but the window measured on a frontal press render is about 31 x 38.5 mm; 1.9in at 128x160 fits it.",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.93,
+      "y": 14.9,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, centred; vertical centre measured"
+    },
+    "keypad": {
+      "x": 5.0,
+      "y": 69.5,
+      "w": 36.0,
+      "h": 22.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_ericsson_k320-1722.php",
+      "https://www.91mobiles.com/sony-ericsson-k320i-price-in-india?ty=specs"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k320-00.jpg",
+      "license": "",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      112,
+      210,
+      334,
+      418
+    ],
+    "mm": [
+      9.33,
+      17.5,
+      27.83,
+      34.83
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        112,
+        108,
+        136
+      ]
+    }
+  }
+}

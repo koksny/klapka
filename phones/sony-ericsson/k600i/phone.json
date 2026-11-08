@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/k600i",
+  "brand": "Sony Ericsson",
+  "model": "K600i",
+  "year": 2005,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 104.3,
+    "depth": 18.9
+  },
+  "size_note": "Measured on a keystone-corrected photo (the original was taken from above: 16% wider at the bottom).",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.22,
+      "y": 19.9,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, centred; vertical centre measured"
+    },
+    "keypad": {
+      "x": 3.0,
+      "y": 72.0,
+      "w": 39.0,
+      "h": 24.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "QuickShare"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_K600",
+      "https://www.91mobiles.com/sony-ericsson-k600i-price-in-india?ty=specs"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_K600i,_front,_switched_off.JPG",
+      "license": "",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      98,
+      218,
+      370,
+      463
+    ],
+    "mm": [
+      8.17,
+      18.17,
+      30.83,
+      38.58
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        37,
+        108,
+        120,
+        150
+      ]
+    }
+  }
+}

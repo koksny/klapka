@@ -1,151 +1,145 @@
-"""Screen stage: find the display on BODY.png from an approximate rectangle, cut the hole at the exact
-native aspect, and measure where the hole sits.
+"""Screen stage: find the display window on BODY.png, paint the whole window as dark glass, and cut the
+hole at the exact native aspect, centred in the window.
 
-python tools/mark_screen.py BODY.png --approx x,y,w,h --native 176x220 --fit-native --out-skin SKIN.png
-       --out-overlay OVERLAY.png [--snap combo|near|strongest|none] [--search 0.12] [--fill-border]
+python tools/mark_screen.py BODY.png --approx x,y,w,h --native 176x220 --out-skin SKIN.png
+       --out-overlay CHECK.png [--window x0,y0,x1,y1] [--spec-mm w,h] [--margin-mm 0.5]
 
-near (default): each side snaps to the strong edge nearest the guess. combo: for each side, up to 5 candidate edges (local maxima of the edge profile) in a band
-around the guess; the four-edge combination wins that is strong, centred on the body's vertical axis
-and closest to the native aspect. none: the given rectangle is the display (manual).
+The window is the inside edge of the bezel: everything inside it is display glass (the black LCD
+border and whatever the render drew on the screen). Automatic: each side of the seed rectangle
+(--approx, the template's screen placed on the body) moves to the strongest edge in a band around it
+where the inside is darker than the outside (bezel to glass). --window gives it by hand (body pixels).
 
-Placement checks printed under "checks" (finish turns them into pass/fail):
-- centre_x_pct: hole centre vs the body's vertical axis, % of the body width
-- margin_diff_mm: the hole must sit centred in the display window: per axis, the difference between
-  the distances from the hole edges to the nearest strong edge outside them
-- spill: a strong edge parallel to a hole side just inside the hole means the hole runs past the
-  display into its frame (ratio of that edge to the frame edge outside; > 0.6 = spill)
+The hole is the largest native-aspect rectangle inside the window less --margin-mm on every side, no
+larger than the spec size (+8%), centred in the window. The window (rounded corners) is painted glass
+colour first, so no rendered screen content is left around the hole.
+
+Checks printed under "checks": hole centring in the window (mm, both axes), window centre vs the
+body's axis (% of width), window size vs spec, and edge strength per side (a weak side means the
+window was probably found in the wrong place).
 """
-import argparse, itertools, json
+import argparse, json
 import numpy as np
 import cv2
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ap = argparse.ArgumentParser()
 ap.add_argument("body")
 ap.add_argument("--approx", required=True)
 ap.add_argument("--native", required=True)
+ap.add_argument("--window", help="window x0,y0,x1,y1 on BODY.png (by hand; each side is refined to the nearest strong edge within 7 px)")
+ap.add_argument("--no-refine", action="store_true")
+ap.add_argument("--spec-mm", help="spec screen size w,h in mm")
+ap.add_argument("--margin-mm", type=float, default=0.5)
 ap.add_argument("--px-per-mm", type=float, default=12.0)
-ap.add_argument("--search", type=float, default=0.12, help="search band per side, fraction of the rect size")
-ap.add_argument("--inset", type=int, default=0, help="shrink the hole by N px after snapping")
-ap.add_argument("--fit-native", action="store_true", help="shrink the hole to the exact native aspect inside the glass")
-ap.add_argument("--snap", choices=["combo", "near", "strongest", "none"], default="near")
-ap.add_argument("--fill-border", action="store_true", help="paint the display area left around the exact-aspect hole near-black")
 ap.add_argument("--out-skin", required=True); ap.add_argument("--out-overlay", required=True)
 a = ap.parse_args()
-
-im = np.asarray(Image.open(a.body).convert("RGBA"))
-g = cv2.cvtColor(im[..., :3], cv2.COLOR_RGB2GRAY).astype(np.float32)
-g = cv2.GaussianBlur(g, (0, 0), 1.0)
-gx = np.abs(cv2.Sobel(g, cv2.CV_32F, 1, 0, ksize=3)); gy = np.abs(cv2.Sobel(g, cv2.CV_32F, 0, 1, ksize=3))
+ppm = a.px_per_mm
+im = np.asarray(Image.open(a.body).convert("RGBA")).copy()
+Y = cv2.GaussianBlur(cv2.cvtColor(im[..., :3], cv2.COLOR_RGB2GRAY).astype(np.float32), (0, 0), 1.2)
 x, y, w, h = map(int, a.approx.split(","))
 nw, nh = map(int, a.native.lower().split("x"))
-ppm = a.px_per_mm
 alpha = im[..., 3] >= 128
-rows = np.where(alpha[y:y + h].any(1))[0] + y
-cols = [np.where(alpha[r])[0] for r in rows[::2]]
-spans = np.array([(c.min(), c.max()) for c in cols if len(c)], float)
-wd = spans[:, 1] - spans[:, 0] + 1; core = spans[np.abs(wd - np.median(wd)) <= 0.01 * np.median(wd)]
-core = core if len(core) >= 5 else spans
-body_cx = float(np.median((core[:, 0] + core[:, 1]) / 2)); body_w = float(np.median(core[:, 1] - core[:, 0] + 1))
 
 
-def vprof(xs, ya, yb):
-    ya, yb = int(ya + 0.15 * (yb - ya)), int(yb - 0.15 * (yb - ya))
-    return np.array([gx[ya:yb, c].mean() if 0 < c < g.shape[1] - 1 else 0.0 for c in xs])
+def body_axis(r0, r1):
+    spans = np.array([(np.where(alpha[r])[0].min(), np.where(alpha[r])[0].max()) for r in range(r0, r1, 2) if alpha[r].any()], float)
+    wd = spans[:, 1] - spans[:, 0] + 1; core = spans[np.abs(wd - np.median(wd)) <= 0.01 * np.median(wd)]
+    core = core if len(core) >= 5 else spans
+    return float(np.median(core.mean(1))), float(np.median(core[:, 1] - core[:, 0] + 1))
 
 
-def hprof(ys, xa, xb):
-    xa, xb = int(xa + 0.15 * (xb - xa)), int(xb - 0.15 * (xb - xa))
-    return np.array([gy[r, xa:xb].mean() if 0 < r < g.shape[0] - 1 else 0.0 for r in ys])
+def profile(side, lo, hi):
+    """median luminance across the side's central 50%, at positions lo..hi (x for left/right, y for top/bottom)."""
+    pos = np.arange(lo, hi)
+    if side in ("left", "right"):
+        band = Y[int(y + 0.25 * h): int(y + 0.75 * h)]
+        return pos, np.array([np.median(band[:, max(0, min(Y.shape[1] - 1, p))]) for p in pos])
+    band = Y[:, int(x + 0.25 * w): int(x + 0.75 * w)]
+    return pos, np.array([np.median(band[max(0, min(Y.shape[0] - 1, p))]) for p in pos])
 
 
-def candidates(pos, prof, k=5):
-    """local maxima of the profile at least 30% of its max, strongest first."""
-    p = np.convolve(prof, np.ones(3) / 3, mode="same")
-    peaks = [i for i in range(1, len(p) - 1) if p[i] >= p[i - 1] and p[i] >= p[i + 1] and p[i] >= 0.3 * p.max()]
-    peaks = sorted(peaks, key=lambda i: -p[i])[:k]
-    return [(int(pos[i]), float(p[i])) for i in peaks] or [(int(pos[int(np.argmax(p))]), float(p.max()))]
+def find_edge(side):
+    """strongest step where outside is brighter than inside, in a band of -22%..+12% around the seed side."""
+    size = w if side in ("left", "right") else h
+    est = {"left": x, "right": x + w, "top": y, "bottom": y + h}[side]
+    out_dir = -1 if side in ("left", "top") else 1
+    lo, hi = sorted((est + out_dir * int(0.22 * size), est - out_dir * int(0.12 * size)))
+    pos, p = profile(side, lo - 4, hi + 4)
+    d = 3; score = np.zeros(len(p))
+    for i in range(d, len(p) - d):
+        outside, inside = (p[i - d], p[i + d]) if out_dir < 0 else (p[i + d], p[i - d])
+        score[i] = outside - inside
+    i = int(np.argmax(score)); edge = int(pos[i])
+    strength = float(score[i] / max(np.median(np.abs(score[d:-d])), 1.0))
+    return edge, round(strength, 1)
 
 
-bx, by = max(3, int(a.search * w)), max(3, int(a.search * h))
-xsL = np.arange(x - bx, x + bx + 1); xsR = np.arange(x + w - bx, x + w + bx + 1)
-ysT = np.arange(y - by, y + by + 1); ysB = np.arange(y + h - by, y + h + by + 1)
+def refine(side, est, r=7):
+    """a hand-given side moved to the strongest step (either direction) within +-r px."""
+    pos, p = profile(side, est - r - 3, est + r + 4)
+    sc = [abs(p[i + 3] - p[i - 3]) for i in range(3, len(p) - 3)]
+    return int(pos[3 + int(np.argmax(sc))])
 
-if a.snap == "none":
-    L, T, R, B = x, y, x + w, y + h
-elif a.snap == "combo":
-    cL = candidates(xsL, vprof(xsL, y, y + h)); cR = candidates(xsR, vprof(xsR, y, y + h))
-    cT = candidates(ysT, hprof(ysT, x, x + w)); cB = candidates(ysB, hprof(ysB, x, x + w))
-    smax = max(s for c in (cL, cR, cT, cB) for _, s in c)
-    best = None
-    for (l, sl), (r, sr), (t, st), (b, sb) in itertools.product(cL, cR, cT, cB):
-        if r - l < 0.5 * w or b - t < 0.5 * h: continue
-        strength = (sl + sr + st + sb) / (4 * smax)
-        centre = abs((l + r) / 2 - body_cx) / body_w
-        aspect = abs(np.log(((r - l) / (b - t)) / (nw / nh)))
-        size = abs(np.log((r - l) / w)) + abs(np.log((b - t) / h))
-        score = strength - 8 * centre - 2.5 * aspect - 0.6 * size
-        if best is None or score > best[0]: best = (score, l, r, t, b)
-    _, L, R, T, B = best
-    L, T = L + 1, T + 1            # the gradient peak sits on the boundary; the hole starts one pixel inside it
+
+if a.window:
+    WL, WT, WR, WB = map(int, a.window.split(","))
+    if not a.no_refine:
+        x, y, w, h = WL, WT, WR - WL, WB - WT     # profiles across the hand-given window's own sides
+        WL, WR, WT, WB = refine("left", WL), refine("right", WR), refine("top", WT), refine("bottom", WB)
+    strength = {"left": None, "right": None, "top": None, "bottom": None}
 else:
-    def pick(pos, prof, est, size):
-        if a.snap == "strongest": return int(pos[int(np.argmax(prof))])
-        wt = np.exp(-((pos - est) / (0.025 * size)) ** 2) * (prof >= 0.35 * prof.max())
-        return int(pos[int(np.argmax(prof * wt))])
-    L = pick(xsL, vprof(xsL, y, y + h), x, w) + 1; R = pick(xsR, vprof(xsR, y, y + h), x + w, w)
-    T = pick(ysT, hprof(ysT, L, R), y, h) + 1; B = pick(ysB, hprof(ysB, L, R), y + h, h)
+    (WL, sl), (WR, sr), (WT, st), (WB, sb) = find_edge("left"), find_edge("right"), find_edge("top"), find_edge("bottom")
+    strength = {"left": sl, "right": sr, "top": st, "bottom": sb}
+ww, wh = WR - WL, WB - WT
 
-L, T, R, B = L + a.inset, T + a.inset, R - a.inset, B - a.inset
-glass = [int(L), int(T), int(R - L), int(B - T)]
-if a.fit_native:
-    # largest rectangle with the exact native aspect inside the glass, centred: the leftover glass stays
-    # as a thin black border, the bezel is never cut
-    gw, gh = R - L, B - T
-    if gw / gh > nw / nh: fw, fh = round(gh * nw / nh), gh
-    else: fw, fh = gw, round(gw * nh / nw)
-    L, T = L + (gw - fw) // 2, T + (gh - fh) // 2
-    R, B = L + fw, T + fh
-L, T, R, B = int(L), int(T), int(R), int(B); rw, rh = R - L, B - T
+# hole: native aspect, inside the window less the margin, capped at the spec size, centred in the window
+m = a.margin_mm * ppm
+fw, fh = ww - 2 * m, wh - 2 * m
+if fw / fh > nw / nh: hw, hh = fh * nw / nh, fh
+else: hw, hh = fw, fw * nh / nw
+if a.spec_mm:
+    sw_, sh_ = [float(v) * ppm * 1.08 for v in a.spec_mm.split(",")]
+    k = min(1.0, sw_ / hw, sh_ / hh); hw, hh = hw * k, hh * k
+hw, hh = int(round(hw)), int(round(hh))
+cx, cy = (WL + WR) / 2, (WT + WB) / 2
+L, T = int(round(cx - hw / 2)), int(round(cy - hh / 2)); R, B = L + hw, T + hh
 
-# ---- placement checks, measured on the uncut body
-reach = int(4 * ppm); inner = int(3 * ppm)
-
-
-def side(dirn):
-    """distance from the hole edge to the strongest edge outside it (within 4 mm), and the strongest
-    parallel edge just inside the hole (0.4-3 mm) relative to it."""
-    if dirn in ("left", "right"):
-        sgn = -1 if dirn == "left" else 1; e = L if dirn == "left" else R - 1
-        out = [e + sgn * d for d in range(1, reach)]; ins = [e - sgn * d for d in range(int(0.4 * ppm), inner)]
-        po, pi = vprof(out, T, B), vprof(ins, T, B)
-    else:
-        sgn = -1 if dirn == "top" else 1; e = T if dirn == "top" else B - 1
-        out = [e + sgn * d for d in range(1, reach)]; ins = [e - sgn * d for d in range(int(0.4 * ppm), inner)]
-        po, pi = hprof(out, L, R), hprof(ins, L, R)
-    k = int(np.argmax(po)); return (k + 1) / ppm, float(pi.max() / max(po.max(), 1e-3))
-
-
-m = {s: side(s) for s in ("left", "right", "top", "bottom")}
-checks = {"centre_x_pct": round(100 * abs((L + R) / 2 - body_cx) / body_w, 2),
-          "margin_diff_mm": round(max(abs(m["left"][0] - m["right"][0]), abs(m["top"][0] - m["bottom"][0])), 2),
-          "margins_mm": {s: round(v[0], 2) for s, v in m.items()},
-          "spill": round(max(v[1] for v in m.values()), 2), "spill_by_side": {s: round(v[1], 2) for s, v in m.items()}}
-
+# paint the window as glass (rounded corners), then cut the hole
 skin = im.copy()
-if a.fill_border:   # what is left of the rendered display around the exact hole becomes the LCD's black border
-    gl, gt, gw_, gh_ = glass; skin[gt:gt + gh_, gl:gl + gw_, :3] = (14, 14, 16)
+glass = Image.new("L", (skin.shape[1], skin.shape[0]), 0)
+ImageDraw.Draw(glass).rounded_rectangle([WL, WT, WR - 1, WB - 1], radius=max(2, int(0.6 * ppm)), fill=255)
+gm = np.asarray(glass) > 0
+skin[gm, 0], skin[gm, 1], skin[gm, 2] = 14, 14, 16
 skin[T:B, L:R, 3] = 0; skin[T:B, L:R, :3] = 0
 Image.fromarray(skin, "RGBA").save(a.out_skin)
-ov = Image.fromarray(im, "RGBA").convert("RGB"); d = ImageDraw.Draw(ov)
-d.rectangle([x, y, x + w - 1, y + h - 1], outline=(255, 200, 0))      # the guess
-d.rectangle(glass[:2] + [glass[0] + glass[2] - 1, glass[1] + glass[3] - 1], outline=(0, 200, 255))   # display found
-d.rectangle([L, T, R - 1, B - 1], outline=(255, 0, 255))              # hole
-d.line([(body_cx, T - 20), (body_cx, B + 20)], fill=(0, 255, 0))      # body axis
-ov.save(a.out_overlay)
 
-print(json.dumps({
-    "approx": [x, y, w, h], "glass_px": glass, "screen_px": [L, T, rw, rh],
-    "screen_mm": [round(L / ppm, 2), round(T / ppm, 2), round(rw / ppm, 2), round(rh / ppm, 2)],
-    "aspect_w_h": round(rw / rh, 4), "native_aspect_w_h": round(nw / nh, 4),
-    "aspect_error_pct": round(100 * ((rw / rh) / (nw / nh) - 1), 2), "snap": a.snap, "checks": checks}))
+axis, bwid = body_axis(max(0, WT), min(im.shape[0], WB))
+checks = {
+    "hole_centre_diff_mm": round(max(abs((L - WL) - (WR - R)), abs((T - WT) - (WB - B))) / ppm, 2),
+    "margins_mm": {"left": round((L - WL) / ppm, 2), "right": round((WR - R) / ppm, 2), "top": round((T - WT) / ppm, 2), "bottom": round((WB - B) / ppm, 2)},
+    "window_centre_x_pct": round(100 * abs(cx - axis) / bwid, 2),
+    "window_mm": [round(ww / ppm, 2), round(wh / ppm, 2)],
+    "edge_strength": strength,
+}
+if a.spec_mm:
+    sw_, sh_ = [float(v) for v in a.spec_mm.split(",")]
+    checks["window_vs_spec"] = [round(ww / ppm / sw_, 3), round(wh / ppm / sh_, 3)]
+
+# check image: body (uncut) with the window outline (green), the hole (magenta, translucent), margins in mm
+ov = Image.fromarray(im, "RGBA"); lay = Image.new("RGBA", ov.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+d.rectangle([L, T, R - 1, B - 1], fill=(255, 0, 255, 70), outline=(255, 0, 255, 255), width=2)
+d.rectangle([WL, WT, WR - 1, WB - 1], outline=(0, 255, 0, 255), width=2)
+d.line([(axis, WT - 30), (axis, WB + 30)], fill=(255, 255, 0, 200), width=1)
+ov.alpha_composite(lay); pad = int(4 * ppm)
+crop = ov.crop((max(0, WL - pad), max(0, WT - pad), min(ov.width, WR + pad), min(ov.height, WB + pad))).convert("RGB")
+crop = crop.resize((crop.width * 2, crop.height * 2), Image.LANCZOS); dd = ImageDraw.Draw(crop)
+try: f = ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", 22)
+except OSError: f = ImageFont.load_default()
+mg = checks["margins_mm"]; dd.rectangle([0, 0, crop.width, 30], fill=(0, 0, 0))
+dd.text((6, 3), f"margins L {mg['left']}  R {mg['right']}  T {mg['top']}  B {mg['bottom']} mm   window {checks['window_mm'][0]}x{checks['window_mm'][1]} mm", fill=(255, 255, 0), font=f)
+crop.save(a.out_overlay)
+
+print(json.dumps({"approx": [x, y, w, h], "window_px": [WL, WT, ww, wh], "screen_px": [L, T, hw, hh],
+                  "screen_mm": [round(L / ppm, 2), round(T / ppm, 2), round(hw / ppm, 2), round(hh / ppm, 2)],
+                  "aspect_w_h": round(hw / hh, 4), "native_aspect_w_h": round(nw / nh, 4),
+                  "aspect_error_pct": round(100 * ((hw / hh) / (nw / nh) - 1), 2), "manual": bool(a.window), "checks": checks}))

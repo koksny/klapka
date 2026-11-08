@@ -1,0 +1,222 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.277,
+    "body_px": [
+      47,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      152,
+      248,
+      552,
+      748
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k530-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      244,
+      546
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.37,
+        "screen_rel_iou": 0.8595,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.4497,
+        "body_aspect": 0.4405,
+        "template_body_aspect": 0.4513,
+        "body": [
+          62,
+          73,
+          639,
+          1384
+        ],
+        "screen": [
+          143,
+          267,
+          556,
+          762
+        ],
+        "score": 0.9484,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.95,
+        "screen_rel_iou": 0.8863,
+        "screen_centre_error_pct": -0.42,
+        "mirror": 0.4784,
+        "body_aspect": 0.438,
+        "template_body_aspect": 0.4513,
+        "body": [
+          55,
+          35,
+          654,
+          1404
+        ],
+        "screen": [
+          142,
+          219,
+          562,
+          753
+        ],
+        "score": 0.9364,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.61,
+        "screen_rel_iou": 0.8118,
+        "screen_centre_error_pct": -0.26,
+        "mirror": 0.5115,
+        "body_aspect": 0.4259,
+        "template_body_aspect": 0.4513,
+        "body": [
+          64,
+          48,
+          638,
+          1397
+        ],
+        "screen": [
+          133,
+          271,
+          566,
+          738
+        ],
+        "score": 0.7608,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.35,
+        "screen_rel_iou": 0.8262,
+        "screen_centre_error_pct": -0.85,
+        "mirror": 0.4599,
+        "body_aspect": 0.4181,
+        "template_body_aspect": 0.4513,
+        "body": [
+          60,
+          48,
+          646,
+          1451
+        ],
+        "screen": [
+          137,
+          284,
+          559,
+          750
+        ],
+        "score": 0.6035,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "screen_source": {
+    "window": [
+      75,
+      150,
+      461,
+      642
+    ],
+    "manual": true,
+    "window_px": [
+      82,
+      155,
+      385,
+      494
+    ],
+    "checks": {
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.17,
+        "bottom": 1.17
+      },
+      "window_centre_x_pct": 1.21,
+      "window_mm": [
+        32.08,
+        41.17
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.064,
+        1.093
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4422,
+      "spec_aspect": 0.451,
+      "aspect_error_pct": -1.95,
+      "lean_deg": 0.024,
+      "taper_deg": 0.046,
+      "deskew_deg": -0.126,
+      "tilt_deg": 0.071,
+      "jitter_px": 1.12,
+      "symmetry_iou": 0.9918,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.0,
+      "window_centre_x_pct": 1.21,
+      "window_vs_spec_min": 1.064,
+      "window_vs_spec_max": 1.093,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "hole_centre_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

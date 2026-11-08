@@ -144,6 +144,9 @@ icons (they differ between models). Check `work/fixN_check.png` (before above, a
   (that prompt writes a description out literally):
   `textfix <id> --row 4 --box x0,y0,x1,y1 --text "a single key: a large '*' on the left, and on the right the small letters 'a/A' with a small key-lock symbol"`.
   Give the key's box (the row from `rows_check.png`, one column of the keypad).
+- **Only the letters are wrong** (digit and key fine): the cleanest fix is the word prompt on a tight
+  box around just those letters, e.g. `textfix <id> --text "PQRS" --box …`. Redrawing a whole key can
+  change its colour and size so it no longer matches its neighbours.
 - **A fix went wrong:** `pass2 <id> --reuse` starts the text fixes over from the clean cutout (no new
   render), or try `--seed 2`.
 - Do not erase letters and ask the model to write them on an empty key: it gets the letters right
@@ -156,9 +159,13 @@ python tools/klapka.py finish sony-ericsson/k750i
 It must end with `PASS` (lines marked `info` are recorded but not pass/fail; thresholds in
 [docs/PIPELINE.md](docs/PIPELINE.md#acceptance)). If the automatic screen hole misses the display, give the display rectangle
 on `work/final.png` yourself: `finish <id> --screen x0,y0,x1,y1` (read it off `work/final_grid.png`; it is remembered).
-Then look at `work/screen_check.png`: the hole (magenta) must cover the lit display only, centred in its
-window, not the frame or the bezel. If it does not, run `finish <id> --snap combo` (a four-edge search) or
-give the display rectangle yourself with `--screen x0,y0,x1,y1`, and look again. Only when it sits right:
+Then look at `work/screen_check.png` (the body before cutting): the **green box is the display
+window** and must follow the inside edge of the bezel on all four sides; the magenta hole sits in its
+middle, and the whole window is painted as dark glass. The automatic window finder misses often (it
+can grab a bezel ring or the screen content). When it does, read the window off `body.png` and give it
+by hand: `finish <id> --window x0,y0,x1,y1` (body.png pixels; each side snaps to the nearest strong
+edge within 7 px). A wrong window paints the bezel black, so never skip this look. Only when the green
+box is right:
 ```
 python tools/klapka.py mark sony-ericsson/k750i --screen-ok
 ```
@@ -201,6 +208,7 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | `finish` fails on the screen aspect | check `layout_mm.screen.y` and `display` in `phone.json` |
 | model ignores the photo and draws a flat grey phone | the template is fine; try other seeds or a clearer photo |
 | the phone looks turned or lopsided (one side panel showing, screen off-centre) | the photo was taken at an angle: the render keeps a little of it. Use a more frontal photo |
+| the body comes out several % too wide although the photo looks frontal | the photo was taken from above or below (keystone: one end wider than the other). Measure the body width at the top and the bottom of the photo; if they differ, run `tools/rectify.py` with the four corners first |
 | keypad rows are tilted while the body is straight | the photo was at an angle; use an orthographic press render or a straight-on photo and render again |
 | the key rows in `rows_check.png` sit on the wrong keys | the keypad block in `phone.json` is off; measure it on this model's photo, not a sister model's |
 | the screen hole misses the display in `work/screen_overlay.png` | `finish <id> --screen x0,y0,x1,y1` from `work/final_grid.png` |

@@ -35,7 +35,7 @@ MAX_PX = 1_048_576
 SCREEN_GLASS = (11, 13, 16)
 STANDARD_KEYS = [["1", "2 ABC", "3 DEF"], ["4 GHI", "5 JKL", "6 MNO"], ["7 PQRS", "8 TUV", "9 WXYZ"], ["* a/A", "0 +", "#"]]
 THRESHOLDS = {"aspect_error_pct": 3.0, "lean_deg": 0.3, "screen_aspect_error_pct": 0.2,
-              "screen_centre_x_pct": 1.3}
+              "hole_centre_diff_mm": 0.15, "window_centre_x_pct": 1.3, "window_vs_spec_min": 0.9, "window_vs_spec_max": 1.4, "window_edge_min": 4.0}
 # measured and recorded, not pass/fail (Koks, 2026-11-08): rounded or tapering sides and one-sided buttons are design
 INFO_ONLY = ("taper_deg", "tilt_deg", "jitter_px", "symmetry_iou", "deskew_deg")
 
@@ -340,20 +340,19 @@ def cmd_finish(a):
     rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", hm, "--width-mm", wm, "--px-per-mm", MASTER_PX_PER_MM, "--deskew"))
     prev_source = dict(b.get("screen_source", {}))
     x0, y0, x1, y1 = alpha_bbox(w / "final.png"); k = hm * MASTER_PX_PER_MM / (y1 - y0 + 1); pad = MASTER_PX_PER_MM
-    if not a.screen and b.get("screen_source", {}).get("manual"):   # keep a rectangle given earlier
-        a.screen = ",".join(map(str, b["screen_source"]["final_px"]))
-    if a.screen:   # the display as seen on work/final.png (x0,y0,x1,y1), e.g. read off final_grid.png
-        sx0, sy0, sx1, sy1 = [int(v) for v in a.screen.split(",")]; snap = "none"
-    else:          # the template's screen, placed relative to the render's own body box
-        bx = T["body_px"]; tw, th = bx[2] - bx[0] + 1, bx[3] - bx[1] + 1; rw, rh = x1 - x0 + 1, y1 - y0 + 1
-        sx0, sy0, sx1, sy1 = [x0 + (T["screen_px"][0] - bx[0]) * rw / tw, y0 + (T["screen_px"][1] - bx[1]) * rh / th,
-                              x0 + (T["screen_px"][2] - bx[0]) * rw / tw, y0 + (T["screen_px"][3] - bx[1]) * rh / th]
-        snap = a.snap
+    # seed: the template's screen, placed relative to the render's own body box, in body.png pixels
+    bx = T["body_px"]; tw, th = bx[2] - bx[0] + 1, bx[3] - bx[1] + 1; rw, rh = x1 - x0 + 1, y1 - y0 + 1
+    sx0, sy0, sx1, sy1 = [x0 + (T["screen_px"][0] - bx[0]) * rw / tw, y0 + (T["screen_px"][1] - bx[1]) * rh / th,
+                          x0 + (T["screen_px"][2] - bx[0]) * rw / tw, y0 + (T["screen_px"][3] - bx[1]) * rh / th]
     approx = f"{round((sx0 - x0) * k + pad)},{round((sy0 - y0) * k + pad)},{round((sx1 - sx0 + 1) * k)},{round((sy1 - sy0 + 1) * k)}"
-    nw, nh = P["display"]["native_px"]
-    scr = last_json(run("mark_screen.py", d / "body.png", "--approx", approx, "--native", f"{nw}x{nh}", "--search", 0.12 if snap == "combo" else 0.08, "--fit-native",
-                        "--snap", snap, "--fill-border", "--px-per-mm", MASTER_PX_PER_MM, "--out-skin", d / "skin.png", "--out-overlay", w / "screen_overlay.png"))
-    b["screen_source"] = {"final_px": [round(v) for v in (sx0, sy0, sx1, sy1)], "snap": snap, "manual": bool(a.screen)}
+    if not a.window and b.get("screen_source", {}).get("window"):   # keep a window given earlier
+        a.window = ",".join(map(str, b["screen_source"]["window"]))
+    nw, nh = P["display"]["native_px"]; scr_mm = P["layout_mm"]["screen"]
+    extra = ["--window", a.window] if a.window else []
+    scr = last_json(run("mark_screen.py", d / "body.png", "--approx", approx, "--native", f"{nw}x{nh}", "--spec-mm", f"{scr_mm['w']},{scr_mm['h']}",
+                        "--px-per-mm", MASTER_PX_PER_MM, "--out-skin", d / "skin.png", "--out-overlay", w / "screen_check.png", *extra))
+    b["screen_source"] = {"window": [int(v) for v in a.window.split(",")] if a.window else None, "manual": bool(a.window),
+                          "window_px": scr["window_px"], "checks": scr["checks"]}
     sx, sy, sw, sh = scr["screen_px"]
     # Mi Band 7/8/9 export: 192x490, phone fitted with a 4 px margin, transparent around it and in the hole
     skin = Image.open(d / "skin.png").convert("RGBA"); BW, BH, M = 192, 490, 4
@@ -380,25 +379,25 @@ def cmd_finish(a):
            "deskew_deg": rep.get("deskew_deg", 0.0),
            "tilt_deg": max(abs(t) for t in rep["side_tilt_deg"]), "jitter_px": max(rep["side_jitter_px"]),
            "symmetry_iou": rep["lr_symmetry_iou"], "screen_aspect_error_pct": abs(scr["aspect_error_pct"]),
-           "screen_centre_x_pct": scr["checks"]["centre_x_pct"]}
+           "hole_centre_diff_mm": scr["checks"]["hole_centre_diff_mm"], "window_centre_x_pct": scr["checks"]["window_centre_x_pct"],
+           "window_vs_spec_min": min(scr["checks"]["window_vs_spec"]), "window_vs_spec_max": max(scr["checks"]["window_vs_spec"]),
+           "window_edge_min": min([v for v in scr["checks"]["edge_strength"].values() if v is not None], default=99)}
     ok = {"aspect_error_pct": abs(acc["aspect_error_pct"]) <= THRESHOLDS["aspect_error_pct"], "lean_deg": acc["lean_deg"] <= THRESHOLDS["lean_deg"],
           "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"],
-          "screen_centre_x_pct": acc["screen_centre_x_pct"] <= THRESHOLDS["screen_centre_x_pct"]}
+          "hole_centre_diff_mm": acc["hole_centre_diff_mm"] <= THRESHOLDS["hole_centre_diff_mm"],
+          "window_centre_x_pct": acc["window_centre_x_pct"] <= THRESHOLDS["window_centre_x_pct"],
+          "window_vs_spec_min": acc["window_vs_spec_min"] >= THRESHOLDS["window_vs_spec_min"],
+          "window_vs_spec_max": acc["window_vs_spec_max"] <= THRESHOLDS["window_vs_spec_max"],
+          "window_edge_min": acc["window_edge_min"] >= THRESHOLDS["window_edge_min"]}
     manual = b.get("acceptance", {}).get("manual", {"text_ok": False, "approved": False})
     if b.get("screen_source", {}) != prev_source: manual["screen_ok"] = False   # a new hole needs a new look
     b["acceptance"] = {"measured": acc, "pass": ok, "manual": manual}; save_build(a.id, b)
-    # screen check: the hole drawn translucent on the uncut body, for the visual check (mark --screen-ok)
-    from PIL import ImageDraw as _D
-    bodyim = Image.open(d / "body.png").convert("RGBA"); sc = Image.new("RGBA", bodyim.size, (120, 120, 120, 255)); sc.alpha_composite(bodyim)
-    ov = Image.new("RGBA", bodyim.size, (0, 0, 0, 0)); _D.Draw(ov).rectangle([sx, sy, sx + sw - 1, sy + sh - 1], fill=(255, 0, 255, 90), outline=(255, 0, 255, 255), width=2)
-    sc.alpha_composite(ov); pad = 4 * MASTER_PX_PER_MM
-    sc.crop((max(0, sx - pad), max(0, sy - pad), min(sc.width, sx + sw + pad), min(sc.height, sy + sh + pad))).convert("RGB").save(w / "screen_check.png")
     # check sheet: skin + the text-fix areas, for the visual read
     S = with_glass(d / "skin.png"); S.thumbnail((10000, 900)); S.save(w / "check_sheet.png")
     for kx, v in acc.items(): print(f"{kx:26s} {v!s:>8}  {'info' if kx in INFO_ONLY or kx not in ok else ('ok' if ok[kx] else 'FAIL')}")
     print("PASS" if all(ok.values()) else "FAIL: see the lines above")
     print(f"text_ok={manual['text_ok']} screen_ok={manual.get('screen_ok', False)} approved={manual['approved']}")
-    print(f"look at {w / 'screen_check.png'} (the hole must sit centred in the display, covering only the display) -> mark {a.id} --screen-ok")
+    print(f"look at {w / 'screen_check.png'}: the green box must follow the inside edge of the bezel on all four sides -> mark {a.id} --screen-ok")
     print(f"read every text on {d / 'skin.png'} -> mark {a.id} --text-ok")
 
 
@@ -488,12 +487,12 @@ def relpath(target, here):
     return os.path.relpath(t or ".", here or ".").replace("\\", "/")
 
 
-def gallery(dirs, here, cols=4):
+def gallery(dirs, here, cols=4, height=160):
     """thumbnail table; links are relative to the folder `here` (repo-relative, "" = root)."""
     cells = []
     for d in dirs:
         P = load(d / "phone.json"); link = relpath(d, here)
-        cells.append(f'<a href="{link}/"><img src="{link}/thumb.png" height="160" alt="{P["brand"]} {P["model"]}"></a>'
+        cells.append(f'<a href="{link}/"><img src="{link}/thumb.png" height="{height}" alt="{P["brand"]} {P["model"]}"></a>'
                      f'<br><b>{P["model"]}</b><br><sub>{P["brand"]} · {P.get("year") or ""}</sub>')
     rows = ["<table>"]
     for i in range(0, len(cells), cols):
@@ -598,11 +597,11 @@ def cmd_pages(a):
           "| Model | Brand | Year | Type | Size | Display |\n|---|---|---|---|---|---|\n" + "\n".join(rows) + "\n")
 
     # front page: the header animation, counts, browse links and the newest additions only
-    recent = sorted(dirs, key=lambda d: (load(d / "build.json")["added"], load(d / "phone.json").get("year") or 0), reverse=True)[:8]
+    recent = sorted(dirs, key=lambda d: (load(d / "build.json")["added"], load(d / "phone.json").get("year") or 0), reverse=True)[:12]
     readme = ROOT / "README.md"
     if readme.exists():
         t = readme.read_text(encoding="utf-8"); ny = [y for y in years if y]
-        t = replace_block(t, "RECENT", gallery(recent, ""))
+        t = replace_block(t, "RECENT", gallery(recent, "", cols=6, height=150))
         t = replace_block(t, "COUNT", f"**{plural(len(dirs), 'phone')}** from {plural(len(by_brand), 'brand')}, {min(ny)}–{max(ny)}")
         t = replace_block(t, "BROWSE", "\n".join([
             "- **[By year](catalog/years.md)**: " + " · ".join(f"[{y}](catalog/years/{y}.md)" for y in ny),
@@ -626,7 +625,7 @@ def main():
     p = sp.add_parser("textfix"); p.add_argument("id"); p.add_argument("--keypad", action="store_true"); p.add_argument("--row", type=int, help="one row of keys (1 = top), labels from phone.json"); p.add_argument("--text"); p.add_argument("--box"); p.add_argument("--seed", type=int, default=1)
     p = sp.add_parser("rows"); p.add_argument("id")
     p = sp.add_parser("restore"); p.add_argument("id"); p.add_argument("--rows", type=int, nargs="*", default=[]); p.add_argument("--box"); p.add_argument("--feather", type=int, default=6, help="soft edge in px (use 1-2 for thin strips)")
-    p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--screen", help="display rectangle on work/final.png: x0,y0,x1,y1 (when the automatic one misses)"); p.add_argument("--snap", default="near", choices=["near", "combo"], help="automatic display finding: near (default) or combo (four-edge search)")
+    p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--window", help="display window on body.png: x0,y0,x1,y1 (when the automatic one misses; read it off work/screen_check.png or body.png)")
     p = sp.add_parser("mark"); p.add_argument("id"); p.add_argument("--text-ok", action="store_true"); p.add_argument("--screen-ok", action="store_true"); p.add_argument("--approved", action="store_true")
     sp.add_parser("pages")
     sp.add_parser("header")

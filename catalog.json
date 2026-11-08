@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 18,
+  "count": 24,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -147,6 +147,54 @@
       }
     },
     {
+      "id": "sony-ericsson/k500i",
+      "brand": "Sony Ericsson",
+      "model": "K500i",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 102,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          96,
+          169,
+          364,
+          455
+        ],
+        "mm": [
+          8.0,
+          14.08,
+          30.33,
+          37.92
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k500i/skin.png",
+        "body.png": "phones/sony-ericsson/k500i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k500i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k500i/preview.png",
+        "phone.json": "phones/sony-ericsson/k500i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k700i",
       "brand": "Sony Ericsson",
       "model": "K700i",
@@ -288,6 +336,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/k300i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k300i/preview.png",
         "phone.json": "phones/sony-ericsson/k300i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k600i",
+      "brand": "Sony Ericsson",
+      "model": "K600i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 45,
+        "height": 104.3,
+        "depth": 18.9
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          98,
+          218,
+          370,
+          463
+        ],
+        "mm": [
+          8.17,
+          18.17,
+          30.83,
+          38.58
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k600i/skin.png",
+        "body.png": "phones/sony-ericsson/k600i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k600i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k600i/preview.png",
+        "phone.json": "phones/sony-ericsson/k600i/phone.json"
       }
     },
     {
@@ -675,6 +771,102 @@
       }
     },
     {
+      "id": "sony-ericsson/k320i",
+      "brand": "Sony Ericsson",
+      "model": "K320i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 44,
+        "height": 101,
+        "depth": 18
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          112,
+          210,
+          334,
+          418
+        ],
+        "mm": [
+          9.33,
+          17.5,
+          27.83,
+          34.83
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k320i/skin.png",
+        "body.png": "phones/sony-ericsson/k320i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k320i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k320i/preview.png",
+        "phone.json": "phones/sony-ericsson/k320i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k530i",
+      "brand": "Sony Ericsson",
+      "model": "K530i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 102,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          88,
+          169,
+          373,
+          466
+        ],
+        "mm": [
+          7.33,
+          14.08,
+          31.08,
+          38.83
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k530i/skin.png",
+        "body.png": "phones/sony-ericsson/k530i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k530i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k530i/preview.png",
+        "phone.json": "phones/sony-ericsson/k530i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k550i",
       "brand": "Sony Ericsson",
       "model": "K550i",
@@ -723,6 +915,54 @@
       }
     },
     {
+      "id": "sony-ericsson/k770i",
+      "brand": "Sony Ericsson",
+      "model": "K770i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47,
+        "height": 105,
+        "depth": 14.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          100,
+          159,
+          375,
+          500
+        ],
+        "mm": [
+          8.33,
+          13.25,
+          31.25,
+          41.67
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k770i/skin.png",
+        "body.png": "phones/sony-ericsson/k770i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k770i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k770i/preview.png",
+        "phone.json": "phones/sony-ericsson/k770i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k810i",
       "brand": "Sony Ericsson",
       "model": "K810i",
@@ -768,6 +1008,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/k810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k810i/preview.png",
         "phone.json": "phones/sony-ericsson/k810i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/k850i",
+      "brand": "Sony Ericsson",
+      "model": "K850i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 102,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT"
+      },
+      "screen": {
+        "skin_px": [
+          78,
+          144,
+          434,
+          578
+        ],
+        "mm": [
+          6.5,
+          12.0,
+          36.17,
+          48.17
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/k850i/skin.png",
+        "body.png": "phones/sony-ericsson/k850i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/k850i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/k850i/preview.png",
+        "phone.json": "phones/sony-ericsson/k850i/phone.json"
       }
     },
     {
