@@ -1,0 +1,272 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 11.545,
+    "body_px": [
+      40,
+      72,
+      535,
+      1720
+    ],
+    "screen_px": [
+      114,
+      170,
+      461,
+      604
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-w350-01.jpg (press photo; open unit cropped)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      180,
+      500
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.2,
+        "screen_rel_iou": 0.8832,
+        "screen_centre_error_pct": -0.21,
+        "mirror": 0.6057,
+        "body_aspect": 0.3002,
+        "template_body_aspect": 0.3008,
+        "body": [
+          45,
+          81,
+          527,
+          1689
+        ],
+        "screen": [
+          110,
+          150,
+          460,
+          613
+        ],
+        "score": 1.1553,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.7,
+        "screen_rel_iou": 0.8718,
+        "screen_centre_error_pct": -0.21,
+        "mirror": 0.6185,
+        "body_aspect": 0.3029,
+        "template_body_aspect": 0.3008,
+        "body": [
+          44,
+          109,
+          514,
+          1663
+        ],
+        "screen": [
+          108,
+          176,
+          448,
+          631
+        ],
+        "score": 1.1248,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.71,
+        "screen_rel_iou": 0.8225,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.5963,
+        "body_aspect": 0.2987,
+        "template_body_aspect": 0.3008,
+        "body": [
+          46,
+          75,
+          536,
+          1718
+        ],
+        "screen": [
+          110,
+          144,
+          473,
+          572
+        ],
+        "score": 1.0751,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.71,
+        "screen_rel_iou": 0.8451,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.537,
+        "body_aspect": 0.2956,
+        "template_body_aspect": 0.3008,
+        "body": [
+          39,
+          87,
+          519,
+          1713
+        ],
+        "screen": [
+          105,
+          156,
+          452,
+          580
+        ],
+        "score": 1.0175,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        48,
+        858,
+        528,
+        1173
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "Ericsson",
+      "box": [
+        202,
+        140,
+        458,
+        172
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          100,
+          128,
+          450,
+          186
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      82,
+      119,
+      455,
+      579
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      82,
+      119,
+      373,
+      460
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.29,
+      "window_mm": [
+        31.08,
+        38.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.031,
+        1.017
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3039,
+      "spec_aspect": 0.3011,
+      "aspect_error_pct": 0.92,
+      "lean_deg": 0.017,
+      "taper_deg": 0.017,
+      "deskew_deg": -0.016,
+      "tilt_deg": 0.033,
+      "jitter_px": 0.64,
+      "symmetry_iou": 0.985,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.29,
+      "window_vs_spec_min": 1.017,
+      "window_vs_spec_max": 1.031,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

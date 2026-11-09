@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w760i",
+  "brand": "Sony Ericsson",
+  "model": "W760i",
+  "year": 2008,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 133.2,
+    "depth": 15
+  },
+  "size_note": "open height from the frontal press render (Allegro listing, via Koks): body 195 x 542 px at the 48 mm width = 133.4 mm; the replacement-housing render gives 132.9 mm (about +-3 mm)",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.23,
+      "y": 14.8,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "2.2in at 240x320, centred; vertical centre (37.2 mm) of the lit LCD on the press render; the Walkman print sits on the glass below it"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 98,
+      "w": 39,
+      "h": 26.5
+    },
+    "seams": [
+      {
+        "y": 95,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "WALKMAN"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w760i/"
+    ],
+    "geometry_photo": {
+      "url": "https://b.allegroimg.com/original/01eb8e/6215802f48b1ae41823905d2a91b/TELEFON-SONY-ERICSSON-W760i-3-KOLORY",
+      "license": "",
+      "author": "",
+      "note": "press render set, via Koks"
+    }
+  },
+  "size_closed_mm": {
+    "width": 48,
+    "height": 103,
+    "depth": 15
+  },
+  "screen": {
+    "skin_px": [
+      108,
+      223,
+      390,
+      520
+    ],
+    "mm": [
+      9.0,
+      18.58,
+      32.5,
+      43.33
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        71,
+        114,
+        153
+      ]
+    }
+  }
+}

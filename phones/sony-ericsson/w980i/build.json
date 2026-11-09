@@ -1,0 +1,283 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1856
+    ],
+    "px_per_mm": 10.482,
+    "body_px": [
+      31,
+      74,
+      512,
+      1781
+    ],
+    "screen_px": [
+      96,
+      165,
+      447,
+      633
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w980.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      140,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.79,
+        "screen_rel_iou": 0.8925,
+        "screen_centre_error_pct": -0.33,
+        "mirror": 0.7565,
+        "body_aspect": 0.2743,
+        "template_body_aspect": 0.2822,
+        "body": [
+          53,
+          92,
+          506,
+          1746
+        ],
+        "screen": [
+          116,
+          159,
+          440,
+          658
+        ],
+        "score": 1.0981,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 3.1,
+        "screen_rel_iou": 0.8905,
+        "screen_centre_error_pct": -0.22,
+        "mirror": 0.6535,
+        "body_aspect": 0.291,
+        "template_body_aspect": 0.2822,
+        "body": [
+          44,
+          135,
+          503,
+          1715
+        ],
+        "screen": [
+          114,
+          196,
+          431,
+          658
+        ],
+        "score": 1.0404,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.55,
+        "screen_rel_iou": 0.9206,
+        "screen_centre_error_pct": -0.32,
+        "mirror": 0.6261,
+        "body_aspect": 0.2722,
+        "template_body_aspect": 0.2822,
+        "body": [
+          48,
+          80,
+          510,
+          1780
+        ],
+        "screen": [
+          117,
+          156,
+          438,
+          639
+        ],
+        "score": 1.0239,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.68,
+        "screen_rel_iou": 0.8842,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.7255,
+        "body_aspect": 0.2605,
+        "template_body_aspect": 0.2822,
+        "body": [
+          70,
+          122,
+          483,
+          1710
+        ],
+        "screen": [
+          123,
+          181,
+          427,
+          618
+        ],
+        "score": 0.827,
+        "seed": 3
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        54,
+        1165,
+        489,
+        1660
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "inpaint",
+      "note": "a stray letter a the keypad redraw put on the # key (instead of a space symbol) removed by OpenCV inpainting",
+      "box": [
+        364,
+        1599,
+        380,
+        1614
+      ]
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "WALKMAN",
+      "box": [
+        203,
+        789,
+        395,
+        825
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 1",
+      "text": "the Sony WALKMAN logo printed in light grey on the black glass: on the left the Walkman symbol (a smooth wavy W made of thick rounded strokes followed by a round dot), then the word WALKMAN in the thin wide Walkman lettering; crisp, sharp edges",
+      "box": [
+        83,
+        782,
+        467,
+        830
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      97,
+      291,
+      480,
+      816
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      97,
+      291,
+      383,
+      525
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        31.92,
+        43.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.952,
+        0.979
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2812,
+      "spec_aspect": 0.2824,
+      "aspect_error_pct": -0.42,
+      "lean_deg": 0.023,
+      "taper_deg": 0.668,
+      "deskew_deg": 0.186,
+      "tilt_deg": 0.692,
+      "jitter_px": 1.71,
+      "symmetry_iou": 0.9856,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 0.952,
+      "window_vs_spec_max": 0.979,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

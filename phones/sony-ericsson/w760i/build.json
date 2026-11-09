@@ -1,0 +1,348 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.272,
+    "body_px": [
+      33,
+      65,
+      573,
+      1565
+    ],
+    "screen_px": [
+      114,
+      232,
+      491,
+      735
+    ]
+  },
+  "photo": {
+    "url": "https://b.allegroimg.com/original/01eb8e/6215802f48b1ae41823905d2a91b/TELEFON-SONY-ERICSSON-W760i-3-KOLORY (press render set, via Koks; open unit cropped)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      228,
+      560
+    ]
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "added": "2026-11-09",
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.09,
+        "screen_rel_iou": 0.9199,
+        "screen_centre_error_pct": 0.28,
+        "mirror": 0.7398,
+        "body_aspect": 0.3601,
+        "template_body_aspect": 0.3604,
+        "body": [
+          40,
+          69,
+          568,
+          1537
+        ],
+        "screen": [
+          120,
+          216,
+          490,
+          747
+        ],
+        "score": 1.2572,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.29,
+        "screen_rel_iou": 0.9172,
+        "screen_centre_error_pct": 0.28,
+        "mirror": 0.7141,
+        "body_aspect": 0.3594,
+        "template_body_aspect": 0.3604,
+        "body": [
+          37,
+          73,
+          565,
+          1544
+        ],
+        "screen": [
+          116,
+          219,
+          488,
+          752
+        ],
+        "score": 1.2315,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.49,
+        "screen_rel_iou": 0.9178,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6115,
+        "body_aspect": 0.3551,
+        "template_body_aspect": 0.3604,
+        "body": [
+          37,
+          64,
+          570,
+          1567
+        ],
+        "screen": [
+          115,
+          211,
+          490,
+          756
+        ],
+        "score": 1.1395,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.89,
+        "screen_rel_iou": 0.8951,
+        "screen_centre_error_pct": 0.56,
+        "mirror": 0.7273,
+        "body_aspect": 0.3536,
+        "template_body_aspect": 0.3604,
+        "body": [
+          37,
+          39,
+          571,
+          1551
+        ],
+        "screen": [
+          122,
+          233,
+          491,
+          737
+        ],
+        "score": 1.1081,
+        "seed": 3
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "GHI",
+      "box": [
+        108,
+        1246,
+        236,
+        1272
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "JKL",
+      "box": [
+        260,
+        1246,
+        388,
+        1272
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        408,
+        1328,
+        536,
+        1356
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        115,
+        1386,
+        217,
+        1410
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "key row 1",
+      "text": "a single small dark grey letter C printed on the silver panel, nothing else",
+      "box": [
+        401,
+        1040,
+        479,
+        1074
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          236,
+          1236,
+          404,
+          1302
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "area": "text",
+      "text": "JKL",
+      "box": [
+        274,
+        1256,
+        364,
+        1282
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 8,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        409,
+        1328,
+        535,
+        1350
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 9,
+      "area": "inpaint",
+      "note": "the clear-key label came out as a ringed (c) after two image-model tries; removed by OpenCV inpainting, the key stays unlabelled (as on the W550i)",
+      "box": [
+        420,
+        1044,
+        456,
+        1072
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      217,
+      505,
+      749
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      100,
+      217,
+      405,
+      532
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.58,
+        "top": 0.67,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.17,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.26,
+      "window_mm": [
+        33.75,
+        44.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.007,
+        0.992
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3626,
+      "spec_aspect": 0.3604,
+      "aspect_error_pct": 0.62,
+      "lean_deg": 0.047,
+      "taper_deg": 0.037,
+      "deskew_deg": -0.06,
+      "tilt_deg": 0.084,
+      "jitter_px": 0.54,
+      "symmetry_iou": 0.997,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.17,
+      "window_centre_x_pct": 0.26,
+      "window_vs_spec_min": 0.992,
+      "window_vs_spec_max": 1.007,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 11.869,
+    "body_px": [
+      38,
+      65,
+      601,
+      1565
+    ],
+    "screen_px": [
+      103,
+      211,
+      536,
+      789
+    ]
+  },
+  "photo": {
+    "url": "https://www.trustedreviews.com/wp-content/uploads/sites/7/2009/04/10550-w705frontbackopen-1.jpg (press render, via Koks; front cropped, reflection off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      198,
+      436
+    ]
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "added": "2026-11-09",
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.22,
+        "screen_rel_iou": 0.8297,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.8208,
+        "body_aspect": 0.3749,
+        "template_body_aspect": 0.3757,
+        "body": [
+          44,
+          81,
+          599,
+          1563
+        ],
+        "screen": [
+          85,
+          213,
+          559,
+          833
+        ],
+        "score": 1.22,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.27,
+        "screen_rel_iou": 0.8459,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.7208,
+        "body_aspect": 0.3768,
+        "template_body_aspect": 0.3757,
+        "body": [
+          40,
+          70,
+          597,
+          1550
+        ],
+        "screen": [
+          83,
+          204,
+          552,
+          820
+        ],
+        "score": 1.1748,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.15,
+        "screen_rel_iou": 0.854,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.7763,
+        "body_aspect": 0.3801,
+        "template_body_aspect": 0.3757,
+        "body": [
+          47,
+          103,
+          591,
+          1536
+        ],
+        "screen": [
+          91,
+          232,
+          545,
+          828
+        ],
+        "score": 1.1665,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.08,
+        "screen_rel_iou": 0.8307,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.8215,
+        "body_aspect": 0.3679,
+        "template_body_aspect": 0.3757,
+        "body": [
+          44,
+          67,
+          596,
+          1569
+        ],
+        "screen": [
+          87,
+          204,
+          553,
+          839
+        ],
+        "score": 1.1374,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 3
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        63,
+        1207,
+        575,
+        1527
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "G on the clear key opened into C (inner bar covered with the key surface); stray letter a on the # key removed by inpainting (no image model)",
+      "boxes": [
+        [
+          492,
+          1043,
+          498,
+          1051
+        ],
+        [
+          470,
+          1421,
+          484,
+          1438
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      56,
+      150,
+      481,
+      631
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.26,
+      "window_mm": [
+        40.08,
+        52.58
+      ],
+      "edge_strength": {
+        "left": 55.1,
+        "right": 205.9,
+        "top": 142.9,
+        "bottom": 70.6
+      },
+      "window_vs_spec": [
+        1.096,
+        1.078
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3765,
+      "spec_aspect": 0.3755,
+      "aspect_error_pct": 0.27,
+      "lean_deg": 0.024,
+      "taper_deg": 0.024,
+      "deskew_deg": 0.024,
+      "tilt_deg": 0.047,
+      "jitter_px": 0.34,
+      "symmetry_iou": 0.9974,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.26,
+      "window_vs_spec_min": 1.078,
+      "window_vs_spec_max": 1.096,
+      "window_edge_min": 55.1
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  }
+}

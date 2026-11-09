@@ -1,0 +1,298 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 9.998,
+    "body_px": [
+      43,
+      72,
+      532,
+      1720
+    ],
+    "screen_px": [
+      137,
+      188,
+      438,
+      565
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w380.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      129,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.77,
+        "screen_rel_iou": 0.8909,
+        "screen_centre_error_pct": -1.13,
+        "mirror": 0.7526,
+        "body_aspect": 0.2889,
+        "template_body_aspect": 0.2971,
+        "body": [
+          46,
+          46,
+          533,
+          1734
+        ],
+        "screen": [
+          142,
+          166,
+          426,
+          529
+        ],
+        "score": 1.0161,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.96,
+        "screen_rel_iou": 0.9008,
+        "screen_centre_error_pct": -1.61,
+        "mirror": 0.5965,
+        "body_aspect": 0.2884,
+        "template_body_aspect": 0.2971,
+        "body": [
+          49,
+          93,
+          514,
+          1708
+        ],
+        "screen": [
+          134,
+          222,
+          414,
+          580
+        ],
+        "score": 0.8903,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.73,
+        "screen_rel_iou": 0.8932,
+        "screen_centre_error_pct": -1.45,
+        "mirror": 0.7022,
+        "body_aspect": 0.2861,
+        "template_body_aspect": 0.2971,
+        "body": [
+          49,
+          52,
+          530,
+          1736
+        ],
+        "screen": [
+          141,
+          185,
+          424,
+          546
+        ],
+        "score": 0.9124,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.96,
+        "screen_rel_iou": 0.9299,
+        "screen_centre_error_pct": 0.51,
+        "mirror": 0.6392,
+        "body_aspect": 0.2854,
+        "template_body_aspect": 0.2971,
+        "body": [
+          43,
+          29,
+          536,
+          1759
+        ],
+        "screen": [
+          140,
+          143,
+          444,
+          532
+        ],
+        "score": 1.0009,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1199,
+        496,
+        1524
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "WALKMAN",
+      "box": [
+        221,
+        680,
+        477,
+        712
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "WALKMAN",
+      "box": [
+        179,
+        1674,
+        499,
+        1704
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 1",
+      "text": "the Sony WALKMAN logo printed in dark grey on the silver panel: on the left the Walkman symbol (a smooth wavy W made of thick rounded strokes followed by a round dot), then the word WALKMAN in the thin wide Walkman lettering; crisp, sharp edges",
+      "box": [
+        175,
+        672,
+        495,
+        717
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "key row 1",
+      "text": "the Sony WALKMAN logo printed in white on the grey metal bar: on the left the Walkman symbol (a smooth wavy W made of thick rounded strokes followed by a round dot), then the word WALKMAN in bold wide letters; crisp, sharp edges",
+      "box": [
+        172,
+        1667,
+        428,
+        1711
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      136,
+      185,
+      486,
+      627
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      136,
+      185,
+      350,
+      442
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "window_centre_x_pct": 0.53,
+      "window_mm": [
+        29.17,
+        36.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.967,
+        0.978
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2982,
+      "spec_aspect": 0.2971,
+      "aspect_error_pct": 0.35,
+      "lean_deg": 0.048,
+      "taper_deg": 0.478,
+      "deskew_deg": 0.048,
+      "tilt_deg": 0.526,
+      "jitter_px": 1.77,
+      "symmetry_iou": 0.9902,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.53,
+      "window_vs_spec_min": 0.967,
+      "window_vs_spec_max": 0.978,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

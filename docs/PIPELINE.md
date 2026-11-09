@@ -193,6 +193,19 @@ one side are part of the design, so these are not pass/fail.
 - A phone whose screen really sits off the body axis (W850i: 1.5% on the photo, 1.7% on the render)
   needs a maintainer exception for `window_centre_x_pct`, recorded like the aspect exception.
 
+## What the third W batch taught (2026-11-09)
+
+- Small press images (about 140 x 400 px) give soft renders with invented labels; the whole keypad
+  then needs a redraw. A larger press render of the same model is worth asking for (W705, W760i).
+- A blurred logo (the Walkman "W." symbol) is redrawn sharp with the row prompt and a description of
+  the logo (`textfix --row 1 --box ... --text "the Sony WALKMAN logo ..."`); the word prompt only
+  rewrites the letters.
+- A replacement-housing render shows the glass opening, not the display: on the W760i the opening
+  also covers the Walkman print below the LCD, 2 mm lower than the lit screen. Measure the screen on
+  a render with the display lit.
+- When the template's keypad block misses the real keys, a keypad redraw writes a second row of
+  labels (W350i, W980i). Measure the block on the render, fix `layout_mm.keypad`, and redraw.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 40,
+  "count": 46,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -1491,6 +1491,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w380i",
+      "brand": "Sony Ericsson",
+      "model": "W380i",
+      "year": 2007,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 49,
+        "height": 164.9,
+        "depth": 16
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          142,
+          195,
+          338,
+          422
+        ],
+        "mm": [
+          11.83,
+          16.25,
+          28.17,
+          35.17
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w380i/skin.png",
+        "body.png": "phones/sony-ericsson/w380i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w380i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w380i/preview.png",
+        "phone.json": "phones/sony-ericsson/w380i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w580i",
       "brand": "Sony Ericsson",
       "model": "W580i",
@@ -1584,6 +1632,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w610i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w610i/preview.png",
         "phone.json": "phones/sony-ericsson/w610i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w660i",
+      "brand": "Sony Ericsson",
+      "model": "W660i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 102,
+        "depth": 14.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          98,
+          172,
+          394,
+          493
+        ],
+        "mm": [
+          8.17,
+          14.33,
+          32.83,
+          41.08
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w660i/skin.png",
+        "body.png": "phones/sony-ericsson/w660i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w660i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w660i/preview.png",
+        "phone.json": "phones/sony-ericsson/w660i/phone.json"
       }
     },
     {
@@ -1779,6 +1875,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w350i",
+      "brand": "Sony Ericsson",
+      "model": "W350i",
+      "year": 2008,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 43,
+        "height": 142.8,
+        "depth": 11
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          90,
+          125,
+          358,
+          448
+        ],
+        "mm": [
+          7.5,
+          10.42,
+          29.83,
+          37.33
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w350i/skin.png",
+        "body.png": "phones/sony-ericsson/w350i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w350i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w350i/preview.png",
+        "phone.json": "phones/sony-ericsson/w350i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w595",
       "brand": "Sony Ericsson",
       "model": "W595",
@@ -1827,6 +1971,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w760i",
+      "brand": "Sony Ericsson",
+      "model": "W760i",
+      "year": 2008,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 133.2,
+        "depth": 15
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          108,
+          223,
+          390,
+          520
+        ],
+        "mm": [
+          9.0,
+          18.58,
+          32.5,
+          43.33
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w760i/skin.png",
+        "body.png": "phones/sony-ericsson/w760i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w760i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w760i/preview.png",
+        "phone.json": "phones/sony-ericsson/w760i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w890i",
       "brand": "Sony Ericsson",
       "model": "W890i",
@@ -1872,6 +2064,102 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w890i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w890i/preview.png",
         "phone.json": "phones/sony-ericsson/w890i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w980i",
+      "brand": "Sony Ericsson",
+      "model": "W980i",
+      "year": 2008,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 162.9,
+        "depth": 16.9
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          103,
+          306,
+          371,
+          495
+        ],
+        "mm": [
+          8.58,
+          25.5,
+          30.92,
+          41.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w980i/skin.png",
+        "body.png": "phones/sony-ericsson/w980i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w980i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w980i/preview.png",
+        "phone.json": "phones/sony-ericsson/w980i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w705",
+      "brand": "Sony Ericsson",
+      "model": "W705",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47.5,
+        "height": 126.5,
+        "depth": 14.3
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          64,
+          156,
+          464,
+          619
+        ],
+        "mm": [
+          5.33,
+          13.0,
+          38.67,
+          51.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w705/skin.png",
+        "body.png": "phones/sony-ericsson/w705/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w705/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w705/preview.png",
+        "phone.json": "phones/sony-ericsson/w705/phone.json"
       }
     },
     {
