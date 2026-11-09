@@ -7,7 +7,7 @@ Sliders and flips are shown open; keypad flips over a touchscreen (Sony Ericsson
 
 | Type | Phones |
 |---|---|
-| [Candybar](types/candybar.md) | 29 |
-| [Flip / clamshell](types/flip.md) | 8 |
-| [Slider](types/slider.md) | 7 |
+| [Candybar](types/candybar.md) | 32 |
+| [Flip / clamshell](types/flip.md) | 9 |
+| [Slider](types/slider.md) | 9 |
 | [Swivel](types/swivel.md) | 2 |

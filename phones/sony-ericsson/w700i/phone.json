@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w700i",
+  "brand": "Sony Ericsson",
+  "model": "W700i",
+  "year": 2006,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 100,
+    "depth": 20.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 10.8,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 176x220, centred; vertical centre measured on the press render (same chassis as the W800i)"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 66.5,
+      "w": 36,
+      "h": 29.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w700i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w700.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      111,
+      136,
+      353,
+      441
+    ],
+    "mm": [
+      9.25,
+      11.33,
+      29.42,
+      36.75
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        40,
+        94,
+        110,
+        139
+      ]
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      159,
+      205,
+      545,
+      688
+    ]
+  },
+  "photo": {
+    "url": "https://www.newmobile.com/phones/sony/ericsson-w700i (press render w700_front_titanium_gold; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      227,
+      495
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.03,
+        "screen_rel_iou": 0.8627,
+        "screen_centre_error_pct": -0.16,
+        "mirror": 0.6749,
+        "body_aspect": 0.46,
+        "template_body_aspect": 0.4601,
+        "body": [
+          42,
+          60,
+          662,
+          1409
+        ],
+        "screen": [
+          137,
+          190,
+          565,
+          692
+        ],
+        "score": 1.1828,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 2.09,
+        "screen_rel_iou": 0.8339,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.7319,
+        "body_aspect": 0.4697,
+        "template_body_aspect": 0.4601,
+        "body": [
+          40,
+          56,
+          660,
+          1377
+        ],
+        "screen": [
+          135,
+          187,
+          566,
+          692
+        ],
+        "score": 1.0873,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.65,
+        "screen_rel_iou": 0.7931,
+        "screen_centre_error_pct": -0.57,
+        "mirror": 0.6074,
+        "body_aspect": 0.4433,
+        "template_body_aspect": 0.4601,
+        "body": [
+          46,
+          51,
+          659,
+          1435
+        ],
+        "screen": [
+          135,
+          180,
+          563,
+          734
+        ],
+        "score": 0.8572,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.98,
+        "screen_rel_iou": 0.8579,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.7872,
+        "body_aspect": 0.4418,
+        "template_body_aspect": 0.4601,
+        "body": [
+          66,
+          87,
+          642,
+          1392
+        ],
+        "screen": [
+          154,
+          212,
+          556,
+          695
+        ],
+        "score": 1.0351,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 2,
+    "note": "the pass-1 score of seed 1 included the reflection under the phone; measured on the cutouts seed 2 is best (+1.2%)"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "screen_source": {
+    "window": [
+      104,
+      130,
+      471,
+      583
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      104,
+      130,
+      367,
+      453
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.46,
+      "window_mm": [
+        30.58,
+        37.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.071,
+        1.057
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.465,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": 1.09,
+      "lean_deg": 0.038,
+      "taper_deg": 0.001,
+      "deskew_deg": -0.237,
+      "tilt_deg": 0.039,
+      "jitter_px": 1.06,
+      "symmetry_iou": 0.9942,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.46,
+      "window_vs_spec_min": 1.057,
+      "window_vs_spec_max": 1.071,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

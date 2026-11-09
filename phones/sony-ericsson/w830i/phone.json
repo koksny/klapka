@@ -1,0 +1,120 @@
+{
+  "id": "sony-ericsson/w830i",
+  "brand": "Sony Ericsson",
+  "model": "W830i",
+  "year": 2006,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 131.0,
+    "depth": 21
+  },
+  "size_note": "same chassis as the W850i (98 x 47 x 21 mm closed); open height 131 mm as measured for the W850i; the reference photo gives 128.5 mm",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.26,
+      "y": 13.7,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "as on the W850i (same chassis and display)"
+    },
+    "keypad": {
+      "x": 6,
+      "y": 99.5,
+      "w": 35,
+      "h": 25
+    },
+    "seams": [
+      {
+        "y": 97,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_w830-1721.php"
+    ],
+    "geometry_photo": {
+      "url": "https://static.wikitide.net/lpcwikiwiki/c/cb/W850-PreciousBlack-front-slidopen.jpg",
+      "license": "",
+      "author": "",
+      "note": "W850i photo (LPC Wiki, via Koks): the W830i is the same phone without the front camera"
+    }
+  },
+  "size_closed_mm": {
+    "width": 47,
+    "height": 98,
+    "depth": 21
+  },
+  "screen": {
+    "skin_px": [
+      100,
+      169,
+      383,
+      511
+    ],
+    "mm": [
+      8.33,
+      14.08,
+      31.92,
+      42.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        56,
+        114,
+        153
+      ]
+    }
+  }
+}

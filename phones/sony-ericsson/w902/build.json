@@ -1,0 +1,322 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 12.311,
+    "body_px": [
+      34,
+      59,
+      636,
+      1412
+    ],
+    "screen_px": [
+      129,
+      225,
+      541,
+      775
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w902.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.78,
+        "screen_rel_iou": 0.7579,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.538,
+        "body_aspect": 0.4374,
+        "template_body_aspect": 0.4453,
+        "body": [
+          39,
+          59,
+          632,
+          1416
+        ],
+        "screen": [
+          158,
+          265,
+          512,
+          744
+        ],
+        "score": 0.9294,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.93,
+        "screen_rel_iou": 0.8147,
+        "screen_centre_error_pct": 3.1,
+        "mirror": 0.2678,
+        "body_aspect": 0.4323,
+        "template_body_aspect": 0.4453,
+        "body": [
+          44,
+          52,
+          624,
+          1395
+        ],
+        "screen": [
+          149,
+          176,
+          555,
+          737
+        ],
+        "score": 0.4922,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.6,
+        "screen_rel_iou": 0.8323,
+        "screen_centre_error_pct": 3.19,
+        "mirror": 0.2945,
+        "body_aspect": 0.4293,
+        "template_body_aspect": 0.4453,
+        "body": [
+          55,
+          68,
+          619,
+          1383
+        ],
+        "screen": [
+          156,
+          205,
+          554,
+          737
+        ],
+        "score": 0.4812,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.01,
+        "screen_rel_iou": 0.8073,
+        "screen_centre_error_pct": -1.58,
+        "mirror": 0.3475,
+        "body_aspect": 0.423,
+        "template_body_aspect": 0.4453,
+        "body": [
+          33,
+          33,
+          634,
+          1455
+        ],
+        "screen": [
+          140,
+          175,
+          508,
+          755
+        ],
+        "score": 0.5729,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        79,
+        965,
+        591,
+        1301
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        240,
+        103,
+        432,
+        151
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          240,
+          100,
+          432,
+          156
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        240,
+        103,
+        432,
+        151
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          236,
+          96,
+          436,
+          160
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        240,
+        103,
+        432,
+        151
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 7,
+      "area": "patch",
+      "note": "the word fix left the lower edge of the old SONY below Sony Ericsson; rows 138-147 cleared by row interpolation (no image model)",
+      "box": [
+        246,
+        138,
+        426,
+        148
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      72,
+      134,
+      532,
+      746
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      72,
+      134,
+      460,
+      612
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 1.08,
+        "right": 1.08,
+        "top": 1.33,
+        "bottom": 1.42
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.08,
+        "right": 1.08,
+        "top": 1.33,
+        "bottom": 1.42
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        38.33,
+        51.0
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.143,
+        1.141
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4417,
+      "spec_aspect": 0.4455,
+      "aspect_error_pct": -0.84,
+      "lean_deg": 0.002,
+      "taper_deg": 0.186,
+      "deskew_deg": -0.184,
+      "tilt_deg": 0.188,
+      "jitter_px": 1.38,
+      "symmetry_iou": 0.9914,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.141,
+      "window_vs_spec_max": 1.143,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

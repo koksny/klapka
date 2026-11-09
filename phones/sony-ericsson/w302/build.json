@@ -1,0 +1,322 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      138,
+      252,
+      566,
+      787
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w302.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      192,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.11,
+        "screen_rel_iou": 0.8014,
+        "screen_centre_error_pct": 0.89,
+        "mirror": 0.5328,
+        "body_aspect": 0.4596,
+        "template_body_aspect": 0.4601,
+        "body": [
+          40,
+          52,
+          659,
+          1400
+        ],
+        "screen": [
+          165,
+          212,
+          545,
+          813
+        ],
+        "score": 0.9734,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.68,
+        "screen_rel_iou": 0.7897,
+        "screen_centre_error_pct": 0.64,
+        "mirror": 0.4816,
+        "body_aspect": 0.4478,
+        "template_body_aspect": 0.4601,
+        "body": [
+          38,
+          34,
+          663,
+          1431
+        ],
+        "screen": [
+          163,
+          195,
+          546,
+          827
+        ],
+        "score": 0.8325,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -0.5,
+        "screen_rel_iou": 0.7922,
+        "screen_centre_error_pct": 1.08,
+        "mirror": 0.5881,
+        "body_aspect": 0.4578,
+        "template_body_aspect": 0.4601,
+        "body": [
+          25,
+          35,
+          670,
+          1445
+        ],
+        "screen": [
+          158,
+          192,
+          551,
+          824
+        ],
+        "score": 0.953,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.74,
+        "screen_rel_iou": 0.7965,
+        "screen_centre_error_pct": 1.36,
+        "mirror": 0.5604,
+        "body_aspect": 0.4291,
+        "template_body_aspect": 0.4601,
+        "body": [
+          64,
+          55,
+          653,
+          1429
+        ],
+        "screen": [
+          188,
+          215,
+          545,
+          824
+        ],
+        "score": 0.6039,
+        "seed": 2
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1014,
+        624,
+        1371
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 1",
+      "text": "the Sony WALKMAN logo printed in gold on the brushed silver panel: on the left the Walkman symbol (a smooth wavy W made of thick rounded strokes followed by a round dot), then the word WALKMAN in the thin wide Walkman lettering; crisp, sharp edges",
+      "box": [
+        185,
+        1306,
+        505,
+        1366
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "inpaint",
+      "note": "stray letter a on the # key removed by OpenCV inpainting",
+      "box": [
+        494,
+        1230,
+        519,
+        1256
+      ]
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          490,
+          1226,
+          522,
+          1258
+        ]
+      ],
+      "box": [
+        496,
+        1231,
+        516,
+        1247
+      ]
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          490,
+          1226,
+          522,
+          1258
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "rows": [],
+      "boxes": [
+        [
+          490,
+          1226,
+          522,
+          1258
+        ]
+      ],
+      "box": [
+        496,
+        1227,
+        514,
+        1247
+      ],
+      "note": "stray letter a on the # key covered by column interpolation of the key surface (no image model)"
+    }
+  ],
+  "screen_source": {
+    "window": [
+      92,
+      176,
+      492,
+      670
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      92,
+      176,
+      400,
+      494
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        33.33,
+        41.17
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.051,
+        1.038
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4693,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": 2.02,
+      "lean_deg": 0.031,
+      "taper_deg": 0.264,
+      "deskew_deg": -0.067,
+      "tilt_deg": 0.295,
+      "jitter_px": 1.74,
+      "symmetry_iou": 0.9951,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.038,
+      "window_vs_spec_max": 1.051,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

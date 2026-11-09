@@ -1,0 +1,298 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.278,
+    "body_px": [
+      41,
+      72,
+      533,
+      1720
+    ],
+    "screen_px": [
+      133,
+      242,
+      442,
+      629
+    ]
+  },
+  "photo": {
+    "url": "https://www.newmobile.com/phones/sony/ericsson-w710i (press render w710_front_open_performance_graphite; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      158,
+      530
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.8,
+        "screen_rel_iou": 0.8483,
+        "screen_centre_error_pct": -0.44,
+        "mirror": 0.6186,
+        "body_aspect": 0.2727,
+        "template_body_aspect": 0.299,
+        "body": [
+          64,
+          78,
+          511,
+          1720
+        ],
+        "screen": [
+          128,
+          233,
+          444,
+          637
+        ],
+        "score": 0.6742,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.91,
+        "screen_rel_iou": 0.8302,
+        "screen_centre_error_pct": -0.44,
+        "mirror": 0.6343,
+        "body_aspect": 0.2633,
+        "template_body_aspect": 0.299,
+        "body": [
+          70,
+          78,
+          508,
+          1744
+        ],
+        "screen": [
+          132,
+          225,
+          443,
+          642
+        ],
+        "score": 0.5073,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.39,
+        "screen_rel_iou": 0.8109,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.6433,
+        "body_aspect": 0.2619,
+        "template_body_aspect": 0.299,
+        "body": [
+          75,
+          97,
+          491,
+          1688
+        ],
+        "screen": [
+          133,
+          238,
+          431,
+          627
+        ],
+        "score": 0.4791,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.87,
+        "screen_rel_iou": 0.8274,
+        "screen_centre_error_pct": -0.33,
+        "mirror": 0.6593,
+        "body_aspect": 0.2545,
+        "template_body_aspect": 0.299,
+        "body": [
+          65,
+          38,
+          500,
+          1750
+        ],
+        "screen": [
+          126,
+          194,
+          437,
+          612
+        ],
+        "score": 0.3807,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        154,
+        171,
+        410,
+        207
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        125,
+        1444,
+        219,
+        1474
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        122,
+        1434,
+        220,
+        1462
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          108,
+          1424,
+          216,
+          1478
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "key row 4",
+      "text": "a single grey key: a large white * on the left and the small white letters a/A on the right, nothing else",
+      "box": [
+        88,
+        1427,
+        235,
+        1475
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      104,
+      192,
+      474,
+      656
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      102,
+      192,
+      372,
+      464
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.67,
+        "top": 1.08,
+        "bottom": 1.08
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.17,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.67,
+        "top": 0.58,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.88,
+      "window_mm": [
+        31.0,
+        38.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.028,
+        1.026
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2904,
+      "spec_aspect": 0.2993,
+      "aspect_error_pct": -2.96,
+      "lean_deg": 0.003,
+      "taper_deg": 1.395,
+      "deskew_deg": 0.12,
+      "tilt_deg": 1.398,
+      "jitter_px": 9.86,
+      "symmetry_iou": 0.9931,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.17,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.88,
+      "window_vs_spec_min": 1.026,
+      "window_vs_spec_max": 1.028,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

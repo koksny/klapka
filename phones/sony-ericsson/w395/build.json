@@ -1,0 +1,232 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 11.822,
+    "body_px": [
+      42,
+      65,
+      597,
+      1565
+    ],
+    "screen_px": [
+      132,
+      236,
+      506,
+      704
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-w395-1.jpg (official image; perspective corrected, watermark cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      411,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.34,
+        "screen_rel_iou": 0.7589,
+        "screen_centre_error_pct": -0.0,
+        "mirror": 0.5146,
+        "body_aspect": 0.3617,
+        "template_body_aspect": 0.3704,
+        "body": [
+          46,
+          61,
+          584,
+          1550
+        ],
+        "screen": [
+          104,
+          202,
+          525,
+          661
+        ],
+        "score": 0.8988,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.9,
+        "screen_rel_iou": 0.8308,
+        "screen_centre_error_pct": -0.82,
+        "mirror": 0.1117,
+        "body_aspect": 0.3634,
+        "template_body_aspect": 0.3704,
+        "body": [
+          51,
+          56,
+          598,
+          1563
+        ],
+        "screen": [
+          124,
+          203,
+          515,
+          662
+        ],
+        "score": 0.7095,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -0.88,
+        "screen_rel_iou": 0.8221,
+        "screen_centre_error_pct": -1.6,
+        "mirror": 0.1015,
+        "body_aspect": 0.3671,
+        "template_body_aspect": 0.3704,
+        "body": [
+          64,
+          102,
+          595,
+          1550
+        ],
+        "screen": [
+          126,
+          240,
+          515,
+          693
+        ],
+        "score": 0.6686,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -0.99,
+        "screen_rel_iou": 0.8287,
+        "screen_centre_error_pct": -3.16,
+        "mirror": 0.1816,
+        "body_aspect": 0.3667,
+        "template_body_aspect": 0.3704,
+        "body": [
+          57,
+          66,
+          594,
+          1532
+        ],
+        "screen": [
+          116,
+          202,
+          500,
+          675
+        ],
+        "score": 0.5535,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "screen_source": {
+    "window": [
+      95,
+      178,
+      489,
+      686
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      95,
+      178,
+      394,
+      508
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 1.33,
+        "bottom": 1.25
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        32.83,
+        42.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.035,
+        1.067
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3666,
+      "spec_aspect": 0.3701,
+      "aspect_error_pct": -0.94,
+      "lean_deg": 0.022,
+      "taper_deg": 0.216,
+      "deskew_deg": 0.092,
+      "tilt_deg": 0.238,
+      "jitter_px": 1.2,
+      "symmetry_iou": 0.994,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.035,
+      "window_vs_spec_max": 1.067,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

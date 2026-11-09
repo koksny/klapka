@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 46,
+  "count": 52,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -867,6 +867,102 @@
       }
     },
     {
+      "id": "sony-ericsson/w700i",
+      "brand": "Sony Ericsson",
+      "model": "W700i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 20.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          111,
+          136,
+          353,
+          441
+        ],
+        "mm": [
+          9.25,
+          11.33,
+          29.42,
+          36.75
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w700i/skin.png",
+        "body.png": "phones/sony-ericsson/w700i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w700i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w700i/preview.png",
+        "phone.json": "phones/sony-ericsson/w700i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w710i",
+      "brand": "Sony Ericsson",
+      "model": "W710i",
+      "year": 2006,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 160.4,
+        "depth": 24.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          108,
+          199,
+          358,
+          448
+        ],
+        "mm": [
+          9.0,
+          16.58,
+          29.83,
+          37.33
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w710i/skin.png",
+        "body.png": "phones/sony-ericsson/w710i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w710i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w710i/preview.png",
+        "phone.json": "phones/sony-ericsson/w710i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w810i",
       "brand": "Sony Ericsson",
       "model": "W810i",
@@ -912,6 +1008,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w810i/preview.png",
         "phone.json": "phones/sony-ericsson/w810i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w830i",
+      "brand": "Sony Ericsson",
+      "model": "W830i",
+      "year": 2006,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47,
+        "height": 131.0,
+        "depth": 21
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          100,
+          169,
+          383,
+          511
+        ],
+        "mm": [
+          8.33,
+          14.08,
+          31.92,
+          42.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w830i/skin.png",
+        "body.png": "phones/sony-ericsson/w830i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w830i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w830i/preview.png",
+        "phone.json": "phones/sony-ericsson/w830i/phone.json"
       }
     },
     {
@@ -1875,6 +2019,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w302",
+      "brand": "Sony Ericsson",
+      "model": "W302",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 10.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          99,
+          182,
+          386,
+          482
+        ],
+        "mm": [
+          8.25,
+          15.17,
+          32.17,
+          40.17
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w302/skin.png",
+        "body.png": "phones/sony-ericsson/w302/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w302/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w302/preview.png",
+        "phone.json": "phones/sony-ericsson/w302/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w350i",
       "brand": "Sony Ericsson",
       "model": "W350i",
@@ -2067,6 +2259,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w902",
+      "brand": "Sony Ericsson",
+      "model": "W902",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 49,
+        "height": 110,
+        "depth": 11.7
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          85,
+          150,
+          434,
+          579
+        ],
+        "mm": [
+          7.08,
+          12.5,
+          36.17,
+          48.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w902/skin.png",
+        "body.png": "phones/sony-ericsson/w902/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w902/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w902/preview.png",
+        "phone.json": "phones/sony-ericsson/w902/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w980i",
       "brand": "Sony Ericsson",
       "model": "W980i",
@@ -2112,6 +2352,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w980i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w980i/preview.png",
         "phone.json": "phones/sony-ericsson/w980i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w395",
+      "brand": "Sony Ericsson",
+      "model": "W395",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47,
+        "height": 127,
+        "depth": 14.9
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          101,
+          193,
+          382,
+          478
+        ],
+        "mm": [
+          8.42,
+          16.08,
+          31.83,
+          39.83
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w395/skin.png",
+        "body.png": "phones/sony-ericsson/w395/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w395/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w395/preview.png",
+        "phone.json": "phones/sony-ericsson/w395/phone.json"
       }
     },
     {

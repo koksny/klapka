@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w902",
+  "brand": "Sony Ericsson",
+  "model": "W902",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 49,
+    "height": 110,
+    "depth": 11.7
+  },
+  "size_note": "",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.73,
+      "y": 13.5,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "2.2in at 240x320, centred; LCD measured on the press render"
+    },
+    "keypad": {
+      "x": 6,
+      "y": 76,
+      "w": 37,
+      "h": 22.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w902/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w902.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      85,
+      150,
+      434,
+      579
+    ],
+    "mm": [
+      7.08,
+      12.5,
+      36.17,
+      48.25
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        30,
+        87,
+        131,
+        174
+      ]
+    }
+  }
+}
