@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w300i",
+  "brand": "Sony Ericsson",
+  "model": "W300i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 154.2,
+    "depth": 24
+  },
+  "size_note": "open height from the frontal press render via Koks (f00.esfr.pl): h/w 3.281 at the 47 mm width = 154.2 mm (about +-3 mm)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "STN 65k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.22,
+      "y": 13.85,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 128x160, centred; vertical centre (31.7 mm) measured on the open press render"
+    },
+    "keypad": {
+      "x": 5.5,
+      "y": 112.5,
+      "w": 37,
+      "h": 27
+    },
+    "seams": [
+      {
+        "y": 63,
+        "note": "lower edge of the open flip"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w300i/",
+      "https://en.wikipedia.org/wiki/Sony_Ericsson_W300i"
+    ],
+    "geometry_photo": {
+      "url": "https://f00.esfr.pl/foto/0/6523394/archival-sony-ericsson-w300i,6523394_3.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render via Koks (f00.esfr.pl)"
+    }
+  },
+  "size_closed_mm": {
+    "width": 47,
+    "height": 90,
+    "depth": 24
+  },
+  "screen": {
+    "skin_px": [
+      136,
+      186,
+      328,
+      410
+    ],
+    "mm": [
+      11.33,
+      15.5,
+      27.33,
+      34.17
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        54,
+        52,
+        84,
+        105
+      ]
+    }
+  }
+}

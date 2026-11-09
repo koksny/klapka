@@ -1,0 +1,389 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.55,
+    "body_px": [
+      33,
+      65,
+      575,
+      1566
+    ],
+    "screen_px": [
+      111,
+      230,
+      497,
+      745
+    ]
+  },
+  "photo": {
+    "url": "https://5.imimg.com/data5/LN/DO/BC/SELLER-89654178/sony-ericsson-walkman-w595-floral--500x500.jpg (press render, via Koks; front cropped)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      156,
+      375
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.04,
+        "screen_rel_iou": 0.9335,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6456,
+        "body_aspect": 0.3578,
+        "template_body_aspect": 0.3615,
+        "body": [
+          40,
+          80,
+          566,
+          1552
+        ],
+        "screen": [
+          112,
+          239,
+          493,
+          771
+        ],
+        "score": 1.195,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.3,
+        "screen_rel_iou": 0.8889,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.5522,
+        "body_aspect": 0.3532,
+        "template_body_aspect": 0.3615,
+        "body": [
+          49,
+          96,
+          558,
+          1539
+        ],
+        "screen": [
+          113,
+          239,
+          494,
+          769
+        ],
+        "score": 1.0498,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.8,
+        "screen_rel_iou": 0.8722,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.6325,
+        "body_aspect": 0.3514,
+        "template_body_aspect": 0.3615,
+        "body": [
+          40,
+          64,
+          564,
+          1557
+        ],
+        "screen": [
+          105,
+          215,
+          500,
+          770
+        ],
+        "score": 1.0391,
+        "seed": 8
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.72,
+        "screen_rel_iou": 0.8767,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.5927,
+        "body_aspect": 0.3517,
+        "template_body_aspect": 0.3615,
+        "body": [
+          48,
+          87,
+          558,
+          1539
+        ],
+        "screen": [
+          111,
+          236,
+          494,
+          775
+        ],
+        "score": 1.0273,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.18,
+        "screen_rel_iou": 0.8823,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.5347,
+        "body_aspect": 0.3536,
+        "template_body_aspect": 0.3615,
+        "body": [
+          48,
+          76,
+          564,
+          1537
+        ],
+        "screen": [
+          112,
+          236,
+          498,
+          777
+        ],
+        "score": 1.0211,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.41,
+        "screen_rel_iou": 0.9001,
+        "screen_centre_error_pct": -0.29,
+        "mirror": 0.4696,
+        "body_aspect": 0.3492,
+        "template_body_aspect": 0.3615,
+        "body": [
+          45,
+          67,
+          565,
+          1558
+        ],
+        "screen": [
+          110,
+          229,
+          497,
+          773
+        ],
+        "score": 0.9356,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.34,
+        "screen_rel_iou": 0.8844,
+        "screen_centre_error_pct": -0.2,
+        "mirror": 0.5848,
+        "body_aspect": 0.3458,
+        "template_body_aspect": 0.3615,
+        "body": [
+          54,
+          70,
+          551,
+          1509
+        ],
+        "screen": [
+          114,
+          220,
+          489,
+          747
+        ],
+        "score": 0.9398,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.1,
+        "screen_rel_iou": 0.8751,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.5774,
+        "body_aspect": 0.3359,
+        "template_body_aspect": 0.3615,
+        "body": [
+          61,
+          103,
+          547,
+          1552
+        ],
+        "screen": [
+          119,
+          242,
+          488,
+          775
+        ],
+        "score": 0.7987,
+        "seed": 5
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        64,
+        1134,
+        544,
+        1479
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 2
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "Ericsson",
+      "box": [
+        299,
+        180,
+        419,
+        214
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          176,
+          172,
+          432,
+          222
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        176,
+        178,
+        432,
+        218
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          176,
+          172,
+          276,
+          224
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      89,
+      180,
+      404,
+      564
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.67,
+        "bottom": 1.75
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.67,
+        "bottom": 1.75
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        33.67,
+        47.0
+      ],
+      "edge_strength": {
+        "left": 177.8,
+        "right": 215.6,
+        "top": 141.4,
+        "bottom": 213.7
+      },
+      "window_vs_spec": [
+        1.004,
+        1.051
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3618,
+      "spec_aspect": 0.3615,
+      "aspect_error_pct": 0.07,
+      "lean_deg": 0.015,
+      "taper_deg": 0.005,
+      "deskew_deg": -0.016,
+      "tilt_deg": 0.02,
+      "jitter_px": 1.62,
+      "symmetry_iou": 0.9873,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.004,
+      "window_vs_spec_max": 1.051,
+      "window_edge_min": 141.4
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

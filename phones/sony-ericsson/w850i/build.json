@@ -1,0 +1,397 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.461,
+    "body_px": [
+      35,
+      65,
+      573,
+      1565
+    ],
+    "screen_px": [
+      130,
+      222,
+      478,
+      686
+    ]
+  },
+  "photo": {
+    "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/7ff131ce-038e-4e99-8320-23abf5b20d24_large.png (via Koks; operator logo painted out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      400,
+      600
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.31,
+        "screen_rel_iou": 0.9413,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.5585,
+        "body_aspect": 0.3544,
+        "template_body_aspect": 0.3591,
+        "body": [
+          39,
+          79,
+          565,
+          1565
+        ],
+        "screen": [
+          131,
+          240,
+          470,
+          713
+        ],
+        "score": 1.1268,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.9,
+        "screen_rel_iou": 0.8666,
+        "screen_centre_error_pct": -1.92,
+        "mirror": 0.3638,
+        "body_aspect": 0.3523,
+        "template_body_aspect": 0.3591,
+        "body": [
+          46,
+          69,
+          566,
+          1547
+        ],
+        "screen": [
+          113,
+          215,
+          479,
+          700
+        ],
+        "score": 0.7615,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.14,
+        "screen_rel_iou": 0.8874,
+        "screen_centre_error_pct": -1.61,
+        "mirror": 0.4529,
+        "body_aspect": 0.3514,
+        "template_body_aspect": 0.3591,
+        "body": [
+          70,
+          189,
+          536,
+          1517
+        ],
+        "screen": [
+          134,
+          325,
+          457,
+          757
+        ],
+        "score": 0.846,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.3,
+        "screen_rel_iou": 0.8813,
+        "screen_centre_error_pct": -1.94,
+        "mirror": 0.3827,
+        "body_aspect": 0.3508,
+        "template_body_aspect": 0.3591,
+        "body": [
+          50,
+          68,
+          564,
+          1535
+        ],
+        "screen": [
+          119,
+          215,
+          475,
+          696
+        ],
+        "score": 0.7633,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.46,
+        "screen_rel_iou": 0.8699,
+        "screen_centre_error_pct": -1.37,
+        "mirror": 0.4633,
+        "body_aspect": 0.3503,
+        "template_body_aspect": 0.3591,
+        "body": [
+          52,
+          71,
+          561,
+          1526
+        ],
+        "screen": [
+          122,
+          216,
+          477,
+          696
+        ],
+        "score": 0.8414,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.29,
+        "screen_rel_iou": 0.8856,
+        "screen_centre_error_pct": -1.95,
+        "mirror": 0.4001,
+        "body_aspect": 0.3473,
+        "template_body_aspect": 0.3591,
+        "body": [
+          46,
+          75,
+          559,
+          1554
+        ],
+        "screen": [
+          115,
+          223,
+          470,
+          706
+        ],
+        "score": 0.7268,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.22,
+        "screen_rel_iou": 0.8708,
+        "screen_centre_error_pct": -1.58,
+        "mirror": 0.4482,
+        "body_aspect": 0.3439,
+        "template_body_aspect": 0.3591,
+        "body": [
+          62,
+          119,
+          537,
+          1502
+        ],
+        "screen": [
+          125,
+          258,
+          459,
+          710
+        ],
+        "score": 0.7262,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.81,
+        "screen_rel_iou": 0.9027,
+        "screen_centre_error_pct": -1.71,
+        "mirror": 0.429,
+        "body_aspect": 0.3418,
+        "template_body_aspect": 0.3591,
+        "body": [
+          54,
+          76,
+          549,
+          1526
+        ],
+        "screen": [
+          123,
+          222,
+          463,
+          690
+        ],
+        "score": 0.7055,
+        "seed": 4
+      }
+    ],
+    "best_seed": 7,
+    "used_seed": 7,
+    "note": "seed 2 copied the template outline, so its score measured the outline; measured on the phone itself seed 7 is best (-2.3%)"
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s7.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3552,
+      "spec_aspect": 0.3588,
+      "aspect_error_pct": -1.0,
+      "lean_deg": 0.025,
+      "taper_deg": 0.08,
+      "deskew_deg": 0.406,
+      "tilt_deg": 0.105,
+      "jitter_px": 2.06,
+      "symmetry_iou": 0.9906,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 1.68,
+      "window_vs_spec_min": 1.056,
+      "window_vs_spec_max": 1.061,
+      "window_edge_min": 10.3
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1180,
+        528,
+        1516
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "ABC",
+      "box": [
+        280,
+        1216,
+        362,
+        1248
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        144,
+        1428,
+        218,
+        1458
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "W850i",
+      "box": [
+        310,
+        1146,
+        438,
+        1174
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the image model kept a closed O in ABC; the right side of the letter opened by copying the key's background from the right (no image model)",
+      "box": [
+        334,
+        1231,
+        342,
+        1236
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      87,
+      168,
+      388,
+      515
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.58
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.58
+      },
+      "window_centre_x_pct": 1.68,
+      "window_mm": [
+        32.33,
+        42.92
+      ],
+      "edge_strength": {
+        "left": 125.1,
+        "right": 74.7,
+        "top": 10.3,
+        "bottom": 167.0
+      },
+      "window_vs_spec": [
+        1.061,
+        1.056
+      ]
+    }
+  },
+  "added": "2026-11-09",
+  "acceptance_exceptions": {
+    "window_centre_x_pct": {
+      "limit": 2.0,
+      "value": 1.68,
+      "approved_by": "Koks",
+      "date": "2026-11-09",
+      "reason": "the screen really sits about 0.75 mm left of the body axis: 1.5% on the frontal photo, 1.7% on the render; the hole is centred in the screen frame"
+    }
+  }
+}

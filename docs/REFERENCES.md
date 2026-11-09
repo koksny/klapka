@@ -11,6 +11,10 @@ Photos are input only: the image model redraws the phone from them, and the phot
 out of the published repo (`refs/` is not published). **Any photo that shows the phone well can be
 used, whatever its licence** (Koks, 2026-11-08): press shots, shop photos, reviews, video frames.
 Good places to look: Wikimedia Commons, GSMArena picture pages, LPC Wiki (lpcwiki.miraheze.org), shop listings (Ceneo and the like).
+Straight-on press renders, best for both roles: gsm.magazyn.pl (`/pic/b/<brand>-<model>.jpg` and the
+gallery `/pic_gallery/b/<brand>-<model>_NNN.jpg`), newmobile.com phone pages (Sony Ericsson press
+sets: `front_straight`, `front_slided_open`), shop and archive listings (esfr.pl, imimg.com).
+Watch for reflections under press renders: they are not part of the phone.
 Record where it came from in `build.json` (`photo`) anyway, so the phone can be made again.
 
 Pick the appearance photo in this order:

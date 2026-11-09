@@ -389,7 +389,7 @@ def cmd_finish(a):
     ok = {"aspect_error_pct": abs(acc["aspect_error_pct"]) <= lim["aspect_error_pct"], "lean_deg": acc["lean_deg"] <= THRESHOLDS["lean_deg"],
           "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"],
           "visible_border_diff_mm": acc["visible_border_diff_mm"] <= lim["visible_border_diff_mm"],
-          "window_centre_x_pct": acc["window_centre_x_pct"] <= THRESHOLDS["window_centre_x_pct"],
+          "window_centre_x_pct": acc["window_centre_x_pct"] <= lim["window_centre_x_pct"],
           "window_vs_spec_min": acc["window_vs_spec_min"] >= THRESHOLDS["window_vs_spec_min"],
           "window_vs_spec_max": acc["window_vs_spec_max"] <= THRESHOLDS["window_vs_spec_max"],
           "window_edge_min": acc["window_edge_min"] >= THRESHOLDS["window_edge_min"]}

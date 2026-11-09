@@ -178,6 +178,21 @@ one side are part of the design, so these are not pass/fail.
 - Operator logos on an otherwise good photo (W910i "orange") are painted out on a copy of the photo
   before pass 1.
 
+## What the second W batch taught (2026-11-09)
+
+- Straight-on press renders of open sliders, swivels and flips exist on gsm.magazyn.pl and
+  newmobile.com (`docs/REFERENCES.md`); a press render beats any photo held at an angle.
+- Press renders often carry a mirror reflection under the phone: measure the body above it.
+- A dark phone on a dark press render loses its light edges to a dark-pixel threshold (W900i measured
+  171.6 mm, really 166.4 mm). Check the open length on a second render or on the finished render.
+- A render can copy the template's outline around the phone (W850i seed 2). The seed score then
+  measures the outline, not the phone, and a 5% too narrow phone passes. Look at the winner; measure
+  the phone itself when an outline shows.
+- The template is a plain rectangle: a flip whose top half is narrower than the bottom (W300i) scores
+  6-10% "too narrow" on every seed. Judge such a phone against the photo, not the score.
+- A phone whose screen really sits off the body axis (W850i: 1.5% on the photo, 1.7% on the render)
+  needs a maintainer exception for `window_centre_x_pct`, recorded like the aspect exception.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

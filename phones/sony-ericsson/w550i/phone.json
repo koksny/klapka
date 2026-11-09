@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w550i",
+  "brand": "Sony Ericsson",
+  "model": "W550i",
+  "year": 2005,
+  "form": "swivel",
+  "view": "open",
+  "size_mm": {
+    "width": 46.5,
+    "height": 141.2,
+    "depth": 22.5
+  },
+  "size_note": "open height from the frontal press render via Koks (gsm.magazyn.pl): body 108 x 328 px (reflection below excluded) at the 46.5 mm width = 141.2 mm (about +-3 mm)",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.97,
+      "y": 13.35,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 176x220, centred; vertical centre (31.2 mm) measured on the open press render"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 87,
+      "w": 33.5,
+      "h": 28.5
+    },
+    "seams": [
+      {
+        "y": 86,
+        "note": "lower edge of the swivelled top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w550i/",
+      "https://www.gsmarena.com/sony_ericsson_w550-1245.php"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w550.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render via Koks (gsm.magazyn.pl)"
+    }
+  },
+  "size_closed_mm": {
+    "width": 46.5,
+    "height": 93,
+    "depth": 22.5
+  },
+  "screen": {
+    "skin_px": [
+      116,
+      162,
+      348,
+      435
+    ],
+    "mm": [
+      9.67,
+      13.5,
+      29.0,
+      36.25
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        47,
+        50,
+        97,
+        121
+      ]
+    }
+  }
+}

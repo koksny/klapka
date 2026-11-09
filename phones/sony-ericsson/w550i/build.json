@@ -1,0 +1,376 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1696
+    ],
+    "px_per_mm": 11.05,
+    "body_px": [
+      31,
+      68,
+      544,
+      1627
+    ],
+    "screen_px": [
+      130,
+      216,
+      445,
+      610
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w550.jpg (press render, via Koks; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      140,
+      346
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.41,
+        "screen_rel_iou": 0.9585,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.8706,
+        "body_aspect": 0.3281,
+        "template_body_aspect": 0.3295,
+        "body": [
+          34,
+          73,
+          539,
+          1614
+        ],
+        "screen": [
+          131,
+          217,
+          443,
+          597
+        ],
+        "score": 1.3636,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.94,
+        "screen_rel_iou": 0.9695,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.8001,
+        "body_aspect": 0.3231,
+        "template_body_aspect": 0.3295,
+        "body": [
+          35,
+          72,
+          539,
+          1634
+        ],
+        "screen": [
+          130,
+          220,
+          445,
+          610
+        ],
+        "score": 1.2626,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.09,
+        "screen_rel_iou": 0.8963,
+        "screen_centre_error_pct": -0.21,
+        "mirror": 0.7737,
+        "body_aspect": 0.316,
+        "template_body_aspect": 0.3295,
+        "body": [
+          46,
+          108,
+          531,
+          1645
+        ],
+        "screen": [
+          135,
+          244,
+          440,
+          619
+        ],
+        "score": 1.0579,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.88,
+        "screen_rel_iou": 0.8894,
+        "screen_centre_error_pct": -0.11,
+        "mirror": 0.779,
+        "body_aspect": 0.2903,
+        "template_body_aspect": 0.3295,
+        "body": [
+          59,
+          84,
+          515,
+          1657
+        ],
+        "screen": [
+          142,
+          223,
+          431,
+          607
+        ],
+        "score": 0.6739,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1004,
+        496,
+        1368
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        159,
+        158,
+        415,
+        186
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "WALKMAN",
+      "box": [
+        230,
+        624,
+        422,
+        660
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 1",
+      "text": "C",
+      "box": [
+        412,
+        760,
+        478,
+        796
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          428,
+          760,
+          462,
+          795
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "key row 1",
+      "text": "a single white key with one large dark letter C on it (the clear key), no other letters",
+      "box": [
+        408,
+        756,
+        482,
+        798
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          426,
+          756,
+          464,
+          798
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "area": "text",
+      "text": "C",
+      "box": [
+        436,
+        760,
+        465,
+        795
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 9,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          426,
+          756,
+          464,
+          798
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "area": "inpaint",
+      "note": "wrong letter B on the clear key removed by OpenCV inpainting; three image-model tries could not draw a single C there",
+      "box": [
+        436,
+        764,
+        462,
+        794
+      ]
+    },
+    {
+      "n": 11,
+      "area": "patch",
+      "rows": [],
+      "boxes": [
+        [
+          412,
+          740,
+          480,
+          808
+        ]
+      ],
+      "box": [
+        434,
+        762,
+        462,
+        794
+      ],
+      "note": "wrong letter B on the clear key filled by row interpolation from the key's own plastic; three image-model tries could not draw a single C there"
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      104,
+      156,
+      373,
+      447
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.0,
+        "right": 1.08,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.0,
+        "right": 1.08,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        31.08,
+        37.25
+      ],
+      "edge_strength": {
+        "left": 63.9,
+        "right": 106.9,
+        "top": 124.2,
+        "bottom": 164.5
+      },
+      "window_vs_spec": [
+        1.088,
+        1.043
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3294,
+      "spec_aspect": 0.3293,
+      "aspect_error_pct": 0.02,
+      "lean_deg": 0.007,
+      "taper_deg": 0.007,
+      "deskew_deg": -0.007,
+      "tilt_deg": 0.014,
+      "jitter_px": 0.19,
+      "symmetry_iou": 0.9967,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.043,
+      "window_vs_spec_max": 1.088,
+      "window_edge_min": 63.9
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

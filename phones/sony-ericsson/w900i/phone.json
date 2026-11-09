@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w900i",
+  "brand": "Sony Ericsson",
+  "model": "W900i",
+  "year": 2005,
+  "form": "swivel",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 166.4,
+    "depth": 24
+  },
+  "size_note": "open height from the white frontal press render (gsm.magazyn.pl/pic/b/sony-ericsson-w900.jpg): h/w 3.397 at the 49 mm width = 166.4 mm; the render made from the black press render agrees (3.39). The black press render first gave 171.6 mm (its light edges were missed); the template was drawn at that length",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.73,
+      "y": 17.75,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "2.2in at 240x320, centred; vertical centre (40.1 mm) measured on the black press render"
+    },
+    "keypad": {
+      "x": 6,
+      "y": 111.5,
+      "w": 37,
+      "h": 28.5
+    },
+    "seams": [
+      {
+        "y": 106,
+        "note": "lower edge of the swivelled top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w900i/",
+      "https://www.gsmarena.com/sony_ericsson_w900-1325.php"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic_gallery/b/sony-ericsson-w900_015.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl gallery, via Koks), black unit"
+    }
+  },
+  "size_closed_mm": {
+    "width": 49,
+    "height": 109,
+    "depth": 24
+  },
+  "screen": {
+    "skin_px": [
+      104,
+      221,
+      410,
+      546
+    ],
+    "mm": [
+      8.67,
+      18.42,
+      34.17,
+      45.5
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        47,
+        57,
+        97,
+        129
+      ]
+    }
+  }
+}

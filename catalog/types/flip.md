@@ -3,8 +3,9 @@
 
 <a href="../years.md">By year</a> · <a href="../brands.md">By brand</a> · <a href="../types.md">By type</a> · <a href="../all.md">All phones</a>
 
-4 phones, oldest first.
+5 phones, oldest first.
 
 <table>
 <tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/p800/"><img src="../../phones/sony-ericsson/p800/thumb.png" height="160" alt="Sony Ericsson P800"></a><br><b>P800</b><br><sub>Sony Ericsson · 2002</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/p900/"><img src="../../phones/sony-ericsson/p900/thumb.png" height="160" alt="Sony Ericsson P900"></a><br><b>P900</b><br><sub>Sony Ericsson · 2003</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/p910i/"><img src="../../phones/sony-ericsson/p910i/thumb.png" height="160" alt="Sony Ericsson P910i"></a><br><b>P910i</b><br><sub>Sony Ericsson · 2004</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/p990i/"><img src="../../phones/sony-ericsson/p990i/thumb.png" height="160" alt="Sony Ericsson P990i"></a><br><b>P990i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
+<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/w300i/"><img src="../../phones/sony-ericsson/w300i/thumb.png" height="160" alt="Sony Ericsson W300i"></a><br><b>W300i</b><br><sub>Sony Ericsson · 2006</sub></td></tr>
 </table>
