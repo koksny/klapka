@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/t200",
+  "brand": "Sony Ericsson",
+  "model": "T200",
+  "year": 2002,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 105,
+    "depth": 22
+  },
+  "size_note": "size from teltarif (105 x 48 x 22 mm); GSMArena gives 106 x 46 x 20, but the press render's proportions (h/w 2.20) match teltarif; display resolution differs between sources (96x64 / 101x67), the 3:2 aspect is the same",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      101,
+      67
+    ],
+    "diagonal_in": 1.5,
+    "type": "monochrome"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.12,
+      "y": 23.4,
+      "w": 31.75,
+      "h": 21.06,
+      "note": "1.5in at the 3:2 panel aspect, centred; vertical centre (34 mm) measured on the press render"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 66,
+      "w": 37,
+      "h": 30
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t200/",
+      "https://www.gsmarena.com/sony_ericsson_t200-358.php"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t200.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      120,
+      316,
+      372,
+      247
+    ],
+    "mm": [
+      10.0,
+      26.33,
+      31.0,
+      20.58
+    ],
+    "native_px": [
+      101,
+      67
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        146,
+        112,
+        74
+      ]
+    }
+  }
+}

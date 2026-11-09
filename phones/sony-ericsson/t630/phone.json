@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/t630",
+  "brand": "Sony Ericsson",
+  "model": "T630",
+  "year": 2004,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43,
+    "height": 102,
+    "depth": 17
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 65k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.22,
+      "y": 16.8,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 128x160, centred; vertical centre (34 mm) measured on the photo"
+    },
+    "keypad": {
+      "x": 3,
+      "y": 66,
+      "w": 37,
+      "h": 27
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t630/"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:T630_Beax.png",
+      "license": "",
+      "author": "",
+      "note": "photo with a ruler (Commons)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      90,
+      206,
+      370,
+      463
+    ],
+    "mm": [
+      7.5,
+      17.17,
+      30.83,
+      38.58
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        35,
+        106,
+        123,
+        154
+      ]
+    }
+  }
+}

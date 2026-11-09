@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 58,
+  "count": 64,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -51,6 +51,198 @@
       }
     },
     {
+      "id": "sony-ericsson/t100",
+      "brand": "Sony Ericsson",
+      "model": "T100",
+      "year": 2002,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 43.5,
+        "height": 99,
+        "depth": 17.7
+      },
+      "display": {
+        "native_px": [
+          101,
+          67
+        ],
+        "diagonal_in": 1.5,
+        "type": "monochrome, 4 shades"
+      },
+      "screen": {
+        "skin_px": [
+          87,
+          311,
+          368,
+          244
+        ],
+        "mm": [
+          7.25,
+          25.92,
+          30.67,
+          20.33
+        ],
+        "native_px": [
+          101,
+          67
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t100/skin.png",
+        "body.png": "phones/sony-ericsson/t100/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t100/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t100/preview.png",
+        "phone.json": "phones/sony-ericsson/t100/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t200",
+      "brand": "Sony Ericsson",
+      "model": "T200",
+      "year": 2002,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 105,
+        "depth": 22
+      },
+      "display": {
+        "native_px": [
+          101,
+          67
+        ],
+        "diagonal_in": 1.5,
+        "type": "monochrome"
+      },
+      "screen": {
+        "skin_px": [
+          120,
+          316,
+          372,
+          247
+        ],
+        "mm": [
+          10.0,
+          26.33,
+          31.0,
+          20.58
+        ],
+        "native_px": [
+          101,
+          67
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t200/skin.png",
+        "body.png": "phones/sony-ericsson/t200/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t200/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t200/preview.png",
+        "phone.json": "phones/sony-ericsson/t200/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t300",
+      "brand": "Sony Ericsson",
+      "model": "T300",
+      "year": 2002,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 106,
+        "depth": 21
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.7,
+        "type": "STN 256 colours"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          367,
+          387,
+          307
+        ],
+        "mm": [
+          8.83,
+          30.58,
+          32.25,
+          25.58
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t300/skin.png",
+        "body.png": "phones/sony-ericsson/t300/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t300/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t300/preview.png",
+        "phone.json": "phones/sony-ericsson/t300/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t68i",
+      "brand": "Sony Ericsson",
+      "model": "T68i",
+      "year": 2002,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 101,
+        "depth": 19.5
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.6,
+        "type": "STN 256 colours"
+      },
+      "screen": {
+        "skin_px": [
+          104,
+          301,
+          410,
+          325
+        ],
+        "mm": [
+          8.67,
+          25.08,
+          34.17,
+          27.08
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t68i/skin.png",
+        "body.png": "phones/sony-ericsson/t68i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t68i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t68i/preview.png",
+        "phone.json": "phones/sony-ericsson/t68i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/p900",
       "brand": "Sony Ericsson",
       "model": "P900",
@@ -96,6 +288,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/p900/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p900/preview.png",
         "phone.json": "phones/sony-ericsson/p900/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t310",
+      "brand": "Sony Ericsson",
+      "model": "T310",
+      "year": 2003,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 49,
+        "height": 104,
+        "depth": 20
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.7,
+        "type": "STN 256 colours"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          331,
+          391,
+          310
+        ],
+        "mm": [
+          8.83,
+          27.58,
+          32.58,
+          25.83
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t310/skin.png",
+        "body.png": "phones/sony-ericsson/t310/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t310/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t310/preview.png",
+        "phone.json": "phones/sony-ericsson/t310/phone.json"
       }
     },
     {
@@ -288,6 +528,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/p910i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p910i/preview.png",
         "phone.json": "phones/sony-ericsson/p910i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t630",
+      "brand": "Sony Ericsson",
+      "model": "T630",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 43,
+        "height": 102,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 65k"
+      },
+      "screen": {
+        "skin_px": [
+          90,
+          206,
+          370,
+          463
+        ],
+        "mm": [
+          7.5,
+          17.17,
+          30.83,
+          38.58
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t630/skin.png",
+        "body.png": "phones/sony-ericsson/t630/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t630/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t630/preview.png",
+        "phone.json": "phones/sony-ericsson/t630/phone.json"
       }
     },
     {

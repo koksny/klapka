@@ -1,0 +1,446 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.776,
+    "body_px": [
+      45,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      135,
+      428,
+      567,
+      770
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t300.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      171,
+      350
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.85,
+        "screen_rel_iou": 0.8189,
+        "screen_centre_error_pct": 0.68,
+        "mirror": 0.5277,
+        "body_aspect": 0.4398,
+        "template_body_aspect": 0.4527,
+        "body": [
+          62,
+          76,
+          653,
+          1421
+        ],
+        "screen": [
+          185,
+          455,
+          538,
+          704
+        ],
+        "score": 0.8726,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.57,
+        "screen_rel_iou": 0.8376,
+        "screen_centre_error_pct": -2.57,
+        "mirror": 0.6689,
+        "body_aspect": 0.4411,
+        "template_body_aspect": 0.4527,
+        "body": [
+          59,
+          73,
+          642,
+          1396
+        ],
+        "screen": [
+          178,
+          447,
+          493,
+          691
+        ],
+        "score": 0.7866,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.48,
+        "screen_rel_iou": 0.8195,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.5935,
+        "body_aspect": 0.437,
+        "template_body_aspect": 0.4527,
+        "body": [
+          65,
+          72,
+          650,
+          1412
+        ],
+        "screen": [
+          186,
+          452,
+          530,
+          699
+        ],
+        "score": 0.9338,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.03,
+        "screen_rel_iou": 0.8477,
+        "screen_centre_error_pct": 1.72,
+        "mirror": 0.5212,
+        "body_aspect": 0.4299,
+        "template_body_aspect": 0.4527,
+        "body": [
+          72,
+          68,
+          654,
+          1423
+        ],
+        "screen": [
+          214,
+          454,
+          532,
+          703
+        ],
+        "score": 0.685,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        105,
+        962,
+        617,
+        1314
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "YES",
+      "box": [
+        181,
+        869,
+        227,
+        891
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "NO",
+      "box": [
+        494,
+        867,
+        540,
+        889
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 1",
+      "text": "a single small silver pill-shaped key with one dark letter C on it, nothing else",
+      "box": [
+        458,
+        921,
+        596,
+        966
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "wrong text 20 on the left soft key covered by row interpolation of the key surface (no image model)",
+      "box": [
+        180,
+        932,
+        208,
+        954
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "stray letter a on the # key covered by column interpolation (no image model)",
+      "box": [
+        516,
+        1248,
+        530,
+        1264
+      ]
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          178,
+          866,
+          232,
+          894
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "area": "key row 1",
+      "text": "a single silver pill-shaped key: a small blue phone handset on the upper left and the dark capital letters YES, nothing else",
+      "box": [
+        132,
+        836,
+        276,
+        899
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 9,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          140,
+          834,
+          268,
+          902
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "area": "text",
+      "text": "YES",
+      "box": [
+        181,
+        869,
+        227,
+        891
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 11,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          140,
+          834,
+          268,
+          902
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "area": "text",
+      "text": "YES",
+      "box": [
+        181,
+        869,
+        227,
+        891
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 13,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          140,
+          834,
+          268,
+          902
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "area": "patch",
+      "note": "YES key: the model kept ARS; the letters were cleared, YES was written by the word prompt on the clean key, and only its letter shapes were kept, in the key's dark ink",
+      "box": [
+        178,
+        866,
+        232,
+        894
+      ]
+    },
+    {
+      "n": 15,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          140,
+          834,
+          268,
+          902
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          140,
+          834,
+          268,
+          902
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "area": "inpaint",
+      "note": "the clear key came out as a small c inside a ring; the glyph area cleared by inpainting and a plain C lettered by hand (Segoe UI Bold, dark grey; no image model)",
+      "box": [
+        518,
+        927,
+        540,
+        954
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      357,
+      499,
+      684
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      100,
+      357,
+      399,
+      327
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "window_centre_x_pct": 0.72,
+      "window_mm": [
+        33.25,
+        27.25
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.982,
+        1.016
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4438,
+      "spec_aspect": 0.4528,
+      "aspect_error_pct": -1.99,
+      "lean_deg": 0.006,
+      "taper_deg": 0.025,
+      "deskew_deg": 0.288,
+      "tilt_deg": 0.031,
+      "jitter_px": 2.22,
+      "symmetry_iou": 0.9814,
+      "screen_aspect_error_pct": 0.15,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.72,
+      "window_vs_spec_min": 0.982,
+      "window_vs_spec_max": 1.016,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

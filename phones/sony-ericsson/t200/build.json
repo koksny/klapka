@@ -1,0 +1,298 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.054,
+    "body_px": [
+      36,
+      60,
+      635,
+      1443
+    ],
+    "screen_px": [
+      129,
+      365,
+      542,
+      639
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t200.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      175,
+      350
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.66,
+        "screen_rel_iou": 0.9078,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6697,
+        "body_aspect": 0.4407,
+        "template_body_aspect": 0.4335,
+        "body": [
+          72,
+          130,
+          599,
+          1327
+        ],
+        "screen": [
+          153,
+          406,
+          518,
+          622
+        ],
+        "score": 1.1595,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.93,
+        "screen_rel_iou": 0.8847,
+        "screen_centre_error_pct": -0.26,
+        "mirror": 0.5908,
+        "body_aspect": 0.4419,
+        "template_body_aspect": 0.4335,
+        "body": [
+          50,
+          89,
+          627,
+          1396
+        ],
+        "screen": [
+          134,
+          393,
+          540,
+          647
+        ],
+        "score": 1.0576,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.04,
+        "screen_rel_iou": 0.8997,
+        "screen_centre_error_pct": -0.37,
+        "mirror": 0.5652,
+        "body_aspect": 0.4247,
+        "template_body_aspect": 0.4335,
+        "body": [
+          65,
+          122,
+          608,
+          1402
+        ],
+        "screen": [
+          147,
+          421,
+          522,
+          665
+        ],
+        "score": 1.0433,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.07,
+        "screen_rel_iou": 0.9207,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.5984,
+        "body_aspect": 0.4202,
+        "template_body_aspect": 0.4335,
+        "body": [
+          64,
+          109,
+          608,
+          1405
+        ],
+        "screen": [
+          147,
+          409,
+          523,
+          657
+        ],
+        "score": 1.0479,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        70,
+        896,
+        614,
+        1338
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "YES",
+      "box": [
+        204,
+        744,
+        288,
+        768
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        209,
+        292,
+        465,
+        328
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          208,
+          288,
+          468,
+          330
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "key row 1",
+      "text": "the brand name Sony Ericsson moulded into the light blue plastic, in the same grey letters, spelled exactly S-o-n-y E-r-i-c-s-s-o-n",
+      "box": [
+        178,
+        282,
+        498,
+        337
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    }
+  ],
+  "screen_source": {
+    "window": [
+      112,
+      310,
+      501,
+      569
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      112,
+      310,
+      389,
+      259
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.61,
+      "window_mm": [
+        32.42,
+        21.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.021,
+        1.025
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4616,
+      "spec_aspect": 0.4571,
+      "aspect_error_pct": 0.98,
+      "lean_deg": 0.011,
+      "taper_deg": 1.498,
+      "deskew_deg": 0.142,
+      "tilt_deg": 1.509,
+      "jitter_px": 7.67,
+      "symmetry_iou": 0.9708,
+      "screen_aspect_error_pct": 0.09,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.61,
+      "window_vs_spec_min": 1.021,
+      "window_vs_spec_max": 1.025,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

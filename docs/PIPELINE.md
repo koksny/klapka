@@ -222,6 +222,20 @@ one side are part of the design, so these are not pass/fail.
   transparent or matte-coloured pixels are refilled; the rims of the affected phones were rebuilt
   with the fixed code, their screen holes untouched.
 
+## What the first T batch taught (2026-11-09)
+
+- Spec sheets of 2002-2003 phones disagree (T200: 106 x 46 mm on GSMArena, 105 x 48 mm on teltarif).
+  The press render's proportions decide which one to take.
+- A photo of a worn unit with an operator logo drew the wrong brand style (T68i: serif "SONY
+  ERICSSON" from a later cover, 7% too narrow). A press render of the original gave the right
+  logo and the spec width; when a skin looks off, look for a press render first (Koks).
+- A small panel (101 x 80, 1.6-1.7 in) sits in a deep black frame; measure the window to the
+  frame's outer edge, or the screen looks too small for its diagonal. (First measured too short
+  on T300, which looked like non-square pixels; it was not.)
+- Several keys came out with the same wrong glyph after every word fix (T68i PORS, T300 ARS, a ringed
+  C). A letter edit by hand (a Q tail, a C lettered in the key's ink) is cleaner than more
+  seeds; every such edit is recorded in `build.json` `text_fixes`.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

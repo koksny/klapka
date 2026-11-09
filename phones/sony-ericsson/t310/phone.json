@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/t310",
+  "brand": "Sony Ericsson",
+  "model": "T310",
+  "year": 2003,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 49,
+    "height": 104,
+    "depth": 20
+  },
+  "size_note": "",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.7,
+    "type": "STN 256 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.57,
+      "y": 25.9,
+      "w": 33.85,
+      "h": 26.81,
+      "note": "1.7in at 101x80, centred in the display window (measured on the render)"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 70,
+      "w": 39,
+      "h": 26
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t310/"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:T310-se.jpg",
+      "license": "",
+      "author": "",
+      "note": "photo (Commons)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      106,
+      331,
+      391,
+      310
+    ],
+    "mm": [
+      8.83,
+      27.58,
+      32.58,
+      25.83
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        37,
+        152,
+        119,
+        94
+      ]
+    }
+  }
+}

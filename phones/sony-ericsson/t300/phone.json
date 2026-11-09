@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/t300",
+  "brand": "Sony Ericsson",
+  "model": "T300",
+  "year": 2002,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 106,
+    "depth": 21
+  },
+  "size_note": "",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.7,
+    "type": "STN 256 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.07,
+      "y": 28.9,
+      "w": 33.85,
+      "h": 26.81,
+      "note": "1.7in at 101x80, centred in the display window (measured on the render)"
+    },
+    "keypad": {
+      "x": 7.5,
+      "y": 73,
+      "w": 34.5,
+      "h": 23,
+      "note": "the four rows of number keys, measured on the render (seed 4); the soft keys above are not part of it"
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t300/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t300.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      106,
+      367,
+      387,
+      307
+    ],
+    "mm": [
+      8.83,
+      30.58,
+      32.25,
+      25.58
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        38,
+        157,
+        120,
+        95
+      ]
+    }
+  }
+}

@@ -10,7 +10,7 @@ The phones we grew up with, as clean skins with a see-through screen.<br>
 Free, measured to scale, ready for your watch face, wallpaper or emulator.
 
 <!-- COUNT:START -->
-**58 phones** from 1 brand, 2002–2010
+**64 phones** from 1 brand, 2002–2010
 <!-- COUNT:END -->
 
 <p><a href="#browse">Browse</a> · <a href="#get-a-skin-no-git-needed">Download</a> · <a href="https://github.com/koksny/klapka/issues/new?template=request-a-phone.yml">Request a phone</a> · <a href="AGENTS.md">For AI agents</a></p>

@@ -1,0 +1,259 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 13.854,
+    "body_px": [
+      38,
+      61,
+      633,
+      1473
+    ],
+    "screen_px": [
+      138,
+      294,
+      533,
+      788
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:T630_Beax.png (ruler cropped off)",
+    "license": "see Commons page",
+    "author": "",
+    "size_used": [
+      315,
+      663
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.89,
+        "screen_rel_iou": 0.7775,
+        "screen_centre_error_pct": 0.2,
+        "mirror": 0.5143,
+        "body_aspect": 0.4256,
+        "template_body_aspect": 0.4218,
+        "body": [
+          87,
+          137,
+          592,
+          1325
+        ],
+        "screen": [
+          151,
+          308,
+          530,
+          781
+        ],
+        "score": 0.9702,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.6,
+        "screen_rel_iou": 0.7878,
+        "screen_centre_error_pct": 0.19,
+        "mirror": 0.5505,
+        "body_aspect": 0.415,
+        "template_body_aspect": 0.4218,
+        "body": [
+          85,
+          110,
+          614,
+          1386
+        ],
+        "screen": [
+          149,
+          286,
+          552,
+          780
+        ],
+        "score": 0.964,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 0.25,
+        "screen_rel_iou": 0.7837,
+        "screen_centre_error_pct": 1.28,
+        "mirror": 0.4897,
+        "body_aspect": 0.4228,
+        "template_body_aspect": 0.4218,
+        "body": [
+          66,
+          87,
+          613,
+          1382
+        ],
+        "screen": [
+          143,
+          268,
+          550,
+          784
+        ],
+        "score": 0.8885,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.34,
+        "screen_rel_iou": 0.8704,
+        "screen_centre_error_pct": -1.8,
+        "mirror": 0.5555,
+        "body_aspect": 0.4077,
+        "template_body_aspect": 0.4218,
+        "body": [
+          89,
+          115,
+          616,
+          1409
+        ],
+        "screen": [
+          155,
+          301,
+          531,
+          785
+        ],
+        "score": 0.8014,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        186,
+        244,
+        506,
+        284
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        188,
+        1186,
+        239,
+        1206
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      80,
+      194,
+      469,
+      681
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      80,
+      194,
+      389,
+      487
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.83,
+        "right": 0.75,
+        "top": 1.0,
+        "bottom": 1.0
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.83,
+        "right": 0.75,
+        "top": 1.0,
+        "bottom": 1.0
+      },
+      "window_centre_x_pct": 0.1,
+      "window_mm": [
+        32.42,
+        40.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.135,
+        1.137
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4287,
+      "spec_aspect": 0.4216,
+      "aspect_error_pct": 1.69,
+      "lean_deg": 0.006,
+      "taper_deg": 0.47,
+      "deskew_deg": -0.23,
+      "tilt_deg": 0.476,
+      "jitter_px": 0.77,
+      "symmetry_iou": 0.9963,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.1,
+      "window_vs_spec_min": 1.135,
+      "window_vs_spec_max": 1.137,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

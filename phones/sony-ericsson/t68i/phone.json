@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/t68i",
+  "brand": "Sony Ericsson",
+  "model": "T68i",
+  "year": 2002,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 101,
+    "depth": 19.5
+  },
+  "size_note": "the straight press render (komputerswiat.pl, via Koks) has h/w 2.117, matching 101 x 48 mm",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.6,
+    "type": "STN 256 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.07,
+      "y": 25.4,
+      "w": 31.86,
+      "h": 25.23,
+      "note": "1.6in at 101x80, centred; vertical centre (38 mm) of the LCD frame measured on the press render"
+    },
+    "keypad": {
+      "x": 2,
+      "y": 67,
+      "w": 44,
+      "h": 25.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_t68i-325.php",
+      "https://www.phonearena.com/phones/Sony-Ericsson-t68i_id131"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.komputerswiat.pl/1/dV9k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy85OGY4MTBmOGExNzU5ZTk1YzgxNzFjZTllNjRjODNhMi5qcGeRkwXNAtDNAeDeAAKhMAehMQQ",
+      "license": "",
+      "author": "",
+      "note": "press render, via Koks"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      104,
+      301,
+      410,
+      325
+    ],
+    "mm": [
+      8.67,
+      25.08,
+      34.17,
+      27.08
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        36,
+        151,
+        122,
+        96
+      ]
+    }
+  }
+}

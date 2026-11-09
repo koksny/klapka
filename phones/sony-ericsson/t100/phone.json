@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/t100",
+  "brand": "Sony Ericsson",
+  "model": "T100",
+  "year": 2002,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43.5,
+    "height": 99,
+    "depth": 17.7
+  },
+  "size_note": "display resolution differs between sources (96x64 / 101x67); the 3:2 aspect is the same",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      101,
+      67
+    ],
+    "diagonal_in": 1.5,
+    "type": "monochrome, 4 shades"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.88,
+      "y": 25.4,
+      "w": 31.75,
+      "h": 21.06,
+      "note": "1.5in at the 3:2 panel aspect, centred; vertical centre (36 mm) measured on the frontal photo"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 64,
+      "w": 36,
+      "h": 30
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_t100-349.php"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_T100.jpg",
+      "license": "",
+      "author": "",
+      "note": "photo (Commons)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      87,
+      311,
+      368,
+      244
+    ],
+    "mm": [
+      7.25,
+      25.92,
+      30.67,
+      20.33
+    ],
+    "native_px": [
+      101,
+      67
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        34,
+        146,
+        123,
+        82
+      ]
+    }
+  }
+}

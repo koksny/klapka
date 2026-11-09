@@ -1,0 +1,259 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1440
+    ],
+    "px_per_mm": 12.738,
+    "body_px": [
+      40,
+      58,
+      663,
+      1382
+    ],
+    "screen_px": [
+      136,
+      388,
+      567,
+      729
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:T310-se.jpg",
+    "license": "see Commons page",
+    "author": "",
+    "size_used": [
+      519,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.16,
+        "screen_rel_iou": 0.7842,
+        "screen_centre_error_pct": -0.47,
+        "mirror": 0.2566,
+        "body_aspect": 0.4561,
+        "template_body_aspect": 0.4709,
+        "body": [
+          86,
+          144,
+          604,
+          1281
+        ],
+        "screen": [
+          176,
+          446,
+          510,
+          679
+        ],
+        "score": 0.708,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.46,
+        "screen_rel_iou": 0.8359,
+        "screen_centre_error_pct": -0.26,
+        "mirror": 0.443,
+        "body_aspect": 0.4452,
+        "template_body_aspect": 0.4709,
+        "body": [
+          73,
+          87,
+          629,
+          1337
+        ],
+        "screen": [
+          172,
+          411,
+          528,
+          658
+        ],
+        "score": 0.7586,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.29,
+        "screen_rel_iou": 0.824,
+        "screen_centre_error_pct": -0.27,
+        "mirror": 0.5209,
+        "body_aspect": 0.4413,
+        "template_body_aspect": 0.4709,
+        "body": [
+          86,
+          95,
+          619,
+          1304
+        ],
+        "screen": [
+          182,
+          397,
+          521,
+          673
+        ],
+        "score": 0.7432,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": false,
+        "aspect_error_pct": 3.81,
+        "screen_rel_iou": 0.8177,
+        "screen_centre_error_pct": -1.29,
+        "mirror": 0.4355,
+        "body_aspect": 0.4889,
+        "template_body_aspect": 0.4709,
+        "body": [
+          0,
+          0,
+          703,
+          1439
+        ],
+        "screen": [
+          154,
+          383,
+          532,
+          684
+        ],
+        "score": -9.2838,
+        "seed": 2
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        432,
+        1067,
+        536,
+        1087
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 3",
+      "text": "a single gold oval key: a large dark 9 on the left and the dark capital letters WXYZ next to it, nothing else",
+      "box": [
+        398,
+        1048,
+        557,
+        1105
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      325,
+      503,
+      647
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      100,
+      325,
+      403,
+      322
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        33.58,
+        26.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.992,
+        1.001
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4614,
+      "spec_aspect": 0.4712,
+      "aspect_error_pct": -2.07,
+      "lean_deg": 0.019,
+      "taper_deg": 0.907,
+      "deskew_deg": -0.579,
+      "tilt_deg": 0.926,
+      "jitter_px": 1.56,
+      "symmetry_iou": 0.9814,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.992,
+      "window_vs_spec_max": 1.001,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}
