@@ -216,6 +216,11 @@ one side are part of the design, so these are not pass/fail.
   the old one (W960i, W100, W715).
 - Two models with the same chassis but a different colour scheme get their own skins (W705 silver,
   W715 black); a cosmetic twin with the same look is described on one skin (Koks).
+- `clean_alpha` used to recolour every interior pixel below alpha 250 from its nearest opaque
+  neighbour (meant for the matte showing through, P1i). Chrome side rims sit at alpha 210-250, so
+  they came out blotchy (W715, and milder on about 30 phones; Koks spotted it). Now only nearly
+  transparent or matte-coloured pixels are refilled; the rims of the affected phones were rebuilt
+  with the fixed code, their screen holes untouched.
 
 ## Open items
 

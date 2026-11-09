@@ -52,9 +52,13 @@ rep["components_ge128"] = int(n)
 A[~ndi.binary_dilation(body, iterations=a.rim + 1)] = 0              # stray islands / far haze
 # pixels the model left (semi-)transparent inside the body carry the matte colour under them
 # (often magenta/purple): give them the colour of the nearest truly opaque pixel before they go solid
+# Only pixels that are mostly transparent or carry the matte's magenta are refilled: a nearly opaque
+# pixel (a chrome side rim at alpha 210-250, W715) keeps its own colour, or the rim turns blotchy.
 was_opaque = A >= 250
 _, (jy, jx) = ndi.distance_transform_edt(~was_opaque, return_indices=True)
-fill = ndi.binary_erosion(body, iterations=a.rim) & ~was_opaque
+r_, g_, b_ = im[..., 0], im[..., 1], im[..., 2]
+matte = (r_ - g_ > 60) & (b_ - g_ > 60)
+fill = ndi.binary_erosion(body, iterations=a.rim) & ~was_opaque & ((A < 128) | matte)
 im[..., :3][fill] = im[..., :3][jy[fill], jx[fill]]
 rep["interior_refilled_px"] = int(fill.sum())
 A[ndi.binary_erosion(body, iterations=a.rim)] = 255                   # solid interior
