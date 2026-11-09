@@ -3,8 +3,8 @@
 
 <a href="../years.md">By year</a> · <a href="../brands.md">By brand</a> · <a href="../types.md">By type</a> · <a href="../all.md">All phones</a>
 
-1 phone, oldest first.
+3 phones, oldest first.
 
 <table>
-<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/w995/"><img src="../../phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>Sony Ericsson · 2009</sub></td></tr>
+<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/w580i/"><img src="../../phones/sony-ericsson/w580i/thumb.png" height="160" alt="Sony Ericsson W580i"></a><br><b>W580i</b><br><sub>Sony Ericsson · 2007</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w910i/"><img src="../../phones/sony-ericsson/w910i/thumb.png" height="160" alt="Sony Ericsson W910i"></a><br><b>W910i</b><br><sub>Sony Ericsson · 2007</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w995/"><img src="../../phones/sony-ericsson/w995/thumb.png" height="160" alt="Sony Ericsson W995"></a><br><b>W995</b><br><sub>Sony Ericsson · 2009</sub></td></tr>
 </table>

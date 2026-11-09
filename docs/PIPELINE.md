@@ -21,8 +21,9 @@ but they stay experiments until he approves them.
 
 ## Rules
 
-1. **Sliders and flips are always shown open** (keypad slid out, clamshell unfolded):
-   `view: "open"`, `size_mm` is the open size, `layout_mm.seams` marks where the parts meet.
+1. **Sliders, flips and swivels are always shown open** (keypad slid out, clamshell unfolded, swivel
+   turned out; swivels added by Koks, 2026-11-09): `view: "open"`, `size_mm` is the open size,
+   `layout_mm.seams` marks where the parts meet.
    **Exception (Koks, 2026-11-08): phones whose keypad sits on a flip that closes over the
    touchscreen** (Sony Ericsson P800, P900, P910i, P990i) are shown **closed**, because that is how
    the keypad was seen: `view: "closed"`, `size_mm` is the closed size, the screen is the part of the
@@ -160,6 +161,22 @@ one side are part of the design, so these are not pass/fail.
   times). With most rows wrong, `--keypad` got every label right at the first seed on K220i, K330 and
   K630i; the few leftovers then took one word fix each.
 - A word box that cuts a glyph erases the part inside it (K200i `*`, K630i `5`); `restore` puts it back.
+
+## What the first W batch taught (2026-11-09)
+
+- On phones with one glass panel over the display and the face (W880i, W890i, W910i) the brand,
+  or the Walkman logo, is printed on that glass. The automatic window takes the whole panel and would
+  paint the print black: the window is the LCD rectangle inside the panel, read off a profile.
+- A cutout photo can still carry perspective (W580i: top narrower than the bottom). Every render came
+  out 3–7% short. Rectifying the photo fixed the size, but the phone still looked crooked (Koks);
+  a straight-on press render of the same model fixed it. A press render beats a corrected photo.
+- A seed's keypad redraw can leave the same wrong letters; another seed of the keypad redraw (`textfix
+  --keypad --seed 2`, after `pass2 --reuse`) got every label right on the W200i.
+- Icons the model keeps redrawing wrong (W200i `#`) and specks copied from a photo (W610i) are
+  removed by inpainting or neighbour interpolation, recorded in `build.json` `text_fixes` as
+  `inpaint`; no image model is involved. A missing icon is better than a wrong one.
+- Operator logos on an otherwise good photo (W910i "orange") are painted out on a copy of the photo
+  before pass 1.
 
 ## Open items
 

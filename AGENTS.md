@@ -12,7 +12,8 @@ step by step.
 
 1. **Follow the standard.** Do not change it in a pull request that adds or fixes phones; propose
    changes in an issue first.
-2. **Sliders and flips are shown open** (keypad slid out, clamshell unfolded). Exception: a keypad
+2. **Sliders, flips and swivels are shown open** (keypad slid out, clamshell unfolded, swivel turned
+   out). Exception: a keypad
    flip that closes over a touchscreen (Sony Ericsson P800, P900, P910i, P990i) is shown closed;
    see [docs/PIPELINE.md](docs/PIPELINE.md#rules).
 3. **Photos:** prefer photos of original, unmodified phones (no operator stickers, no aftermarket
@@ -174,6 +175,10 @@ off a luminance profile across each side (where the bezel ends and the glass or 
 begins) and add `--no-refine` to use them exactly. A bright frame line (bezel highlight) belongs
 outside the window on all four sides or on none. Where the render's screen content reaches the window
 edge, give the window 1–2 px beyond it: the window has rounded corners and would leave a light speck.
+
+When the brand or a logo is printed on the glass around the display (one glass panel over the
+face, e.g. W880i, W890i, W910i), the window is the LCD rectangle inside the panel, never the whole
+panel: a window over the print paints it black.
 
 `finish` also measures the **visible border**: on the finished skin, the dark band from each hole edge
 out to the bezel. Opposite sides may differ by at most 0.3 mm; when a dark LCD border was left outside

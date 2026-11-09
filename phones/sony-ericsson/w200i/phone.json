@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w200i",
+  "brand": "Sony Ericsson",
+  "model": "W200i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 101,
+    "depth": 18
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "CSTN 65k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.72,
+      "y": 15.3,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 128x160, centred; top edge measured on SEW200iFrontb.jpg"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 70,
+      "w": 35.5,
+      "h": 23
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w200i/",
+      "https://www.91mobiles.com/sony-ericsson-w200i-price-in-india?ty=specs"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:SEW200iFrontb.jpg",
+      "license": "CC BY 2.5",
+      "author": "Kpjas"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      109,
+      204,
+      335,
+      419
+    ],
+    "mm": [
+      9.08,
+      17.0,
+      27.92,
+      34.92
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        107,
+        110,
+        138
+      ]
+    }
+  }
+}

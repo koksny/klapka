@@ -19,7 +19,7 @@ Pick the appearance photo in this order:
    "QuickShare"), no operator stickers or logos, no aftermarket covers, no plugs, caps or straps
    sticking out, no protective film. A sharper photo of a modified unit loses to a softer photo of an
    original one.
-2. **Sliders and flips photographed open** (keypad flips over a touchscreen: closed), the way the skin
+2. **Sliders, flips and swivels photographed open** (keypad flips over a touchscreen: closed), the way the skin
    shows them.
 3. **Whole front visible**, labels and logos large and readable (the text pass fixes what is not,
    but readable text means fewer fixes).

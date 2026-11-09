@@ -1,0 +1,246 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.022,
+    "body_px": [
+      49,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      153,
+      313,
+      549,
+      841
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W890i_Vorderseite.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Strubbl",
+    "size_used": [
+      519,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.22,
+        "screen_rel_iou": 0.915,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.8305,
+        "body_aspect": 0.4466,
+        "template_body_aspect": 0.4476,
+        "body": [
+          48,
+          60,
+          649,
+          1407
+        ],
+        "screen": [
+          142,
+          302,
+          556,
+          848
+        ],
+        "score": 1.3028,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.95,
+        "screen_rel_iou": 0.8411,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.7784,
+        "body_aspect": 0.4433,
+        "template_body_aspect": 0.4476,
+        "body": [
+          51,
+          58,
+          652,
+          1415
+        ],
+        "screen": [
+          139,
+          279,
+          564,
+          862
+        ],
+        "score": 1.1744,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.2,
+        "screen_rel_iou": 0.8933,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.6849,
+        "body_aspect": 0.4422,
+        "template_body_aspect": 0.4476,
+        "body": [
+          56,
+          65,
+          648,
+          1405
+        ],
+        "screen": [
+          143,
+          303,
+          557,
+          851
+        ],
+        "score": 1.1505,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.49,
+        "screen_rel_iou": 0.8843,
+        "screen_centre_error_pct": 0.34,
+        "mirror": 0.7674,
+        "body_aspect": 0.4364,
+        "template_body_aspect": 0.4476,
+        "body": [
+          64,
+          61,
+          643,
+          1389
+        ],
+        "screen": [
+          154,
+          336,
+          556,
+          837
+        ],
+        "score": 1.1094,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        169,
+        1218,
+        275,
+        1256
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      105,
+      195,
+      488,
+      707
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      105,
+      195,
+      383,
+      512
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        31.92,
+        42.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.047,
+        1.05
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4563,
+      "spec_aspect": 0.4471,
+      "aspect_error_pct": 2.05,
+      "lean_deg": 0.047,
+      "taper_deg": 0.205,
+      "deskew_deg": 0.047,
+      "tilt_deg": 0.252,
+      "jitter_px": 2.79,
+      "symmetry_iou": 0.9949,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.047,
+      "window_vs_spec_max": 1.05,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

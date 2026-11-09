@@ -1,0 +1,268 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.7,
+    "body_px": [
+      35,
+      60,
+      637,
+      1443
+    ],
+    "screen_px": [
+      141,
+      270,
+      531,
+      758
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W200i_Rythm_Black_(1).jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "",
+    "size_used": [
+      727,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.14,
+        "screen_rel_iou": 0.9621,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.5812,
+        "body_aspect": 0.4351,
+        "template_body_aspect": 0.4357,
+        "body": [
+          41,
+          63,
+          633,
+          1425
+        ],
+        "screen": [
+          140,
+          269,
+          531,
+          759
+        ],
+        "score": 1.2202,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.33,
+        "screen_rel_iou": 0.8537,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.5587,
+        "body_aspect": 0.4212,
+        "template_body_aspect": 0.4357,
+        "body": [
+          68,
+          101,
+          604,
+          1375
+        ],
+        "screen": [
+          148,
+          285,
+          522,
+          774
+        ],
+        "score": 0.9478,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.92,
+        "screen_rel_iou": 0.8828,
+        "screen_centre_error_pct": -1.31,
+        "mirror": 0.4708,
+        "body_aspect": 0.4143,
+        "template_body_aspect": 0.4357,
+        "body": [
+          114,
+          224,
+          572,
+          1331
+        ],
+        "screen": [
+          180,
+          382,
+          494,
+          800
+        ],
+        "score": 0.7415,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.69,
+        "screen_rel_iou": 0.9089,
+        "screen_centre_error_pct": -0.21,
+        "mirror": 0.6197,
+        "body_aspect": 0.4109,
+        "template_body_aspect": 0.4357,
+        "body": [
+          101,
+          163,
+          582,
+          1335
+        ],
+        "screen": [
+          174,
+          334,
+          507,
+          749
+        ],
+        "score": 0.9136,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        68,
+        989,
+        612,
+        1363
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 2
+    },
+    {
+      "n": 2,
+      "area": "inpaint",
+      "note": "garbled icons next to # (space / silent) removed by OpenCV inpainting; the image model kept redrawing the same wrong glyphs",
+      "box": [
+        498,
+        1242,
+        568,
+        1274
+      ]
+    },
+    {
+      "n": 3,
+      "area": "inpaint",
+      "note": "small white speck on the left end of the * key filled by row interpolation from its neighbours (no image model)",
+      "box": [
+        83,
+        1251,
+        100,
+        1267
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      103,
+      196,
+      450,
+      631
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      103,
+      196,
+      347,
+      435
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.1,
+      "window_mm": [
+        28.92,
+        36.25
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.012,
+        1.015
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4374,
+      "spec_aspect": 0.4356,
+      "aspect_error_pct": 0.4,
+      "lean_deg": 0.044,
+      "taper_deg": 0.272,
+      "deskew_deg": 0.044,
+      "tilt_deg": 0.316,
+      "jitter_px": 0.66,
+      "symmetry_iou": 0.9975,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.1,
+      "window_vs_spec_min": 1.012,
+      "window_vs_spec_max": 1.015,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

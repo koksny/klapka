@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w890i",
+  "brand": "Sony Ericsson",
+  "model": "W890i",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46.5,
+    "height": 104,
+    "depth": 9.9
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.01,
+      "y": 19.5,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "2.0in at 240x320, centred under the printed Sony Ericsson on the glass; glass panel 4.5-42 x 14.5-62 mm"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 80.5,
+      "w": 33.5,
+      "h": 20.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon (two circles joined by a line); the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w890i/",
+      "https://www.91mobiles.com/sony-ericsson-w890i-price-in-india?ty=specs"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W890i_Vorderseite.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Strubbl"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      111,
+      204,
+      371,
+      495
+    ],
+    "mm": [
+      9.25,
+      17.0,
+      30.92,
+      41.25
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        111,
+        114,
+        152
+      ]
+    }
+  }
+}

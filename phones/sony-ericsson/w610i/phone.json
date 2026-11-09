@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w610i",
+  "brand": "Sony Ericsson",
+  "model": "W610i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 102,
+    "depth": 14
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFD 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.93,
+      "y": 10.0,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "1.9in at 176x220, centred; lit area measured on Sony_Ericsson_W610i_front.JPG"
+    },
+    "keypad": {
+      "x": 7.5,
+      "y": 69.5,
+      "w": 31.5,
+      "h": 22
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w610i/",
+      "https://www.91mobiles.com/sony-ericsson-w610i-price-in-india?ty=specs"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_W610i_front.JPG",
+      "license": "CC BY 3.0",
+      "author": "何家聰"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      96,
+      130,
+      380,
+      475
+    ],
+    "mm": [
+      8.0,
+      10.83,
+      31.67,
+      39.58
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        36,
+        85,
+        122,
+        153
+      ]
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.55,
+    "body_px": [
+      33,
+      65,
+      575,
+      1566
+    ],
+    "screen_px": [
+      128,
+      268,
+      479,
+      736
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.cs.1worldsync.com/24/7e/247e3dae-872f-4e84-896e-a502c8dd030f.jpg (press render, via Koks; cropped to the phone)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      426,
+      1024
+    ]
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "added": "2026-11-09",
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.85,
+        "screen_rel_iou": 0.8882,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.7949,
+        "body_aspect": 0.3548,
+        "template_body_aspect": 0.3615,
+        "body": [
+          37,
+          62,
+          570,
+          1566
+        ],
+        "screen": [
+          118,
+          252,
+          487,
+          746
+        ],
+        "score": 1.1835,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.51,
+        "screen_rel_iou": 0.8589,
+        "screen_centre_error_pct": -0.0,
+        "mirror": 0.7493,
+        "body_aspect": 0.3561,
+        "template_body_aspect": 0.3615,
+        "body": [
+          47,
+          88,
+          563,
+          1539
+        ],
+        "screen": [
+          123,
+          274,
+          486,
+          759
+        ],
+        "score": 1.1577,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.79,
+        "screen_rel_iou": 0.866,
+        "screen_centre_error_pct": 0.28,
+        "mirror": 0.711,
+        "body_aspect": 0.3587,
+        "template_body_aspect": 0.3615,
+        "body": [
+          37,
+          61,
+          574,
+          1560
+        ],
+        "screen": [
+          118,
+          249,
+          495,
+          747
+        ],
+        "score": 1.1543,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.92,
+        "screen_rel_iou": 0.8576,
+        "screen_centre_error_pct": 0.19,
+        "mirror": 0.6156,
+        "body_aspect": 0.3473,
+        "template_body_aspect": 0.3615,
+        "body": [
+          44,
+          62,
+          564,
+          1561
+        ],
+        "screen": [
+          122,
+          247,
+          487,
+          750
+        ],
+        "score": 0.9504,
+        "seed": 3
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        98,
+        1152,
+        514,
+        1477
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      96,
+      209,
+      479,
+      722
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      96,
+      209,
+      383,
+      513
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.27,
+      "window_mm": [
+        31.92,
+        42.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.047,
+        1.052
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3555,
+      "spec_aspect": 0.3615,
+      "aspect_error_pct": -1.67,
+      "lean_deg": 0.024,
+      "taper_deg": 0.015,
+      "deskew_deg": -0.024,
+      "tilt_deg": 0.039,
+      "jitter_px": 0.33,
+      "symmetry_iou": 0.9978,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.27,
+      "window_vs_spec_min": 1.047,
+      "window_vs_spec_max": 1.052,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  }
+}
