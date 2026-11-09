@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/k330i",
+  "brand": "Sony Ericsson",
+  "model": "K330",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 100,
+    "depth": 12
+  },
+  "size_note": "",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.5,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 10.6,
+      "y": 14.75,
+      "w": 23.8,
+      "h": 29.75,
+      "note": "1.5in at 128x160 fits the lit area measured on a frontal photo (about 24 x 31 mm); spec sheets give no size"
+    },
+    "keypad": {
+      "x": 3,
+      "y": 65,
+      "w": 40,
+      "h": 24
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "K330"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_ericsson_k330-2428.php"
+    ],
+    "geometry_photo": {
+      "url": "https://image.ceneostatic.pl/data/products/1836402/i-sony-ericsson-k330.jpg",
+      "license": "",
+      "author": "",
+      "note": "via Koks"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      138,
+      202,
+      286,
+      357
+    ],
+    "mm": [
+      11.5,
+      16.83,
+      23.83,
+      29.75
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        49,
+        112,
+        92,
+        115
+      ]
+    }
+  }
+}

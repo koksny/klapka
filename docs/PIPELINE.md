@@ -73,17 +73,19 @@ Pass/fail (`finish` prints `PASS` only when all of these hold):
 
 | Check | Threshold |
 |---|---|
-| body aspect vs spec | within ±3% (Koks, 2026-11-08: renders land 2–4% off; ≤3% is acceptable) |
+| body aspect vs spec | within ±3% (Koks, 2026-11-08: renders land 2–4% off; ≤3% is acceptable). A wider limit for one phone only with the maintainer's approval, recorded in its `build.json` under `acceptance_exceptions` with the reason |
 | lean (mean angle of the two sides, after the automatic straightening) | ≤ 0.3° |
 | screen hole aspect vs native | error ≤ 0.2% |
-| screen hole centred on the body's axis | ≤ 1.3% of the body width (rows with side buttons ignored) |
-| screen hole placement | the hole is centred in the display window (the inside edge of the bezel; ≤ 0.15 mm difference between opposite margins), the window is on the body's axis (≤ 1.3%) and 0.9–1.4× the spec screen size; the window itself is confirmed visually on `work/screen_check.png` (`mark --screen-ok`) |
+| display window on the body's axis | the window's centre ≤ 1.3% of the body width from the axis (rows with side buttons ignored) |
+| display window size | 0.9–1.4× the spec screen size; an automatic window also needs edge strength ≥ 4 on every side |
+| visible screen border | on the finished skin, the dark band from the hole to the bezel differs by ≤ 0.3 mm between opposite sides (left/right, top/bottom). The hole is centred in the window (the inside edge of the bezel); if a dark LCD border outside the window makes one side wider, the hole is re-centred in the whole dark area. On a dark front (band more than 2 mm past the window) only the window counts. The window is confirmed visually on `work/screen_check.png` (`mark --screen-ok`) |
 | printed text | every letter right, icons plausible (`mark --text-ok`) |
 | text-pass seams | none visible at 2× |
 | maintainer | visual approval (`mark --approved`) |
 
 Measured and recorded in `build.json`, for information only (Koks, 2026-11-08): taper (sides
-converging), side tilt, edge jitter and left/right symmetry. Rounded or tapering sides and buttons on
+converging), side tilt, edge jitter and left/right symmetry; also the hole's margins inside the
+window (the visible border above is what the eye judges). Rounded or tapering sides and buttons on
 one side are part of the design, so these are not pass/fail.
 
 ## Tried and rejected (do not retry without a new idea)
@@ -145,6 +147,19 @@ one side are part of the design, so these are not pass/fail.
   all as dark glass and centres the hole in it. The automatic window finder is unreliable (it caught
   the bezel ring or the screen content on most early phones), so the window is checked on
   `screen_check.png` and usually given by hand with `--window`.
+
+## What the end of the K series taught (2026-11-09)
+
+- Snapping a hand-given window to the nearest strong edge (±7 px) can take the outer edge of a thin
+  dark LCD border on one side and the inner edge on the other: holes 0.3–0.7 mm off (K220i up and
+  left, K530i, K770i) while every number passed. Edges are read off luminance profiles across each
+  side and given exactly (`--no-refine`); the visible-border check now measures what the eye sees.
+- A black front (K330) makes the visible border run into the body; re-centring on it moved the hole
+  4 mm. It is skipped when the band runs more than 2 mm past the window.
+- Word fixes on small key labels often return the same garbled letters (K330 "AGC", K220i "DBŁ" six
+  times). With most rows wrong, `--keypad` got every label right at the first seed on K220i, K330 and
+  K630i; the few leftovers then took one word fix each.
+- A word box that cuts a glyph erases the part inside it (K200i `*`, K630i `5`); `restore` puts it back.
 
 ## Open items
 

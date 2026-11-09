@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/k630i",
+  "brand": "Sony Ericsson",
+  "model": "K630i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 47,
+    "height": 104,
+    "depth": 16
+  },
+  "size_note": "",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.26,
+      "y": 13.45,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "2.0in at 240x320, centred; vertical centre measured on a frontal press render"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 78,
+      "w": 34,
+      "h": 25
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/k630i/"
+    ],
+    "geometry_photo": {
+      "url": "https://c.428.ua/img/4316/600/600/mobilnyy_telefon_sony-ericsson_k630i_black~650~439.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, via Koks"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      112,
+      177,
+      366,
+      488
+    ],
+    "mm": [
+      9.33,
+      14.75,
+      30.5,
+      40.67
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        102,
+        114,
+        151
+      ]
+    }
+  }
+}

@@ -304,30 +304,39 @@
   ],
   "screen_source": {
     "window": [
-      74,
-      140,
-      487,
-      670
+      82,
+      142,
+      500,
+      680
     ],
     "manual": true,
+    "exact": true,
     "window_px": [
-      81,
-      141,
-      413,
-      536
+      82,
+      142,
+      418,
+      538
     ],
     "checks": {
-      "hole_centre_diff_mm": 0.0,
-      "margins_mm": {
-        "left": 1.58,
-        "right": 1.58,
-        "top": 1.5,
-        "bottom": 1.5
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.83,
+        "right": 1.75,
+        "top": 1.58,
+        "bottom": 1.58
       },
-      "window_centre_x_pct": 0.54,
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.83,
+        "right": 1.75,
+        "top": 1.58,
+        "bottom": 1.58
+      },
+      "window_centre_x_pct": 0.09,
       "window_mm": [
-        34.42,
-        44.67
+        34.83,
+        44.83
       ],
       "edge_strength": {
         "left": null,
@@ -336,8 +345,8 @@
         "bottom": null
       },
       "window_vs_spec": [
-        1.188,
-        1.157
+        1.203,
+        1.161
       ]
     }
   },
@@ -353,17 +362,18 @@
       "jitter_px": 0.08,
       "symmetry_iou": 0.9986,
       "screen_aspect_error_pct": 0.0,
-      "hole_centre_diff_mm": 0.0,
-      "window_centre_x_pct": 0.54,
-      "window_vs_spec_min": 1.157,
-      "window_vs_spec_max": 1.188,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.161,
+      "window_vs_spec_max": 1.203,
       "window_edge_min": 99
     },
     "pass": {
       "aspect_error_pct": true,
       "lean_deg": true,
       "screen_aspect_error_pct": true,
-      "hole_centre_diff_mm": true,
+      "visible_border_diff_mm": true,
       "window_centre_x_pct": true,
       "window_vs_spec_min": true,
       "window_vs_spec_max": true,

@@ -1,0 +1,493 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.148,
+    "body_px": [
+      50,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      163,
+      267,
+      540,
+      644
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k220-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      185,
+      408
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.87,
+        "screen_rel_iou": 0.8175,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.696,
+        "body_aspect": 0.4385,
+        "template_body_aspect": 0.4468,
+        "body": [
+          72,
+          74,
+          634,
+          1357
+        ],
+        "screen": [
+          160,
+          283,
+          547,
+          602
+        ],
+        "score": 1.0549,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.5,
+        "screen_rel_iou": 0.7485,
+        "screen_centre_error_pct": 0.26,
+        "mirror": 0.6407,
+        "body_aspect": 0.4178,
+        "template_body_aspect": 0.4468,
+        "body": [
+          77,
+          53,
+          635,
+          1390
+        ],
+        "screen": [
+          156,
+          288,
+          558,
+          603
+        ],
+        "score": 0.7178,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.16,
+        "screen_rel_iou": 0.8331,
+        "screen_centre_error_pct": 0.35,
+        "mirror": 0.5956,
+        "body_aspect": 0.4104,
+        "template_body_aspect": 0.4468,
+        "body": [
+          77,
+          57,
+          646,
+          1445
+        ],
+        "screen": [
+          165,
+          298,
+          561,
+          660
+        ],
+        "score": 0.6884,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.63,
+        "screen_rel_iou": 0.8307,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6027,
+        "body_aspect": 0.3949,
+        "template_body_aspect": 0.4468,
+        "body": [
+          86,
+          31,
+          654,
+          1471
+        ],
+        "screen": [
+          176,
+          276,
+          564,
+          670
+        ],
+        "score": 0.5423,
+        "seed": 3
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "K220i",
+      "box": [
+        240,
+        1237,
+        470,
+        1347
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 1",
+      "text": "'1', '2 ABC', '3 DEF'. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+      "box": [
+        32,
+        914,
+        672,
+        994
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 4",
+      "text": "'* a/A', '0 +', '#'. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+      "box": [
+        32,
+        1145,
+        672,
+        1225
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [
+        1,
+        4
+      ],
+      "boxes": [
+        [
+          63,
+          916,
+          641,
+          992
+        ],
+        [
+          63,
+          1146,
+          641,
+          1224
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "key row 1",
+      "text": "a single blue key: a large white digit '1' on the left and a small white envelope-and-voicemail icon on the right",
+      "box": [
+        76,
+        916,
+        288,
+        992
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "restored from p2",
+      "rows": [
+        1
+      ],
+      "boxes": [
+        [
+          63,
+          916,
+          641,
+          992
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "area": "key row 1",
+      "text": "a single dark-blue key, same colour as the keys next to it: a large white digit '1' on the left and a small white envelope-and-voicemail icon on the right",
+      "box": [
+        58,
+        922,
+        306,
+        986
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    },
+    {
+      "n": 8,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        148,
+        1152,
+        286,
+        1218
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 9,
+      "area": "restored from p2",
+      "rows": [
+        1
+      ],
+      "boxes": [
+        [
+          63,
+          916,
+          641,
+          992
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        490,
+        1090,
+        602,
+        1126
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 11,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        151,
+        1168,
+        263,
+        1204
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 12,
+      "area": "key row 1",
+      "text": "a small white envelope icon followed by a small white voicemail symbol (two small rings joined by a line), no letters",
+      "box": [
+        163,
+        928,
+        255,
+        972
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 13,
+      "area": "key row 1",
+      "text": "remove the letters DBL completely; in their place draw only a small white envelope icon, no letters at all",
+      "box": [
+        163,
+        928,
+        255,
+        972
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    },
+    {
+      "n": 14,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          182,
+          928,
+          236,
+          972
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "area": "text",
+      "text": "✉",
+      "box": [
+        163,
+        928,
+        255,
+        972
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 16,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          182,
+          928,
+          236,
+          972
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "area": "key row 1",
+      "text": "nothing at all: this part of the key is blank, plain dark-blue plastic with no printing",
+      "box": [
+        163,
+        928,
+        255,
+        972
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 18,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          182,
+          928,
+          236,
+          972
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        48,
+        911,
+        656,
+        1310
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      88,
+      221,
+      481,
+      606
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      88,
+      221,
+      393,
+      385
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.58,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.58,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        32.75,
+        32.08
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.14,
+        1.116
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4425,
+      "spec_aspect": 0.4466,
+      "aspect_error_pct": -0.92,
+      "lean_deg": 0.003,
+      "taper_deg": 0.111,
+      "deskew_deg": -0.14,
+      "tilt_deg": 0.114,
+      "jitter_px": 1.42,
+      "symmetry_iou": 0.9911,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.116,
+      "window_vs_spec_max": 1.14,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

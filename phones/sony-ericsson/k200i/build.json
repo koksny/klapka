@@ -1,0 +1,511 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.148,
+    "body_px": [
+      50,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      163,
+      258,
+      540,
+      635
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k200-00.jpg",
+    "license": "",
+    "author": "",
+    "size_used": [
+      240,
+      544
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.1,
+        "screen_rel_iou": 0.7928,
+        "screen_centre_error_pct": -3.18,
+        "mirror": 0.6606,
+        "body_aspect": 0.4419,
+        "template_body_aspect": 0.4468,
+        "body": [
+          47,
+          38,
+          643,
+          1388
+        ],
+        "screen": [
+          133,
+          208,
+          518,
+          589
+        ],
+        "score": 0.7495,
+        "seed": 10
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.98,
+        "screen_rel_iou": 0.7742,
+        "screen_centre_error_pct": -3.25,
+        "mirror": 0.4684,
+        "body_aspect": 0.4335,
+        "template_body_aspect": 0.4468,
+        "body": [
+          46,
+          38,
+          645,
+          1421
+        ],
+        "screen": [
+          136,
+          270,
+          515,
+          598
+        ],
+        "score": 0.5345,
+        "seed": 9
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.48,
+        "screen_rel_iou": 0.7987,
+        "screen_centre_error_pct": -1.59,
+        "mirror": 0.671,
+        "body_aspect": 0.4313,
+        "template_body_aspect": 0.4468,
+        "body": [
+          68,
+          64,
+          635,
+          1380
+        ],
+        "screen": [
+          150,
+          282,
+          534,
+          596
+        ],
+        "score": 0.8013,
+        "seed": 11
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.66,
+        "screen_rel_iou": 0.7897,
+        "screen_centre_error_pct": -1.11,
+        "mirror": 0.535,
+        "body_aspect": 0.4305,
+        "template_body_aspect": 0.4468,
+        "body": [
+          59,
+          52,
+          643,
+          1410
+        ],
+        "screen": [
+          147,
+          282,
+          541,
+          601
+        ],
+        "score": 0.7627,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.8,
+        "screen_rel_iou": 0.7563,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.5953,
+        "body_aspect": 0.4299,
+        "template_body_aspect": 0.4468,
+        "body": [
+          65,
+          52,
+          640,
+          1391
+        ],
+        "screen": [
+          146,
+          278,
+          556,
+          594
+        ],
+        "score": 0.8463,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.09,
+        "screen_rel_iou": 0.7844,
+        "screen_centre_error_pct": -1.12,
+        "mirror": 0.6293,
+        "body_aspect": 0.4286,
+        "template_body_aspect": 0.4468,
+        "body": [
+          65,
+          61,
+          646,
+          1418
+        ],
+        "screen": [
+          149,
+          231,
+          548,
+          610
+        ],
+        "score": 0.7828,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.3,
+        "screen_rel_iou": 0.7946,
+        "screen_centre_error_pct": -1.14,
+        "mirror": 0.5699,
+        "body_aspect": 0.4276,
+        "template_body_aspect": 0.4468,
+        "body": [
+          65,
+          59,
+          637,
+          1398
+        ],
+        "screen": [
+          150,
+          227,
+          538,
+          601
+        ],
+        "score": 0.7507,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.79,
+        "screen_rel_iou": 0.7865,
+        "screen_centre_error_pct": -2.09,
+        "mirror": 0.602,
+        "body_aspect": 0.4254,
+        "template_body_aspect": 0.4468,
+        "body": [
+          56,
+          35,
+          654,
+          1442
+        ],
+        "screen": [
+          139,
+          273,
+          545,
+          604
+        ],
+        "score": 0.6393,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.94,
+        "screen_rel_iou": 0.8081,
+        "screen_centre_error_pct": -2.29,
+        "mirror": 0.6372,
+        "body_aspect": 0.4247,
+        "template_body_aspect": 0.4468,
+        "body": [
+          66,
+          59,
+          635,
+          1400
+        ],
+        "screen": [
+          153,
+          279,
+          521,
+          601
+        ],
+        "score": 0.651,
+        "seed": 12
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.21,
+        "screen_rel_iou": 0.7999,
+        "screen_centre_error_pct": -2.38,
+        "mirror": 0.6222,
+        "body_aspect": 0.4191,
+        "template_body_aspect": 0.4468,
+        "body": [
+          77,
+          69,
+          625,
+          1378
+        ],
+        "screen": [
+          156,
+          287,
+          519,
+          598
+        ],
+        "score": 0.563,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.48,
+        "screen_rel_iou": 0.8384,
+        "screen_centre_error_pct": -0.71,
+        "mirror": 0.6636,
+        "body_aspect": 0.4179,
+        "template_body_aspect": 0.4468,
+        "body": [
+          67,
+          49,
+          636,
+          1412
+        ],
+        "screen": [
+          150,
+          273,
+          544,
+          635
+        ],
+        "score": 0.7757,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.22,
+        "screen_rel_iou": 0.7782,
+        "screen_centre_error_pct": -0.88,
+        "mirror": 0.596,
+        "body_aspect": 0.4145,
+        "template_body_aspect": 0.4468,
+        "body": [
+          68,
+          31,
+          637,
+          1405
+        ],
+        "screen": [
+          149,
+          260,
+          545,
+          587
+        ],
+        "score": 0.6267,
+        "seed": 3
+      }
+    ],
+    "best_seed": 10,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        138,
+        1117,
+        264,
+        1189
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        138,
+        1202,
+        264,
+        1274
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "*",
+      "box": [
+        107,
+        1208,
+        177,
+        1266
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          108,
+          1208,
+          176,
+          1266
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "key row 4",
+      "text": "*",
+      "box": [
+        107,
+        1208,
+        177,
+        1266
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "text",
+      "text": "K200i",
+      "box": [
+        253,
+        1308,
+        445,
+        1353
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "acceptance_exceptions": {
+    "aspect_error_pct": {
+      "limit": 4.0,
+      "approved_by": "Koks",
+      "date": "2026-11-09",
+      "reason": "the press render itself is 4.7% narrower than the 46 x 103 mm spec; 12 seeds landed at -3.7% or worse"
+    }
+  },
+  "screen_source": {
+    "window": [
+      91,
+      225,
+      477,
+      612
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      91,
+      225,
+      386,
+      387
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        32.17,
+        32.25
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.119,
+        1.122
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4393,
+      "spec_aspect": 0.4466,
+      "aspect_error_pct": -1.63,
+      "lean_deg": 0.026,
+      "taper_deg": 0.028,
+      "deskew_deg": 0.053,
+      "tilt_deg": 0.054,
+      "jitter_px": 0.28,
+      "symmetry_iou": 0.9975,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.119,
+      "window_vs_spec_max": 1.122,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

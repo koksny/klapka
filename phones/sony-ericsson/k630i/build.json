@@ -1,0 +1,285 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.022,
+    "body_px": [
+      46,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      154,
+      234,
+      549,
+      761
+    ]
+  },
+  "photo": {
+    "url": "https://c.428.ua/img/4316/600/600/mobilnyy_telefon_sony-ericsson_k630i_black~650~439.jpg (via Koks)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      392,
+      830
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.13,
+        "screen_rel_iou": 0.9057,
+        "screen_centre_error_pct": -0.41,
+        "mirror": 0.6142,
+        "body_aspect": 0.4526,
+        "template_body_aspect": 0.452,
+        "body": [
+          50,
+          61,
+          655,
+          1399
+        ],
+        "screen": [
+          141,
+          246,
+          559,
+          761
+        ],
+        "score": 1.1651,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.49,
+        "screen_rel_iou": 0.9009,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6569,
+        "body_aspect": 0.4587,
+        "template_body_aspect": 0.452,
+        "body": [
+          43,
+          58,
+          659,
+          1402
+        ],
+        "screen": [
+          142,
+          248,
+          561,
+          768
+        ],
+        "score": 1.1466,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.13,
+        "screen_rel_iou": 0.8879,
+        "screen_centre_error_pct": -0.49,
+        "mirror": 0.6004,
+        "body_aspect": 0.4571,
+        "template_body_aspect": 0.452,
+        "body": [
+          47,
+          55,
+          659,
+          1395
+        ],
+        "screen": [
+          139,
+          241,
+          561,
+          767
+        ],
+        "score": 1.0824,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 4.53,
+        "screen_rel_iou": 0.8792,
+        "screen_centre_error_pct": -0.65,
+        "mirror": 0.6196,
+        "body_aspect": 0.4725,
+        "template_body_aspect": 0.452,
+        "body": [
+          43,
+          72,
+          660,
+          1379
+        ],
+        "screen": [
+          132,
+          237,
+          563,
+          773
+        ],
+        "score": 0.8977,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        96,
+        1045,
+        608,
+        1429
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "JKL",
+      "box": [
+        318,
+        1166,
+        424,
+        1198
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "TUV",
+      "box": [
+        318,
+        1228,
+        424,
+        1264
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          314,
+          1164,
+          346,
+          1200
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      96,
+      171,
+      495,
+      671
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      96,
+      171,
+      399,
+      500
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.33,
+        "right": 1.58,
+        "top": 0.5,
+        "bottom": 0.58
+      },
+      "visible_border_diff_mm": 0.25,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.33,
+        "right": 1.42,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        33.25,
+        41.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.091,
+        1.025
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4533,
+      "spec_aspect": 0.4519,
+      "aspect_error_pct": 0.3,
+      "lean_deg": 0.001,
+      "taper_deg": 0.001,
+      "deskew_deg": 0.001,
+      "tilt_deg": 0.001,
+      "jitter_px": 0.08,
+      "symmetry_iou": 0.9957,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.25,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.025,
+      "window_vs_spec_max": 1.091,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

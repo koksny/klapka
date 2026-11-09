@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/k220i",
+  "brand": "Sony Ericsson",
+  "model": "K220i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 103,
+    "depth": 16
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      128
+    ],
+    "diagonal_in": 1.6,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.63,
+      "y": 15.8,
+      "w": 28.74,
+      "h": 28.74,
+      "note": "w/h from the diagonal at the native aspect, centred; vertical centre measured"
+    },
+    "keypad": {
+      "x": 2,
+      "y": 67,
+      "w": 42,
+      "h": 26
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "K220i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.91mobiles.com/sony-ericsson-k220i-price-in-india?ty=specs",
+      "https://www.teltarif.de/h/sony-ericsson/k220i/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k220-00.jpg",
+      "license": "",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      98,
+      228,
+      372,
+      372
+    ],
+    "mm": [
+      8.17,
+      19.0,
+      31.0,
+      31.0
+    ],
+    "native_px": [
+      128,
+      128
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        36,
+        116,
+        119,
+        119
+      ]
+    }
+  }
+}

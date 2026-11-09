@@ -1,0 +1,111 @@
+{
+  "id": "sony-ericsson/k660i",
+  "brand": "Sony Ericsson",
+  "model": "K660i",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 47,
+    "height": 104,
+    "depth": 15
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.26,
+      "y": 14.7,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "w/h from the diagonal at the native aspect, centred; vertical centre measured"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 70,
+      "w": 37,
+      "h": 29
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "K660i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a key-lock symbol; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://wikipedia.com/wiki/Sony_Ericsson_K660i",
+      "https://www.teltarif.de/h/sony-ericsson/k660i/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-k660-00.jpg",
+      "license": "",
+      "author": ""
+    }
+  },
+  "screen": {
+    "skin_px": [
+      117,
+      190,
+      368,
+      491
+    ],
+    "mm": [
+      9.75,
+      15.83,
+      30.67,
+      40.92
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        107,
+        113,
+        151
+      ]
+    }
+  }
+}

@@ -35,9 +35,9 @@ MAX_PX = 1_048_576
 SCREEN_GLASS = (11, 13, 16)
 STANDARD_KEYS = [["1", "2 ABC", "3 DEF"], ["4 GHI", "5 JKL", "6 MNO"], ["7 PQRS", "8 TUV", "9 WXYZ"], ["* a/A", "0 +", "#"]]
 THRESHOLDS = {"aspect_error_pct": 3.0, "lean_deg": 0.3, "screen_aspect_error_pct": 0.2,
-              "hole_centre_diff_mm": 0.15, "window_centre_x_pct": 1.3, "window_vs_spec_min": 0.9, "window_vs_spec_max": 1.4, "window_edge_min": 4.0}
+              "hole_centre_diff_mm": 0.15, "visible_border_diff_mm": 0.3, "window_centre_x_pct": 1.3, "window_vs_spec_min": 0.9, "window_vs_spec_max": 1.4, "window_edge_min": 4.0}
 # measured and recorded, not pass/fail (Koks, 2026-11-08): rounded or tapering sides and one-sided buttons are design
-INFO_ONLY = ("taper_deg", "tilt_deg", "jitter_px", "symmetry_iou", "deskew_deg")
+INFO_ONLY = ("taper_deg", "tilt_deg", "jitter_px", "symmetry_iou", "deskew_deg", "hole_centre_diff_mm")
 
 
 # ---------------------------------------------------------------- helpers
@@ -347,12 +347,13 @@ def cmd_finish(a):
     approx = f"{round((sx0 - x0) * k + pad)},{round((sy0 - y0) * k + pad)},{round((sx1 - sx0 + 1) * k)},{round((sy1 - sy0 + 1) * k)}"
     if not a.window and b.get("screen_source", {}).get("window"):   # keep a window given earlier
         a.window = ",".join(map(str, b["screen_source"]["window"]))
+        a.no_refine = a.no_refine or b["screen_source"].get("exact", False)
     nw, nh = P["display"]["native_px"]; scr_mm = P["layout_mm"]["screen"]
-    extra = ["--window", a.window] if a.window else []
+    extra = (["--window", a.window] + (["--no-refine"] if a.no_refine else [])) if a.window else []
     scr = last_json(run("mark_screen.py", d / "body.png", "--approx", approx, "--native", f"{nw}x{nh}", "--spec-mm", f"{scr_mm['w']},{scr_mm['h']}",
                         "--px-per-mm", MASTER_PX_PER_MM, "--out-skin", d / "skin.png", "--out-overlay", w / "screen_check.png", *extra))
     b["screen_source"] = {"window": [int(v) for v in a.window.split(",")] if a.window else None, "manual": bool(a.window),
-                          "window_px": scr["window_px"], "checks": scr["checks"]}
+                          "exact": bool(a.window and a.no_refine), "window_px": scr["window_px"], "checks": scr["checks"]}
     sx, sy, sw, sh = scr["screen_px"]
     # Mi Band 7/8/9 export: 192x490, phone fitted with a 4 px margin, transparent around it and in the hole
     skin = Image.open(d / "skin.png").convert("RGBA"); BW, BH, M = 192, 490, 4
@@ -379,12 +380,15 @@ def cmd_finish(a):
            "deskew_deg": rep.get("deskew_deg", 0.0),
            "tilt_deg": max(abs(t) for t in rep["side_tilt_deg"]), "jitter_px": max(rep["side_jitter_px"]),
            "symmetry_iou": rep["lr_symmetry_iou"], "screen_aspect_error_pct": abs(scr["aspect_error_pct"]),
-           "hole_centre_diff_mm": scr["checks"]["hole_centre_diff_mm"], "window_centre_x_pct": scr["checks"]["window_centre_x_pct"],
+           "hole_centre_diff_mm": scr["checks"]["hole_centre_diff_mm"], "visible_border_diff_mm": scr["checks"]["visible_border_diff_mm"], "window_centre_x_pct": scr["checks"]["window_centre_x_pct"],
            "window_vs_spec_min": min(scr["checks"]["window_vs_spec"]), "window_vs_spec_max": max(scr["checks"]["window_vs_spec"]),
            "window_edge_min": min([v for v in scr["checks"]["edge_strength"].values() if v is not None], default=99)}
-    ok = {"aspect_error_pct": abs(acc["aspect_error_pct"]) <= THRESHOLDS["aspect_error_pct"], "lean_deg": acc["lean_deg"] <= THRESHOLDS["lean_deg"],
+    lim = dict(THRESHOLDS)
+    for key, ex in b.get("acceptance_exceptions", {}).items():   # per-phone limits approved by the maintainer
+        lim[key] = ex["limit"]
+    ok = {"aspect_error_pct": abs(acc["aspect_error_pct"]) <= lim["aspect_error_pct"], "lean_deg": acc["lean_deg"] <= THRESHOLDS["lean_deg"],
           "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"],
-          "hole_centre_diff_mm": acc["hole_centre_diff_mm"] <= THRESHOLDS["hole_centre_diff_mm"],
+          "visible_border_diff_mm": acc["visible_border_diff_mm"] <= lim["visible_border_diff_mm"],
           "window_centre_x_pct": acc["window_centre_x_pct"] <= THRESHOLDS["window_centre_x_pct"],
           "window_vs_spec_min": acc["window_vs_spec_min"] >= THRESHOLDS["window_vs_spec_min"],
           "window_vs_spec_max": acc["window_vs_spec_max"] <= THRESHOLDS["window_vs_spec_max"],
@@ -626,6 +630,7 @@ def main():
     p = sp.add_parser("rows"); p.add_argument("id")
     p = sp.add_parser("restore"); p.add_argument("id"); p.add_argument("--rows", type=int, nargs="*", default=[]); p.add_argument("--box"); p.add_argument("--feather", type=int, default=6, help="soft edge in px (use 1-2 for thin strips)")
     p = sp.add_parser("finish"); p.add_argument("id"); p.add_argument("--window", help="display window on body.png: x0,y0,x1,y1 (when the automatic one misses; read it off work/screen_check.png or body.png)")
+    p.add_argument("--no-refine", action="store_true", help="use --window exactly as given (no snapping to the nearest edge)")
     p = sp.add_parser("mark"); p.add_argument("id"); p.add_argument("--text-ok", action="store_true"); p.add_argument("--screen-ok", action="store_true"); p.add_argument("--approved", action="store_true")
     sp.add_parser("pages")
     sp.add_parser("header")

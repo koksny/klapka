@@ -15,7 +15,7 @@
 | Type | candybar |
 | Size | 47 × 105 mm |
 | Display | 1.9″, 240 × 320 |
-| Screen hole in `skin.png` | x 100, y 159, 375 × 500 px |
+| Screen hole in `skin.png` | x 104, y 161, 375 × 500 px |
 
 ## Download
 
@@ -29,7 +29,7 @@ Click **Download**; the file saves straight away.
 | `phone.json` | sizes and the screen position, for your own tools | [Download](phone.json?raw=true) |
 
 **Mi Band 7 / 8 / 9:** use `mi-band-192x490.png` as the background and put the clock inside
-the screen: x 36, y 92, 118 × 157 px.
+the screen: x 37, y 92, 118 × 158 px.
 
 ## How it was made
 

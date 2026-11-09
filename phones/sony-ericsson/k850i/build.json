@@ -167,6 +167,7 @@
       725
     ],
     "manual": true,
+    "exact": false,
     "window_px": [
       53,
       138,
@@ -174,6 +175,14 @@
       590
     ],
     "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 2.08,
+        "right": 2.08,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
       "hole_centre_diff_mm": 0.0,
       "margins_mm": {
         "left": 2.08,
@@ -211,6 +220,7 @@
       "symmetry_iou": 0.9745,
       "screen_aspect_error_pct": 0.12,
       "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
       "window_centre_x_pct": 0.18,
       "window_vs_spec_min": 1.1,
       "window_vs_spec_max": 1.203,
@@ -220,7 +230,7 @@
       "aspect_error_pct": true,
       "lean_deg": true,
       "screen_aspect_error_pct": true,
-      "hole_centre_diff_mm": true,
+      "visible_border_diff_mm": true,
       "window_centre_x_pct": true,
       "window_vs_spec_min": true,
       "window_vs_spec_max": true,
@@ -229,7 +239,7 @@
     "manual": {
       "text_ok": true,
       "approved": true,
-      "screen_ok": true
+      "screen_ok": false
     }
   },
   "added": "2026-11-09"

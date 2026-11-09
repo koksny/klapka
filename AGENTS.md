@@ -129,8 +129,9 @@ numbered boxes must sit on the rows of number keys (1 = the row with 1 2 3). If 
 **Fix as little as possible.** Every redraw can drift the small icons next to the labels, so fix only
 the rows of keys that are wrong (`--row N`, 1 = top row, labels from `phone.json` `keys`) and leave
 correct rows alone. `--row` finds the rows on the render itself; `--keypad` takes the template's
-keypad block and redraws everything at once, so use it only when most rows are wrong, and then put
-the rows that were already right back from the clean cutout:
+keypad block and redraws everything at once, so use it only when most rows are wrong (then it is the
+best tool: it got every label right at the first seed on three phones where word fixes kept returning
+the same garbled letters), and then put the rows that were already right back from the clean cutout:
 ```
 python tools/klapka.py restore sony-ericsson/k750i --rows 1 4
 ```
@@ -148,7 +149,11 @@ icons (they differ between models). Check `work/fixN_check.png` (before above, a
   box around just those letters, e.g. `textfix <id> --text "PQRS" --box …`. Redrawing a whole key can
   change its colour and size so it no longer matches its neighbours.
 - **A fix went wrong:** `pass2 <id> --reuse` starts the text fixes over from the clean cutout (no new
-  render), or try `--seed 2`.
+  render), or try `--seed 2`. To undo one small area, `restore <id> --box x0,y0,x1,y1 --feather 2`.
+- **Keep word boxes clear of their neighbours:** a box that cuts through a glyph erases the part
+  inside it (a `*` became `→)`, a `5` lost its right half); `restore` that glyph from the cutout.
+- **A single character** (`*`, `#`) through the word prompt comes back with the quote marks drawn as
+  commas; use the row prompt: `textfix <id> --row 4 --box … --text "*"`.
 - Do not erase letters and ask the model to write them on an empty key: it gets the letters right
   but too large, and it redraws the digit.
 
@@ -157,15 +162,25 @@ icons (they differ between models). Check `work/fixN_check.png` (before above, a
 python tools/klapka.py finish sony-ericsson/k750i
 ```
 It must end with `PASS` (lines marked `info` are recorded but not pass/fail; thresholds in
-[docs/PIPELINE.md](docs/PIPELINE.md#acceptance)). If the automatic screen hole misses the display, give the display rectangle
-on `work/final.png` yourself: `finish <id> --screen x0,y0,x1,y1` (read it off `work/final_grid.png`; it is remembered).
+[docs/PIPELINE.md](docs/PIPELINE.md#acceptance)).
 Then look at `work/screen_check.png` (the body before cutting): the **green box is the display
 window** and must follow the inside edge of the bezel on all four sides; the magenta hole sits in its
 middle, and the whole window is painted as dark glass. The automatic window finder misses often (it
 can grab a bezel ring or the screen content). When it does, read the window off `body.png` and give it
-by hand: `finish <id> --window x0,y0,x1,y1` (body.png pixels; each side snaps to the nearest strong
-edge within 7 px). A wrong window paints the bezel black, so never skip this look. Only when the green
-box is right:
+by hand: `finish <id> --window x0,y0,x1,y1` (body.png pixels; it is remembered). Each side then snaps
+to the strongest edge within 7 px, which can jump from the outer to the inner edge of a thin dark LCD
+border on one side only and shift the hole by half a millimetre. To avoid that, read the four edges
+off a luminance profile across each side (where the bezel ends and the glass or the dark LCD border
+begins) and add `--no-refine` to use them exactly. A bright frame line (bezel highlight) belongs
+outside the window on all four sides or on none. Where the render's screen content reaches the window
+edge, give the window 1–2 px beyond it: the window has rounded corners and would leave a light speck.
+
+`finish` also measures the **visible border**: on the finished skin, the dark band from each hole edge
+out to the bezel. Opposite sides may differ by at most 0.3 mm; when a dark LCD border was left outside
+the window on one side, the hole is re-centred in the whole dark area. On a dark front (the band runs
+more than 2 mm past the window, e.g. a black phone) the band is the body itself, so only the window
+counts there (`dark_front` in the checks). A wrong window paints the bezel black, so never skip this
+look. Only when the green box is right:
 ```
 python tools/klapka.py mark sony-ericsson/k750i --screen-ok
 ```
@@ -211,7 +226,8 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | the body comes out several % too wide although the photo looks frontal | the photo was taken from above or below (keystone: one end wider than the other). Measure the body width at the top and the bottom of the photo; if they differ, run `tools/rectify.py` with the four corners first |
 | keypad rows are tilted while the body is straight | the photo was at an angle; use an orthographic press render or a straight-on photo and render again |
 | the key rows in `rows_check.png` sit on the wrong keys | the keypad block in `phone.json` is off; measure it on this model's photo, not a sister model's |
-| the screen hole misses the display in `work/screen_overlay.png` | `finish <id> --screen x0,y0,x1,y1` from `work/final_grid.png` |
+| the green window in `work/screen_check.png` misses the bezel's inside edge | `finish <id> --window x0,y0,x1,y1 --no-refine` with the edges read off `body.png` |
+| the hole looks off-centre although `finish` passes | a thin frame line or dark border is inside the window on one side and outside on the other; give the window exactly (`--no-refine`) |
 | a photo shows an operator logo or sticker (e.g. "vodafone") | use another photo: it ends up on the skin |
 | a spec value cannot be right (a diagonal that does not fit the measured glass) | use what fits the measurement and explain it in `size_note` |
 | downloads from Wikimedia fail with an HTML error page | rate limit: send a descriptive User-Agent and retry with a pause |

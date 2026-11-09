@@ -1,0 +1,285 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      47,
+      59,
+      655,
+      1412
+    ],
+    "screen_px": [
+      191,
+      260,
+      512,
+      661
+    ]
+  },
+  "photo": {
+    "url": "https://image.ceneostatic.pl/data/products/1836402/i-sony-ericsson-k330.jpg (via Koks)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      416,
+      910
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.29,
+        "screen_rel_iou": 0.814,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.6788,
+        "body_aspect": 0.4511,
+        "template_body_aspect": 0.4498,
+        "body": [
+          62,
+          89,
+          642,
+          1376
+        ],
+        "screen": [
+          176,
+          291,
+          527,
+          679
+        ],
+        "score": 1.122,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.28,
+        "screen_rel_iou": 0.8176,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6034,
+        "body_aspect": 0.444,
+        "template_body_aspect": 0.4498,
+        "body": [
+          51,
+          58,
+          653,
+          1415
+        ],
+        "screen": [
+          169,
+          269,
+          537,
+          676
+        ],
+        "score": 1.0471,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.68,
+        "screen_rel_iou": 0.8604,
+        "screen_centre_error_pct": -0.5,
+        "mirror": 0.5271,
+        "body_aspect": 0.4422,
+        "template_body_aspect": 0.4498,
+        "body": [
+          54,
+          47,
+          654,
+          1405
+        ],
+        "screen": [
+          171,
+          257,
+          532,
+          652
+        ],
+        "score": 0.9903,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.97,
+        "screen_rel_iou": 0.861,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.6749,
+        "body_aspect": 0.4274,
+        "template_body_aspect": 0.4498,
+        "body": [
+          63,
+          60,
+          648,
+          1430
+        ],
+        "screen": [
+          180,
+          269,
+          531,
+          665
+        ],
+        "score": 0.9418,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "ABC",
+      "box": [
+        331,
+        962,
+        457,
+        1022
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        152,
+        1171,
+        293,
+        1231
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        54,
+        911,
+        662,
+        1291
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          210,
+          1046,
+          242,
+          1074
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      115,
+      196,
+      448,
+      565
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      115,
+      196,
+      333,
+      369
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 1.92,
+        "right": 2.0,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.92,
+        "right": 2.0,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        27.75,
+        30.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.166,
+        1.034
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4526,
+      "spec_aspect": 0.45,
+      "aspect_error_pct": 0.58,
+      "lean_deg": 0.028,
+      "taper_deg": 0.028,
+      "deskew_deg": -0.027,
+      "tilt_deg": 0.055,
+      "jitter_px": 0.35,
+      "symmetry_iou": 0.995,
+      "screen_aspect_error_pct": 0.14,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.034,
+      "window_vs_spec_max": 1.166,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

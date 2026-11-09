@@ -10,6 +10,7 @@ A phone needs two kinds of photo; one photo can serve both.
 Photos are input only: the image model redraws the phone from them, and the photos themselves stay
 out of the published repo (`refs/` is not published). **Any photo that shows the phone well can be
 used, whatever its licence** (Koks, 2026-11-08): press shots, shop photos, reviews, video frames.
+Good places to look: Wikimedia Commons, GSMArena picture pages, LPC Wiki (lpcwiki.miraheze.org), shop listings (Ceneo and the like).
 Record where it came from in `build.json` (`photo`) anyway, so the phone can be made again.
 
 Pick the appearance photo in this order:
