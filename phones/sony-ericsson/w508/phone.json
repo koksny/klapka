@@ -1,0 +1,122 @@
+{
+  "id": "sony-ericsson/w508",
+  "brand": "Sony Ericsson",
+  "model": "W508",
+  "year": 2009,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 50,
+    "height": 174,
+    "depth": 14
+  },
+  "size_note": "open height from the straight open press render (via Koks, mvideo.ru): 166 x 578 px at the 50 mm width = 174 mm (about +-4 mm)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.23,
+      "y": 21.6,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "2.2in at 240x320, centred; lit LCD measured on the press render"
+    },
+    "keypad": {
+      "x": 5.5,
+      "y": 121,
+      "w": 39,
+      "h": 43.5
+    },
+    "seams": [
+      {
+        "y": 82,
+        "note": "lower edge of the open flip"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "WALKMAN",
+    "W508"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w508/"
+    ],
+    "geometry_photo": {
+      "url": "https://img.mvideo.ru//product-medias/photos/30010800/7dcb5a97-d2de-45af-86f8-d4ca1d86dcb7.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, via Koks"
+    }
+  },
+  "size_closed_mm": {
+    "width": 50,
+    "height": 93.5,
+    "depth": 14
+  },
+  "screen": {
+    "skin_px": [
+      106,
+      278,
+      396,
+      528
+    ],
+    "mm": [
+      8.83,
+      23.17,
+      33.0,
+      44.0
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        50,
+        68,
+        89,
+        119
+      ]
+    }
+  }
+}

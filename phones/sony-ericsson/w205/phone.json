@@ -1,0 +1,121 @@
+{
+  "id": "sony-ericsson/w205",
+  "brand": "Sony Ericsson",
+  "model": "W205",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 120,
+    "depth": 16.4
+  },
+  "size_note": "open height from the straight open press render (newmobile.com): 134 x 343 px at the 47 mm width = 120 mm (about +-4 mm)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.22,
+      "y": 17.3,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "1.8in at 128x160, centred; lit LCD measured on the press render; the W205 label sits on the glass below it"
+    },
+    "keypad": {
+      "x": 7,
+      "y": 93.5,
+      "w": 34,
+      "h": 23
+    },
+    "seams": [
+      {
+        "y": 88,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "W205"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w205/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.newmobile.com/phones/sony/ericsson-w205",
+      "license": "",
+      "author": "",
+      "note": "press render 200904_w205_front_open_ambient_black"
+    }
+  },
+  "size_closed_mm": {
+    "width": 47,
+    "height": 100,
+    "depth": 16.4
+  },
+  "screen": {
+    "skin_px": [
+      128,
+      190,
+      326,
+      407
+    ],
+    "mm": [
+      10.67,
+      15.83,
+      27.17,
+      33.92
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        45,
+        75,
+        101,
+        127
+      ]
+    }
+  }
+}

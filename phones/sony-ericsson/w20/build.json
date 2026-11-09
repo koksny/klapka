@@ -1,0 +1,232 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1600
+    ],
+    "px_per_mm": 11.068,
+    "body_px": [
+      32,
+      64,
+      607,
+      1535
+    ],
+    "screen_px": [
+      101,
+      192,
+      538,
+      775
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_Zylo_(Jazz_Black,_Prototype)_-_Front_(Open).jpg (keystone corrected)",
+    "license": "CC BY-SA 4.0",
+    "author": "Beamish4",
+    "size_used": [
+      401,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.4,
+        "screen_rel_iou": 0.8377,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.3312,
+        "body_aspect": 0.3898,
+        "template_body_aspect": 0.3913,
+        "body": [
+          43,
+          74,
+          590,
+          1479
+        ],
+        "screen": [
+          84,
+          182,
+          547,
+          779
+        ],
+        "score": 0.9653,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.75,
+        "screen_rel_iou": 0.8361,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.3909,
+        "body_aspect": 0.3805,
+        "template_body_aspect": 0.3913,
+        "body": [
+          50,
+          65,
+          589,
+          1483
+        ],
+        "screen": [
+          83,
+          172,
+          553,
+          742
+        ],
+        "score": 0.8664,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.59,
+        "screen_rel_iou": 0.8186,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.3487,
+        "body_aspect": 0.3773,
+        "template_body_aspect": 0.3913,
+        "body": [
+          39,
+          49,
+          599,
+          1535
+        ],
+        "screen": [
+          72,
+          152,
+          566,
+          762
+        ],
+        "score": 0.8136,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.88,
+        "screen_rel_iou": 0.839,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.4765,
+        "body_aspect": 0.3644,
+        "template_body_aspect": 0.3913,
+        "body": [
+          56,
+          74,
+          583,
+          1522
+        ],
+        "screen": [
+          91,
+          173,
+          547,
+          774
+        ],
+        "score": 0.7238,
+        "seed": 4
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [],
+  "screen_source": {
+    "window": [
+      82,
+      183,
+      564,
+      828
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      82,
+      183,
+      482,
+      645
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.16,
+      "window_mm": [
+        40.17,
+        53.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.014,
+        1.017
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3891,
+      "spec_aspect": 0.391,
+      "aspect_error_pct": -0.48,
+      "lean_deg": 0.02,
+      "taper_deg": 0.081,
+      "deskew_deg": -0.054,
+      "tilt_deg": 0.1,
+      "jitter_px": 0.29,
+      "symmetry_iou": 0.9941,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.16,
+      "window_vs_spec_min": 1.014,
+      "window_vs_spec_max": 1.017,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 52,
+  "count": 58,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -1923,6 +1923,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w960i",
+      "brand": "Sony Ericsson",
+      "model": "W960i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 55,
+        "height": 109,
+        "depth": 16
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT touchscreen 262k"
+      },
+      "screen": {
+        "skin_px": [
+          130,
+          217,
+          452,
+          603
+        ],
+        "mm": [
+          10.83,
+          18.08,
+          37.67,
+          50.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w960i/skin.png",
+        "body.png": "phones/sony-ericsson/w960i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w960i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w960i/preview.png",
+        "phone.json": "phones/sony-ericsson/w960i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k330i",
       "brand": "Sony Ericsson",
       "model": "K330",
@@ -2355,6 +2403,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w205",
+      "brand": "Sony Ericsson",
+      "model": "W205",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47,
+        "height": 120,
+        "depth": 16.4
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          128,
+          190,
+          326,
+          407
+        ],
+        "mm": [
+          10.67,
+          15.83,
+          27.17,
+          33.92
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w205/skin.png",
+        "body.png": "phones/sony-ericsson/w205/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w205/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w205/preview.png",
+        "phone.json": "phones/sony-ericsson/w205/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w395",
       "brand": "Sony Ericsson",
       "model": "W395",
@@ -2400,6 +2496,54 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w395/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w395/preview.png",
         "phone.json": "phones/sony-ericsson/w395/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w508",
+      "brand": "Sony Ericsson",
+      "model": "W508",
+      "year": 2009,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 50,
+        "height": 174,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          278,
+          396,
+          528
+        ],
+        "mm": [
+          8.83,
+          23.17,
+          33.0,
+          44.0
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w508/skin.png",
+        "body.png": "phones/sony-ericsson/w508/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w508/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w508/preview.png",
+        "phone.json": "phones/sony-ericsson/w508/phone.json"
       }
     },
     {
@@ -2451,6 +2595,54 @@
       }
     },
     {
+      "id": "sony-ericsson/w715",
+      "brand": "Sony Ericsson",
+      "model": "W715",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 47.5,
+        "height": 126.5,
+        "depth": 14.3
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          68,
+          177,
+          455,
+          607
+        ],
+        "mm": [
+          5.67,
+          14.75,
+          37.92,
+          50.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w715/skin.png",
+        "body.png": "phones/sony-ericsson/w715/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w715/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w715/preview.png",
+        "phone.json": "phones/sony-ericsson/w715/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w995",
       "brand": "Sony Ericsson",
       "model": "W995",
@@ -2496,6 +2688,102 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w995/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w995/preview.png",
         "phone.json": "phones/sony-ericsson/w995/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w100",
+      "brand": "Sony Ericsson",
+      "model": "W100 Spiro",
+      "year": 2010,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 48,
+        "height": 117.5,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          95,
+          158,
+          397,
+          529
+        ],
+        "mm": [
+          7.92,
+          13.17,
+          33.08,
+          44.08
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w100/skin.png",
+        "body.png": "phones/sony-ericsson/w100/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w100/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w100/preview.png",
+        "phone.json": "phones/sony-ericsson/w100/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/w20",
+      "brand": "Sony Ericsson",
+      "model": "W20 Zylo",
+      "year": 2010,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-09",
+      "size_mm": {
+        "width": 52,
+        "height": 133,
+        "depth": 16
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT 262k"
+      },
+      "screen": {
+        "skin_px": [
+          88,
+          192,
+          470,
+          627
+        ],
+        "mm": [
+          7.33,
+          16.0,
+          39.17,
+          52.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/w20/skin.png",
+        "body.png": "phones/sony-ericsson/w20/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/w20/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/w20/preview.png",
+        "phone.json": "phones/sony-ericsson/w20/phone.json"
       }
     }
   ]

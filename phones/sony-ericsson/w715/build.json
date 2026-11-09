@@ -1,0 +1,299 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1600
+    ],
+    "px_per_mm": 11.9,
+    "body_px": [
+      37,
+      64,
+      601,
+      1535
+    ],
+    "screen_px": [
+      102,
+      221,
+      536,
+      800
+    ]
+  },
+  "photo": {
+    "url": "https://itbiznes.pl/zdjecia/artykuly/gregorp/NEWS/w715_02.jpg (press render via Koks; Vodafone logo painted out, reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      250,
+      573
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.39,
+        "screen_rel_iou": 0.8623,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.4338,
+        "body_aspect": 0.3747,
+        "template_body_aspect": 0.3838,
+        "body": [
+          38,
+          63,
+          599,
+          1562
+        ],
+        "screen": [
+          84,
+          210,
+          553,
+          840
+        ],
+        "score": 0.9598,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.74,
+        "screen_rel_iou": 0.8798,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.4765,
+        "body_aspect": 0.3733,
+        "template_body_aspect": 0.3838,
+        "body": [
+          44,
+          75,
+          591,
+          1542
+        ],
+        "screen": [
+          89,
+          215,
+          542,
+          825
+        ],
+        "score": 0.9443,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.89,
+        "screen_rel_iou": 0.8701,
+        "screen_centre_error_pct": -0.82,
+        "mirror": 0.4098,
+        "body_aspect": 0.3727,
+        "template_body_aspect": 0.3838,
+        "body": [
+          43,
+          69,
+          594,
+          1549
+        ],
+        "screen": [
+          85,
+          210,
+          543,
+          830
+        ],
+        "score": 0.8487,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.35,
+        "screen_rel_iou": 0.8638,
+        "screen_centre_error_pct": -0.93,
+        "mirror": 0.2965,
+        "body_aspect": 0.3671,
+        "template_body_aspect": 0.3838,
+        "body": [
+          54,
+          74,
+          589,
+          1533
+        ],
+        "screen": [
+          95,
+          207,
+          538,
+          825
+        ],
+        "score": 0.7011,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 2,
+    "note": "seed 1 of the cutout made the dark body semi-transparent and blue-tinted; seed 2 keeps it opaque"
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        136,
+        1370,
+        234,
+        1392
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        437,
+        1370,
+        547,
+        1392
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        162,
+        1437,
+        208,
+        1459
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          462,
+          1368,
+          522,
+          1394
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        437,
+        1370,
+        547,
+        1392
+      ],
+      "prompt_id": "fix_text",
+      "seed": 3
+    }
+  ],
+  "screen_source": {
+    "window": [
+      62,
+      165,
+      529,
+      796
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      62,
+      165,
+      467,
+      631
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "visible_border_diff_mm": 0.25,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 1.0
+      },
+      "window_centre_x_pct": 0.27,
+      "window_mm": [
+        38.92,
+        52.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.064,
+        1.078
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.378,
+      "spec_aspect": 0.3755,
+      "aspect_error_pct": 0.67,
+      "lean_deg": 0.05,
+      "taper_deg": 0.02,
+      "deskew_deg": -0.05,
+      "tilt_deg": 0.069,
+      "jitter_px": 0.31,
+      "symmetry_iou": 0.9836,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.25,
+      "window_centre_x_pct": 0.27,
+      "window_vs_spec_min": 1.064,
+      "window_vs_spec_max": 1.078,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

@@ -1,0 +1,283 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1568
+    ],
+    "px_per_mm": 12.021,
+    "body_px": [
+      38,
+      63,
+      602,
+      1505
+    ],
+    "screen_px": [
+      149,
+      271,
+      491,
+      699
+    ]
+  },
+  "photo": {
+    "url": "https://www.newmobile.com/phones/sony/ericsson-w205 (press render 200904_w205_front_open_ambient_black; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      134,
+      344
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.31,
+        "screen_rel_iou": 0.838,
+        "screen_centre_error_pct": -0.99,
+        "mirror": 0.6757,
+        "body_aspect": 0.3864,
+        "template_body_aspect": 0.3915,
+        "body": [
+          41,
+          71,
+          598,
+          1514
+        ],
+        "screen": [
+          147,
+          312,
+          481,
+          737
+        ],
+        "score": 1.012,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.77,
+        "screen_rel_iou": 0.8524,
+        "screen_centre_error_pct": -0.91,
+        "mirror": 0.5733,
+        "body_aspect": 0.3885,
+        "template_body_aspect": 0.3915,
+        "body": [
+          44,
+          70,
+          592,
+          1482
+        ],
+        "screen": [
+          148,
+          305,
+          478,
+          716
+        ],
+        "score": 1.0095,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.87,
+        "screen_rel_iou": 0.8569,
+        "screen_centre_error_pct": -0.84,
+        "mirror": 0.5663,
+        "body_aspect": 0.3803,
+        "template_body_aspect": 0.3915,
+        "body": [
+          52,
+          83,
+          588,
+          1494
+        ],
+        "screen": [
+          154,
+          318,
+          477,
+          727
+        ],
+        "score": 0.9128,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -0.69,
+        "screen_rel_iou": 0.8581,
+        "screen_centre_error_pct": -1.77,
+        "mirror": 0.5041,
+        "body_aspect": 0.3889,
+        "template_body_aspect": 0.3915,
+        "body": [
+          36,
+          53,
+          600,
+          1505
+        ],
+        "screen": [
+          151,
+          243,
+          465,
+          707
+        ],
+        "score": 0.8988,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        86,
+        1160,
+        566,
+        1490
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "+",
+      "box": [
+        305,
+        1380,
+        407,
+        1410
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 4",
+      "text": "a single silver key: a large dark # on the left and the small dark letters a/A on the right, nothing else",
+      "box": [
+        384,
+        1371,
+        576,
+        1419
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "garbled icons and a stray letter next to # (the image model kept redrawing them) covered by column interpolation of the key surface; the key keeps #",
+      "box": [
+        460,
+        1388,
+        522,
+        1411
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      119,
+      184,
+      463,
+      603
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      119,
+      184,
+      344,
+      419
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.75,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        28.67,
+        34.92
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.004,
+        0.978
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3893,
+      "spec_aspect": 0.3917,
+      "aspect_error_pct": -0.6,
+      "lean_deg": 0.025,
+      "taper_deg": 0.077,
+      "deskew_deg": -0.079,
+      "tilt_deg": 0.102,
+      "jitter_px": 1.25,
+      "symmetry_iou": 0.9907,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.978,
+      "window_vs_spec_max": 1.004,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}

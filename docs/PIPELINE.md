@@ -206,6 +206,17 @@ one side are part of the design, so these are not pass/fail.
 - When the template's keypad block misses the real keys, a keypad redraw writes a second row of
   labels (W350i, W980i). Measure the block on the render, fix `layout_mm.keypad`, and redraw.
 
+## What the last W batch taught (2026-11-09)
+
+- The cutout can turn a dark body semi-transparent and tint it (W715, seed 1: alpha 205-245 over a
+  quarter of the screen); `clean_alpha` then refills those pixels and smears the face. Check that the
+  body inside the silhouette is opaque after pass 2; another cutout seed fixes it.
+- Word-fix boxes must hold only the letters, read off the clean cutout's bright pixels. Boxes read
+  off a coarse grid overlapped the digit or icon next to them, and the new text was pasted beside
+  the old one (W960i, W100, W715).
+- Two models with the same chassis but a different colour scheme get their own skins (W705 silver,
+  W715 black); a cosmetic twin with the same look is described on one skin (Koks).
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

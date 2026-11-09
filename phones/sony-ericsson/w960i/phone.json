@@ -1,0 +1,110 @@
+{
+  "id": "sony-ericsson/w960i",
+  "brand": "Sony Ericsson",
+  "model": "W960i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 55,
+    "height": 109,
+    "depth": 16
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.6,
+    "type": "TFT touchscreen 262k"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.69,
+      "y": 16.4,
+      "w": 39.62,
+      "h": 52.83,
+      "note": "2.6in at 240x320, centred; lit LCD measured on the press render"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 84.5,
+      "w": 47,
+      "h": 23.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A; the # key also shows a space symbol and a silent-mode symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/w960i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-w960.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      130,
+      217,
+      452,
+      603
+    ],
+    "mm": [
+      10.83,
+      18.08,
+      37.67,
+      50.25
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        39,
+        126,
+        119,
+        159
+      ]
+    }
+  }
+}

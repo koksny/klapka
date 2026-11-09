@@ -1,0 +1,337 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 12.027,
+    "body_px": [
+      47,
+      61,
+      623,
+      1473
+    ],
+    "screen_px": [
+      134,
+      232,
+      536,
+      768
+    ]
+  },
+  "photo": {
+    "url": "https://www.trustedreviews.com/wp-content/uploads/sites/7/2010/11/14413-views-1.jpg (press render via Koks; open unit cropped)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      218,
+      490
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -3.0,
+        "screen_rel_iou": 0.8425,
+        "screen_centre_error_pct": -0.27,
+        "mirror": 0.3784,
+        "body_aspect": 0.3961,
+        "template_body_aspect": 0.4084,
+        "body": [
+          62,
+          75,
+          610,
+          1460
+        ],
+        "screen": [
+          135,
+          272,
+          534,
+          809
+        ],
+        "score": 0.8544,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.47,
+        "screen_rel_iou": 0.8388,
+        "screen_centre_error_pct": -0.26,
+        "mirror": 0.4053,
+        "body_aspect": 0.3942,
+        "template_body_aspect": 0.4084,
+        "body": [
+          51,
+          55,
+          618,
+          1495
+        ],
+        "screen": [
+          125,
+          263,
+          541,
+          813
+        ],
+        "score": 0.8415,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.93,
+        "screen_rel_iou": 0.8367,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.4004,
+        "body_aspect": 0.3923,
+        "template_body_aspect": 0.4084,
+        "body": [
+          56,
+          50,
+          616,
+          1479
+        ],
+        "screen": [
+          130,
+          256,
+          538,
+          808
+        ],
+        "score": 0.8048,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.45,
+        "screen_rel_iou": 0.836,
+        "screen_centre_error_pct": -0.56,
+        "mirror": 0.4055,
+        "body_aspect": 0.3902,
+        "template_body_aspect": 0.4084,
+        "body": [
+          75,
+          74,
+          614,
+          1457
+        ],
+        "screen": [
+          145,
+          273,
+          538,
+          808
+        ],
+        "score": 0.7607,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        434,
+        1278,
+        562,
+        1310
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        476,
+        1350,
+        527,
+        1370
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          440,
+          1274,
+          540,
+          1312
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          470,
+          1344,
+          532,
+          1374
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        480,
+        1283,
+        531,
+        1303
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        472,
+        1351,
+        532,
+        1368
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          440,
+          1336,
+          540,
+          1380
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "area": "key row 4",
+      "text": "a single black key: a large white # on the left, then the small white letters a/A and a small white musical-note-with-slash silent icon, nothing else",
+      "box": [
+        374,
+        1330,
+        586,
+        1390
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      89,
+      149,
+      498,
+      696
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      89,
+      149,
+      409,
+      547
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        34.08,
+        45.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.017,
+        1.02
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4019,
+      "spec_aspect": 0.4085,
+      "aspect_error_pct": -1.62,
+      "lean_deg": 0.012,
+      "taper_deg": 0.619,
+      "deskew_deg": 0.123,
+      "tilt_deg": 0.631,
+      "jitter_px": 3.19,
+      "symmetry_iou": 0.9798,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.017,
+      "window_vs_spec_max": 1.02,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-09"
+}
