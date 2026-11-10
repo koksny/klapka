@@ -1,0 +1,123 @@
+{
+  "id": "sony-ericsson/t606",
+  "brand": "Sony Ericsson",
+  "model": "T606",
+  "year": 2003,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 106,
+    "depth": 20.1
+  },
+  "size_note": "never sold (cancelled after FCC approval, Phone Scoop); no spec gives the display diagonal: 1.7in is measured on the press render (the 128x128 panel is about 30.5 mm square)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      128,
+      128
+    ],
+    "diagonal_in": 1.7,
+    "type": "STN 65,536 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.73,
+      "y": 25.2,
+      "w": 30.53,
+      "h": 30.53,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 7,
+      "y": 73,
+      "w": 34.5,
+      "h": 21
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1 @",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 NEXT",
+      "#"
+    ]
+  ],
+  "key_icons": "The # key also shows a space symbol (a short horizontal bar with raised ends).",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.phonescoop.com/phones/phone.php?p=229"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssont606.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (link from Koks)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      126,
+      319,
+      360,
+      360
+    ],
+    "mm": [
+      10.5,
+      26.58,
+      30.0,
+      30.0
+    ],
+    "native_px": [
+      128,
+      128
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        43,
+        146,
+        108,
+        108
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        605,
+        1296
+      ],
+      "screen_px": [
+        126,
+        319,
+        360,
+        360
+      ]
+    }
+  }
+}

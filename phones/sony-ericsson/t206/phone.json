@@ -1,0 +1,125 @@
+{
+  "id": "sony-ericsson/t206",
+  "brand": "Sony Ericsson",
+  "model": "T206",
+  "year": 2002,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 112,
+    "depth": 26
+  },
+  "size_note": "monochrome display, 101 x 80 (several spec sites; LPC Wiki writes 80 x 101); no spec gives the diagonal: 1.31in matches the width of the display content on the press render",
+  "corner_radius_mm": 10.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.31,
+    "type": "monochrome"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 10.96,
+      "y": 33.15,
+      "w": 26.08,
+      "h": 20.66,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 7.5,
+      "y": 73.5,
+      "w": 34,
+      "h": 25
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "CLR"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "DEF 3"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "MNO 6"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "WXYZ 9"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Digits are black italic, letters small blue italic; on the right-hand column the letters come before the digit. The 1 key also shows a small blue voicemail icon; the 5 key has a small raised dot on each side.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.phonescoop.com/phones/phone.php?p=118",
+      "https://www.sogi.com.tw/products/Sony_Ericsson_T206/370",
+      "https://lpcwiki.miraheze.org/wiki/Sony_Ericsson_T206"
+    ],
+    "geometry_photo": {
+      "url": "https://img.mobilephonefeatures.com/phone/view_b/sony_ericsson_t206_f677f9b584.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (link from Koks)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      138,
+      395,
+      338,
+      268
+    ],
+    "mm": [
+      11.5,
+      32.92,
+      28.17,
+      22.33
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        45,
+        160,
+        100,
+        78
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        621,
+        1368
+      ],
+      "screen_px": [
+        138,
+        395,
+        338,
+        268
+      ]
+    }
+  }
+}

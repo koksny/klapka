@@ -1,0 +1,125 @@
+{
+  "id": "sony-ericsson/t290i",
+  "brand": "Sony Ericsson",
+  "model": "T290i",
+  "year": 2004,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 101.5,
+    "depth": 19
+  },
+  "size_note": "display diagonal: 1.45in (devicebeast) and 1.7in (teltarif) disagree; the press render's lit area measures 1.5in, the same as the T230 it shares a body with",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.5,
+    "type": "STN 4096 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.06,
+      "y": 25.4,
+      "w": 29.87,
+      "h": 23.66,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 70,
+      "w": 34,
+      "h": 20
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "YES",
+    "NO"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t290i/",
+      "https://devicebeast.com/phones/t290"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssont290.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      100,
+      305,
+      369,
+      292
+    ],
+    "mm": [
+      8.33,
+      25.42,
+      30.75,
+      24.33
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        37,
+        141,
+        120,
+        95
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        562,
+        1242
+      ],
+      "screen_px": [
+        100,
+        305,
+        369,
+        292
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 64,
+  "count": 70,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -147,6 +147,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/t200/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t200/preview.png",
         "phone.json": "phones/sony-ericsson/t200/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t206",
+      "brand": "Sony Ericsson",
+      "model": "T206",
+      "year": 2002,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 48,
+        "height": 112,
+        "depth": 26
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.31,
+        "type": "monochrome"
+      },
+      "screen": {
+        "skin_px": [
+          138,
+          395,
+          338,
+          268
+        ],
+        "mm": [
+          11.5,
+          32.92,
+          28.17,
+          22.33
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t206/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t206/skin-black.png",
+        "body.png": "phones/sony-ericsson/t206/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t206/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t206/preview.png",
+        "phone.json": "phones/sony-ericsson/t206/phone.json"
       }
     },
     {
@@ -297,6 +346,55 @@
       }
     },
     {
+      "id": "sony-ericsson/t230",
+      "brand": "Sony Ericsson",
+      "model": "T230",
+      "year": 2003,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 44,
+        "height": 101,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.5,
+        "type": "STN 4096 colours"
+      },
+      "screen": {
+        "skin_px": [
+          93,
+          297,
+          364,
+          288
+        ],
+        "mm": [
+          7.75,
+          24.75,
+          30.33,
+          24.0
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t230/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t230/skin-black.png",
+        "body.png": "phones/sony-ericsson/t230/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t230/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t230/preview.png",
+        "phone.json": "phones/sony-ericsson/t230/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/t310",
       "brand": "Sony Ericsson",
       "model": "T310",
@@ -343,6 +441,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/t310/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t310/preview.png",
         "phone.json": "phones/sony-ericsson/t310/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t606",
+      "brand": "Sony Ericsson",
+      "model": "T606",
+      "year": 2003,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 48,
+        "height": 106,
+        "depth": 20.1
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.7,
+        "type": "STN 65,536 colours"
+      },
+      "screen": {
+        "skin_px": [
+          126,
+          319,
+          360,
+          360
+        ],
+        "mm": [
+          10.5,
+          26.58,
+          30.0,
+          30.0
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t606/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t606/skin-black.png",
+        "body.png": "phones/sony-ericsson/t606/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t606/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t606/preview.png",
+        "phone.json": "phones/sony-ericsson/t606/phone.json"
       }
     },
     {
@@ -539,6 +686,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/p910i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p910i/preview.png",
         "phone.json": "phones/sony-ericsson/p910i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t290i",
+      "brand": "Sony Ericsson",
+      "model": "T290i",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 44,
+        "height": 101.5,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          101,
+          80
+        ],
+        "diagonal_in": 1.5,
+        "type": "STN 4096 colours"
+      },
+      "screen": {
+        "skin_px": [
+          100,
+          305,
+          369,
+          292
+        ],
+        "mm": [
+          8.33,
+          25.42,
+          30.75,
+          24.33
+        ],
+        "native_px": [
+          101,
+          80
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t290i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t290i/skin-black.png",
+        "body.png": "phones/sony-ericsson/t290i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t290i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t290i/preview.png",
+        "phone.json": "phones/sony-ericsson/t290i/phone.json"
       }
     },
     {
@@ -1914,6 +2110,55 @@
       }
     },
     {
+      "id": "sony-ericsson/t250i",
+      "brand": "Sony Ericsson",
+      "model": "T250i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 45,
+        "height": 100,
+        "depth": 13
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.7,
+        "type": "TFT 65,536 colours"
+      },
+      "screen": {
+        "skin_px": [
+          118,
+          195,
+          316,
+          395
+        ],
+        "mm": [
+          9.83,
+          16.25,
+          26.33,
+          32.92
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t250i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t250i/skin-black.png",
+        "body.png": "phones/sony-ericsson/t250i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t250i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t250i/preview.png",
+        "phone.json": "phones/sony-ericsson/t250i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w200i",
       "brand": "Sony Ericsson",
       "model": "W200i",
@@ -2401,6 +2646,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/k660i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k660i/preview.png",
         "phone.json": "phones/sony-ericsson/k660i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t270i",
+      "brand": "Sony Ericsson",
+      "model": "T270i",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 45,
+        "height": 100,
+        "depth": 13
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.7,
+        "type": "TFT 65,536 colours"
+      },
+      "screen": {
+        "skin_px": [
+          126,
+          194,
+          315,
+          394
+        ],
+        "mm": [
+          10.5,
+          16.17,
+          26.25,
+          32.83
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t270i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t270i/skin-black.png",
+        "body.png": "phones/sony-ericsson/t270i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t270i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t270i/preview.png",
+        "phone.json": "phones/sony-ericsson/t270i/phone.json"
       }
     },
     {

@@ -1,0 +1,274 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.632,
+    "body_px": [
+      36,
+      60,
+      635,
+      1443
+    ],
+    "screen_px": [
+      132,
+      406,
+      538,
+      727
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssont290.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      456
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.6,
+        "screen_rel_iou": 0.9349,
+        "screen_centre_error_pct": 0.75,
+        "mirror": 0.604,
+        "body_aspect": 0.4404,
+        "template_body_aspect": 0.4335,
+        "body": [
+          35,
+          56,
+          633,
+          1415
+        ],
+        "screen": [
+          136,
+          389,
+          540,
+          704
+        ],
+        "score": 1.0821,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.13,
+        "screen_rel_iou": 0.9078,
+        "screen_centre_error_pct": 0.53,
+        "mirror": 0.663,
+        "body_aspect": 0.4243,
+        "template_body_aspect": 0.4335,
+        "body": [
+          53,
+          86,
+          618,
+          1419
+        ],
+        "screen": [
+          147,
+          432,
+          529,
+          717
+        ],
+        "score": 1.0802,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 2.03,
+        "screen_rel_iou": 0.8674,
+        "screen_centre_error_pct": 0.42,
+        "mirror": 0.6387,
+        "body_aspect": 0.4423,
+        "template_body_aspect": 0.4335,
+        "body": [
+          35,
+          72,
+          632,
+          1423
+        ],
+        "screen": [
+          133,
+          435,
+          538,
+          710
+        ],
+        "score": 1.0437,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 3.08,
+        "screen_rel_iou": 0.9033,
+        "screen_centre_error_pct": 0.74,
+        "mirror": 0.6622,
+        "body_aspect": 0.4469,
+        "template_body_aspect": 0.4335,
+        "body": [
+          30,
+          62,
+          639,
+          1426
+        ],
+        "screen": [
+          133,
+          421,
+          544,
+          713
+        ],
+        "score": 1.0064,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        64,
+        980,
+        608,
+        1320
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "restored from p2",
+      "rows": [
+        1
+      ],
+      "boxes": [
+        [
+          90,
+          983,
+          581,
+          1057
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          493,
+          1227,
+          543,
+          1262
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      91,
+      299,
+      477,
+      603
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      91,
+      299,
+      386,
+      304
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.75,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.56,
+      "window_mm": [
+        32.17,
+        25.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.077,
+        1.071
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4414,
+      "spec_aspect": 0.4335,
+      "aspect_error_pct": 1.82,
+      "lean_deg": 0.009,
+      "taper_deg": 0.643,
+      "deskew_deg": -0.236,
+      "tilt_deg": 0.651,
+      "jitter_px": 1.09,
+      "symmetry_iou": 0.9951,
+      "screen_aspect_error_pct": 0.09,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.56,
+      "window_vs_spec_min": 1.071,
+      "window_vs_spec_max": 1.077,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

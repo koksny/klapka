@@ -1,0 +1,335 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      47,
+      59,
+      655,
+      1412
+    ],
+    "screen_px": [
+      169,
+      260,
+      533,
+      715
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssont270.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      449
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.6,
+        "screen_rel_iou": 0.9633,
+        "screen_centre_error_pct": 0.57,
+        "mirror": 0.6154,
+        "body_aspect": 0.4426,
+        "template_body_aspect": 0.4498,
+        "body": [
+          48,
+          37,
+          656,
+          1412
+        ],
+        "screen": [
+          168,
+          239,
+          543,
+          705
+        ],
+        "score": 1.1336,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.75,
+        "screen_rel_iou": 0.8981,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.7573,
+        "body_aspect": 0.4374,
+        "template_body_aspect": 0.4498,
+        "body": [
+          55,
+          48,
+          648,
+          1405
+        ],
+        "screen": [
+          169,
+          248,
+          535,
+          741
+        ],
+        "score": 1.1308,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.03,
+        "screen_rel_iou": 0.9262,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.6361,
+        "body_aspect": 0.4406,
+        "template_body_aspect": 0.4498,
+        "body": [
+          48,
+          52,
+          652,
+          1424
+        ],
+        "screen": [
+          161,
+          238,
+          536,
+          716
+        ],
+        "score": 1.1179,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.48,
+        "screen_rel_iou": 0.8977,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.6942,
+        "body_aspect": 0.4251,
+        "template_body_aspect": 0.4498,
+        "body": [
+          65,
+          59,
+          646,
+          1427
+        ],
+        "screen": [
+          176,
+          237,
+          537,
+          714
+        ],
+        "score": 0.9536,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "JKL",
+      "box": [
+        354,
+        1062,
+        398,
+        1085
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        132,
+        1138,
+        260,
+        1162
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        225,
+        158,
+        481,
+        202
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 4",
+      "text": "a single key: a large '*' on the left, and on the right the small letters 'a/A' followed by a small key-lock symbol",
+      "box": [
+        106,
+        1191,
+        250,
+        1254
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          350,
+          1058,
+          402,
+          1089
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "text",
+      "text": "JKL",
+      "box": [
+        354,
+        1062,
+        398,
+        1085
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          121,
+          1204,
+          163,
+          1243
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "area": "patch",
+      "note": "the K of JKL came out R-like after two word fixes: the bowl above the junction cleared to the key background and a straight upper arm drawn in the letter colour by hand (no image model)",
+      "box": [
+        375,
+        1063,
+        384,
+        1074
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      120,
+      188,
+      447,
+      595
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      120,
+      188,
+      327,
+      407
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.58
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.58
+      },
+      "window_centre_x_pct": 0.56,
+      "window_mm": [
+        27.25,
+        33.92
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.01,
+        1.006
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4499,
+      "spec_aspect": 0.45,
+      "aspect_error_pct": -0.02,
+      "lean_deg": 0.015,
+      "taper_deg": 0.216,
+      "deskew_deg": -0.163,
+      "tilt_deg": 0.231,
+      "jitter_px": 1.67,
+      "symmetry_iou": 0.9912,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.56,
+      "window_vs_spec_min": 1.006,
+      "window_vs_spec_max": 1.01,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

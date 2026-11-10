@@ -236,6 +236,25 @@ one side are part of the design, so these are not pass/fail.
   C). A letter edit by hand (a Q tail, a C lettered in the key's ink) is cleaner than more
   seeds; every such edit is recorded in `build.json` `text_fixes`.
 
+## What the second T batch taught (2026-11-10)
+
+- `--keypad` again got every label right at the first seed on four phones (T230, T290i, T606, T206,
+  including labels before the digit and `0 NEXT`). It can also turn an icon that was right (a
+  voicemail tape, a space symbol) into nonsense: put those back from the clean cutout (`restore
+  --rows 1`, or a box around the symbol).
+- A single-key fix can redraw the digit in another weight (T270i: a bold `*` among thin digits);
+  restore the digit from the cutout and keep the new letters.
+- A word fix on a logo printed on dark glass drew ghost shadows twice (T250i). The cutout had one
+  wrong letter (an i drawn as l), which a hand edit fixed: the stroke cut into a dot and a stem at the
+  x-height of the letters beside it. A K that came back R-like twice (T270i) was drawn by hand in the
+  letter colour. Both are recorded in `build.json` `text_fixes`.
+- A small window-limited hole can miss the 0.2% aspect limit through rounding alone (T206 at 1.3in);
+  a diagonal 0.01in away rounds cleanly. Note it in `size_note` when no spec gives the diagonal.
+- A light silver rim on a white background scores 3-5% narrow on every seed (T250i, 8 seeds); the
+  cutout measured 2.5%. Measure the cutout before rendering more seeds.
+- Press renders on esato.com are cropped tight; geometry is measured on a full, uncropped render
+  (gsm.magazyn.pl) of the same model.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

@@ -1,0 +1,255 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 12.354,
+    "body_px": [
+      40,
+      60,
+      632,
+      1443
+    ],
+    "screen_px": [
+      177,
+      470,
+      495,
+      722
+    ]
+  },
+  "photo": {
+    "url": "https://img.mobilephonefeatures.com/phone/view_b/sony_ericsson_t206_f677f9b584.jpg (press render, link from Koks)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      224,
+      500
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.51,
+        "screen_rel_iou": 0.8802,
+        "screen_centre_error_pct": -0.49,
+        "mirror": 0.7057,
+        "body_aspect": 0.4263,
+        "template_body_aspect": 0.4285,
+        "body": [
+          82,
+          99,
+          590,
+          1292
+        ],
+        "screen": [
+          204,
+          438,
+          463,
+          667
+        ],
+        "score": 1.1587,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.2,
+        "screen_rel_iou": 0.8953,
+        "screen_centre_error_pct": -0.43,
+        "mirror": 0.6424,
+        "body_aspect": 0.4336,
+        "template_body_aspect": 0.4285,
+        "body": [
+          45,
+          84,
+          622,
+          1416
+        ],
+        "screen": [
+          184,
+          465,
+          478,
+          723
+        ],
+        "score": 1.1133,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.89,
+        "screen_rel_iou": 0.9004,
+        "screen_centre_error_pct": -0.87,
+        "mirror": 0.7298,
+        "body_aspect": 0.4366,
+        "template_body_aspect": 0.4285,
+        "body": [
+          42,
+          75,
+          619,
+          1398
+        ],
+        "screen": [
+          176,
+          459,
+          475,
+          718
+        ],
+        "score": 1.0844,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.47,
+        "screen_rel_iou": 0.9021,
+        "screen_centre_error_pct": -0.77,
+        "mirror": 0.6303,
+        "body_aspect": 0.4348,
+        "template_body_aspect": 0.4285,
+        "body": [
+          45,
+          66,
+          627,
+          1406
+        ],
+        "screen": [
+          180,
+          456,
+          483,
+          719
+        ],
+        "score": 1.0667,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        102,
+        942,
+        582,
+        1302
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      132,
+      380,
+      482,
+      678
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      132,
+      380,
+      350,
+      298
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "window_centre_x_pct": 0.64,
+      "window_mm": [
+        29.17,
+        24.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.118,
+        1.202
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.444,
+      "spec_aspect": 0.4286,
+      "aspect_error_pct": 3.6,
+      "lean_deg": 0.006,
+      "taper_deg": 1.676,
+      "deskew_deg": -0.141,
+      "tilt_deg": 1.682,
+      "jitter_px": 7.37,
+      "symmetry_iou": 0.989,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.64,
+      "window_vs_spec_min": 1.118,
+      "window_vs_spec_max": 1.202,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10",
+  "acceptance_exceptions": {
+    "aspect_error_pct": {
+      "limit": 4.0,
+      "value": 3.6,
+      "approved_by": "Koks",
+      "date": "2026-11-10",
+      "reason": "the sides bulge: the body is 49.6 mm at its widest against the 48 mm spec; the press render itself is 2.6% wider than the 112 x 48 mm spec"
+    }
+  }
+}

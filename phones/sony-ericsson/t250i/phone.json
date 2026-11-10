@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/t250i",
+  "brand": "Sony Ericsson",
+  "model": "T250i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 100,
+    "depth": 13
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.7,
+    "type": "TFT 65,536 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.02,
+      "y": 14.8,
+      "w": 26.97,
+      "h": 33.72,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 68,
+      "w": 35,
+      "h": 20
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "T250i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t250i/",
+      "https://mobile-review.com/phonemodels/sonyericsson/sonyericsson-t250i.shtml"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t250.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (black version, same body)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      118,
+      195,
+      316,
+      395
+    ],
+    "mm": [
+      9.83,
+      16.25,
+      26.33,
+      32.92
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        44,
+        106,
+        104,
+        131
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        551,
+        1224
+      ],
+      "screen_px": [
+        118,
+        195,
+        316,
+        395
+      ]
+    }
+  }
+}

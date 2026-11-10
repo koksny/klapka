@@ -1,0 +1,125 @@
+{
+  "id": "sony-ericsson/t230",
+  "brand": "Sony Ericsson",
+  "model": "T230",
+  "year": 2003,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 101,
+    "depth": 19
+  },
+  "size_note": "",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      101,
+      80
+    ],
+    "diagonal_in": 1.5,
+    "type": "STN 4096 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.06,
+      "y": 24.2,
+      "w": 29.87,
+      "h": 23.66,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 68.3,
+      "w": 35,
+      "h": 20
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "YES",
+    "NO"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t230/",
+      "https://devicebeast.com/phones/t230"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t230.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      93,
+      297,
+      364,
+      288
+    ],
+    "mm": [
+      7.75,
+      24.75,
+      30.33,
+      24.0
+    ],
+    "native_px": [
+      101,
+      80
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        36,
+        138,
+        120,
+        95
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        550,
+        1236
+      ],
+      "screen_px": [
+        93,
+        297,
+        364,
+        288
+      ]
+    }
+  }
+}

@@ -13,7 +13,10 @@ used, whatever its licence** (Koks, 2026-11-08): press shots, shop photos, revie
 Good places to look: Wikimedia Commons, GSMArena picture pages, LPC Wiki (lpcwiki.miraheze.org), shop listings (Ceneo and the like).
 Straight-on press renders, best for both roles: gsm.magazyn.pl (`/pic/b/<brand>-<model>.jpg` and the
 gallery `/pic_gallery/b/<brand>-<model>_NNN.jpg`), newmobile.com phone pages (Sony Ericsson press
-sets: `front_straight`, `front_slided_open`), shop and archive listings (esfr.pl, imimg.com).
+sets: `front_straight`, `front_slided_open`), esato.com (`/gfx/phones/sonyericsson<model>.jpg`, about
+200 x 450, sharper than gsm.magazyn.pl but cropped tight, sometimes through the phone's edge), mobilephonefeatures.com
+(`view_b` images, also CDMA models), shop and archive listings (esfr.pl, imimg.com). GSMArena now answers
+automated clients with a paywall; specs also come from teltarif.de, devicebeast.com and phonescoop.com.
 Watch for reflections under press renders: they are not part of the phone.
 Record where it came from in `build.json` (`photo`) anyway, so the phone can be made again.
 
