@@ -255,6 +255,24 @@ one side are part of the design, so these are not pass/fail.
 - Press renders on esato.com are cropped tight; geometry is measured on a full, uncropped render
   (gsm.magazyn.pl) of the same model.
 
+## What the last T batch taught (2026-11-10)
+
+- Press renders with a mirror reflection under the phone (T303, T707, T715) gave seeds that drew the
+  reflection too, or copied the flat template; the open length was first measured 15 mm long on the
+  T715 (the reflection counted). Crop the reflection off the photo before `photo` and measure the
+  body above it.
+- Xataka Movil galleries (`xatakamovil.com/galeria/sony-ericsson-<model>`) hold the official Sony
+  Ericsson press sets (`front_open` and the like, up to 768 px tall); newmobile.com has the same
+  sets, but only at about 130 x 360.
+- A keypad block measured on the photo can still miss the rendered keys by a few pixels; measure
+  it on the render (or on the cutout) before `--keypad` (T700, T707, T715).
+- The `i` of the Sony Ericsson logo often comes out as a tall `l` (four phones in this series); the
+  stroke is cut into a dot and a stem at the x-height of `r` and `c` by hand. A model name copied from
+  a variant's render (`T280a`) is rewritten with the word prompt.
+- A cutout can make small coloured details transparent (the T707's blue speaker dots, alpha 0-200
+  with the colour kept); `clean_alpha` would refill them dark. Set their alpha to 255 on the cutout
+  first and record it.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

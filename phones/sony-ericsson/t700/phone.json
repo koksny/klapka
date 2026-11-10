@@ -1,0 +1,123 @@
+{
+  "id": "sony-ericsson/t700",
+  "brand": "Sony Ericsson",
+  "model": "T700",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 104,
+    "depth": 10
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.76,
+      "y": 15.7,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 6.07,
+      "y": 78.25,
+      "w": 35.05,
+      "h": 18.29
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t700/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-t700.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      120,
+      202,
+      361,
+      481
+    ],
+    "mm": [
+      10.0,
+      16.83,
+      30.08,
+      40.08
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        113,
+        109,
+        145
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        605,
+        1272
+      ],
+      "screen_px": [
+        120,
+        202,
+        361,
+        481
+      ]
+    }
+  }
+}

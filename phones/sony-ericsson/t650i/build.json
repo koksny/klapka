@@ -1,0 +1,259 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 13.022,
+    "body_px": [
+      36,
+      59,
+      634,
+      1412
+    ],
+    "screen_px": [
+      147,
+      212,
+      523,
+      714
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-t650-00.jpg (press render, front cropped from the front/back pair)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      252,
+      489
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.81,
+        "screen_rel_iou": 0.8158,
+        "screen_centre_error_pct": -0.71,
+        "mirror": 0.4229,
+        "body_aspect": 0.4344,
+        "template_body_aspect": 0.4424,
+        "body": [
+          55,
+          74,
+          620,
+          1376
+        ],
+        "screen": [
+          139,
+          190,
+          528,
+          731
+        ],
+        "score": 0.866,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.59,
+        "screen_rel_iou": 0.8426,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.5084,
+        "body_aspect": 0.4265,
+        "template_body_aspect": 0.4424,
+        "body": [
+          45,
+          48,
+          630,
+          1421
+        ],
+        "screen": [
+          134,
+          168,
+          537,
+          720
+        ],
+        "score": 0.883,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.66,
+        "screen_rel_iou": 0.8637,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6166,
+        "body_aspect": 0.4173,
+        "template_body_aspect": 0.4424,
+        "body": [
+          48,
+          58,
+          615,
+          1418
+        ],
+        "screen": [
+          137,
+          180,
+          525,
+          717
+        ],
+        "score": 0.88,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.72,
+        "screen_rel_iou": 0.8431,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.5887,
+        "body_aspect": 0.4171,
+        "template_body_aspect": 0.4424,
+        "body": [
+          46,
+          75,
+          611,
+          1431
+        ],
+        "screen": [
+          135,
+          190,
+          522,
+          725
+        ],
+        "score": 0.8516,
+        "seed": 3
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        194,
+        129,
+        450,
+        169
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        211,
+        1228,
+        259,
+        1249
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      72,
+      127,
+      491,
+      640
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      72,
+      127,
+      419,
+      513
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.83,
+        "right": 1.92,
+        "top": 0.58,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.83,
+        "right": 1.83,
+        "top": 0.58,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.56,
+      "window_mm": [
+        34.92,
+        42.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.206,
+        1.107
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.441,
+      "spec_aspect": 0.4423,
+      "aspect_error_pct": -0.3,
+      "lean_deg": 0.003,
+      "taper_deg": 0.19,
+      "deskew_deg": 0.126,
+      "tilt_deg": 0.193,
+      "jitter_px": 1.77,
+      "symmetry_iou": 0.9843,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.56,
+      "window_vs_spec_min": 1.107,
+      "window_vs_spec_max": 1.206,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

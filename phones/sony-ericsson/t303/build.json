@@ -1,0 +1,296 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 12.731,
+    "body_px": [
+      37,
+      61,
+      634,
+      1473
+    ],
+    "screen_px": [
+      154,
+      246,
+      517,
+      700
+    ]
+  },
+  "photo": {
+    "url": "https://i.blogs.es/6ce544/t303_front_open_shimmering_silver/2560_3000.webp (press render, Xataka Movil gallery; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      266,
+      491
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.29,
+        "screen_rel_iou": 0.9396,
+        "screen_centre_error_pct": 0.26,
+        "mirror": 0.7282,
+        "body_aspect": 0.4177,
+        "template_body_aspect": 0.4232,
+        "body": [
+          45,
+          66,
+          623,
+          1451
+        ],
+        "screen": [
+          159,
+          233,
+          512,
+          683
+        ],
+        "score": 1.2132,
+        "seed": 6
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.66,
+        "screen_rel_iou": 0.9427,
+        "screen_centre_error_pct": 0.29,
+        "mirror": 0.7512,
+        "body_aspect": 0.4162,
+        "template_body_aspect": 0.4232,
+        "body": [
+          73,
+          154,
+          591,
+          1400
+        ],
+        "screen": [
+          176,
+          305,
+          491,
+          710
+        ],
+        "score": 1.2065,
+        "seed": 8
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.54,
+        "screen_rel_iou": 0.9472,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.7211,
+        "body_aspect": 0.4125,
+        "template_body_aspect": 0.4232,
+        "body": [
+          40,
+          64,
+          628,
+          1491
+        ],
+        "screen": [
+          156,
+          238,
+          513,
+          699
+        ],
+        "score": 1.1722,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.08,
+        "screen_rel_iou": 0.9551,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.7544,
+        "body_aspect": 0.4102,
+        "template_body_aspect": 0.4232,
+        "body": [
+          66,
+          107,
+          604,
+          1420
+        ],
+        "screen": [
+          171,
+          266,
+          500,
+          697
+        ],
+        "score": 1.1692,
+        "seed": 7
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "GHI",
+      "box": [
+        154,
+        1186,
+        242,
+        1212
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "PQRS",
+      "box": [
+        140,
+        1260,
+        268,
+        1286
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        162,
+        1334,
+        246,
+        1360
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        205,
+        144,
+        461,
+        184
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the i of Ericsson came out as a tall l: the stroke cut into a dot and a stem at the x-height of r and c by hand, background colour from the same rows (no image model); the stem's top edge copied from the dot's top edge",
+      "box": [
+        345,
+        156,
+        353,
+        160
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      125,
+      172,
+      466,
+      608
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      125,
+      172,
+      341,
+      436
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 1.08
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 1.08
+      },
+      "window_centre_x_pct": 0.27,
+      "window_mm": [
+        28.42,
+        36.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.995,
+        1.018
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.422,
+      "spec_aspect": 0.4234,
+      "aspect_error_pct": -0.34,
+      "lean_deg": 0.002,
+      "taper_deg": 0.057,
+      "deskew_deg": -0.002,
+      "tilt_deg": 0.059,
+      "jitter_px": 0.58,
+      "symmetry_iou": 0.9929,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.27,
+      "window_vs_spec_min": 0.995,
+      "window_vs_spec_max": 1.018,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

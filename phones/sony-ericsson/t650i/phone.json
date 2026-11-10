@@ -1,0 +1,123 @@
+{
+  "id": "sony-ericsson/t650i",
+  "brand": "Sony Ericsson",
+  "model": "T650i",
+  "year": 2007,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 104,
+    "depth": 12.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.52,
+      "y": 11.75,
+      "w": 28.96,
+      "h": 38.61,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 6,
+      "y": 71,
+      "w": 35,
+      "h": 25
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Each key is a long metal key with the digit on the left, a small light rectangle in the middle and the letters on the right. The 1 key also shows a small voicemail icon; the * key shows a/A; the # key shows a silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t650i/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-t650-00.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      94,
+      134,
+      375,
+      500
+    ],
+    "mm": [
+      7.83,
+      11.17,
+      31.25,
+      41.67
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        35,
+        84,
+        119,
+        160
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        574,
+        1272
+      ],
+      "screen_px": [
+        94,
+        134,
+        375,
+        500
+      ]
+    }
+  }
+}

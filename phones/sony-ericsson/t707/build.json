@@ -1,0 +1,257 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1824
+    ],
+    "px_per_mm": 9.756,
+    "body_px": [
+      28,
+      73,
+      515,
+      1750
+    ],
+    "screen_px": [
+      108,
+      268,
+      434,
+      703
+    ]
+  },
+  "photo": {
+    "url": "https://i.blogs.es/25f21f/sony-ericsson-t707-10/2560_3000.webp (press render, Xataka Movil gallery; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      262,
+      693
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.87,
+        "screen_rel_iou": 0.9335,
+        "screen_centre_error_pct": -0.0,
+        "mirror": 0.7934,
+        "body_aspect": 0.2854,
+        "template_body_aspect": 0.2908,
+        "body": [
+          40,
+          76,
+          521,
+          1764
+        ],
+        "screen": [
+          110,
+          266,
+          450,
+          710
+        ],
+        "score": 1.2365,
+        "seed": 6
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.76,
+        "screen_rel_iou": 0.9136,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.7524,
+        "body_aspect": 0.2857,
+        "template_body_aspect": 0.2908,
+        "body": [
+          31,
+          79,
+          504,
+          1737
+        ],
+        "screen": [
+          100,
+          273,
+          437,
+          713
+        ],
+        "score": 1.1706,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.84,
+        "screen_rel_iou": 0.929,
+        "screen_centre_error_pct": -0.12,
+        "mirror": 0.647,
+        "body_aspect": 0.2797,
+        "template_body_aspect": 0.2908,
+        "body": [
+          60,
+          97,
+          507,
+          1698
+        ],
+        "screen": [
+          124,
+          277,
+          441,
+          699
+        ],
+        "score": 1.0483,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.36,
+        "screen_rel_iou": 0.9318,
+        "screen_centre_error_pct": -0.01,
+        "mirror": 0.8474,
+        "body_aspect": 0.2723,
+        "template_body_aspect": 0.2908,
+        "body": [
+          49,
+          68,
+          496,
+          1712
+        ],
+        "screen": [
+          115,
+          251,
+          429,
+          684
+        ],
+        "score": 1.0369,
+        "seed": 8
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        78,
+        1223,
+        481,
+        1639
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 2
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the cutout made the blue speaker dots above the logo transparent (their colour kept under alpha 0-200); alpha set to 255 in that strip by hand before finishing, so they stay blue instead of being refilled dark (no image model)",
+      "box": [
+        215,
+        150,
+        345,
+        182
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      96,
+      259,
+      512,
+      803
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      96,
+      259,
+      416,
+      544
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.75,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        34.67,
+        45.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.034,
+        1.014
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2839,
+      "spec_aspect": 0.2907,
+      "aspect_error_pct": -2.34,
+      "lean_deg": 0.0,
+      "taper_deg": 0.001,
+      "deskew_deg": -0.0,
+      "tilt_deg": 0.001,
+      "jitter_px": 0.79,
+      "symmetry_iou": 0.9992,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.014,
+      "window_vs_spec_max": 1.034,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

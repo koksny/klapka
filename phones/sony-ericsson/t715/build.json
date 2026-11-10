@@ -1,0 +1,259 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 12.45,
+    "body_px": [
+      37,
+      61,
+      634,
+      1473
+    ],
+    "screen_px": [
+      127,
+      202,
+      543,
+      757
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.nieuwemobiel.nl/media/200906_t715_frontopen_galaxysilver/200906_t715_frontopen_galaxysilver-4074f541.webp (newmobile.com press set, reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      149,
+      328
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.63,
+        "screen_rel_iou": 0.8213,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.8541,
+        "body_aspect": 0.4205,
+        "template_body_aspect": 0.4232,
+        "body": [
+          36,
+          62,
+          633,
+          1483
+        ],
+        "screen": [
+          100,
+          196,
+          568,
+          723
+        ],
+        "score": 1.2167,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.54,
+        "screen_rel_iou": 0.9474,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.7372,
+        "body_aspect": 0.4125,
+        "template_body_aspect": 0.4232,
+        "body": [
+          44,
+          61,
+          625,
+          1471
+        ],
+        "screen": [
+          125,
+          191,
+          542,
+          753
+        ],
+        "score": 1.1803,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.78,
+        "screen_rel_iou": 0.9356,
+        "screen_centre_error_pct": 0.43,
+        "mirror": 0.7767,
+        "body_aspect": 0.4072,
+        "template_body_aspect": 0.4232,
+        "body": [
+          46,
+          60,
+          620,
+          1471
+        ],
+        "screen": [
+          127,
+          196,
+          543,
+          766
+        ],
+        "score": 1.0919,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.86,
+        "screen_rel_iou": 0.9436,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.7808,
+        "body_aspect": 0.4069,
+        "template_body_aspect": 0.4232,
+        "body": [
+          45,
+          61,
+          625,
+          1488
+        ],
+        "screen": [
+          124,
+          197,
+          547,
+          765
+        ],
+        "score": 1.1239,
+        "seed": 3
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        93,
+        1122,
+        573,
+        1452
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "a single key: a large '#' on the left, and on the right a small space symbol (a short horizontal bracket) followed by a small silent symbol (a musical note crossed out)",
+      "box": [
+        408,
+        1363,
+        561,
+        1423
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      92,
+      139,
+      496,
+      683
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      92,
+      139,
+      404,
+      544
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 0.83
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 0.83
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        33.67,
+        45.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.004,
+        1.014
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.413,
+      "spec_aspect": 0.4229,
+      "aspect_error_pct": -2.34,
+      "lean_deg": 0.016,
+      "taper_deg": 0.049,
+      "deskew_deg": 0.016,
+      "tilt_deg": 0.065,
+      "jitter_px": 0.54,
+      "symmetry_iou": 0.9966,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.004,
+      "window_vs_spec_max": 1.014,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

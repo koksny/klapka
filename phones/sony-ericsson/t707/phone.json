@@ -1,0 +1,133 @@
+{
+  "id": "sony-ericsson/t707",
+  "brand": "Sony Ericsson",
+  "model": "T707",
+  "year": 2009,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 50,
+    "height": 172,
+    "depth": 14.1
+  },
+  "size_note": "closed 93 x 50 mm (teltarif); the open length is measured on two press renders (width/length 0.288 and 0.295)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.23,
+      "y": 20.0,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 8.41,
+      "y": 120.4,
+      "w": 34.97,
+      "h": 37.64
+    },
+    "seams": [
+      {
+        "y": 76.5,
+        "note": "lower edge of the open flip (screen half)"
+      },
+      {
+        "y": 91,
+        "note": "upper edge of the keypad half, below the hinge"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "T707",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Each key is a round key with a glowing ring; the digit sits large in the middle and the letters small below it. The 1 key shows a small voicemail icon below the digit; the * key shows a/A; the # key shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t707/"
+    ],
+    "geometry_photo": {
+      "url": "https://i.blogs.es/25f21f/sony-ericsson-t707-10/2560_3000.webp",
+      "license": "",
+      "author": "",
+      "note": "press render, open, Lucid Blue (Xataka Movil gallery)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      104,
+      265,
+      399,
+      532
+    ],
+    "mm": [
+      8.67,
+      22.08,
+      33.25,
+      44.33
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        50,
+        66,
+        91,
+        121
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        610,
+        2088
+      ],
+      "screen_px": [
+        104,
+        265,
+        399,
+        532
+      ]
+    }
+  }
+}

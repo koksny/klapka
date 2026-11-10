@@ -1,0 +1,128 @@
+{
+  "id": "sony-ericsson/t303",
+  "brand": "Sony Ericsson",
+  "model": "T303",
+  "year": 2008,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 111,
+    "depth": 14.7
+  },
+  "size_note": "closed 83 x 47 mm (teltarif); the open length is measured on the press render (width/length 0.423)",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 65,536 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.22,
+      "y": 14.5,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 83,
+      "w": 35,
+      "h": 21.5
+    },
+    "seams": [
+      {
+        "y": 78.5,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t303/"
+    ],
+    "geometry_photo": {
+      "url": "https://i.blogs.es/6ce544/t303_front_open_shimmering_silver/2560_3000.webp",
+      "license": "",
+      "author": "",
+      "note": "press render, open (Xataka Movil gallery)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      131,
+      184,
+      329,
+      411
+    ],
+    "mm": [
+      10.92,
+      15.33,
+      27.42,
+      34.25
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        46,
+        90,
+        102,
+        128
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        586,
+        1356
+      ],
+      "screen_px": [
+        131,
+        184,
+        329,
+        411
+      ]
+    }
+  }
+}

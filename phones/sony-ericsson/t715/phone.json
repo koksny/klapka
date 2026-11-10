@@ -1,0 +1,128 @@
+{
+  "id": "sony-ericsson/t715",
+  "brand": "Sony Ericsson",
+  "model": "T715",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 113.5,
+    "depth": 14.9
+  },
+  "size_note": "closed 91.5 x 48 mm (teltarif); the open length is measured on the press render (width/length 0.422, the mirror reflection under it left out)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.23,
+      "y": 11.3,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 6.67,
+      "y": 87.54,
+      "w": 34.3,
+      "h": 21.95
+    },
+    "seams": [
+      {
+        "y": 84.7,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/t715/"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.nieuwemobiel.nl/media/200906_t715_frontopen_galaxysilver/200906_t715_frontopen_galaxysilver-4074f541.webp",
+      "license": "",
+      "author": "",
+      "note": "press render, open (newmobile.com press set, 133 x 364)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      98,
+      150,
+      392,
+      523
+    ],
+    "mm": [
+      8.17,
+      12.5,
+      32.67,
+      43.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        35,
+        76,
+        122,
+        162
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        587,
+        1386
+      ],
+      "screen_px": [
+        98,
+        150,
+        392,
+        523
+      ]
+    }
+  }
+}

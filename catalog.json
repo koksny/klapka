@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 70,
+  "count": 76,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -2159,6 +2159,55 @@
       }
     },
     {
+      "id": "sony-ericsson/t650i",
+      "brand": "Sony Ericsson",
+      "model": "T650i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 46,
+        "height": 104,
+        "depth": 12.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          94,
+          134,
+          375,
+          500
+        ],
+        "mm": [
+          7.83,
+          11.17,
+          31.25,
+          41.67
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t650i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t650i/skin-black.png",
+        "body.png": "phones/sony-ericsson/t650i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t650i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t650i/preview.png",
+        "phone.json": "phones/sony-ericsson/t650i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w200i",
       "brand": "Sony Ericsson",
       "model": "W200i",
@@ -2698,6 +2747,153 @@
       }
     },
     {
+      "id": "sony-ericsson/t280i",
+      "brand": "Sony Ericsson",
+      "model": "T280i",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 45,
+        "height": 100,
+        "depth": 13
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.7,
+        "type": "TFT 65,536 colours"
+      },
+      "screen": {
+        "skin_px": [
+          124,
+          191,
+          316,
+          395
+        ],
+        "mm": [
+          10.33,
+          15.92,
+          26.33,
+          32.92
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t280i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t280i/skin-black.png",
+        "body.png": "phones/sony-ericsson/t280i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t280i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t280i/preview.png",
+        "phone.json": "phones/sony-ericsson/t280i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t303",
+      "brand": "Sony Ericsson",
+      "model": "T303",
+      "year": 2008,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 47,
+        "height": 111,
+        "depth": 14.7
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 65,536 colours"
+      },
+      "screen": {
+        "skin_px": [
+          131,
+          184,
+          329,
+          411
+        ],
+        "mm": [
+          10.92,
+          15.33,
+          27.42,
+          34.25
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t303/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t303/skin-black.png",
+        "body.png": "phones/sony-ericsson/t303/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t303/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t303/preview.png",
+        "phone.json": "phones/sony-ericsson/t303/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t700",
+      "brand": "Sony Ericsson",
+      "model": "T700",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 48,
+        "height": 104,
+        "depth": 10
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          120,
+          202,
+          361,
+          481
+        ],
+        "mm": [
+          10.0,
+          16.83,
+          30.08,
+          40.08
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t700/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t700/skin-black.png",
+        "body.png": "phones/sony-ericsson/t700/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t700/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t700/preview.png",
+        "phone.json": "phones/sony-ericsson/t700/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/w302",
       "brand": "Sony Ericsson",
       "model": "W302",
@@ -3038,6 +3234,104 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w980i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w980i/preview.png",
         "phone.json": "phones/sony-ericsson/w980i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t707",
+      "brand": "Sony Ericsson",
+      "model": "T707",
+      "year": 2009,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 50,
+        "height": 172,
+        "depth": 14.1
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          104,
+          265,
+          399,
+          532
+        ],
+        "mm": [
+          8.67,
+          22.08,
+          33.25,
+          44.33
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t707/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t707/skin-black.png",
+        "body.png": "phones/sony-ericsson/t707/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t707/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t707/preview.png",
+        "phone.json": "phones/sony-ericsson/t707/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/t715",
+      "brand": "Sony Ericsson",
+      "model": "T715",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 48,
+        "height": 113.5,
+        "depth": 14.9
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          98,
+          150,
+          392,
+          523
+        ],
+        "mm": [
+          8.17,
+          12.5,
+          32.67,
+          43.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/t715/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t715/skin-black.png",
+        "body.png": "phones/sony-ericsson/t715/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/t715/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/t715/preview.png",
+        "phone.json": "phones/sony-ericsson/t715/phone.json"
       }
     },
     {
