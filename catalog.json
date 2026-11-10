@@ -44,6 +44,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/p800/skin.png",
+        "skin-black.png": "phones/sony-ericsson/p800/skin-black.png",
         "body.png": "phones/sony-ericsson/p800/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/p800/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p800/preview.png",
@@ -92,6 +93,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t100/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t100/skin-black.png",
         "body.png": "phones/sony-ericsson/t100/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t100/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t100/preview.png",
@@ -140,6 +142,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t200/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t200/skin-black.png",
         "body.png": "phones/sony-ericsson/t200/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t200/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t200/preview.png",
@@ -188,6 +191,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t300/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t300/skin-black.png",
         "body.png": "phones/sony-ericsson/t300/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t300/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t300/preview.png",
@@ -236,6 +240,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t68i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t68i/skin-black.png",
         "body.png": "phones/sony-ericsson/t68i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t68i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t68i/preview.png",
@@ -284,6 +289,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/p900/skin.png",
+        "skin-black.png": "phones/sony-ericsson/p900/skin-black.png",
         "body.png": "phones/sony-ericsson/p900/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/p900/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p900/preview.png",
@@ -332,6 +338,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t310/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t310/skin-black.png",
         "body.png": "phones/sony-ericsson/t310/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t310/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t310/preview.png",
@@ -380,6 +387,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t610/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t610/skin-black.png",
         "body.png": "phones/sony-ericsson/t610/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t610/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t610/preview.png",
@@ -428,6 +436,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k500i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k500i/skin-black.png",
         "body.png": "phones/sony-ericsson/k500i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k500i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k500i/preview.png",
@@ -476,6 +485,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k700i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k700i/skin-black.png",
         "body.png": "phones/sony-ericsson/k700i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k700i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k700i/preview.png",
@@ -524,6 +534,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/p910i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/p910i/skin-black.png",
         "body.png": "phones/sony-ericsson/p910i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/p910i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p910i/preview.png",
@@ -572,6 +583,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/t630/skin.png",
+        "skin-black.png": "phones/sony-ericsson/t630/skin-black.png",
         "body.png": "phones/sony-ericsson/t630/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/t630/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t630/preview.png",
@@ -620,6 +632,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k300i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k300i/skin-black.png",
         "body.png": "phones/sony-ericsson/k300i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k300i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k300i/preview.png",
@@ -668,6 +681,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k600i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k600i/skin-black.png",
         "body.png": "phones/sony-ericsson/k600i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k600i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k600i/preview.png",
@@ -716,6 +730,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k750i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k750i/skin-black.png",
         "body.png": "phones/sony-ericsson/k750i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k750i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k750i/preview.png",
@@ -764,6 +779,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/p990i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/p990i/skin-black.png",
         "body.png": "phones/sony-ericsson/p990i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/p990i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p990i/preview.png",
@@ -812,6 +828,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w550i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w550i/skin-black.png",
         "body.png": "phones/sony-ericsson/w550i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w550i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w550i/preview.png",
@@ -860,6 +877,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w800i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w800i/skin-black.png",
         "body.png": "phones/sony-ericsson/w800i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w800i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w800i/preview.png",
@@ -908,6 +926,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w900i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w900i/skin-black.png",
         "body.png": "phones/sony-ericsson/w900i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w900i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w900i/preview.png",
@@ -956,6 +975,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k310i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k310i/skin-black.png",
         "body.png": "phones/sony-ericsson/k310i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k310i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k310i/preview.png",
@@ -1004,6 +1024,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k510i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k510i/skin-black.png",
         "body.png": "phones/sony-ericsson/k510i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k510i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k510i/preview.png",
@@ -1052,6 +1073,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k610i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k610i/skin-black.png",
         "body.png": "phones/sony-ericsson/k610i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k610i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k610i/preview.png",
@@ -1100,6 +1122,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k800i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k800i/skin-black.png",
         "body.png": "phones/sony-ericsson/k800i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k800i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k800i/preview.png",
@@ -1148,6 +1171,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w300i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w300i/skin-black.png",
         "body.png": "phones/sony-ericsson/w300i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w300i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w300i/preview.png",
@@ -1196,6 +1220,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w700i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w700i/skin-black.png",
         "body.png": "phones/sony-ericsson/w700i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w700i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w700i/preview.png",
@@ -1244,6 +1269,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w710i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w710i/skin-black.png",
         "body.png": "phones/sony-ericsson/w710i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w710i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w710i/preview.png",
@@ -1292,6 +1318,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w810i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w810i/skin-black.png",
         "body.png": "phones/sony-ericsson/w810i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w810i/preview.png",
@@ -1340,6 +1367,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w830i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w830i/skin-black.png",
         "body.png": "phones/sony-ericsson/w830i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w830i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w830i/preview.png",
@@ -1388,6 +1416,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w850i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w850i/skin-black.png",
         "body.png": "phones/sony-ericsson/w850i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w850i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w850i/preview.png",
@@ -1436,6 +1465,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k200i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k200i/skin-black.png",
         "body.png": "phones/sony-ericsson/k200i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k200i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k200i/preview.png",
@@ -1484,6 +1514,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k220i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k220i/skin-black.png",
         "body.png": "phones/sony-ericsson/k220i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k220i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k220i/preview.png",
@@ -1532,6 +1563,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k320i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k320i/skin-black.png",
         "body.png": "phones/sony-ericsson/k320i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k320i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k320i/preview.png",
@@ -1580,6 +1612,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k530i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k530i/skin-black.png",
         "body.png": "phones/sony-ericsson/k530i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k530i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k530i/preview.png",
@@ -1628,6 +1661,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k550i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k550i/skin-black.png",
         "body.png": "phones/sony-ericsson/k550i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k550i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k550i/preview.png",
@@ -1676,6 +1710,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k630i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k630i/skin-black.png",
         "body.png": "phones/sony-ericsson/k630i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k630i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k630i/preview.png",
@@ -1724,6 +1759,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k770i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k770i/skin-black.png",
         "body.png": "phones/sony-ericsson/k770i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k770i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k770i/preview.png",
@@ -1772,6 +1808,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k810i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k810i/skin-black.png",
         "body.png": "phones/sony-ericsson/k810i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k810i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k810i/preview.png",
@@ -1820,6 +1857,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k850i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k850i/skin-black.png",
         "body.png": "phones/sony-ericsson/k850i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k850i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k850i/preview.png",
@@ -1868,6 +1906,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/p1i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/p1i/skin-black.png",
         "body.png": "phones/sony-ericsson/p1i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/p1i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p1i/preview.png",
@@ -1916,6 +1955,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w200i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w200i/skin-black.png",
         "body.png": "phones/sony-ericsson/w200i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w200i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w200i/preview.png",
@@ -1964,6 +2004,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w380i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w380i/skin-black.png",
         "body.png": "phones/sony-ericsson/w380i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w380i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w380i/preview.png",
@@ -2012,6 +2053,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w580i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w580i/skin-black.png",
         "body.png": "phones/sony-ericsson/w580i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w580i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w580i/preview.png",
@@ -2060,6 +2102,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w610i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w610i/skin-black.png",
         "body.png": "phones/sony-ericsson/w610i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w610i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w610i/preview.png",
@@ -2108,6 +2151,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w660i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w660i/skin-black.png",
         "body.png": "phones/sony-ericsson/w660i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w660i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w660i/preview.png",
@@ -2156,6 +2200,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w880i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w880i/skin-black.png",
         "body.png": "phones/sony-ericsson/w880i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w880i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w880i/preview.png",
@@ -2204,6 +2249,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w910i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w910i/skin-black.png",
         "body.png": "phones/sony-ericsson/w910i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w910i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w910i/preview.png",
@@ -2252,6 +2298,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w960i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w960i/skin-black.png",
         "body.png": "phones/sony-ericsson/w960i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w960i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w960i/preview.png",
@@ -2300,6 +2347,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k330i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k330i/skin-black.png",
         "body.png": "phones/sony-ericsson/k330i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k330i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k330i/preview.png",
@@ -2348,6 +2396,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/k660i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/k660i/skin-black.png",
         "body.png": "phones/sony-ericsson/k660i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/k660i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k660i/preview.png",
@@ -2396,6 +2445,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w302/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w302/skin-black.png",
         "body.png": "phones/sony-ericsson/w302/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w302/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w302/preview.png",
@@ -2444,6 +2494,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w350i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w350i/skin-black.png",
         "body.png": "phones/sony-ericsson/w350i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w350i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w350i/preview.png",
@@ -2492,6 +2543,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w595/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w595/skin-black.png",
         "body.png": "phones/sony-ericsson/w595/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w595/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w595/preview.png",
@@ -2540,6 +2592,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w760i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w760i/skin-black.png",
         "body.png": "phones/sony-ericsson/w760i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w760i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w760i/preview.png",
@@ -2588,6 +2641,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w890i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w890i/skin-black.png",
         "body.png": "phones/sony-ericsson/w890i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w890i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w890i/preview.png",
@@ -2636,6 +2690,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w902/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w902/skin-black.png",
         "body.png": "phones/sony-ericsson/w902/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w902/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w902/preview.png",
@@ -2684,6 +2739,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w980i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w980i/skin-black.png",
         "body.png": "phones/sony-ericsson/w980i/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w980i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w980i/preview.png",
@@ -2732,6 +2788,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w205/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w205/skin-black.png",
         "body.png": "phones/sony-ericsson/w205/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w205/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w205/preview.png",
@@ -2780,6 +2837,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w395/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w395/skin-black.png",
         "body.png": "phones/sony-ericsson/w395/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w395/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w395/preview.png",
@@ -2828,6 +2886,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w508/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w508/skin-black.png",
         "body.png": "phones/sony-ericsson/w508/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w508/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w508/preview.png",
@@ -2876,6 +2935,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w705/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w705/skin-black.png",
         "body.png": "phones/sony-ericsson/w705/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w705/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w705/preview.png",
@@ -2924,6 +2984,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w715/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w715/skin-black.png",
         "body.png": "phones/sony-ericsson/w715/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w715/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w715/preview.png",
@@ -2972,6 +3033,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w995/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w995/skin-black.png",
         "body.png": "phones/sony-ericsson/w995/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w995/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w995/preview.png",
@@ -3020,6 +3082,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w100/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w100/skin-black.png",
         "body.png": "phones/sony-ericsson/w100/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w100/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w100/preview.png",
@@ -3068,6 +3131,7 @@
       },
       "files": {
         "skin.png": "phones/sony-ericsson/w20/skin.png",
+        "skin-black.png": "phones/sony-ericsson/w20/skin-black.png",
         "body.png": "phones/sony-ericsson/w20/body.png",
         "mi-band-192x490.png": "phones/sony-ericsson/w20/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w20/preview.png",

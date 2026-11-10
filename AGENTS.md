@@ -197,7 +197,7 @@ python tools/klapka.py pages
 
 **10. Commit and open a pull request.** Commit only:
 - `phones/<brand>/<model>/`: `README.md`, `phone.json`, `build.json`, `skin.png`, `body.png`,
-  `mi-band-192x490.png`, `preview.png`, `thumb.png`
+  `skin-black.png`, `mi-band-192x490.png`, `preview.png`, `thumb.png`
 - everything `pages` regenerated: `README.md`, `phones/README.md`, `phones/<brand>/README.md`,
   `catalog/`, `catalog.json` (not `assets/header.png`: the header is a fixed line-up the maintainer picks)
 

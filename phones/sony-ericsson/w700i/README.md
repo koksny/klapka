@@ -24,6 +24,7 @@ Click **Download**; the file saves straight away.
 | File | What it is | |
 |---|---|---|
 | `skin.png` | the phone at 12 px/mm, transparent background, transparent screen | [Download](skin.png?raw=true) |
+| `skin-black.png` | the same on a black background, only the screen transparent (for apps that do not accept a transparent background) | [Download](skin-black.png?raw=true) |
 | `body.png` | the same without the screen hole | [Download](body.png?raw=true) |
 | `mi-band-192x490.png` | ready for a Mi Band 7 / 8 / 9 watch face (192 × 490) | [Download](mi-band-192x490.png?raw=true) |
 | `phone.json` | sizes and the screen position, for your own tools | [Download](phone.json?raw=true) |

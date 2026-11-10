@@ -7,6 +7,7 @@ Every phone lives in `phones/<brand>/<model>/` and has the same files.
 | File | Size | Contents |
 |---|---|---|
 | `skin.png` | phone + 1 mm on each side, at **12 px/mm** | RGBA. Fully transparent around the phone and inside the screen hole; the phone is opaque with anti-aliased edges. Colour values under fully transparent pixels are 0. |
+| `skin-black.png` | same as `skin.png` | `skin.png` on an opaque black background: alpha 255 everywhere except the screen hole (alpha 0, colour 0). For apps that look for one transparent area and would take a transparent background for the screen |
 | `body.png` | same as `skin.png` | the same image with the screen glass left in |
 | `mi-band-192x490.png` | 192 × 490 | the skin fitted into a Mi Band 7 / 8 / 9 screen with a 4 px margin, transparent around it and in the screen |
 | `preview.png` | 384 × 980 | the Mi Band export with a sample clock, on black, enlarged 2× (for the page) |
@@ -40,7 +41,7 @@ Validated by [schema/phone.schema.json](../schema/phone.schema.json).
 | `key_icons` | icons next to labels, in words |
 | `keypad_labels` | the letters line used in the render prompt |
 | `screen` | written by the tools: the screen hole in `skin.png` (`skin_px`), in mm, and `native_px` |
-| `exports` | written by the tools: per export file, its size and the screen rectangle in it |
+| `exports` | written by the tools: per export file (`mi-band-192x490.png`, `skin-black.png`), its size and the screen rectangle in it |
 | `sources` | `specs` (URLs) and `geometry_photo` (url, license, author) |
 
 ## `build.json`

@@ -106,6 +106,17 @@ def with_glass(skin):
     g.alpha_composite(im); return g
 
 
+def black_export(d, screen_px):
+    """skin-black.png: skin.png on an opaque black background, only the screen hole transparent (some
+    skin apps look for one transparent area and take the background around the phone for the screen)."""
+    sk = np.asarray(Image.open(d / "skin.png").convert("RGBA")).astype(np.float32)
+    out = np.empty(sk.shape, np.uint8)
+    out[..., :3] = np.round(sk[..., :3] * (sk[..., 3:4] / 255.0)).astype(np.uint8); out[..., 3] = 255
+    sx, sy, sw, sh = screen_px; out[sy:sy + sh, sx:sx + sw] = 0
+    Image.fromarray(out, "RGBA").save(d / "skin-black.png")
+    return {"size": [int(out.shape[1]), int(out.shape[0])], "screen_px": [sx, sy, sw, sh]}
+
+
 # ---------------------------------------------------------------- commands
 def cmd_new(a):
     d = pdir(a.id)
@@ -372,7 +383,8 @@ def cmd_finish(a):
         if (d / old).exists(): (d / old).unlink()
     P["screen"] = {"skin_px": [sx, sy, sw, sh], "mm": scr["screen_mm"], "native_px": [nw, nh],
                    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"}
-    P["exports"] = {"mi-band-192x490.png": {"size": [BW, BH], "screen_px": [bL, bT, bR - bL, bB - bT]}}
+    P["exports"] = {"mi-band-192x490.png": {"size": [BW, BH], "screen_px": [bL, bT, bR - bL, bB - bT]},
+                    "skin-black.png": black_export(d, [sx, sy, sw, sh])}
     save(d / "phone.json", P)
     acc = {"aspect": round(rep["aspect_w_h"], 4), "spec_aspect": round(wm / hm, 4),
            "aspect_error_pct": round(100 * (rep["aspect_w_h"] / (wm / hm) - 1), 2),
@@ -466,6 +478,7 @@ Click **Download**; the file saves straight away.
 | File | What it is | |
 |---|---|---|
 | `skin.png` | the phone at 12 px/mm, transparent background, transparent screen | [Download](skin.png?raw=true) |
+| `skin-black.png` | the same on a black background, only the screen transparent (for apps that do not accept a transparent background) | [Download](skin-black.png?raw=true) |
 | `body.png` | the same without the screen hole | [Download](body.png?raw=true) |
 | `mi-band-192x490.png` | ready for a Mi Band 7 / 8 / 9 watch face (192 × 490) | [Download](mi-band-192x490.png?raw=true) |
 | `phone.json` | sizes and the screen position, for your own tools | [Download](phone.json?raw=true) |
@@ -561,7 +574,7 @@ def cmd_pages(a):
         catalog.append({"id": P["id"], "brand": P["brand"], "model": P["model"], "year": P.get("year"), "form": P["form"],
                         "view": P.get("view"), "added": load(d / "build.json")["added"], "size_mm": P["size_mm"],
                         "display": P["display"], "screen": P["screen"],
-                        "files": {f: f"{here}/{f}" for f in ("skin.png", "body.png", "mi-band-192x490.png", "preview.png", "phone.json")}})
+                        "files": {f: f"{here}/{f}" for f in ("skin.png", "skin-black.png", "body.png", "mi-band-192x490.png", "preview.png", "phone.json")}})
     save(ROOT / "catalog.json", {"standard": "v1", "count": len(catalog), "phones": catalog})
 
     cat = ROOT / "catalog"

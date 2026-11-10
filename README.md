@@ -53,6 +53,7 @@ Every phone comes in the same format, so they work together:
 | File | What it is |
 |---|---|
 | `skin.png` | the phone, straight-on, at **12 pixels per millimetre**, transparent around it and in the screen |
+| `skin-black.png` | the same on a black background, only the screen transparent: for apps that do not accept a transparent background |
 | `body.png` | the same, with the screen glass left in |
 | `mi-band-192x490.png` | ready-made background for a **Mi Band 7 / 8 / 9** watch face |
 | `phone.json` | real size, display, and the exact screen position in every file |
