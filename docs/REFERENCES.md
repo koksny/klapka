@@ -18,7 +18,9 @@ sets: `front_straight`, `front_slided_open`), esato.com (`/gfx/phones/sonyericss
 (`view_b` images, also CDMA models), Xataka Movil galleries (`xatakamovil.com/galeria/sony-ericsson-<model>`:
 official press sets such as `front_open`, up to 768 px tall), shop and archive listings (esfr.pl, imimg.com). GSMArena now answers
 automated clients with a paywall; specs also come from teltarif.de, devicebeast.com and phonescoop.com.
-Watch for reflections under press renders: they are not part of the phone.
+Watch for reflections under press renders: they are not part of the phone. When no press render of
+the open phone exists, a review photo of an original unit works (mobile-review.com reviews show most
+phones open); paint out the site's watermark first.
 Record where it came from in `build.json` (`photo`) anyway, so the phone can be made again.
 
 Pick the appearance photo in this order:

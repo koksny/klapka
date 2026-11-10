@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 82,
+  "count": 88,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -689,6 +689,55 @@
       }
     },
     {
+      "id": "sony-ericsson/s700i",
+      "brand": "Sony Ericsson",
+      "model": "S700i",
+      "year": 2004,
+      "form": "swivel",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 49,
+        "height": 160,
+        "depth": 24.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.3,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          105,
+          227,
+          401,
+          535
+        ],
+        "mm": [
+          8.75,
+          18.92,
+          33.42,
+          44.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s700i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s700i/skin-black.png",
+        "body.png": "phones/sony-ericsson/s700i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s700i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s700i/preview.png",
+        "phone.json": "phones/sony-ericsson/s700i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/t290i",
       "brand": "Sony Ericsson",
       "model": "T290i",
@@ -980,6 +1029,104 @@
         "mi-band-192x490.png": "phones/sony-ericsson/p990i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/p990i/preview.png",
         "phone.json": "phones/sony-ericsson/p990i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/s600i",
+      "brand": "Sony Ericsson",
+      "model": "S600i",
+      "year": 2005,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 46.5,
+        "height": 140,
+        "depth": 22.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          118,
+          174,
+          335,
+          419
+        ],
+        "mm": [
+          9.83,
+          14.5,
+          27.92,
+          34.92
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s600i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s600i/skin-black.png",
+        "body.png": "phones/sony-ericsson/s600i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s600i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s600i/preview.png",
+        "phone.json": "phones/sony-ericsson/s600i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/s710a",
+      "brand": "Sony Ericsson",
+      "model": "S710a",
+      "year": 2005,
+      "form": "swivel",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 49,
+        "height": 160,
+        "depth": 24.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.3,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          102,
+          262,
+          395,
+          527
+        ],
+        "mm": [
+          8.5,
+          21.83,
+          32.92,
+          43.92
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s710a/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s710a/skin-black.png",
+        "body.png": "phones/sony-ericsson/s710a/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s710a/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s710a/preview.png",
+        "phone.json": "phones/sony-ericsson/s710a/phone.json"
       }
     },
     {
@@ -2110,6 +2257,55 @@
       }
     },
     {
+      "id": "sony-ericsson/s500i",
+      "brand": "Sony Ericsson",
+      "model": "S500i",
+      "year": 2007,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 47,
+        "height": 130,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          222,
+          370,
+          493
+        ],
+        "mm": [
+          8.83,
+          18.5,
+          30.83,
+          41.08
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s500i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s500i/skin-black.png",
+        "body.png": "phones/sony-ericsson/s500i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s500i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s500i/preview.png",
+        "phone.json": "phones/sony-ericsson/s500i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/t250i",
       "brand": "Sony Ericsson",
       "model": "T250i",
@@ -2845,6 +3041,55 @@
       }
     },
     {
+      "id": "sony-ericsson/s302",
+      "brand": "Sony Ericsson",
+      "model": "S302",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 46,
+        "height": 101,
+        "depth": 11
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          188,
+          369,
+          461
+        ],
+        "mm": [
+          8.83,
+          15.67,
+          30.75,
+          38.42
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s302/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s302/skin-black.png",
+        "body.png": "phones/sony-ericsson/s302/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s302/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s302/preview.png",
+        "phone.json": "phones/sony-ericsson/s302/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/t270i",
       "brand": "Sony Ericsson",
       "model": "T270i",
@@ -3528,6 +3773,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/c903/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/c903/preview.png",
         "phone.json": "phones/sony-ericsson/c903/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/s312",
+      "brand": "Sony Ericsson",
+      "model": "S312",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 46,
+        "height": 100,
+        "depth": 12.5
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          90,
+          170,
+          375,
+          469
+        ],
+        "mm": [
+          7.5,
+          14.17,
+          31.25,
+          39.08
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/s312/skin.png",
+        "skin-black.png": "phones/sony-ericsson/s312/skin-black.png",
+        "body.png": "phones/sony-ericsson/s312/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/s312/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/s312/preview.png",
+        "phone.json": "phones/sony-ericsson/s312/phone.json"
       }
     },
     {

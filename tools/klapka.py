@@ -348,7 +348,8 @@ def cmd_restore(a):
 def cmd_finish(a):
     d, w = pdir(a.id), wdir(a.id); P = phone(a.id); b = build(a.id); T = load(w / "template.json")
     wm, hm = P["size_mm"]["width"], P["size_mm"]["height"]
-    rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", hm, "--width-mm", wm, "--px-per-mm", MASTER_PX_PER_MM, "--deskew"))
+    holes = ["--keep-holes", b["keep_holes"]] if b.get("keep_holes") else []   # px; a real opening through the body
+    rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", hm, "--width-mm", wm, "--px-per-mm", MASTER_PX_PER_MM, "--deskew", *holes))
     prev_source = dict(b.get("screen_source", {}))
     x0, y0, x1, y1 = alpha_bbox(w / "final.png"); k = hm * MASTER_PX_PER_MM / (y1 - y0 + 1); pad = MASTER_PX_PER_MM
     # seed: the template's screen, placed relative to the render's own body box, in body.png pixels

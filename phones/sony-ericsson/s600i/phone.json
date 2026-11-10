@@ -1,0 +1,130 @@
+{
+  "id": "sony-ericsson/s600i",
+  "brand": "Sony Ericsson",
+  "model": "S600i",
+  "year": 2005,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 46.5,
+    "height": 140,
+    "depth": 22.5
+  },
+  "size_note": "closed 93 x 46.5 mm (devicebeast); the keypad folds out below the front; the open length is measured on the press render (width/length 0.332); no spec gives the display diagonal",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.97,
+      "y": 13.7,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 6,
+      "y": 90,
+      "w": 34,
+      "h": 25
+    },
+    "seams": [
+      {
+        "y": 87,
+        "note": "upper edge of the opened keypad flap"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "QuickShare",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. The keys stand in three tall pill-shaped columns; each digit has its letters below it.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://devicebeast.com/phones/s600",
+      "https://www.teltarif.de/h/sony-ericsson/s600i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s600.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, open"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      118,
+      174,
+      335,
+      419
+    ],
+    "mm": [
+      9.83,
+      14.5,
+      27.92,
+      34.92
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        49,
+        54,
+        94,
+        117
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        571,
+        1704
+      ],
+      "screen_px": [
+        118,
+        174,
+        335,
+        419
+      ]
+    }
+  }
+}

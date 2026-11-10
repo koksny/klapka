@@ -234,5 +234,6 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | the green window in `work/screen_check.png` misses the bezel's inside edge | `finish <id> --window x0,y0,x1,y1 --no-refine` with the edges read off `body.png` |
 | the hole looks off-centre although `finish` passes | a thin frame line or dark border is inside the window on one side and outside on the other; give the window exactly (`--no-refine`) |
 | a photo shows an operator logo or sticker (e.g. "vodafone") | use another photo: it ends up on the skin |
+| a real opening through the body (a slot in a flap) comes out filled with smeared colour | set `"keep_holes": 2000` in `build.json` (minimum opening size in render pixels) and run `finish` again |
 | a spec value cannot be right (a diagonal that does not fit the measured glass) | use what fits the measurement and explain it in `size_note` |
 | downloads from Wikimedia fail with an HTML error page | rate limit: send a descriptive User-Agent and retry with a pause |

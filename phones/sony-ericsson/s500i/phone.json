@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/s500i",
+  "brand": "Sony Ericsson",
+  "model": "S500i",
+  "year": 2007,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 130,
+    "depth": 14
+  },
+  "size_note": "closed 99 x 47 mm (teltarif); the open length is measured on the press render (width/length 0.362)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.26,
+      "y": 17.0,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 7.11,
+      "y": 96.2,
+      "w": 30.8,
+      "h": 23.9
+    },
+    "seams": [
+      {
+        "y": 93,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "S500i",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. The keypad is a flat green panel with three key columns separated by small round dividers.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/s500i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s500.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, open, Mysterious Green"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      106,
+      222,
+      370,
+      493
+    ],
+    "mm": [
+      8.83,
+      18.5,
+      30.83,
+      41.08
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        40,
+        72,
+        111,
+        149
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        584,
+        1584
+      ],
+      "screen_px": [
+        106,
+        222,
+        370,
+        493
+      ]
+    }
+  }
+}

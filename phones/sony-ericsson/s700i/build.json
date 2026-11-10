@@ -1,0 +1,259 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.304,
+    "body_px": [
+      36,
+      72,
+      540,
+      1720
+    ],
+    "screen_px": [
+      108,
+      268,
+      468,
+      748
+    ]
+  },
+  "photo": {
+    "url": "https://www.mobile-review.com/review/image/sonyeric/s700/pic25.jpg (photo of the open S700, rotated upright, watermark painted out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      167,
+      500
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.03,
+        "screen_rel_iou": 0.7976,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.5599,
+        "body_aspect": 0.3063,
+        "template_body_aspect": 0.3062,
+        "body": [
+          37,
+          79,
+          539,
+          1720
+        ],
+        "screen": [
+          81,
+          247,
+          494,
+          736
+        ],
+        "score": 1.0662,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.92,
+        "screen_rel_iou": 0.8595,
+        "screen_centre_error_pct": 0.51,
+        "mirror": 0.4073,
+        "body_aspect": 0.3004,
+        "template_body_aspect": 0.3062,
+        "body": [
+          47,
+          80,
+          538,
+          1717
+        ],
+        "screen": [
+          110,
+          261,
+          480,
+          787
+        ],
+        "score": 0.9163,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 3.1,
+        "screen_rel_iou": 0.7765,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.6275,
+        "body_aspect": 0.3157,
+        "template_body_aspect": 0.3062,
+        "body": [
+          33,
+          106,
+          546,
+          1733
+        ],
+        "screen": [
+          77,
+          263,
+          503,
+          758
+        ],
+        "score": 0.9257,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.65,
+        "screen_rel_iou": 0.8651,
+        "screen_centre_error_pct": 0.4,
+        "mirror": 0.474,
+        "body_aspect": 0.2951,
+        "template_body_aspect": 0.3062,
+        "body": [
+          38,
+          49,
+          533,
+          1729
+        ],
+        "screen": [
+          102,
+          264,
+          473,
+          772
+        ],
+        "score": 0.8792,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        56,
+        1130,
+        504,
+        1466
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          60,
+          1432,
+          535,
+          1515
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      99,
+      210,
+      512,
+      779
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      99,
+      210,
+      413,
+      569
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.42
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.42
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        34.42,
+        47.42
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.982,
+        1.014
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3071,
+      "spec_aspect": 0.3063,
+      "aspect_error_pct": 0.28,
+      "lean_deg": 0.035,
+      "taper_deg": 0.12,
+      "deskew_deg": 0.035,
+      "tilt_deg": 0.156,
+      "jitter_px": 0.56,
+      "symmetry_iou": 0.9973,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.982,
+      "window_vs_spec_max": 1.014,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

@@ -1,0 +1,321 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1696
+    ],
+    "px_per_mm": 11.145,
+    "body_px": [
+      29,
+      68,
+      546,
+      1627
+    ],
+    "screen_px": [
+      129,
+      221,
+      446,
+      618
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s600.jpg (press render, open)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      131,
+      370
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.76,
+        "screen_rel_iou": 0.921,
+        "screen_centre_error_pct": 1.29,
+        "mirror": 0.597,
+        "body_aspect": 0.3229,
+        "template_body_aspect": 0.3321,
+        "body": [
+          34,
+          55,
+          538,
+          1618
+        ],
+        "screen": [
+          130,
+          204,
+          455,
+          615
+        ],
+        "score": 0.9529,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.03,
+        "screen_rel_iou": 0.9726,
+        "screen_centre_error_pct": -0.2,
+        "mirror": 0.6114,
+        "body_aspect": 0.322,
+        "template_body_aspect": 0.3321,
+        "body": [
+          35,
+          77,
+          536,
+          1635
+        ],
+        "screen": [
+          131,
+          224,
+          438,
+          624
+        ],
+        "score": 1.107,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.77,
+        "screen_rel_iou": 0.9565,
+        "screen_centre_error_pct": -0.31,
+        "mirror": 0.5951,
+        "body_aspect": 0.3195,
+        "template_body_aspect": 0.3321,
+        "body": [
+          47,
+          107,
+          525,
+          1605
+        ],
+        "screen": [
+          135,
+          248,
+          434,
+          632
+        ],
+        "score": 1.0344,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.1,
+        "screen_rel_iou": 0.9574,
+        "screen_centre_error_pct": -0.43,
+        "mirror": 0.5487,
+        "body_aspect": 0.3051,
+        "template_body_aspect": 0.3321,
+        "body": [
+          53,
+          80,
+          521,
+          1616
+        ],
+        "screen": [
+          142,
+          219,
+          428,
+          622
+        ],
+        "score": 0.7839,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        61,
+        1049,
+        509,
+        1371
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "QuickShare",
+      "box": [
+        192,
+        1399,
+        384,
+        1435
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          190,
+          1396,
+          386,
+          1438
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "QuickShare",
+      "box": [
+        192,
+        1399,
+        384,
+        1435
+      ],
+      "prompt_id": "fix_text",
+      "seed": 2
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "faint ghosts of the old 'Quick Shere' around the redrawn QuickShare set to the panel colour by hand (light grey pixels only, the dark letters untouched; no image model)",
+      "box": [
+        190,
+        1394,
+        388,
+        1440
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the slot through the flap: the cutout left a ragged, semi-transparent edge with dark dashes; the opening's outline smoothed (blurred mask, 1 px anti-aliasing) and a 4 px band around it filled by inpainting from the body around it; the slot is kept transparent (build.json keep_holes, no image model)",
+      "box": [
+        108,
+        1512,
+        461,
+        1579
+      ]
+    },
+    {
+      "n": 7,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          100,
+          1505,
+          470,
+          1590
+        ]
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      112,
+      165,
+      459,
+      602
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      112,
+      165,
+      347,
+      437
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        28.92,
+        36.42
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.012,
+        1.02
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3259,
+      "spec_aspect": 0.3321,
+      "aspect_error_pct": -1.88,
+      "lean_deg": 0.006,
+      "taper_deg": 0.185,
+      "deskew_deg": 0.078,
+      "tilt_deg": 0.191,
+      "jitter_px": 1.21,
+      "symmetry_iou": 0.9916,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.012,
+      "window_vs_spec_max": 1.02,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10",
+  "keep_holes": 2000
+}

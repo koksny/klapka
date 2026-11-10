@@ -1,0 +1,296 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.408,
+    "body_px": [
+      44,
+      59,
+      660,
+      1412
+    ],
+    "screen_px": [
+      140,
+      256,
+      564,
+      786
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s302.jpg (press render, Crystal Blue)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.32,
+        "screen_rel_iou": 0.7912,
+        "screen_centre_error_pct": -0.16,
+        "mirror": 0.7324,
+        "body_aspect": 0.4497,
+        "template_body_aspect": 0.4557,
+        "body": [
+          48,
+          58,
+          659,
+          1418
+        ],
+        "screen": [
+          112,
+          236,
+          593,
+          825
+        ],
+        "score": 1.075,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.6,
+        "screen_rel_iou": 0.7817,
+        "screen_centre_error_pct": -0.16,
+        "mirror": 0.638,
+        "body_aspect": 0.4484,
+        "template_body_aspect": 0.4557,
+        "body": [
+          43,
+          48,
+          659,
+          1423
+        ],
+        "screen": [
+          106,
+          227,
+          594,
+          826
+        ],
+        "score": 1.0045,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.31,
+        "screen_rel_iou": 0.7896,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.515,
+        "body_aspect": 0.4497,
+        "template_body_aspect": 0.4557,
+        "body": [
+          51,
+          57,
+          654,
+          1399
+        ],
+        "screen": [
+          114,
+          231,
+          589,
+          813
+        ],
+        "score": 0.9653,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.81,
+        "screen_rel_iou": 0.7871,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.5582,
+        "body_aspect": 0.4429,
+        "template_body_aspect": 0.4557,
+        "body": [
+          63,
+          56,
+          663,
+          1412
+        ],
+        "screen": [
+          124,
+          233,
+          599,
+          820
+        ],
+        "score": 0.9009,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        71,
+        1020,
+        615,
+        1326
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          100,
+          230,
+          600,
+          830
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          100,
+          190,
+          605,
+          835
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          100,
+          190,
+          605,
+          835
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the black screen glass carried grey and blue gloss reflections (left and bottom light, right black): the glass outline (rounded rectangle) painted black, the Sony Ericsson print moved onto black in proportion to its brightness, evened across the word (no image model)",
+      "box": [
+        114,
+        202,
+        591,
+        818
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      180,
+      481,
+      657
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      100,
+      180,
+      381,
+      477
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        31.75,
+        39.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.001,
+        1.002
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4614,
+      "spec_aspect": 0.4554,
+      "aspect_error_pct": 1.31,
+      "lean_deg": 0.001,
+      "taper_deg": 0.32,
+      "deskew_deg": -0.001,
+      "tilt_deg": 0.32,
+      "jitter_px": 1.88,
+      "symmetry_iou": 0.9917,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.001,
+      "window_vs_spec_max": 1.002,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

@@ -1,0 +1,283 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      41,
+      59,
+      663,
+      1412
+    ],
+    "screen_px": [
+      138,
+      228,
+      566,
+      763
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s312.jpg (press render, Dawn Blue)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.18,
+        "screen_rel_iou": 0.8574,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.5225,
+        "body_aspect": 0.4455,
+        "template_body_aspect": 0.4601,
+        "body": [
+          46,
+          50,
+          650,
+          1407
+        ],
+        "screen": [
+          128,
+          182,
+          566,
+          776
+        ],
+        "score": 0.9434,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.21,
+        "screen_rel_iou": 0.8648,
+        "screen_centre_error_pct": -0.41,
+        "mirror": 0.5331,
+        "body_aspect": 0.4407,
+        "template_body_aspect": 0.4601,
+        "body": [
+          47,
+          50,
+          652,
+          1424
+        ],
+        "screen": [
+          129,
+          183,
+          565,
+          783
+        ],
+        "score": 0.8794,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.38,
+        "screen_rel_iou": 0.8576,
+        "screen_centre_error_pct": -0.33,
+        "mirror": 0.5592,
+        "body_aspect": 0.4399,
+        "template_body_aspect": 0.4601,
+        "body": [
+          47,
+          35,
+          654,
+          1416
+        ],
+        "screen": [
+          117,
+          217,
+          580,
+          773
+        ],
+        "score": 0.8851,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.82,
+        "screen_rel_iou": 0.8727,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.5265,
+        "body_aspect": 0.438,
+        "template_body_aspect": 0.4601,
+        "body": [
+          51,
+          55,
+          643,
+          1408
+        ],
+        "screen": [
+          133,
+          187,
+          560,
+          772
+        ],
+        "score": 0.8867,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.22,
+        "screen_rel_iou": 0.8245,
+        "screen_centre_error_pct": -0.77,
+        "mirror": 0.4542,
+        "body_aspect": 0.3947,
+        "template_body_aspect": 0.4601,
+        "body": [
+          91,
+          69,
+          611,
+          1388
+        ],
+        "screen": [
+          147,
+          226,
+          547,
+          792
+        ],
+        "score": 0.2639,
+        "seed": 5
+      }
+    ],
+    "best_seed": 7,
+    "used_seed": 7
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s7.png",
+    "prompt_id": "cutout",
+    "seed": 2
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        16,
+        979,
+        688,
+        1336
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 2",
+      "text": "a single key: a large '6' on the left, and on the right the small letters 'MNO'",
+      "box": [
+        427,
+        1090,
+        571,
+        1147
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": [
+      84,
+      155,
+      471,
+      653
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      84,
+      155,
+      387,
+      498
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.17
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.25,
+        "bottom": 1.17
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        32.25,
+        41.5
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.016,
+        1.046
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4555,
+      "spec_aspect": 0.46,
+      "aspect_error_pct": -0.98,
+      "lean_deg": 0.011,
+      "taper_deg": 0.011,
+      "deskew_deg": 0.011,
+      "tilt_deg": 0.023,
+      "jitter_px": 4.3,
+      "symmetry_iou": 0.9603,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.016,
+      "window_vs_spec_max": 1.046,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

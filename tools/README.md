@@ -14,7 +14,7 @@ records in `build.json`. The other scripts are what it calls; they also work on 
 | `backend.py` | – | finds the image server (`KLAPKA_SD_URL`, `klapka.local.json` or KLIF) |
 | `score_render.py` | pass1 | ranks renders: white background, body aspect within 3%, then the best screen match |
 | `fix_text.py` | textfix | cut, enlarge to an exact multiple of 32, paste back colour-matched with a feathered edge; alpha untouched |
-| `clean_alpha.py` | finish | alpha cleanup, edge colour clean-up, 12 px/mm master with 1 mm padding; measures tilt, jitter, symmetry |
+| `clean_alpha.py` | finish | alpha cleanup, edge colour clean-up, 12 px/mm master with 1 mm padding; measures tilt, jitter, symmetry; `--keep-holes N` keeps real openings through the body (from `build.json` `keep_holes`) |
 | `mark_screen.py` | finish | display window (automatic, or `--window` by hand, `--no-refine` to keep it exact) painted as glass, exact-aspect hole centred in it, visible-border check and balancing |
 | `make_header.py` | header | the README header animation: letters of KLAPKA on lit LCDs, phones stepping past one place per second (animated PNG) |
 | `contact_sheet.py` | – | images side by side on a checkerboard, for looking |

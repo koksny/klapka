@@ -288,6 +288,28 @@ one side are part of the design, so these are not pass/fail.
   back from the keypad redraw's saved crop (`work/fixN_crop.png`, the state before fix N) and the
   rest is fixed by hand.
 
+## What the S series taught (2026-11-10)
+
+- The keypad block in `layout_mm.keypad` was off on five of six phones (read off a small press
+  render); a keypad redraw then writes labels between the keys. Measure the block on the render
+  (`final.png` with a ruler) before `--keypad`; after that all six keypads came out right at the
+  first seed, apart from one key on the S312.
+- The spec width can include side buttons (S312: 46 mm with the buttons, 0.454 without them on two
+  press renders): every seed then scores 3-6% narrow. Measure the body on the render without the
+  buttons.
+- A cutout can go semi-transparent over most of the body (S312 84%, S710a 18% on the screen); a
+  second cutout seed (`pass2 --seed 2`) fixed both. Checking the cutout's alpha catches it before
+  the text fixes.
+- No straight-on press render of the open S700i exists; a review photo of the open phone (watermark
+  painted out, rotated upright) gave a clean render. The S710a (the same body in black) gives the
+  open length a second check.
+- A real opening through the body (the S600i's slot in the keypad flap) was filled by `clean_alpha`
+  with smeared colour (Koks spotted it). `build.json` `keep_holes: N` keeps transparent openings of at
+  least N px (render pixels) through `finish`; the slot's ragged edge was smoothed and its rim
+  inpainted from the body around it. `skin-black.png` shows the opening black.
+- A black screen glass with a grey gloss reflection on one side (S302) makes the frame around the
+  hole uneven. The glass outline is painted black and the brand print kept on it by brightness.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

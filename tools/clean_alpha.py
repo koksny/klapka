@@ -23,6 +23,8 @@ ap.add_argument("--width-mm", type=float, required=True)
 ap.add_argument("--px-per-mm", type=float, default=12.0)
 ap.add_argument("--rim", type=int, default=2, help="px band at the outline where model alpha is kept")
 ap.add_argument("--deskew", action="store_true")
+ap.add_argument("--keep-holes", type=int, default=0, metavar="PX",
+                help="keep transparent openings inside the body of at least PX pixels (a slot through a flap); 0 = fill all")
 a = ap.parse_args()
 
 src = Image.open(a.raw)
@@ -47,8 +49,15 @@ def edge_tilt(mask):
 A[A < 8] = 0
 lab, n = ndi.label(A >= 128)
 sizes = ndi.sum(np.ones_like(lab), lab, range(1, n + 1))
-body = ndi.binary_fill_holes(lab == int(np.argmax(sizes)) + 1)
+solid = lab == int(np.argmax(sizes)) + 1
+body = ndi.binary_fill_holes(solid)
 rep["components_ge128"] = int(n)
+if a.keep_holes:   # real openings through the body (S600i flap slot) stay transparent; small gaps are still filled
+    hl, hn = ndi.label(body & ~solid)
+    hs = ndi.sum(np.ones_like(hl), hl, range(1, hn + 1)) if hn else []
+    keep = np.isin(hl, [i + 1 for i, s in enumerate(hs) if s >= a.keep_holes])
+    body &= ~keep
+    rep["kept_holes_px"] = int(keep.sum())
 A[~ndi.binary_dilation(body, iterations=a.rim + 1)] = 0              # stray islands / far haze
 # pixels the model left (semi-)transparent inside the body carry the matte colour under them
 # (often magenta/purple): give them the colour of the nearest truly opaque pixel before they go solid

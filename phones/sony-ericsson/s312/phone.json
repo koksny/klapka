@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/s312",
+  "brand": "Sony Ericsson",
+  "model": "S312",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 100,
+    "depth": 12.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.13,
+      "y": 12.5,
+      "w": 31.73,
+      "h": 39.67,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 0.3,
+      "y": 70.5,
+      "w": 45.4,
+      "h": 21.3
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "S312",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. The keys 3, 6, 9 and # carry a small green media icon at their right edge.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/s312/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s312.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      90,
+      170,
+      375,
+      469
+    ],
+    "mm": [
+      7.5,
+      14.17,
+      31.25,
+      39.08
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        34,
+        103,
+        119,
+        150
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        571,
+        1224
+      ],
+      "screen_px": [
+        90,
+        170,
+        375,
+        469
+      ]
+    }
+  }
+}

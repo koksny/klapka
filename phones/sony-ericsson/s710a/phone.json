@@ -1,0 +1,130 @@
+{
+  "id": "sony-ericsson/s710a",
+  "brand": "Sony Ericsson",
+  "model": "S710a",
+  "year": 2005,
+  "form": "swivel",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 160,
+    "depth": 24.5
+  },
+  "size_note": "the North American S700i (850/1800/1900 MHz, Cingular) in black; body as the S700i (107.5 x 49 mm closed); open length about 160 mm, 162 mm on this press render",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.3,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.98,
+      "y": 19,
+      "w": 35.05,
+      "h": 46.74,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 4.86,
+      "y": 105.6,
+      "w": 37.2,
+      "h": 27.9
+    },
+    "seams": [
+      {
+        "y": 102,
+        "note": "lower edge of the turned-out screen part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "QuickShare",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. A fifth row below the number keys holds a round internet key on the left and a round power key on the right.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://mobiletechreview.com/phones/sony-ericsson-S710a.htm",
+      "https://www.teltarif.de/h/sony-ericsson/s700i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-s710.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, open"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      102,
+      262,
+      395,
+      527
+    ],
+    "mm": [
+      8.5,
+      21.83,
+      32.92,
+      43.92
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        47,
+        69,
+        97,
+        130
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        602,
+        1944
+      ],
+      "screen_px": [
+        102,
+        262,
+        395,
+        527
+      ]
+    }
+  }
+}

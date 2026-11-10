@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/s700i",
+  "brand": "Sony Ericsson",
+  "model": "S700i",
+  "year": 2004,
+  "form": "swivel",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 160,
+    "depth": 24.5
+  },
+  "size_note": "closed 107.5 x 49 mm (teltarif, mobile-review); open length about 160 mm: 158 mm on a frontal photo of the open S700, 162 mm on the S710a press render (same body), 16 cm in a user review",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.3,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.98,
+      "y": 19,
+      "w": 35.05,
+      "h": 46.74,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 4.37,
+      "y": 104.96,
+      "w": 38.7,
+      "h": 28.0
+    },
+    "seams": [
+      {
+        "y": 104,
+        "note": "lower edge of the turned-out screen part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. A fifth row below the number keys holds a round internet key on the left and a round power key on the right.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/s700i/",
+      "https://www.mobile-review.com/review/sonyericsson-s700-en.shtml"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobile-review.com/review/image/sonyeric/s700/pic25.jpg",
+      "license": "",
+      "author": "",
+      "note": "photo of the open S700, rotated upright, watermark painted out"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      105,
+      227,
+      401,
+      535
+    ],
+    "mm": [
+      8.75,
+      18.92,
+      33.42,
+      44.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        47,
+        61,
+        98,
+        131
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        614,
+        1944
+      ],
+      "screen_px": [
+        105,
+        227,
+        401,
+        535
+      ]
+    }
+  }
+}

@@ -3,8 +3,8 @@
 
 <a href="../years.md">By year</a> · <a href="../brands.md">By brand</a> · <a href="../types.md">By type</a> · <a href="../all.md">All phones</a>
 
-2 phones, oldest first.
+4 phones, oldest first.
 
 <table>
-<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/w550i/"><img src="../../phones/sony-ericsson/w550i/thumb.png" height="160" alt="Sony Ericsson W550i"></a><br><b>W550i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w900i/"><img src="../../phones/sony-ericsson/w900i/thumb.png" height="160" alt="Sony Ericsson W900i"></a><br><b>W900i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
+<tr><td align="center" width="25%"><a href="../../phones/sony-ericsson/s700i/"><img src="../../phones/sony-ericsson/s700i/thumb.png" height="160" alt="Sony Ericsson S700i"></a><br><b>S700i</b><br><sub>Sony Ericsson · 2004</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/s710a/"><img src="../../phones/sony-ericsson/s710a/thumb.png" height="160" alt="Sony Ericsson S710a"></a><br><b>S710a</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w550i/"><img src="../../phones/sony-ericsson/w550i/thumb.png" height="160" alt="Sony Ericsson W550i"></a><br><b>W550i</b><br><sub>Sony Ericsson · 2005</sub></td><td align="center" width="25%"><a href="../../phones/sony-ericsson/w900i/"><img src="../../phones/sony-ericsson/w900i/thumb.png" height="160" alt="Sony Ericsson W900i"></a><br><b>W900i</b><br><sub>Sony Ericsson · 2005</sub></td></tr>
 </table>
