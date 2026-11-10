@@ -273,6 +273,21 @@ one side are part of the design, so these are not pass/fail.
   with the colour kept); `clean_alpha` would refill them dark. Set their alpha to 255 on the cutout
   first and record it.
 
+## What the C series taught (2026-11-10)
+
+- Slider press renders on gsm.magazyn.pl are cropped at the top and bottom edge (C903, C905): every
+  seed came out 3-5% narrow and none passed. The cutout of the best-looking seed measured within the
+  limit (C903 -1.4%, C905 -2.7%); measure the cutout before rendering more seeds.
+- The open length of the C905 measured on the render (134 mm) matches the only published figure
+  (about 135 mm, Trusted Reviews).
+- A cutout can turn a whole dark phone semi-transparent (C702, a third of the body at alpha below
+  250); another cutout seed (`pass2 --seed 2`) fixed it.
+- A keypad redraw writes the `#` key's space symbol as a second, smaller `#` (C702, C903) or as
+  invented glyphs (C905). The wrong glyph is painted out; a missing icon is better than a wrong one.
+- A single-key redraw can change the key's main glyph (C905: `a*` instead of `*`). The area is put
+  back from the keypad redraw's saved crop (`work/fixN_crop.png`, the state before fix N) and the
+  rest is fixed by hand.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

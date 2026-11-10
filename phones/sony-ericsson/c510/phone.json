@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/c510",
+  "brand": "Sony Ericsson",
+  "model": "C510",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 47,
+    "height": 107,
+    "depth": 12.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.4,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.21,
+      "y": 15.6,
+      "w": 36.58,
+      "h": 48.77,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 79,
+      "w": 39,
+      "h": 20
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Cyber-shot",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. The keys 3, 6, 9 and # carry a small media icon at their right edge.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/c510/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonc510.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, cropped at the body's top and bottom edges (198 x 451 px = 0.439, the spec aspect)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      86,
+      218,
+      408,
+      544
+    ],
+    "mm": [
+      7.17,
+      18.17,
+      34.0,
+      45.33
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        31,
+        109,
+        127,
+        169
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        589,
+        1308
+      ],
+      "screen_px": [
+        86,
+        218,
+        408,
+        544
+      ]
+    }
+  }
+}

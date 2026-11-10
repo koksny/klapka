@@ -1,0 +1,279 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.776,
+    "body_px": [
+      45,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      137,
+      260,
+      565,
+      831
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c702.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.29,
+        "screen_rel_iou": 0.9341,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.6034,
+        "body_aspect": 0.4541,
+        "template_body_aspect": 0.4527,
+        "body": [
+          48,
+          50,
+          650,
+          1377
+        ],
+        "screen": [
+          132,
+          240,
+          568,
+          819
+        ],
+        "score": 1.2045,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.0,
+        "screen_rel_iou": 0.917,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.5714,
+        "body_aspect": 0.4437,
+        "template_body_aspect": 0.4527,
+        "body": [
+          55,
+          65,
+          649,
+          1405
+        ],
+        "screen": [
+          133,
+          257,
+          571,
+          842
+        ],
+        "score": 1.1029,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.61,
+        "screen_rel_iou": 0.9159,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.5484,
+        "body_aspect": 0.4454,
+        "template_body_aspect": 0.4527,
+        "body": [
+          47,
+          50,
+          654,
+          1414
+        ],
+        "screen": [
+          129,
+          241,
+          573,
+          842
+        ],
+        "score": 1.1011,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.9,
+        "screen_rel_iou": 0.8401,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.6314,
+        "body_aspect": 0.4306,
+        "template_body_aspect": 0.4527,
+        "body": [
+          59,
+          56,
+          647,
+          1423
+        ],
+        "screen": [
+          131,
+          230,
+          571,
+          872
+        ],
+        "score": 0.8769,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 2
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        79,
+        1053,
+        623,
+        1376
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the keypad redraw printed a second, smaller # where the space symbol belongs: painted out with the key colour by hand (no image model); the space symbol is left out",
+      "box": [
+        527,
+        1267,
+        544,
+        1289
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "a stray stroke before a/A on the * key painted out with the key colour by hand (no image model)",
+      "box": [
+        177,
+        1274,
+        182,
+        1289
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the U of TUV had an extra stroke inside it (read as W); the stroke and a stray dot after GHI painted out with the key colour by hand (no image model)",
+      "box": [
+        354,
+        1218,
+        358,
+        1228
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      90,
+      187,
+      515,
+      749
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      90,
+      187,
+      425,
+      562
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.17,
+      "window_mm": [
+        35.42,
+        46.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.056,
+        1.048
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4635,
+      "spec_aspect": 0.4528,
+      "aspect_error_pct": 2.36,
+      "lean_deg": 0.017,
+      "taper_deg": 0.298,
+      "deskew_deg": 0.112,
+      "tilt_deg": 0.316,
+      "jitter_px": 3.07,
+      "symmetry_iou": 0.9846,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.17,
+      "window_vs_spec_min": 1.048,
+      "window_vs_spec_max": 1.056,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

@@ -1,0 +1,296 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.178,
+    "body_px": [
+      39,
+      60,
+      631,
+      1443
+    ],
+    "screen_px": [
+      115,
+      204,
+      555,
+      791
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonc901.jpg (press render)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      454
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.28,
+        "screen_rel_iou": 0.8933,
+        "screen_centre_error_pct": -0.25,
+        "mirror": 0.6392,
+        "body_aspect": 0.434,
+        "template_body_aspect": 0.4285,
+        "body": [
+          36,
+          58,
+          633,
+          1435
+        ],
+        "screen": [
+          104,
+          197,
+          562,
+          831
+        ],
+        "score": 1.1237,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.81,
+        "screen_rel_iou": 0.9,
+        "screen_centre_error_pct": -0.62,
+        "mirror": 0.5597,
+        "body_aspect": 0.4319,
+        "template_body_aspect": 0.4285,
+        "body": [
+          50,
+          84,
+          617,
+          1398
+        ],
+        "screen": [
+          112,
+          217,
+          548,
+          816
+        ],
+        "score": 1.0778,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.61,
+        "screen_rel_iou": 0.8994,
+        "screen_centre_error_pct": -0.41,
+        "mirror": 0.5524,
+        "body_aspect": 0.4354,
+        "template_body_aspect": 0.4285,
+        "body": [
+          36,
+          59,
+          638,
+          1443
+        ],
+        "screen": [
+          104,
+          198,
+          565,
+          832
+        ],
+        "score": 1.0536,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.88,
+        "screen_rel_iou": 0.8865,
+        "screen_centre_error_pct": -0.83,
+        "mirror": 0.5823,
+        "body_aspect": 0.4323,
+        "template_body_aspect": 0.4285,
+        "body": [
+          33,
+          55,
+          635,
+          1449
+        ],
+        "screen": [
+          96,
+          191,
+          562,
+          832
+        ],
+        "score": 1.0505,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "MNO",
+      "box": [
+        456,
+        1134,
+        564,
+        1158
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "a single key: a large '*' on the left, and on the right the small letters 'a/A' above a small key-lock symbol",
+      "box": [
+        97,
+        1269,
+        265,
+        1320
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "text",
+      "text": "a/A",
+      "box": [
+        166,
+        1278,
+        226,
+        1295
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "a stray dot between N and O of MNO painted out with the key colour by hand (no image model)",
+      "box": [
+        516,
+        1141,
+        522,
+        1154
+      ]
+    },
+    {
+      "n": 5,
+      "area": "key row 4",
+      "text": "a single key: a large '*' on the left, and on the right the small letters 'a/A' above a small key-lock symbol",
+      "box": [
+        97,
+        1269,
+        265,
+        1320
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 2
+    }
+  ],
+  "screen_source": {
+    "window": [
+      73,
+      135,
+      499,
+      692
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      73,
+      135,
+      426,
+      557
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.75,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        35.5,
+        46.42
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.059,
+        1.038
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4398,
+      "spec_aspect": 0.4286,
+      "aspect_error_pct": 2.62,
+      "lean_deg": 0.013,
+      "taper_deg": 0.098,
+      "deskew_deg": -0.095,
+      "tilt_deg": 0.111,
+      "jitter_px": 2.99,
+      "symmetry_iou": 0.9835,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.038,
+      "window_vs_spec_max": 1.059,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

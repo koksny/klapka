@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/c702",
+  "brand": "Sony Ericsson",
+  "model": "C702",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 48,
+    "height": 106,
+    "depth": 15.5
+  },
+  "size_note": "",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.23,
+      "y": 15.75,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 80,
+      "w": 38,
+      "h": 21
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Cyber-shot",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. Digits and letters are printed in amber on dark keys; the keys 3, 6, 9 and # carry a small media icon at their right edge.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/c702/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c702.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      96,
+      193,
+      412,
+      550
+    ],
+    "mm": [
+      8.0,
+      16.08,
+      34.33,
+      45.83
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        33,
+        109,
+        123,
+        164
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        614,
+        1296
+      ],
+      "screen_px": [
+        96,
+        193,
+        412,
+        550
+      ]
+    }
+  }
+}

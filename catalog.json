@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 76,
+  "count": 82,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -2600,6 +2600,153 @@
       }
     },
     {
+      "id": "sony-ericsson/c702",
+      "brand": "Sony Ericsson",
+      "model": "C702",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 48,
+        "height": 106,
+        "depth": 15.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          96,
+          193,
+          412,
+          550
+        ],
+        "mm": [
+          8.0,
+          16.08,
+          34.33,
+          45.83
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c702/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c702/skin-black.png",
+        "body.png": "phones/sony-ericsson/c702/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c702/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c702/preview.png",
+        "phone.json": "phones/sony-ericsson/c702/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/c902",
+      "brand": "Sony Ericsson",
+      "model": "C902",
+      "year": 2008,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 49,
+        "height": 108,
+        "depth": 10.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          118,
+          238,
+          360,
+          480
+        ],
+        "mm": [
+          9.83,
+          19.83,
+          30.0,
+          40.0
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c902/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c902/skin-black.png",
+        "body.png": "phones/sony-ericsson/c902/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c902/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c902/preview.png",
+        "phone.json": "phones/sony-ericsson/c902/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/c905",
+      "brand": "Sony Ericsson",
+      "model": "C905",
+      "year": 2008,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 49,
+        "height": 134,
+        "depth": 18
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          72,
+          198,
+          447,
+          596
+        ],
+        "mm": [
+          6.0,
+          16.5,
+          37.25,
+          49.67
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c905/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c905/skin-black.png",
+        "body.png": "phones/sony-ericsson/c905/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c905/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c905/preview.png",
+        "phone.json": "phones/sony-ericsson/c905/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k330i",
       "brand": "Sony Ericsson",
       "model": "K330",
@@ -3234,6 +3381,153 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w980i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w980i/preview.png",
         "phone.json": "phones/sony-ericsson/w980i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/c510",
+      "brand": "Sony Ericsson",
+      "model": "C510",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 47,
+        "height": 107,
+        "depth": 12.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          86,
+          218,
+          408,
+          544
+        ],
+        "mm": [
+          7.17,
+          18.17,
+          34.0,
+          45.33
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c510/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c510/skin-black.png",
+        "body.png": "phones/sony-ericsson/c510/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c510/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c510/preview.png",
+        "phone.json": "phones/sony-ericsson/c510/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/c901",
+      "brand": "Sony Ericsson",
+      "model": "C901",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 45,
+        "height": 105,
+        "depth": 13
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          82,
+          141,
+          409,
+          545
+        ],
+        "mm": [
+          6.83,
+          11.75,
+          34.08,
+          45.42
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c901/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c901/skin-black.png",
+        "body.png": "phones/sony-ericsson/c901/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c901/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c901/preview.png",
+        "phone.json": "phones/sony-ericsson/c901/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/c903",
+      "brand": "Sony Ericsson",
+      "model": "C903",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-10",
+      "size_mm": {
+        "width": 49,
+        "height": 127.5,
+        "depth": 16
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          85,
+          188,
+          428,
+          571
+        ],
+        "mm": [
+          7.08,
+          15.67,
+          35.67,
+          47.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/c903/skin.png",
+        "skin-black.png": "phones/sony-ericsson/c903/skin-black.png",
+        "body.png": "phones/sony-ericsson/c903/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/c903/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/c903/preview.png",
+        "phone.json": "phones/sony-ericsson/c903/phone.json"
       }
     },
     {

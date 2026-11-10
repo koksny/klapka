@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/c903",
+  "brand": "Sony Ericsson",
+  "model": "C903",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 127.5,
+    "depth": 16
+  },
+  "size_note": "closed 97 x 49 mm (teltarif); the open length is measured on the press render (width/length 0.384)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.4,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.21,
+      "y": 14.35,
+      "w": 36.58,
+      "h": 48.77,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 5.46,
+      "y": 91.73,
+      "w": 38.11,
+      "h": 22.35
+    },
+    "seams": [
+      {
+        "y": 95,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Cyber-shot",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/c903/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c903.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render, open"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      85,
+      188,
+      428,
+      571
+    ],
+    "mm": [
+      7.08,
+      15.67,
+      35.67,
+      47.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        30,
+        66,
+        130,
+        172
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        605,
+        1554
+      ],
+      "screen_px": [
+        85,
+        188,
+        428,
+        571
+      ]
+    }
+  }
+}

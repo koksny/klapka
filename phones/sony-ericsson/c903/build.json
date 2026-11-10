@@ -1,0 +1,318 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1600
+    ],
+    "px_per_mm": 11.545,
+    "body_px": [
+      37,
+      64,
+      602,
+      1535
+    ],
+    "screen_px": [
+      109,
+      230,
+      530,
+      792
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c903.jpg (press render, open, Glamour Red)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      200,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.67,
+        "screen_rel_iou": 0.8904,
+        "screen_centre_error_pct": 2.39,
+        "mirror": 0.6647,
+        "body_aspect": 0.3743,
+        "template_body_aspect": 0.3845,
+        "body": [
+          63,
+          120,
+          565,
+          1463
+        ],
+        "screen": [
+          121,
+          265,
+          531,
+          778
+        ],
+        "score": 0.8508,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.02,
+        "screen_rel_iou": 0.8886,
+        "screen_centre_error_pct": 1.97,
+        "mirror": 0.3429,
+        "body_aspect": 0.3729,
+        "template_body_aspect": 0.3845,
+        "body": [
+          55,
+          78,
+          588,
+          1509
+        ],
+        "screen": [
+          113,
+          233,
+          551,
+          791
+        ],
+        "score": 0.7125,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.83,
+        "screen_rel_iou": 0.8938,
+        "screen_centre_error_pct": 2.22,
+        "mirror": 0.5507,
+        "body_aspect": 0.3698,
+        "template_body_aspect": 0.3845,
+        "body": [
+          49,
+          63,
+          589,
+          1525
+        ],
+        "screen": [
+          110,
+          221,
+          552,
+          790
+        ],
+        "score": 0.7559,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.91,
+        "screen_rel_iou": 0.8865,
+        "screen_centre_error_pct": 1.84,
+        "mirror": 0.3516,
+        "body_aspect": 0.3656,
+        "template_body_aspect": 0.3845,
+        "body": [
+          60,
+          85,
+          576,
+          1498
+        ],
+        "screen": [
+          115,
+          236,
+          540,
+          787
+        ],
+        "score": 0.6331,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.74,
+        "screen_rel_iou": 0.8745,
+        "screen_centre_error_pct": -0.68,
+        "mirror": 0.4558,
+        "body_aspect": 0.3624,
+        "template_body_aspect": 0.3845,
+        "body": [
+          64,
+          98,
+          578,
+          1518
+        ],
+        "screen": [
+          111,
+          233,
+          524,
+          793
+        ],
+        "score": 0.7472,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.14,
+        "screen_rel_iou": 0.9401,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6501,
+        "body_aspect": 0.357,
+        "template_body_aspect": 0.3845,
+        "body": [
+          51,
+          55,
+          582,
+          1544
+        ],
+        "screen": [
+          112,
+          216,
+          522,
+          800
+        ],
+        "score": 0.8987,
+        "seed": 5
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        64,
+        1100,
+        576,
+        1404
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "Cyber-shot",
+      "box": [
+        218,
+        792,
+        410,
+        828
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the i of Ericsson had no dot: a dot drawn by hand at cap height from the stem's own pixels and shadow (no image model)",
+      "box": [
+        326,
+        230,
+        334,
+        234
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      79,
+      180,
+      519,
+      767
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      79,
+      180,
+      440,
+      587
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.26,
+      "window_mm": [
+        36.67,
+        48.92
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.002,
+        1.003
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3798,
+      "spec_aspect": 0.3843,
+      "aspect_error_pct": -1.17,
+      "lean_deg": 0.007,
+      "taper_deg": 0.222,
+      "deskew_deg": -0.007,
+      "tilt_deg": 0.229,
+      "jitter_px": 1.5,
+      "symmetry_iou": 0.9873,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.26,
+      "window_vs_spec_min": 1.002,
+      "window_vs_spec_max": 1.003,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

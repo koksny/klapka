@@ -1,0 +1,355 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 11.205,
+    "body_px": [
+      45,
+      65,
+      593,
+      1565
+    ],
+    "screen_px": [
+      115,
+      238,
+      523,
+      782
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c905.jpg (press render, open, Night Black)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      180,
+      400
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.51,
+        "screen_rel_iou": 0.9191,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6786,
+        "body_aspect": 0.3529,
+        "template_body_aspect": 0.3658,
+        "body": [
+          60,
+          71,
+          582,
+          1552
+        ],
+        "screen": [
+          116,
+          241,
+          526,
+          795
+        ],
+        "score": 1.0827,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.19,
+        "screen_rel_iou": 0.9136,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.5847,
+        "body_aspect": 0.3504,
+        "template_body_aspect": 0.3658,
+        "body": [
+          57,
+          64,
+          589,
+          1584
+        ],
+        "screen": [
+          114,
+          229,
+          529,
+          805
+        ],
+        "score": 0.9683,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.38,
+        "screen_rel_iou": 0.9184,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.6561,
+        "body_aspect": 0.3497,
+        "template_body_aspect": 0.3658,
+        "body": [
+          64,
+          67,
+          582,
+          1550
+        ],
+        "screen": [
+          119,
+          237,
+          526,
+          792
+        ],
+        "score": 1.0177,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.38,
+        "screen_rel_iou": 0.9049,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.6592,
+        "body_aspect": 0.3497,
+        "template_body_aspect": 0.3658,
+        "body": [
+          64,
+          74,
+          575,
+          1537
+        ],
+        "screen": [
+          118,
+          239,
+          520,
+          794
+        ],
+        "score": 1.0056,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.74,
+        "screen_rel_iou": 0.8836,
+        "screen_centre_error_pct": 0.29,
+        "mirror": 0.5361,
+        "body_aspect": 0.3484,
+        "template_body_aspect": 0.3658,
+        "body": [
+          60,
+          68,
+          575,
+          1548
+        ],
+        "screen": [
+          111,
+          231,
+          527,
+          791
+        ],
+        "score": 0.8855,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.45,
+        "screen_rel_iou": 0.9313,
+        "screen_centre_error_pct": -0.2,
+        "mirror": 0.6612,
+        "body_aspect": 0.3385,
+        "template_body_aspect": 0.3658,
+        "body": [
+          71,
+          75,
+          571,
+          1554
+        ],
+        "screen": [
+          124,
+          244,
+          516,
+          791
+        ],
+        "score": 0.8695,
+        "seed": 6
+      }
+    ],
+    "best_seed": 7,
+    "used_seed": 7
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s7.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        79,
+        1194,
+        559,
+        1524
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 4",
+      "text": "a single key: a large '*' on the left, and on the right the small letters 'a/A' followed by a small key-lock symbol",
+      "box": [
+        101,
+        1418,
+        254,
+        1478
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 4",
+      "text": "a single key: a large '#' on the left, and on the right a small space symbol (a short horizontal bracket) followed by a small silent symbol (a musical note crossed out)",
+      "box": [
+        384,
+        1418,
+        537,
+        1478
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          110,
+          1418,
+          245,
+          1478
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the * key redraw (fix 2) printed 'a*'; that area was put back from the keypad redraw (fix 1), and the lock icon fix 1 had drawn across the lower arms of the * was replaced by the mirrored upper arms by hand (no image model); the key-lock icon is left out",
+      "box": [
+        140,
+        1458,
+        172,
+        1479
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "a faint ghost of the old symbol under the space mark of the # key painted out with the key colour by hand (no image model)",
+      "box": [
+        458,
+        1465,
+        476,
+        1476
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      66,
+      191,
+      525,
+      801
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      66,
+      191,
+      459,
+      610
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.58
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.58
+      },
+      "window_centre_x_pct": 0.27,
+      "window_mm": [
+        38.25,
+        50.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.046,
+        1.042
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3574,
+      "spec_aspect": 0.3657,
+      "aspect_error_pct": -2.26,
+      "lean_deg": 0.049,
+      "taper_deg": 0.317,
+      "deskew_deg": 0.049,
+      "tilt_deg": 0.366,
+      "jitter_px": 2.99,
+      "symmetry_iou": 0.9836,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.27,
+      "window_vs_spec_min": 1.042,
+      "window_vs_spec_max": 1.046,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-10"
+}

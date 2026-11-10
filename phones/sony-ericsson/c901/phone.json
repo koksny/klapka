@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/c901",
+  "brand": "Sony Ericsson",
+  "model": "C901",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 105,
+    "depth": 13
+  },
+  "size_note": "",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262,144 colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.73,
+      "y": 10.9,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal, x centred; y = top edge, measured on the press render"
+    },
+    "keypad": {
+      "x": 3,
+      "y": 75,
+      "w": 38,
+      "h": 22
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Cyber-shot",
+    "C"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "The 1 key also shows a small voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol. On the 7 and 9 keys the letters stand in two lines (PQ over RS, WX over YZ); the keys 3, 6, 9 and # carry a small media icon at their right edge.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://devicebeast.com/phones/c901"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-c901.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      82,
+      141,
+      409,
+      545
+    ],
+    "mm": [
+      6.83,
+      11.75,
+      34.08,
+      45.42
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        31,
+        85,
+        129,
+        173
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        578,
+        1284
+      ],
+      "screen_px": [
+        82,
+        141,
+        409,
+        545
+      ]
+    }
+  }
+}
