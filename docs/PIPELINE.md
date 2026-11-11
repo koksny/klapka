@@ -364,6 +364,17 @@ one side are part of the design, so these are not pass/fail.
 - Where the screen content runs up to the brand print (G700), give the window from the top of the
   content (the status bar), or a strip of it stays above the hole.
 
+## What the first J batch taught (2026-11-11)
+
+- A white phone on a white background (the white J200i) rendered 6-13% narrow on all eight seeds, and
+  the cutout confirmed it: the edge melts into the background. A press render of the same model in a
+  dark colour (navy J200i) gave seeds within 2%.
+- An embossed brand print (J300i, the print pressed into the pink body) that comes out misspelled is
+  fixed by copying whole letters from the same print ('s' of Ericsson, 'o' of Sony): a word fix
+  leaves the edges of its patch on a textured surface.
+- A keypad redraw can stack a symbol on another key (the * on the a of 'a/A', J210i): put that key
+  back from the cutout with `restore --box` and fix its letters by hand.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

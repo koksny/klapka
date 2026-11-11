@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 101,
+  "count": 107,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -591,6 +591,55 @@
       }
     },
     {
+      "id": "sony-ericsson/j200i",
+      "brand": "Sony Ericsson",
+      "model": "J200i",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 43,
+        "height": 101,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.6,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          86,
+          265,
+          363,
+          363
+        ],
+        "mm": [
+          7.17,
+          22.08,
+          30.25,
+          30.25
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j200i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j200i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j200i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j200i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j200i/preview.png",
+        "phone.json": "phones/sony-ericsson/j200i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k500i",
       "brand": "Sony Ericsson",
       "model": "K500i",
@@ -882,6 +931,202 @@
         "mi-band-192x490.png": "phones/sony-ericsson/t630/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t630/preview.png",
         "phone.json": "phones/sony-ericsson/t630/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j210i",
+      "brand": "Sony Ericsson",
+      "model": "J210i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 43,
+        "height": 101,
+        "depth": 19
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.6,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          92,
+          268,
+          355,
+          355
+        ],
+        "mm": [
+          7.67,
+          22.33,
+          29.58,
+          29.58
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j210i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j210i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j210i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j210i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j210i/preview.png",
+        "phone.json": "phones/sony-ericsson/j210i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j220i",
+      "brand": "Sony Ericsson",
+      "model": "J220i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 44,
+        "height": 102,
+        "depth": 18
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.55,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          110,
+          271,
+          330,
+          330
+        ],
+        "mm": [
+          9.17,
+          22.58,
+          27.5,
+          27.5
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j220i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j220i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j220i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j220i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j220i/preview.png",
+        "phone.json": "phones/sony-ericsson/j220i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j230i",
+      "brand": "Sony Ericsson",
+      "model": "J230i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 44,
+        "height": 102,
+        "depth": 18
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.55,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          100,
+          256,
+          346,
+          346
+        ],
+        "mm": [
+          8.33,
+          21.33,
+          28.83,
+          28.83
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j230i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j230i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j230i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j230i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j230i/preview.png",
+        "phone.json": "phones/sony-ericsson/j230i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j300i",
+      "brand": "Sony Ericsson",
+      "model": "J300i",
+      "year": 2005,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 42.6,
+        "height": 99.1,
+        "depth": 18.2
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.5,
+        "type": "TFT 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          103,
+          276,
+          324,
+          324
+        ],
+        "mm": [
+          8.58,
+          23.0,
+          27.0,
+          27.0
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j300i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j300i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j300i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j300i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j300i/preview.png",
+        "phone.json": "phones/sony-ericsson/j300i/phone.json"
       }
     },
     {
@@ -1323,6 +1568,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w900i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w900i/preview.png",
         "phone.json": "phones/sony-ericsson/w900i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j100i",
+      "brand": "Sony Ericsson",
+      "model": "J100i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 44,
+        "height": 100,
+        "depth": 18
+      },
+      "display": {
+        "native_px": [
+          96,
+          64
+        ],
+        "diagonal_in": 1.4,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          262,
+          353,
+          235
+        ],
+        "mm": [
+          8.83,
+          21.83,
+          29.42,
+          19.58
+        ],
+        "native_px": [
+          96,
+          64
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j100i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j100i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j100i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j100i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j100i/preview.png",
+        "phone.json": "phones/sony-ericsson/j100i/phone.json"
       }
     },
     {

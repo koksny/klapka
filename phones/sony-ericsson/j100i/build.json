@@ -1,0 +1,266 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 13.542,
+    "body_px": [
+      38,
+      59,
+      633,
+      1412
+    ],
+    "screen_px": [
+      136,
+      334,
+      535,
+      600
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonj100.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      484
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.04,
+        "screen_rel_iou": 0.8997,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.8077,
+        "body_aspect": 0.4403,
+        "template_body_aspect": 0.4402,
+        "body": [
+          32,
+          52,
+          640,
+          1434
+        ],
+        "screen": [
+          127,
+          320,
+          546,
+          614
+        ],
+        "score": 1.2934,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.55,
+        "screen_rel_iou": 0.9089,
+        "screen_centre_error_pct": 0.18,
+        "mirror": 0.7962,
+        "body_aspect": 0.4377,
+        "template_body_aspect": 0.4402,
+        "body": [
+          61,
+          102,
+          612,
+          1362
+        ],
+        "screen": [
+          151,
+          348,
+          524,
+          618
+        ],
+        "score": 1.2613,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.63,
+        "screen_rel_iou": 0.9006,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.7574,
+        "body_aspect": 0.4374,
+        "template_body_aspect": 0.4402,
+        "body": [
+          54,
+          89,
+          619,
+          1382
+        ],
+        "screen": [
+          145,
+          342,
+          527,
+          622
+        ],
+        "score": 1.239,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.91,
+        "screen_rel_iou": 0.8764,
+        "screen_centre_error_pct": -0.08,
+        "mirror": 0.782,
+        "body_aspect": 0.4442,
+        "template_body_aspect": 0.4402,
+        "body": [
+          39,
+          62,
+          631,
+          1396
+        ],
+        "screen": [
+          131,
+          324,
+          538,
+          616
+        ],
+        "score": 1.2133,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the voicemail symbol after the envelope on the 1 key came out as 'Sbo': redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        163,
+        984,
+        218,
+        1008
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        179,
+        1160,
+        195,
+        1183
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' after * came out as '4/A': redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        178,
+        1235,
+        221,
+        1259
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      248,
+      465,
+      510
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      100,
+      248,
+      365,
+      262
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.17,
+        "bottom": 1.08
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.17,
+        "bottom": 1.08
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        30.42,
+        21.83
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.028,
+        1.107
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4521,
+      "spec_aspect": 0.44,
+      "aspect_error_pct": 2.75,
+      "lean_deg": 0.025,
+      "taper_deg": 0.46,
+      "deskew_deg": -0.063,
+      "tilt_deg": 0.485,
+      "jitter_px": 1.5,
+      "symmetry_iou": 0.9957,
+      "screen_aspect_error_pct": 0.14,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.028,
+      "window_vs_spec_max": 1.107,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

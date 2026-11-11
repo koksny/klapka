@@ -1,0 +1,122 @@
+{
+  "id": "sony-ericsson/j200i",
+  "brand": "Sony Ericsson",
+  "model": "J200i",
+  "year": 2004,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43,
+    "height": 101,
+    "depth": 19
+  },
+  "size_note": "101 x 43 x 19 mm (GSMArena)",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      128,
+      128
+    ],
+    "diagonal_in": 1.6,
+    "type": "CSTN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.13,
+      "y": 22.0,
+      "w": 28.74,
+      "h": 28.74,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the frontal press render"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 67.5,
+      "w": 34.0,
+      "h": 26.0
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Round-ended white keys with a dark outline, in three columns, each digit with its small letters to its right. The 1 key also shows a small envelope and voicemail icon (two small rings joined along their bottoms); the * key also shows a/A; the # key also shows a space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_j200-908.php"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonj200i.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 px wide, cropped tight)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      86,
+      265,
+      363,
+      363
+    ],
+    "mm": [
+      7.17,
+      22.08,
+      30.25,
+      30.25
+    ],
+    "native_px": [
+      128,
+      128
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        34,
+        125,
+        123,
+        123
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        539,
+        1236
+      ],
+      "screen_px": [
+        86,
+        265,
+        363,
+        363
+      ]
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 13.991,
+    "body_px": [
+      35,
+      61,
+      636,
+      1473
+    ],
+    "screen_px": [
+      135,
+      366,
+      536,
+      767
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonj210.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      511
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.23,
+        "screen_rel_iou": 0.8453,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.7649,
+        "body_aspect": 0.4208,
+        "template_body_aspect": 0.426,
+        "body": [
+          41,
+          63,
+          627,
+          1457
+        ],
+        "screen": [
+          119,
+          349,
+          550,
+          774
+        ],
+        "score": 1.1576,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.05,
+        "screen_rel_iou": 0.8697,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.7848,
+        "body_aspect": 0.4173,
+        "template_body_aspect": 0.426,
+        "body": [
+          60,
+          87,
+          609,
+          1404
+        ],
+        "screen": [
+          133,
+          368,
+          537,
+          758
+        ],
+        "score": 1.1503,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.4,
+        "screen_rel_iou": 0.8655,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.7897,
+        "body_aspect": 0.4158,
+        "template_body_aspect": 0.426,
+        "body": [
+          67,
+          130,
+          602,
+          1418
+        ],
+        "screen": [
+          136,
+          403,
+          532,
+          784
+        ],
+        "score": 1.1311,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.87,
+        "screen_rel_iou": 0.8728,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.7704,
+        "body_aspect": 0.4053,
+        "template_body_aspect": 0.426,
+        "body": [
+          65,
+          86,
+          614,
+          1442
+        ],
+        "screen": [
+          138,
+          380,
+          542,
+          778
+        ],
+        "score": 1.0056,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        88,
+        990,
+        536,
+        1326
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          112,
+          1250,
+          234,
+          1296
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the keypad redraw drew the voicemail symbol as legs under the envelope: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        164,
+        1016,
+        216,
+        1050
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the * key was put back from the cutout (the keypad redraw stacked the star on the a); its 'a/A' came out as 'NA': redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        170,
+        1265,
+        208,
+        1290
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the space symbol on the # key came out as a plain dash: redrawn as a space symbol (drawn by hand in the label colour, no image model)",
+      "box": [
+        496,
+        1278,
+        526,
+        1294
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      82,
+      262,
+      376,
+      367
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.1,
+      "window_mm": [
+        31.33,
+        30.58
+      ],
+      "edge_strength": {
+        "left": 21.2,
+        "right": 41.5,
+        "top": 172.2,
+        "bottom": 38.5
+      },
+      "window_vs_spec": [
+        1.09,
+        1.064
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4252,
+      "spec_aspect": 0.4257,
+      "aspect_error_pct": -0.13,
+      "lean_deg": 0.011,
+      "taper_deg": 0.825,
+      "deskew_deg": 0.011,
+      "tilt_deg": 0.836,
+      "jitter_px": 0.98,
+      "symmetry_iou": 0.9961,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.1,
+      "window_vs_spec_min": 1.064,
+      "window_vs_spec_max": 1.09,
+      "window_edge_min": 21.2
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

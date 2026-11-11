@@ -1,0 +1,272 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 13.565,
+    "body_px": [
+      38,
+      60,
+      634,
+      1443
+    ],
+    "screen_px": [
+      148,
+      354,
+      524,
+      730
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonj230.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      519
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.87,
+        "screen_rel_iou": 0.8304,
+        "screen_centre_error_pct": 0.18,
+        "mirror": 0.6226,
+        "body_aspect": 0.4276,
+        "template_body_aspect": 0.4314,
+        "body": [
+          57,
+          93,
+          617,
+          1404
+        ],
+        "screen": [
+          141,
+          347,
+          535,
+          732
+        ],
+        "score": 1.0802,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.16,
+        "screen_rel_iou": 0.8276,
+        "screen_centre_error_pct": 0.38,
+        "mirror": 0.547,
+        "body_aspect": 0.4177,
+        "template_body_aspect": 0.4314,
+        "body": [
+          72,
+          129,
+          599,
+          1392
+        ],
+        "screen": [
+          155,
+          375,
+          520,
+          753
+        ],
+        "score": 0.9052,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.24,
+        "screen_rel_iou": 0.8526,
+        "screen_centre_error_pct": 0.36,
+        "mirror": 0.4359,
+        "body_aspect": 0.4174,
+        "template_body_aspect": 0.4314,
+        "body": [
+          62,
+          95,
+          609,
+          1407
+        ],
+        "screen": [
+          148,
+          352,
+          527,
+          733
+        ],
+        "score": 0.8719,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.44,
+        "screen_rel_iou": 0.8083,
+        "screen_centre_error_pct": 0.56,
+        "mirror": 0.5186,
+        "body_aspect": 0.4165,
+        "template_body_aspect": 0.4314,
+        "body": [
+          70,
+          100,
+          603,
+          1381
+        ],
+        "screen": [
+          153,
+          359,
+          526,
+          694
+        ],
+        "score": 0.8396,
+        "seed": 3
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out as a ticked box and 'bo': redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        171,
+        991,
+        226,
+        1019
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        191,
+        1157,
+        209,
+        1179
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' after * came out with a broken a: redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        193,
+        1226,
+        235,
+        1255
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label after # came out as a curved dash and a garbled note: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        476,
+        1222,
+        537,
+        1252
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      90,
+      250,
+      367,
+      358
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.83,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        30.58,
+        29.83
+      ],
+      "edge_strength": {
+        "left": 79.1,
+        "right": 115.0,
+        "top": 84.3,
+        "bottom": 57.9
+      },
+      "window_vs_spec": [
+        1.099,
+        1.072
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4266,
+      "spec_aspect": 0.4314,
+      "aspect_error_pct": -1.11,
+      "lean_deg": 0.023,
+      "taper_deg": 0.273,
+      "deskew_deg": 0.023,
+      "tilt_deg": 0.296,
+      "jitter_px": 1.12,
+      "symmetry_iou": 0.9974,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.072,
+      "window_vs_spec_max": 1.099,
+      "window_edge_min": 57.9
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}
