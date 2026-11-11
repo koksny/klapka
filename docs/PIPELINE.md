@@ -403,6 +403,18 @@ one side are part of the design, so these are not pass/fail.
   of the AT&T Z310a (Koks's link) gave the true shape. Its at&t marks were painted out before the
   render, the pink D-pad centre made grey, and the European activity-menu key drawn back by hand.
 
+## What the second Z batch taught (2026-11-11)
+
+- Rendering 8 seeds per clamshell at once and measuring every raw seed (`tmp`-side script, body box
+  on a white background) found a seed within 3% for all six phones without a second round; one
+  phone (Z300i) needed 4 more.
+- The brand print came out garbled on four of six (letters swapped, "Song"); a word fix cleaned two.
+  The other two were wiped and replaced with another phone's clean print of the same logotype,
+  scaled to the print's box (the source print taken from a flat background, so no gloss bands
+  carry over).
+- Shortcut-key icons (internet, camera, activity menu) came out garbled on the Z610i; they were drawn
+  by hand from the official image.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

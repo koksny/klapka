@@ -1,0 +1,131 @@
+{
+  "id": "sony-ericsson/z525a",
+  "brand": "Sony Ericsson",
+  "model": "Z525a",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 46,
+    "height": 152.5,
+    "depth": 24
+  },
+  "size_note": "closed 83 x 46 x 24 mm (GSMArena); the open length is measured on the press render of the open phone (117 x 388 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 17.5,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, centred in the display frame on the geometry photo"
+    },
+    "keypad": {
+      "x": 5.0,
+      "y": 107.0,
+      "w": 35.0,
+      "h": 27.0
+    },
+    "seams": [
+      {
+        "y": 67.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 82.0,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "A flat silver keypad in four rows separated by darker lines, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z525-1526.php"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z525.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render of the open phone (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      118,
+      217,
+      342,
+      428
+    ],
+    "mm": [
+      9.83,
+      18.08,
+      28.5,
+      35.67
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        61,
+        88,
+        110
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        580,
+        1854
+      ],
+      "screen_px": [
+        118,
+        217,
+        342,
+        428
+      ]
+    }
+  }
+}

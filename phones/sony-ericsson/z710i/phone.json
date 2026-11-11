@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z710i",
+  "brand": "Sony Ericsson",
+  "model": "Z710i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 155.9,
+    "depth": 24.5
+  },
+  "size_note": "closed 88 x 48 x 24.5 mm (GSMArena; teltarif 25 mm deep); the open length is measured on the press render of the open phone (121 x 393 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.93,
+      "y": 16.0,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, centred in the display frame on the geometry photo"
+    },
+    "keypad": {
+      "x": 7.0,
+      "y": 112.5,
+      "w": 34.5,
+      "h": 24.5
+    },
+    "seams": [
+      {
+        "y": 64.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 76.0,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Black keys in three columns separated by thin silver lines, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z710-1561.php",
+      "https://www.teltarif.de/h/sony-ericsson/z710i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z710.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render of the open phone (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      112,
+      195,
+      366,
+      458
+    ],
+    "mm": [
+      9.33,
+      16.25,
+      30.5,
+      38.17
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        50,
+        54,
+        92,
+        116
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        589,
+        1895
+      ],
+      "screen_px": [
+        112,
+        195,
+        366,
+        458
+      ]
+    }
+  }
+}

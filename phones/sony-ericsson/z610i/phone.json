@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z610i",
+  "brand": "Sony Ericsson",
+  "model": "Z610i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 162.4,
+    "depth": 20
+  },
+  "size_note": "closed 94.5 x 49 x 20 mm (GSMArena, teltarif); the open length is measured on the press render of the open phone (118 x 391 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.63,
+      "y": 15.6,
+      "w": 31.73,
+      "h": 39.67,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, centred in the display frame on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 112.5,
+      "w": 35.5,
+      "h": 31.5
+    },
+    "seams": [
+      {
+        "y": 73.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 85.5,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Rounded dark grey keys in three columns, each digit large in the middle with its small letters under it. The 1 key shows a small voicemail icon under the 1; the * key shows a/A under it; the 0 key shows '+' under it; the # key shows a small space symbol and a small silent (crossed note) symbol under it.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z610-1665.php",
+      "https://www.teltarif.de/h/sony-ericsson/z610i/"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z610.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render of the open phone (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      125,
+      232,
+      356,
+      445
+    ],
+    "mm": [
+      10.42,
+      19.33,
+      29.67,
+      37.08
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        52,
+        61,
+        86,
+        108
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        609,
+        1973
+      ],
+      "screen_px": [
+        125,
+        232,
+        356,
+        445
+      ]
+    }
+  }
+}

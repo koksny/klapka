@@ -1,0 +1,383 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.575,
+    "body_px": [
+      34,
+      72,
+      541,
+      1720
+    ],
+    "screen_px": [
+      128,
+      241,
+      446,
+      639
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z710.jpg (press render of the open phone, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      211,
+      448
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.24,
+        "screen_rel_iou": 0.7825,
+        "screen_centre_error_pct": -0.01,
+        "mirror": 0.7725,
+        "body_aspect": 0.2981,
+        "template_body_aspect": 0.3081,
+        "body": [
+          50,
+          93,
+          514,
+          1652
+        ],
+        "screen": [
+          114,
+          235,
+          449,
+          605
+        ],
+        "score": 1.0058,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.3,
+        "screen_rel_iou": 0.8307,
+        "screen_centre_error_pct": 0.76,
+        "mirror": 0.5158,
+        "body_aspect": 0.2856,
+        "template_body_aspect": 0.3081,
+        "body": [
+          138,
+          324,
+          438,
+          1377
+        ],
+        "screen": [
+          183,
+          420,
+          397,
+          683
+        ],
+        "score": 0.6473,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.44,
+        "screen_rel_iou": 0.8274,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.4749,
+        "body_aspect": 0.2821,
+        "template_body_aspect": 0.3081,
+        "body": [
+          70,
+          118,
+          509,
+          1677
+        ],
+        "screen": [
+          132,
+          254,
+          443,
+          657
+        ],
+        "score": 0.607,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.52,
+        "screen_rel_iou": 0.8273,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.5182,
+        "body_aspect": 0.2757,
+        "template_body_aspect": 0.3081,
+        "body": [
+          82,
+          107,
+          516,
+          1684
+        ],
+        "screen": [
+          145,
+          254,
+          453,
+          661
+        ],
+        "score": 0.5507,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.83,
+        "screen_rel_iou": 0.7875,
+        "screen_centre_error_pct": 0.59,
+        "mirror": 0.4886,
+        "body_aspect": 0.2747,
+        "template_body_aspect": 0.3081,
+        "body": [
+          93,
+          137,
+          495,
+          1603
+        ],
+        "screen": [
+          151,
+          268,
+          441,
+          659
+        ],
+        "score": 0.4309,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.89,
+        "screen_rel_iou": 0.8274,
+        "screen_centre_error_pct": -0.13,
+        "mirror": 0.5234,
+        "body_aspect": 0.2714,
+        "template_body_aspect": 0.3081,
+        "body": [
+          68,
+          76,
+          510,
+          1707
+        ],
+        "screen": [
+          132,
+          217,
+          444,
+          634
+        ],
+        "score": 0.482,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.61,
+        "screen_rel_iou": 0.8458,
+        "screen_centre_error_pct": -0.02,
+        "mirror": 0.5283,
+        "body_aspect": 0.2692,
+        "template_body_aspect": 0.3081,
+        "body": [
+          86,
+          130,
+          495,
+          1652
+        ],
+        "screen": [
+          146,
+          267,
+          434,
+          653
+        ],
+        "score": 0.4768,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -17.62,
+        "screen_rel_iou": 0.7907,
+        "screen_centre_error_pct": 5.01,
+        "mirror": 0.5063,
+        "body_aspect": 0.2538,
+        "template_body_aspect": 0.3081,
+        "body": [
+          98,
+          104,
+          484,
+          1628
+        ],
+        "screen": [
+          189,
+          238,
+          431,
+          637
+        ],
+        "score": -0.3381,
+        "seed": 3
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        103,
+        1249,
+        487,
+        1501
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out garbled: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        187,
+        1270,
+        216,
+        1290
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the silent symbol on the # key came out as a crossed box: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        447,
+        1443,
+        474,
+        1465
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "a stray dark mark below JKL on the 5 key painted out with the key colour above and below it (no image model)",
+      "box": [
+        284,
+        1350,
+        321,
+        1363
+      ]
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        170,
+        200,
+        426,
+        236
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      103,
+      189,
+      385,
+      470
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.75,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.75,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        32.08,
+        39.17
+      ],
+      "edge_strength": {
+        "left": 11.8,
+        "right": 13.6,
+        "top": 34.1,
+        "bottom": 38.6
+      },
+      "window_vs_spec": [
+        1.064,
+        1.039
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3023,
+      "spec_aspect": 0.3079,
+      "aspect_error_pct": -1.82,
+      "lean_deg": 0.003,
+      "taper_deg": 1.033,
+      "deskew_deg": 0.427,
+      "tilt_deg": 1.036,
+      "jitter_px": 9.78,
+      "symmetry_iou": 0.993,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.039,
+      "window_vs_spec_max": 1.064,
+      "window_edge_min": 11.8
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

@@ -1,0 +1,388 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1856
+    ],
+    "px_per_mm": 10.652,
+    "body_px": [
+      30,
+      74,
+      514,
+      1781
+    ],
+    "screen_px": [
+      112,
+      212,
+      432,
+      612
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z558.jpg (press render of the open phone, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      204,
+      448
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.32,
+        "screen_rel_iou": 0.8639,
+        "screen_centre_error_pct": -1.56,
+        "mirror": 0.6099,
+        "body_aspect": 0.2774,
+        "template_body_aspect": 0.284,
+        "body": [
+          64,
+          149,
+          481,
+          1655
+        ],
+        "screen": [
+          113,
+          278,
+          419,
+          632
+        ],
+        "score": 0.8974,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.17,
+        "screen_rel_iou": 0.8788,
+        "screen_centre_error_pct": -1.37,
+        "mirror": 0.5693,
+        "body_aspect": 0.2721,
+        "template_body_aspect": 0.284,
+        "body": [
+          57,
+          130,
+          493,
+          1735
+        ],
+        "screen": [
+          108,
+          263,
+          430,
+          640
+        ],
+        "score": 0.8174,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.3,
+        "screen_rel_iou": 0.9219,
+        "screen_centre_error_pct": 0.67,
+        "mirror": 0.5858,
+        "body_aspect": 0.2717,
+        "template_body_aspect": 0.284,
+        "body": [
+          91,
+          200,
+          465,
+          1579
+        ],
+        "screen": [
+          150,
+          315,
+          411,
+          640
+        ],
+        "score": 0.933,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.02,
+        "screen_rel_iou": 0.9293,
+        "screen_centre_error_pct": 0.61,
+        "mirror": 0.551,
+        "body_aspect": 0.2697,
+        "template_body_aspect": 0.284,
+        "body": [
+          70,
+          142,
+          476,
+          1650
+        ],
+        "screen": [
+          133,
+          266,
+          418,
+          620
+        ],
+        "score": 0.8926,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.06,
+        "screen_rel_iou": 0.8765,
+        "screen_centre_error_pct": -1.07,
+        "mirror": 0.6048,
+        "body_aspect": 0.2696,
+        "template_body_aspect": 0.284,
+        "body": [
+          85,
+          220,
+          459,
+          1610
+        ],
+        "screen": [
+          130,
+          337,
+          406,
+          661
+        ],
+        "score": 0.8192,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.2,
+        "screen_rel_iou": 0.9197,
+        "screen_centre_error_pct": 0.48,
+        "mirror": 0.5755,
+        "body_aspect": 0.2692,
+        "template_body_aspect": 0.284,
+        "body": [
+          58,
+          134,
+          478,
+          1697
+        ],
+        "screen": [
+          123,
+          266,
+          417,
+          631
+        ],
+        "score": 0.8998,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.35,
+        "screen_rel_iou": 0.8999,
+        "screen_centre_error_pct": -1.59,
+        "mirror": 0.5794,
+        "body_aspect": 0.2659,
+        "template_body_aspect": 0.284,
+        "body": [
+          69,
+          141,
+          477,
+          1678
+        ],
+        "screen": [
+          117,
+          266,
+          416,
+          625
+        ],
+        "score": 0.7132,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.04,
+        "screen_rel_iou": 0.8738,
+        "screen_centre_error_pct": -1.21,
+        "mirror": 0.6473,
+        "body_aspect": 0.2441,
+        "template_body_aspect": 0.284,
+        "body": [
+          108,
+          238,
+          437,
+          1589
+        ],
+        "screen": [
+          147,
+          351,
+          390,
+          659
+        ],
+        "score": 0.3742,
+        "seed": 4
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        88,
+        1214,
+        472,
+        1490
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out garbled: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        140,
+        1231,
+        172,
+        1257
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as one crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        362,
+        1442,
+        420,
+        1467
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        152,
+        208,
+        408,
+        240
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "box": [
+        173,
+        211,
+        381,
+        246
+      ],
+      "note": "the brand print stayed garbled after word fixes: wiped and replaced with the Z710I's own clean 'Sony Ericsson' print (same logotype), scaled to the print's box (no image model)"
+    }
+  ],
+  "screen_source": {
+    "window": [
+      102,
+      177,
+      471,
+      630
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      102,
+      177,
+      369,
+      453
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.38,
+      "window_mm": [
+        30.75,
+        37.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.02,
+        1.002
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2848,
+      "spec_aspect": 0.2838,
+      "aspect_error_pct": 0.34,
+      "lean_deg": 0.021,
+      "taper_deg": 0.298,
+      "deskew_deg": -0.195,
+      "tilt_deg": 0.319,
+      "jitter_px": 2.59,
+      "symmetry_iou": 0.9968,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.38,
+      "window_vs_spec_min": 1.002,
+      "window_vs_spec_max": 1.02,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

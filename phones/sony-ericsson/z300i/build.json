@@ -1,0 +1,375 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1792
+    ],
+    "px_per_mm": 10.811,
+    "body_px": [
+      29,
+      72,
+      514,
+      1720
+    ],
+    "screen_px": [
+      122,
+      317,
+      422,
+      617
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z300.jpg (press render of the open phone, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      174,
+      448
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.41,
+        "screen_rel_iou": 0.986,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.8808,
+        "body_aspect": 0.2935,
+        "template_body_aspect": 0.2947,
+        "body": [
+          31,
+          72,
+          514,
+          1720
+        ],
+        "screen": [
+          122,
+          316,
+          423,
+          618
+        ],
+        "score": 1.3955,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.94,
+        "screen_rel_iou": 0.8618,
+        "screen_centre_error_pct": -0.71,
+        "mirror": 0.4656,
+        "body_aspect": 0.2625,
+        "template_body_aspect": 0.2947,
+        "body": [
+          70,
+          105,
+          479,
+          1666
+        ],
+        "screen": [
+          130,
+          338,
+          414,
+          630
+        ],
+        "score": 0.4764,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.91,
+        "screen_rel_iou": 0.8645,
+        "screen_centre_error_pct": -0.49,
+        "mirror": 0.5536,
+        "body_aspect": 0.2596,
+        "template_body_aspect": 0.2947,
+        "body": [
+          78,
+          112,
+          468,
+          1617
+        ],
+        "screen": [
+          134,
+          334,
+          409,
+          612
+        ],
+        "score": 0.4972,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.4,
+        "screen_rel_iou": 0.8716,
+        "screen_centre_error_pct": -0.72,
+        "mirror": 0.6134,
+        "body_aspect": 0.2582,
+        "template_body_aspect": 0.2947,
+        "body": [
+          74,
+          110,
+          475,
+          1666
+        ],
+        "screen": [
+          133,
+          337,
+          411,
+          627
+        ],
+        "score": 0.4859,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.72,
+        "screen_rel_iou": 0.8114,
+        "screen_centre_error_pct": -0.24,
+        "mirror": 0.6669,
+        "body_aspect": 0.2513,
+        "template_body_aspect": 0.2947,
+        "body": [
+          83,
+          159,
+          460,
+          1662
+        ],
+        "screen": [
+          137,
+          371,
+          405,
+          647
+        ],
+        "score": 0.3851,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -15.12,
+        "screen_rel_iou": 0.8454,
+        "screen_centre_error_pct": -0.59,
+        "mirror": 0.7058,
+        "body_aspect": 0.2502,
+        "template_body_aspect": 0.2947,
+        "body": [
+          68,
+          76,
+          475,
+          1706
+        ],
+        "screen": [
+          126,
+          317,
+          413,
+          625
+        ],
+        "score": 0.3828,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -16.78,
+        "screen_rel_iou": 0.8772,
+        "screen_centre_error_pct": -0.62,
+        "mirror": 0.5449,
+        "body_aspect": 0.2453,
+        "template_body_aspect": 0.2947,
+        "body": [
+          80,
+          107,
+          467,
+          1688
+        ],
+        "screen": [
+          137,
+          339,
+          406,
+          631
+        ],
+        "score": 0.2486,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -19.85,
+        "screen_rel_iou": 0.8492,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.7341,
+        "body_aspect": 0.2362,
+        "template_body_aspect": 0.2947,
+        "body": [
+          88,
+          112,
+          456,
+          1673
+        ],
+        "screen": [
+          143,
+          339,
+          403,
+          632
+        ],
+        "score": 0.2072,
+        "seed": 8
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 11
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s11.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        64,
+        1134,
+        480,
+        1485
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out as a crossed triangle: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        144,
+        1197,
+        172,
+        1222
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as one crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        407,
+        1446,
+        437,
+        1471
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the 0 key came out as 'D+' with a stray mark: redrawn as '0' and a small '+' in Bahnschrift SemiBold at the size of the other digits (drawn by hand in the label colour, no image model)",
+      "box": [
+        244,
+        1458,
+        294,
+        1484
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      112,
+      286,
+      440,
+      622
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      112,
+      286,
+      328,
+      336
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.58,
+        "top": 0.83,
+        "bottom": 0.92
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "window_centre_x_pct": 0.2,
+      "window_mm": [
+        27.33,
+        28.0
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.982,
+        1.006
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2863,
+      "spec_aspect": 0.2951,
+      "aspect_error_pct": -2.98,
+      "lean_deg": 0.039,
+      "taper_deg": 0.529,
+      "deskew_deg": -0.04,
+      "tilt_deg": 0.569,
+      "jitter_px": 6.72,
+      "symmetry_iou": 0.989,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.2,
+      "window_vs_spec_min": 0.982,
+      "window_vs_spec_max": 1.006,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

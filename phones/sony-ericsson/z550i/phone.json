@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z550i",
+  "brand": "Sony Ericsson",
+  "model": "Z550i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 45.4,
+    "height": 162.5,
+    "depth": 20
+  },
+  "size_note": "closed 87.5 x 45.4 x 20 mm (GSMArena; teltarif 88 x 46); the open length is measured on the press render of the open phone (153 x 548 px; the site banner covers its last few px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.62,
+      "y": 14.8,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, centred in the display frame on the geometry photo"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 116.5,
+      "w": 37.0,
+      "h": 33.5
+    },
+    "seams": [
+      {
+        "y": 76.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 91.0,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Rounded silver keys outlined in grey in three columns, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z550-1564.php",
+      "https://www.teltarif.de/h/sony-ericsson/z550i/"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.nieuwemobiel.nl/media/z550_pearl_copper_open_front/z550_pearl_copper_open_front-e95a36d9.webp",
+      "license": "",
+      "author": "",
+      "note": "press render z550_pearl_copper_open_front (newmobile.com press set), cut above the site banner over its bottom edge"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      99,
+      187,
+      362,
+      452
+    ],
+    "mm": [
+      8.25,
+      15.58,
+      30.17,
+      37.67
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        52,
+        50,
+        87,
+        110
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        561,
+        1974
+      ],
+      "screen_px": [
+        99,
+        187,
+        362,
+        452
+      ]
+    }
+  }
+}

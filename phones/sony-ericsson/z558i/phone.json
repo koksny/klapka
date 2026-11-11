@@ -1,0 +1,131 @@
+{
+  "id": "sony-ericsson/z558i",
+  "brand": "Sony Ericsson",
+  "model": "Z558i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 45.5,
+    "height": 160.3,
+    "depth": 20.5
+  },
+  "size_note": "closed 87.5 x 45.5 x 20.5 mm (GSMArena); the open length is measured on the press render of the open phone (109 x 384 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT resistive touchscreen 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.68,
+      "y": 12.9,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, centred in the display frame on the geometry photo"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 113.5,
+      "w": 36.5,
+      "h": 28.5
+    },
+    "seams": [
+      {
+        "y": 74.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 86.0,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Rounded silver keys outlined in grey in three columns, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z558-1723.php"
+    ],
+    "geometry_photo": {
+      "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z558.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render of the open phone (gsm.magazyn.pl)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      110,
+      183,
+      353,
+      441
+    ],
+    "mm": [
+      9.17,
+      15.25,
+      29.42,
+      36.75
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        53,
+        50,
+        86,
+        108
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        572,
+        1948
+      ],
+      "screen_px": [
+        110,
+        183,
+        353,
+        441
+      ]
+    }
+  }
+}

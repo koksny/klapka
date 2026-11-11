@@ -1,0 +1,370 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1888
+    ],
+    "px_per_mm": 10.689,
+    "body_px": [
+      29,
+      76,
+      513,
+      1812
+    ],
+    "screen_px": [
+      110,
+      234,
+      432,
+      637
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.nieuwemobiel.nl/media/z550_pearl_copper_open_front/z550_pearl_copper_open_front-e95a36d9.webp (newmobile.com press set, cut above the site banner)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      202,
+      595
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.7,
+        "screen_rel_iou": 0.879,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.765,
+        "body_aspect": 0.2661,
+        "template_body_aspect": 0.2792,
+        "body": [
+          40,
+          80,
+          498,
+          1804
+        ],
+        "screen": [
+          104,
+          225,
+          436,
+          643
+        ],
+        "score": 1.0046,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.45,
+        "screen_rel_iou": 0.866,
+        "screen_centre_error_pct": 0.78,
+        "mirror": 0.6249,
+        "body_aspect": 0.264,
+        "template_body_aspect": 0.2792,
+        "body": [
+          47,
+          87,
+          494,
+          1783
+        ],
+        "screen": [
+          113,
+          227,
+          435,
+          647
+        ],
+        "score": 0.8277,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.07,
+        "screen_rel_iou": 0.8716,
+        "screen_centre_error_pct": 0.71,
+        "mirror": 0.6535,
+        "body_aspect": 0.2595,
+        "template_body_aspect": 0.2792,
+        "body": [
+          58,
+          109,
+          482,
+          1746
+        ],
+        "screen": [
+          120,
+          244,
+          426,
+          646
+        ],
+        "score": 0.774,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.12,
+        "screen_rel_iou": 0.8795,
+        "screen_centre_error_pct": 0.68,
+        "mirror": 0.6392,
+        "body_aspect": 0.2593,
+        "template_body_aspect": 0.2792,
+        "body": [
+          48,
+          81,
+          491,
+          1792
+        ],
+        "screen": [
+          114,
+          224,
+          431,
+          644
+        ],
+        "score": 0.7757,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.73,
+        "screen_rel_iou": 0.8752,
+        "screen_centre_error_pct": 0.7,
+        "mirror": 0.6239,
+        "body_aspect": 0.2576,
+        "template_body_aspect": 0.2792,
+        "body": [
+          57,
+          92,
+          487,
+          1764
+        ],
+        "screen": [
+          121,
+          236,
+          429,
+          648
+        ],
+        "score": 0.7308,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.82,
+        "screen_rel_iou": 0.8838,
+        "screen_centre_error_pct": 0.7,
+        "mirror": 0.6389,
+        "body_aspect": 0.2546,
+        "template_body_aspect": 0.2792,
+        "body": [
+          54,
+          88,
+          482,
+          1772
+        ],
+        "screen": [
+          117,
+          228,
+          425,
+          637
+        ],
+        "score": 0.6925,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.42,
+        "screen_rel_iou": 0.8763,
+        "screen_centre_error_pct": 0.81,
+        "mirror": 0.6586,
+        "body_aspect": 0.2529,
+        "template_body_aspect": 0.2792,
+        "body": [
+          53,
+          81,
+          485,
+          1792
+        ],
+        "screen": [
+          117,
+          222,
+          428,
+          641
+        ],
+        "score": 0.6538,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.44,
+        "screen_rel_iou": 0.8391,
+        "screen_centre_error_pct": 0.95,
+        "mirror": 0.6653,
+        "body_aspect": 0.2529,
+        "template_body_aspect": 0.2792,
+        "body": [
+          61,
+          71,
+          479,
+          1727
+        ],
+        "screen": [
+          123,
+          212,
+          425,
+          634
+        ],
+        "score": 0.6044,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        67,
+        1284,
+        483,
+        1661
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        126,
+        1342,
+        168,
+        1358
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "JKL came out as 'JRL' with a stray mark before it: the word redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        264,
+        1421,
+        302,
+        1444
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label after # came out as one crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        368,
+        1583,
+        436,
+        1611
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      93,
+      177,
+      374,
+      472
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.83,
+        "bottom": 0.83
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        31.17,
+        39.33
+      ],
+      "edge_strength": {
+        "left": 77.8,
+        "right": 47.0,
+        "top": 36.2,
+        "bottom": 49.3
+      },
+      "window_vs_spec": [
+        1.034,
+        1.044
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2753,
+      "spec_aspect": 0.2794,
+      "aspect_error_pct": -1.46,
+      "lean_deg": 0.003,
+      "taper_deg": 0.29,
+      "deskew_deg": -0.085,
+      "tilt_deg": 0.293,
+      "jitter_px": 3.76,
+      "symmetry_iou": 0.9963,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.034,
+      "window_vs_spec_max": 1.044,
+      "window_edge_min": 36.2
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

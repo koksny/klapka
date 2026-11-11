@@ -1,0 +1,410 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.152,
+    "body_px": [
+      39,
+      72,
+      535,
+      1720
+    ],
+    "screen_px": [
+      127,
+      230,
+      448,
+      631
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z610.jpg (press render of the open phone, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      220,
+      448
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.01,
+        "screen_rel_iou": 0.8869,
+        "screen_centre_error_pct": 0.03,
+        "mirror": 0.6923,
+        "body_aspect": 0.2803,
+        "template_body_aspect": 0.3014,
+        "body": [
+          103,
+          205,
+          491,
+          1592
+        ],
+        "screen": [
+          161,
+          340,
+          434,
+          686
+        ],
+        "score": 0.8796,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.4,
+        "screen_rel_iou": 0.8942,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.7399,
+        "body_aspect": 0.2791,
+        "template_body_aspect": 0.3014,
+        "body": [
+          70,
+          141,
+          491,
+          1652
+        ],
+        "screen": [
+          131,
+          287,
+          428,
+          662
+        ],
+        "score": 0.8606,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.42,
+        "screen_rel_iou": 0.9232,
+        "screen_centre_error_pct": -0.49,
+        "mirror": 0.7046,
+        "body_aspect": 0.276,
+        "template_body_aspect": 0.3014,
+        "body": [
+          99,
+          220,
+          480,
+          1603
+        ],
+        "screen": [
+          155,
+          353,
+          421,
+          690
+        ],
+        "score": 0.8051,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.13,
+        "screen_rel_iou": 0.8692,
+        "screen_centre_error_pct": -0.91,
+        "mirror": 0.6668,
+        "body_aspect": 0.2739,
+        "template_body_aspect": 0.3014,
+        "body": [
+          77,
+          114,
+          506,
+          1683
+        ],
+        "screen": [
+          134,
+          264,
+          442,
+          660
+        ],
+        "score": 0.6548,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.09,
+        "screen_rel_iou": 0.8878,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.6299,
+        "body_aspect": 0.271,
+        "template_body_aspect": 0.3014,
+        "body": [
+          141,
+          341,
+          421,
+          1377
+        ],
+        "screen": [
+          185,
+          438,
+          376,
+          707
+        ],
+        "score": 0.6702,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.59,
+        "screen_rel_iou": 0.8569,
+        "screen_centre_error_pct": -1.12,
+        "mirror": 0.6104,
+        "body_aspect": 0.2695,
+        "template_body_aspect": 0.3014,
+        "body": [
+          62,
+          75,
+          504,
+          1718
+        ],
+        "screen": [
+          121,
+          237,
+          436,
+          652
+        ],
+        "score": 0.5207,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -13.94,
+        "screen_rel_iou": 0.862,
+        "screen_centre_error_pct": 0.27,
+        "mirror": 0.6198,
+        "body_aspect": 0.2594,
+        "template_body_aspect": 0.3014,
+        "body": [
+          84,
+          104,
+          484,
+          1649
+        ],
+        "screen": [
+          140,
+          251,
+          431,
+          639
+        ],
+        "score": 0.4476,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -17.86,
+        "screen_rel_iou": 0.8753,
+        "screen_centre_error_pct": -0.52,
+        "mirror": 0.7464,
+        "body_aspect": 0.2476,
+        "template_body_aspect": 0.3014,
+        "body": [
+          108,
+          160,
+          464,
+          1601
+        ],
+        "screen": [
+          160,
+          303,
+          409,
+          664
+        ],
+        "score": 0.3035,
+        "seed": 4
+      }
+    ],
+    "best_seed": 8,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        93,
+        1186,
+        477,
+        1510
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out garbled: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        155,
+        1237,
+        181,
+        1253
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label under # came out as 'a' and a crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        379,
+        1464,
+        421,
+        1486
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        152,
+        237,
+        408,
+        273
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the internet key's icon came out as a printer-like blob: redrawn as a globe, as on the official image (drawn by hand in the label colour, no image model)",
+      "box": [
+        150,
+        1149,
+        185,
+        1178
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the camera key's icon came out as 'OM/Gt': redrawn as a camera, a slash and a video frame, as on the official image (drawn by hand in the label colour, no image model)",
+      "box": [
+        250,
+        1151,
+        316,
+        1176
+      ]
+    },
+    {
+      "n": 7,
+      "area": "patch",
+      "note": "the activity-menu key's icon came out as a broken shape: redrawn as two overlapping squares with an arrow, as on the official image (drawn by hand in the label colour, no image model)",
+      "box": [
+        374,
+        1150,
+        412,
+        1178
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      111,
+      226,
+      495,
+      683
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      111,
+      226,
+      384,
+      457
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.17,
+        "right": 1.17,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 1.17,
+        "right": 1.17,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        32.0,
+        38.08
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.009,
+        0.96
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3003,
+      "spec_aspect": 0.3017,
+      "aspect_error_pct": -0.47,
+      "lean_deg": 0.039,
+      "taper_deg": 0.867,
+      "deskew_deg": 0.038,
+      "tilt_deg": 0.906,
+      "jitter_px": 4.03,
+      "symmetry_iou": 0.9915,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 0.96,
+      "window_vs_spec_max": 1.009,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}
