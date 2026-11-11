@@ -1,0 +1,250 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.04,
+    "body_px": [
+      31,
+      65,
+      576,
+      1565
+    ],
+    "screen_px": [
+      86,
+      201,
+      522,
+      783
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sony-ericsson-hazel-superior-black.jpg (official image, the open phone cut out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      222,
+      587
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.6,
+        "screen_rel_iou": 0.9323,
+        "screen_centre_error_pct": -0.27,
+        "mirror": 0.6507,
+        "body_aspect": 0.3616,
+        "template_body_aspect": 0.3638,
+        "body": [
+          31,
+          62,
+          576,
+          1571
+        ],
+        "screen": [
+          87,
+          173,
+          518,
+          775
+        ],
+        "score": 1.2004,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.51,
+        "screen_rel_iou": 0.9231,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.6702,
+        "body_aspect": 0.3583,
+        "template_body_aspect": 0.3638,
+        "body": [
+          31,
+          63,
+          571,
+          1572
+        ],
+        "screen": [
+          84,
+          236,
+          516,
+          780
+        ],
+        "score": 1.1552,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.68,
+        "screen_rel_iou": 0.9107,
+        "screen_centre_error_pct": -0.55,
+        "mirror": 0.6251,
+        "body_aspect": 0.354,
+        "template_body_aspect": 0.3638,
+        "body": [
+          28,
+          39,
+          575,
+          1586
+        ],
+        "screen": [
+          82,
+          216,
+          516,
+          770
+        ],
+        "score": 1.0344,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.21,
+        "screen_rel_iou": 0.8875,
+        "screen_centre_error_pct": -1.2,
+        "mirror": 0.6419,
+        "body_aspect": 0.3594,
+        "template_body_aspect": 0.3638,
+        "body": [
+          31,
+          63,
+          573,
+          1573
+        ],
+        "screen": [
+          79,
+          156,
+          513,
+          775
+        ],
+        "score": 1.0284,
+        "seed": 4
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        152,
+        1356,
+        167,
+        1374
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the i of Ericsson came out as a tall l: the stroke cut into a dot and a stem at the x-height of r and c, background colour from the same rows (no image model)",
+      "box": [
+        313,
+        155,
+        319,
+        157
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      37,
+      134,
+      550,
+      715
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.58,
+        "right": 1.67,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.58,
+        "right": 1.5,
+        "top": 1.25,
+        "bottom": 1.25
+      },
+      "window_centre_x_pct": 0.94,
+      "window_mm": [
+        45.83,
+        59.58
+      ],
+      "edge_strength": {
+        "left": 30.8,
+        "right": 56.8,
+        "top": 76.2,
+        "bottom": 216.2
+      },
+      "window_vs_spec": [
+        1.157,
+        1.128
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3618,
+      "spec_aspect": 0.364,
+      "aspect_error_pct": -0.6,
+      "lean_deg": 0.03,
+      "taper_deg": 0.03,
+      "deskew_deg": -0.03,
+      "tilt_deg": 0.06,
+      "jitter_px": 0.29,
+      "symmetry_iou": 0.9985,
+      "screen_aspect_error_pct": 0.15,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.94,
+      "window_vs_spec_min": 1.128,
+      "window_vs_spec_max": 1.157,
+      "window_edge_min": 30.8
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

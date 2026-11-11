@@ -1,0 +1,123 @@
+{
+  "id": "sony-ericsson/elm",
+  "brand": "Sony Ericsson",
+  "model": "Elm",
+  "year": 2010,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 110,
+    "depth": 14
+  },
+  "size_note": "110 x 45 x 14 mm (GSMArena, teltarif, GSMChoice); both frontal photos measure about 0.43 width/height (the photo and a press render), 4% wider than the spec; the spec is kept",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 256K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.73,
+      "y": 14.0,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 2.5,
+      "y": 82.0,
+      "w": 42.0,
+      "h": 26.0
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "A flat black keypad in four rows with white labels, the columns separated by short white dividers, each digit with its small letters to its right. The 1 key shows a small voicemail symbol (two small rings joined along their bottoms); the 5 key has a small dot at its left; the * key also shows '+' and a small key-lock symbol; the 0 key also shows a space symbol; the # key also shows a/A and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_elm-3057.php",
+      "https://www.teltarif.de/h/sony-ericsson/elm/"
+    ],
+    "geometry_photo": {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_Elm.png",
+      "license": "CC BY 2.0",
+      "author": "Jimmy Tan",
+      "note": "frontal photo by Jimmy Tan, CC BY 2.0 (every press render has the earphones over the keypad)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      88,
+      214,
+      393,
+      524
+    ],
+    "mm": [
+      7.33,
+      17.83,
+      32.75,
+      43.67
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        33,
+        98,
+        126,
+        168
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        570,
+        1344
+      ],
+      "screen_px": [
+        88,
+        214,
+        393,
+        524
+      ]
+    }
+  }
+}

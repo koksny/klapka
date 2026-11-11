@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1504
+    ],
+    "px_per_mm": 12.812,
+    "body_px": [
+      35,
+      60,
+      636,
+      1443
+    ],
+    "screen_px": [
+      121,
+      198,
+      550,
+      770
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonnaite.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      500
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.42,
+        "screen_rel_iou": 0.9037,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.616,
+        "body_aspect": 0.4288,
+        "template_body_aspect": 0.435,
+        "body": [
+          68,
+          90,
+          603,
+          1339
+        ],
+        "screen": [
+          132,
+          210,
+          537,
+          749
+        ],
+        "score": 1.1221,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.37,
+        "screen_rel_iou": 0.9045,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6497,
+        "body_aspect": 0.4203,
+        "template_body_aspect": 0.435,
+        "body": [
+          61,
+          108,
+          606,
+          1406
+        ],
+        "screen": [
+          129,
+          233,
+          537,
+          799
+        ],
+        "score": 1.0518,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.19,
+        "screen_rel_iou": 0.8562,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6936,
+        "body_aspect": 0.4081,
+        "template_body_aspect": 0.435,
+        "body": [
+          68,
+          88,
+          604,
+          1403
+        ],
+        "screen": [
+          124,
+          202,
+          549,
+          774
+        ],
+        "score": 0.8843,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.58,
+        "screen_rel_iou": 0.8687,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.7821,
+        "body_aspect": 0.4063,
+        "template_body_aspect": 0.435,
+        "body": [
+          67,
+          93,
+          604,
+          1416
+        ],
+        "screen": [
+          130,
+          208,
+          540,
+          797
+        ],
+        "score": 0.9214,
+        "seed": 2
+      }
+    ],
+    "best_seed": 1,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        180,
+        1176,
+        198,
+        1196
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the label after * came out garbled: redrawn as 'a/A' and a key lying on its side (key lock) (drawn by hand in the label colour, no image model)",
+      "box": [
+        168,
+        1232,
+        230,
+        1252
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the silent symbol on the # key came out garbled: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        509,
+        1230,
+        532,
+        1252
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the i of Ericsson came out as a tall l: the stroke cut into a dot and a stem at the x-height of r and c, background colour from the same rows (no image model)",
+      "box": [
+        344,
+        180,
+        350,
+        181
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      78,
+      137,
+      497,
+      695
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      78,
+      137,
+      419,
+      558
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.17,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        34.92,
+        46.5
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.041,
+        1.04
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4293,
+      "spec_aspect": 0.4352,
+      "aspect_error_pct": -1.35,
+      "lean_deg": 0.041,
+      "taper_deg": 0.048,
+      "deskew_deg": -0.108,
+      "tilt_deg": 0.089,
+      "jitter_px": 1.08,
+      "symmetry_iou": 0.9898,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.17,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.04,
+      "window_vs_spec_max": 1.041,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

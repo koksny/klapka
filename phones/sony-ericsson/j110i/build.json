@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 13.679,
+    "body_px": [
+      35,
+      59,
+      636,
+      1412
+    ],
+    "screen_px": [
+      139,
+      356,
+      532,
+      618
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonj110.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      492
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.26,
+        "screen_rel_iou": 0.9746,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.675,
+        "body_aspect": 0.4458,
+        "template_body_aspect": 0.4446,
+        "body": [
+          38,
+          75,
+          629,
+          1402
+        ],
+        "screen": [
+          141,
+          366,
+          527,
+          629
+        ],
+        "score": 1.2904,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.72,
+        "screen_rel_iou": 0.9754,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6899,
+        "body_aspect": 0.4414,
+        "template_body_aspect": 0.4446,
+        "body": [
+          52,
+          102,
+          620,
+          1390
+        ],
+        "screen": [
+          151,
+          384,
+          522,
+          639
+        ],
+        "score": 1.2758,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.25,
+        "screen_rel_iou": 0.9532,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6937,
+        "body_aspect": 0.4391,
+        "template_body_aspect": 0.4446,
+        "body": [
+          55,
+          83,
+          616,
+          1362
+        ],
+        "screen": [
+          154,
+          365,
+          516,
+          619
+        ],
+        "score": 1.2288,
+        "seed": 1
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.12,
+        "screen_rel_iou": 0.9527,
+        "screen_centre_error_pct": -0.43,
+        "mirror": 0.4968,
+        "body_aspect": 0.4396,
+        "template_body_aspect": 0.4446,
+        "body": [
+          45,
+          63,
+          630,
+          1395
+        ],
+        "screen": [
+          150,
+          356,
+          520,
+          610
+        ],
+        "score": 1.1022,
+        "seed": 2
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined into one shape: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        164,
+        936,
+        214,
+        958
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        183,
+        1115,
+        202,
+        1134
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' on the # key came out as '0/A' and the silent note garbled: redrawn as 'a/A' and a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        490,
+        1195,
+        559,
+        1218
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the i of Ericsson came out as a tall l: the stroke cut into a dot and a stem at the x-height of r and c, background colour from the same rows (no image model)",
+      "box": [
+        349,
+        245,
+        355,
+        247
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      104,
+      272,
+      449,
+      507
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      104,
+      272,
+      345,
+      235
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.58
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.5,
+        "bottom": 0.58
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        28.75,
+        19.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.0,
+        1.022
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4455,
+      "spec_aspect": 0.4444,
+      "aspect_error_pct": 0.24,
+      "lean_deg": 0.032,
+      "taper_deg": 0.211,
+      "deskew_deg": 0.032,
+      "tilt_deg": 0.243,
+      "jitter_px": 0.75,
+      "symmetry_iou": 0.998,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.0,
+      "window_vs_spec_max": 1.022,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

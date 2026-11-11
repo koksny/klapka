@@ -1,0 +1,244 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 12.847,
+    "body_px": [
+      47,
+      61,
+      624,
+      1473
+    ],
+    "screen_px": [
+      121,
+      242,
+      550,
+      814
+    ]
+  },
+  "photo": {
+    "url": "https://commons.wikimedia.org/wiki/File:Sony_Ericsson_Elm.png (frontal photo, scaled down, white margin added)",
+    "license": "CC BY 2.0",
+    "author": "Jimmy Tan",
+    "size_used": [
+      487,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.03,
+        "screen_rel_iou": 0.8955,
+        "screen_centre_error_pct": -0.18,
+        "mirror": 0.6086,
+        "body_aspect": 0.4092,
+        "template_body_aspect": 0.4091,
+        "body": [
+          54,
+          65,
+          623,
+          1457
+        ],
+        "screen": [
+          124,
+          199,
+          551,
+          823
+        ],
+        "score": 1.1806,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.68,
+        "screen_rel_iou": 0.9218,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6029,
+        "body_aspect": 0.4063,
+        "template_body_aspect": 0.4091,
+        "body": [
+          52,
+          70,
+          619,
+          1467
+        ],
+        "screen": [
+          121,
+          242,
+          551,
+          844
+        ],
+        "score": 1.1806,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.2,
+        "screen_rel_iou": 0.9198,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.5546,
+        "body_aspect": 0.4083,
+        "template_body_aspect": 0.4091,
+        "body": [
+          49,
+          62,
+          622,
+          1467
+        ],
+        "screen": [
+          122,
+          197,
+          550,
+          813
+        ],
+        "score": 1.1785,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 2.19,
+        "screen_rel_iou": 0.8863,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.5185,
+        "body_aspect": 0.418,
+        "template_body_aspect": 0.4091,
+        "body": [
+          60,
+          73,
+          620,
+          1414
+        ],
+        "screen": [
+          128,
+          202,
+          552,
+          804
+        ],
+        "score": 1.0358,
+        "seed": 1
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        168,
+        1311,
+        184,
+        1332
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      82,
+      175,
+      487,
+      777
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      82,
+      175,
+      405,
+      602
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 3.25,
+        "bottom": 3.25
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 3.25,
+        "bottom": 3.25
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        33.75,
+        50.17
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.007,
+        1.122
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4136,
+      "spec_aspect": 0.4091,
+      "aspect_error_pct": 1.1,
+      "lean_deg": 0.011,
+      "taper_deg": 0.254,
+      "deskew_deg": -0.011,
+      "tilt_deg": 0.265,
+      "jitter_px": 1.35,
+      "symmetry_iou": 0.9954,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.007,
+      "window_vs_spec_max": 1.122,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

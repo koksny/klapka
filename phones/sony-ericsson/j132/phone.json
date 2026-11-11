@@ -1,0 +1,123 @@
+{
+  "id": "sony-ericsson/j132",
+  "brand": "Sony Ericsson",
+  "model": "J132",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 103,
+    "depth": 15.3
+  },
+  "size_note": "103 x 45 x 15.3 mm (GSMArena, teltarif)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      128,
+      128
+    ],
+    "diagonal_in": 1.5,
+    "type": "CSTN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.03,
+      "y": 19.6,
+      "w": 26.94,
+      "h": 26.94,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.0,
+      "y": 70.0,
+      "w": 33.0,
+      "h": 26.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "Black keys with grey labels in three columns, each digit with its small letters to its right. The 1 key shows a small voicemail symbol (two small rings joined along their bottoms) and a small envelope; the * key also shows a small key-lock symbol and '+'; the 0 key also shows a space symbol; the # key also shows a/A and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_j132-2430.php",
+      "https://www.teltarif.de/h/sony-ericsson/j132/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonj132.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 450)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      122,
+      254,
+      315,
+      315
+    ],
+    "mm": [
+      10.17,
+      21.17,
+      26.25,
+      26.25
+    ],
+    "native_px": [
+      128,
+      128
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        45,
+        122,
+        102,
+        102
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        561,
+        1260
+      ],
+      "screen_px": [
+        122,
+        254,
+        315,
+        315
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "sony-ericsson/hazel",
+  "brand": "Sony Ericsson",
+  "model": "Hazel",
+  "year": 2010,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 49.5,
+    "height": 136,
+    "depth": 16
+  },
+  "size_note": "closed 102.5 x 49.5 x 16 mm (teltarif; GSMArena 102 mm); the open length is measured on the official image of the open phone (209 x 573 px, read on the silver keypad, the black top on a black background)",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.6,
+    "type": "TFT 256K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 4.94,
+      "y": 12.3,
+      "w": 39.62,
+      "h": 52.83,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 2.5,
+      "y": 103.0,
+      "w": 44.5,
+      "h": 25.5
+    },
+    "seams": [
+      {
+        "y": 100.5,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "A flat silver keypad on the slide in four rows with dark labels, separated by thin lines, each digit with its small letters to its right. The 1 key shows a small voicemail symbol (two small rings joined along their bottoms); the 5 key has a small dot above it; the * key also shows '+'; the 0 key also shows a space symbol; the # key also shows a/A and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_hazel-3058.php",
+      "https://www.teltarif.de/h/sony-ericsson/hazel/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sony-ericsson-hazel-superior-black.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, the open phone cut out of the front, back and side views (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      56,
+      149,
+      513,
+      685
+    ],
+    "mm": [
+      4.67,
+      12.42,
+      42.75,
+      57.08
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        23,
+        48,
+        148,
+        198
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        614,
+        1656
+      ],
+      "screen_px": [
+        56,
+        149,
+        513,
+        685
+      ]
+    }
+  }
+}

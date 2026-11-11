@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 107,
+  "count": 114,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -2156,6 +2156,104 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w850i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w850i/preview.png",
         "phone.json": "phones/sony-ericsson/w850i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j110i",
+      "brand": "Sony Ericsson",
+      "model": "J110i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 44,
+        "height": 99,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          96,
+          64
+        ],
+        "diagonal_in": 1.36,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          110,
+          278,
+          333,
+          222
+        ],
+        "mm": [
+          9.17,
+          23.17,
+          27.75,
+          18.5
+        ],
+        "native_px": [
+          96,
+          64
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j110i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j110i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j110i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j110i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j110i/preview.png",
+        "phone.json": "phones/sony-ericsson/j110i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j120i",
+      "brand": "Sony Ericsson",
+      "model": "J120i",
+      "year": 2007,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 44,
+        "height": 99,
+        "depth": 17
+      },
+      "display": {
+        "native_px": [
+          96,
+          64
+        ],
+        "diagonal_in": 1.36,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          110,
+          282,
+          326,
+          217
+        ],
+        "mm": [
+          9.17,
+          23.5,
+          27.17,
+          18.08
+        ],
+        "native_px": [
+          96,
+          64
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j120i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j120i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j120i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j120i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j120i/preview.png",
+        "phone.json": "phones/sony-ericsson/j120i/phone.json"
       }
     },
     {
@@ -4560,6 +4658,104 @@
       }
     },
     {
+      "id": "sony-ericsson/j105i",
+      "brand": "Sony Ericsson",
+      "model": "J105i Naite",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 47,
+        "height": 108,
+        "depth": 12.6
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 256K colours"
+      },
+      "screen": {
+        "skin_px": [
+          84,
+          144,
+          407,
+          543
+        ],
+        "mm": [
+          7.0,
+          12.0,
+          33.92,
+          45.25
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j105i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j105i/skin-black.png",
+        "body.png": "phones/sony-ericsson/j105i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j105i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j105i/preview.png",
+        "phone.json": "phones/sony-ericsson/j105i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/j132",
+      "brand": "Sony Ericsson",
+      "model": "J132",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 45,
+        "height": 103,
+        "depth": 15.3
+      },
+      "display": {
+        "native_px": [
+          128,
+          128
+        ],
+        "diagonal_in": 1.5,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          122,
+          254,
+          315,
+          315
+        ],
+        "mm": [
+          10.17,
+          21.17,
+          26.25,
+          26.25
+        ],
+        "native_px": [
+          128,
+          128
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/j132/skin.png",
+        "skin-black.png": "phones/sony-ericsson/j132/skin-black.png",
+        "body.png": "phones/sony-ericsson/j132/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/j132/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/j132/preview.png",
+        "phone.json": "phones/sony-ericsson/j132/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/jalou",
       "brand": "Sony Ericsson",
       "model": "Jalou",
@@ -5145,6 +5341,153 @@
         "mi-band-192x490.png": "phones/sony-ericsson/yari/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/yari/preview.png",
         "phone.json": "phones/sony-ericsson/yari/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/cedar",
+      "brand": "Sony Ericsson",
+      "model": "Cedar",
+      "year": 2010,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 49,
+        "height": 111,
+        "depth": 15.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 256K colours"
+      },
+      "screen": {
+        "skin_px": [
+          99,
+          200,
+          410,
+          547
+        ],
+        "mm": [
+          8.25,
+          16.67,
+          34.17,
+          45.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/cedar/skin.png",
+        "skin-black.png": "phones/sony-ericsson/cedar/skin-black.png",
+        "body.png": "phones/sony-ericsson/cedar/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/cedar/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/cedar/preview.png",
+        "phone.json": "phones/sony-ericsson/cedar/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/elm",
+      "brand": "Sony Ericsson",
+      "model": "Elm",
+      "year": 2010,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 45,
+        "height": 110,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 256K colours"
+      },
+      "screen": {
+        "skin_px": [
+          88,
+          214,
+          393,
+          524
+        ],
+        "mm": [
+          7.33,
+          17.83,
+          32.75,
+          43.67
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/elm/skin.png",
+        "skin-black.png": "phones/sony-ericsson/elm/skin-black.png",
+        "body.png": "phones/sony-ericsson/elm/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/elm/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/elm/preview.png",
+        "phone.json": "phones/sony-ericsson/elm/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/hazel",
+      "brand": "Sony Ericsson",
+      "model": "Hazel",
+      "year": 2010,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 49.5,
+        "height": 136,
+        "depth": 16
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT 256K colours"
+      },
+      "screen": {
+        "skin_px": [
+          56,
+          149,
+          513,
+          685
+        ],
+        "mm": [
+          4.67,
+          12.42,
+          42.75,
+          57.08
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/hazel/skin.png",
+        "skin-black.png": "phones/sony-ericsson/hazel/skin-black.png",
+        "body.png": "phones/sony-ericsson/hazel/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/hazel/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/hazel/preview.png",
+        "phone.json": "phones/sony-ericsson/hazel/phone.json"
       }
     },
     {

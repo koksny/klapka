@@ -1,0 +1,299 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1472
+    ],
+    "px_per_mm": 12.2,
+    "body_px": [
+      37,
+      59,
+      634,
+      1412
+    ],
+    "screen_px": [
+      131,
+      236,
+      539,
+      780
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.nieuwemobiel.nl/media/201006_cedar_silver_front/201006_cedar_silver_front-b2b5f849.webp (newmobile.com press set, reflection cropped off, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      182,
+      351
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.6,
+        "screen_rel_iou": 0.8605,
+        "screen_centre_error_pct": -0.9,
+        "mirror": 0.5894,
+        "body_aspect": 0.439,
+        "template_body_aspect": 0.4417,
+        "body": [
+          54,
+          90,
+          611,
+          1360
+        ],
+        "screen": [
+          119,
+          241,
+          535,
+          749
+        ],
+        "score": 1.0353,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.22,
+        "screen_rel_iou": 0.8453,
+        "screen_centre_error_pct": -1.35,
+        "mirror": 0.6287,
+        "body_aspect": 0.4363,
+        "template_body_aspect": 0.4417,
+        "body": [
+          40,
+          60,
+          631,
+          1416
+        ],
+        "screen": [
+          107,
+          213,
+          547,
+          760
+        ],
+        "score": 0.9633,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.22,
+        "screen_rel_iou": 0.8569,
+        "screen_centre_error_pct": -1.31,
+        "mirror": 0.6,
+        "body_aspect": 0.4186,
+        "template_body_aspect": 0.4417,
+        "body": [
+          67,
+          93,
+          606,
+          1382
+        ],
+        "screen": [
+          130,
+          243,
+          528,
+          757
+        ],
+        "score": 0.7654,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.63,
+        "screen_rel_iou": 0.8523,
+        "screen_centre_error_pct": -0.3,
+        "mirror": 0.495,
+        "body_aspect": 0.4168,
+        "template_body_aspect": 0.4417,
+        "body": [
+          76,
+          107,
+          596,
+          1356
+        ],
+        "screen": [
+          142,
+          251,
+          526,
+          749
+        ],
+        "score": 0.7884,
+        "seed": 3
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out as 'ɑɒ': redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        179,
+        1064,
+        213,
+        1082
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "ABC came out as 'DEC': redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        333,
+        1061,
+        381,
+        1085
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "WXYZ came out as 'WOIYZ': redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        476,
+        1201,
+        540,
+        1225
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the key-lock symbol on the * key came out as '=ɑ': redrawn as a key lying on its side (drawn by hand in the label colour, no image model)",
+      "box": [
+        209,
+        1272,
+        238,
+        1293
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "'a/A' and the silent note on the # key came out as 'WAIY&': redrawn as 'a/A' and a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        478,
+        1269,
+        550,
+        1294
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the i of Ericsson came out as a tall l: the stroke cut into a dot and a stem at the x-height of r and c, background colour from the same rows (no image model)",
+      "box": [
+        347,
+        196,
+        352,
+        197
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      93,
+      189,
+      515,
+      748
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      93,
+      189,
+      422,
+      564
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 1.0
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.42,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        35.17,
+        47.0
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.049,
+        1.051
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4391,
+      "spec_aspect": 0.4414,
+      "aspect_error_pct": -0.53,
+      "lean_deg": 0.009,
+      "taper_deg": 0.009,
+      "deskew_deg": -0.009,
+      "tilt_deg": 0.017,
+      "jitter_px": 0.25,
+      "symmetry_iou": 0.9962,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.42,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.049,
+      "window_vs_spec_max": 1.051,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

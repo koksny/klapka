@@ -1,0 +1,122 @@
+{
+  "id": "sony-ericsson/j105i",
+  "brand": "Sony Ericsson",
+  "model": "J105i Naite",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 47,
+    "height": 108,
+    "depth": 12.6
+  },
+  "size_note": "108 x 47 x 12.6 mm (GSMArena)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 256K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.73,
+      "y": 10.8,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 84.5,
+      "w": 40.0,
+      "h": 21.0
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Silver keys in three columns on the silver lower half, each digit with its small letters to its right. The 1 key shows a small voicemail symbol (two small rings joined along their bottoms); the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_j105_naite-2818.php"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonnaite.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 452)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      84,
+      144,
+      407,
+      543
+    ],
+    "mm": [
+      7.0,
+      12.0,
+      33.92,
+      45.25
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        31,
+        81,
+        128,
+        171
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        580,
+        1320
+      ],
+      "screen_px": [
+        84,
+        144,
+        407,
+        543
+      ]
+    }
+  }
+}

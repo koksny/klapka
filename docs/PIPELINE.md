@@ -375,6 +375,18 @@ one side are part of the design, so these are not pass/fail.
 - A keypad redraw can stack a symbol on another key (the * on the a of 'a/A', J210i): put that key
   back from the cutout with `restore --box` and fix its letters by hand.
 
+## What the last J batch taught (2026-11-11)
+
+- Read every label position off `final.png` itself (a script that lists the text components of each
+  key row), not off a zoomed grid: boxes read off a zoom with the wrong origin landed beside the
+  labels.
+- The i of Ericsson came out as a tall l on six of seven phones; check the brand print on every
+  phone, not only where a batch's first phones showed it.
+- Every frontal press render of the Elm has the earphones lying over the keypad; a CC BY photo from
+  Wikimedia Commons gave a clean front.
+- Where the screen content ends in soft-key labels (J105i), a profile through the middle column can
+  stop on a letter; read the window's bottom edge between the words.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.
