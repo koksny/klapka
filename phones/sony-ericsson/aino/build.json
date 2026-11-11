@@ -1,0 +1,279 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1696
+    ],
+    "px_per_mm": 10.472,
+    "body_px": [
+      42,
+      68,
+      565,
+      1627
+    ],
+    "screen_px": [
+      110,
+      266,
+      497,
+      963
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-aino-01.jpg (official image, the open phone cut out, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      268,
+      648
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.35,
+        "screen_rel_iou": 0.7483,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.6734,
+        "body_aspect": 0.3314,
+        "template_body_aspect": 0.3359,
+        "body": [
+          40,
+          79,
+          547,
+          1611
+        ],
+        "screen": [
+          76,
+          220,
+          512,
+          1008
+        ],
+        "score": 1.0078,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.96,
+        "screen_rel_iou": 0.755,
+        "screen_centre_error_pct": 0.11,
+        "mirror": 0.7241,
+        "body_aspect": 0.3259,
+        "template_body_aspect": 0.3359,
+        "body": [
+          78,
+          163,
+          518,
+          1515
+        ],
+        "screen": [
+          109,
+          287,
+          488,
+          975
+        ],
+        "score": 0.9576,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 0.31,
+        "screen_rel_iou": 0.7766,
+        "screen_centre_error_pct": 1.71,
+        "mirror": 0.7315,
+        "body_aspect": 0.3369,
+        "template_body_aspect": 0.3359,
+        "body": [
+          52,
+          94,
+          549,
+          1571
+        ],
+        "screen": [
+          104,
+          231,
+          514,
+          994
+        ],
+        "score": 0.9561,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.54,
+        "screen_rel_iou": 0.78,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.6891,
+        "body_aspect": 0.3206,
+        "template_body_aspect": 0.3359,
+        "body": [
+          60,
+          71,
+          539,
+          1567
+        ],
+        "screen": [
+          94,
+          240,
+          506,
+          978
+        ],
+        "score": 0.8871,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        377,
+        1481,
+        491,
+        1505
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the last letter of DEF came out as E: its bottom bar painted out with the key colour from the same rows (drawn by hand in the label colour, no image model)",
+      "box": [
+        438,
+        1388,
+        442,
+        1392
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the voicemail symbol after the 1 came out as 'GD'-like letters: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        166,
+        1375,
+        193,
+        1392
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label after # came out garbled ('WN'-like): redrawn as 'a/A' (Bahnschrift Regular at the cap height of the labels in that row) and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        409,
+        1537,
+        461,
+        1557
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      54,
+      177,
+      567,
+      1095
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      54,
+      177,
+      513,
+      918
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.33,
+        "right": 1.42,
+        "top": 2.25,
+        "bottom": 2.33
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.33,
+        "right": 1.42,
+        "top": 2.25,
+        "bottom": 2.33
+      },
+      "window_centre_x_pct": 0.08,
+      "window_mm": [
+        42.75,
+        76.5
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.155,
+        1.148
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3333,
+      "spec_aspect": 0.3356,
+      "aspect_error_pct": -0.68,
+      "lean_deg": 0.03,
+      "taper_deg": 0.03,
+      "deskew_deg": 0.03,
+      "tilt_deg": 0.061,
+      "jitter_px": 0.3,
+      "symmetry_iou": 0.9966,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.08,
+      "window_vs_spec_min": 1.148,
+      "window_vs_spec_max": 1.155,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

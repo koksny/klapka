@@ -1,0 +1,353 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      672,
+      1536
+    ],
+    "px_per_mm": 13.854,
+    "body_px": [
+      38,
+      61,
+      633,
+      1473
+    ],
+    "screen_px": [
+      146,
+      164,
+      525,
+      670
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonxperiapureness.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      519
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 1.04,
+        "screen_rel_iou": 0.8721,
+        "screen_centre_error_pct": 0.44,
+        "mirror": 0.7463,
+        "body_aspect": 0.4262,
+        "template_body_aspect": 0.4218,
+        "body": [
+          53,
+          94,
+          618,
+          1421
+        ],
+        "screen": [
+          143,
+          196,
+          533,
+          689
+        ],
+        "score": 1.1488,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.67,
+        "screen_rel_iou": 0.8338,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.6935,
+        "body_aspect": 0.4246,
+        "template_body_aspect": 0.4218,
+        "body": [
+          36,
+          62,
+          632,
+          1467
+        ],
+        "screen": [
+          114,
+          157,
+          550,
+          683
+        ],
+        "score": 1.1138,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.52,
+        "screen_rel_iou": 0.8459,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.6878,
+        "body_aspect": 0.4112,
+        "template_body_aspect": 0.4218,
+        "body": [
+          59,
+          74,
+          611,
+          1418
+        ],
+        "screen": [
+          131,
+          162,
+          538,
+          654
+        ],
+        "score": 1.0546,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 0.04,
+        "screen_rel_iou": 0.884,
+        "screen_centre_error_pct": 3.3,
+        "mirror": 0.6459,
+        "body_aspect": 0.422,
+        "template_body_aspect": 0.4218,
+        "body": [
+          44,
+          79,
+          619,
+          1443
+        ],
+        "screen": [
+          159,
+          170,
+          542,
+          670
+        ],
+        "score": 0.8749,
+        "seed": 4
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "text",
+      "text": "ABC",
+      "box": [
+        286,
+        955,
+        388,
+        981
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "text",
+      "text": "WXYZ",
+      "box": [
+        444,
+        1152,
+        572,
+        1180
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 1",
+      "text": "a small white voicemail symbol under the digit: two small circles side by side, joined by a straight line along their bottoms",
+      "box": [
+        108,
+        954,
+        222,
+        982
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 4",
+      "text": "under the star: a small white '+' and, to its right, a small white key-lock symbol (a small key lying sideways)",
+      "box": [
+        101,
+        1250,
+        229,
+        1276
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "key row 4",
+      "text": "under the hash: the small white letters 'a/A' and, to their right, a small white silent symbol (a musical note crossed by a slash)",
+      "box": [
+        451,
+        1249,
+        579,
+        1279
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the voicemail symbol under 1 came out as letters ('0F', then 'QH' after a row fix): cleared to the key's background and drawn by hand as two rings joined along their bottoms, in the label colour (no image model)",
+      "box": [
+        140,
+        955,
+        192,
+        981
+      ]
+    },
+    {
+      "n": 7,
+      "area": "patch",
+      "note": "the label under # came out garbled twice ('£a♫'-like glyphs): cleared to the key's background and drawn by hand as 'a/A' (Bahnschrift SemiBold at the letters' cap height) and a crossed note (silent), in the label colour (no image model)",
+      "box": [
+        477,
+        1249,
+        553,
+        1279
+      ]
+    },
+    {
+      "n": 8,
+      "area": "patch",
+      "note": "the activity-menu icon came out as a blob: cleared to the key's background and drawn by hand as the press renders show it (a square at the lower left over a second square at the upper right, an arrow pointing to the upper right), in the label colour (no image model)",
+      "box": [
+        138,
+        836,
+        186,
+        876
+      ]
+    },
+    {
+      "n": 9,
+      "area": "patch",
+      "note": "the word fix wrote 'ABC' over faint ghosts of the old letters ('GHR'): cleared to the key's background and 'ABC' drawn by hand in Bahnschrift SemiBold at the cap height and width of 'DEF', centred under the 2, in the label colour (no image model)",
+      "box": [
+        313,
+        956,
+        363,
+        980
+      ]
+    },
+    {
+      "n": 10,
+      "area": "patch",
+      "note": "under the star the row fix drew '+' and a key with stray specks around them: cleared to the key's background and drawn by hand as '+' and a key lying sideways (key lock), as on the press renders, in the label colour (no image model)",
+      "box": [
+        136,
+        1252,
+        196,
+        1276
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      102,
+      107,
+      444,
+      558
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      102,
+      107,
+      342,
+      451
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        28.5,
+        37.58
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.039,
+        1.027
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4265,
+      "spec_aspect": 0.4216,
+      "aspect_error_pct": 1.17,
+      "lean_deg": 0.013,
+      "taper_deg": 0.092,
+      "deskew_deg": -0.013,
+      "tilt_deg": 0.106,
+      "jitter_px": 0.3,
+      "symmetry_iou": 0.9988,
+      "screen_aspect_error_pct": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.027,
+      "window_vs_spec_max": 1.039,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

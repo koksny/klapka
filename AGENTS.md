@@ -10,6 +10,11 @@ step by step.
 
 ## Ground rules
 
+0. **Only phones with a keypad of number keys below the screen belong here** (a keyboard whose
+   middle keys carry the digits in a keypad layout, like the P1i, counts). Touchscreen-only
+   phones, phones with a full QWERTY keyboard instead of a keypad (e.g. the Sony Ericsson txt) and
+   phones whose keyboard slides out sideways (landscape, e.g. the Xperia X10 mini pro or PLAY) are
+   out; see [docs/PIPELINE.md](docs/PIPELINE.md#rules).
 1. **Follow the standard.** Do not change it in a pull request that adds or fixes phones; propose
    changes in an issue first.
 2. **Sliders, flips and swivels are shown open** (keypad slid out, clamshell unfolded, swivel turned
@@ -222,6 +227,8 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | Problem | What to do |
 |---|---|
 | `No image server` | set `KLAPKA_SD_URL` or `klapka.local.json` (Setup) |
+| `KLIF System CGI runs preset ...` | CGI is shared and runs another model: switch it to `qwen-image-21` and restart it |
+| a see-through display (no LCD border, e.g. the Xperia Pureness) | give the window as the active area plus 0.5 mm, centred in the display panel (`--window ... --no-refine`), never the whole panel |
 | best seed too narrow or too short | more seeds (`--seeds 5,6,7,8`); check `size_mm` and the template |
 | the render copies the photo's screen content | fine: the screen is cut out in `finish` |
 | a text fix comes out wrong | tighter `--box`, another `--seed`; never accept a wrong label |
@@ -233,7 +240,7 @@ Fill in the pull request template. A maintainer looks at the result before it is
 | the key rows in `rows_check.png` sit on the wrong keys | the keypad block in `phone.json` is off; measure it on this model's photo, not a sister model's |
 | the green window in `work/screen_check.png` misses the bezel's inside edge | `finish <id> --window x0,y0,x1,y1 --no-refine` with the edges read off `body.png` |
 | the hole looks off-centre although `finish` passes | a thin frame line or dark border is inside the window on one side and outside on the other; give the window exactly (`--no-refine`) |
-| a photo shows an operator logo or sticker (e.g. "vodafone") | use another photo: it ends up on the skin |
+| a photo shows an operator logo or sticker (e.g. "vodafone") | use another photo: it ends up on the skin. Exception: a model sold only through one operator with its print (Sony Ericsson F500i) keeps it |
 | a real opening through the body (a slot in a flap) comes out filled with smeared colour | set `"keep_holes": 2000` in `build.json` (minimum opening size in render pixels) and run `finish` again |
 | a spec value cannot be right (a diagonal that does not fit the measured glass) | use what fits the measurement and explain it in `size_note` |
 | downloads from Wikimedia fail with an HTML error page | rate limit: send a descriptive User-Agent and retry with a pause |

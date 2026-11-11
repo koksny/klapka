@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/jalou",
+  "brand": "Sony Ericsson",
+  "model": "Jalou",
+  "year": 2009,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 45,
+    "height": 135.7,
+    "depth": 18.2
+  },
+  "size_note": "closed 73 x 45 x 18.2 mm (GSMArena, teltarif); the open length is measured on the press photo of the open phone (192 x 579 px)",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 256K colours (inner)"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.26,
+      "y": 12.2,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 5.0,
+      "y": 102.0,
+      "w": 35.0,
+      "h": 28.5
+    },
+    "seams": [
+      {
+        "y": 63.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 72.5,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Each digit has a small diamond to its right (white in the left column, half white and half grey in the middle column, grey with a white outline in the right column) and its small letters printed under the digit and diamond, on a black keypad. The 1 key shows a small envelope and voicemail icon under it; the * key shows 'a/A' under it; the 0 key shows '+' under it; the # key shows a small space symbol and a silent (crossed note) symbol under it.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_jalou-2895.php",
+      "https://www.teltarif.de/h/sony-ericsson/jalou/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-jalou-1.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, open (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      103,
+      164,
+      355,
+      473
+    ],
+    "mm": [
+      8.58,
+      13.67,
+      29.58,
+      39.42
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        44,
+        52,
+        102,
+        137
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        564,
+        1652
+      ],
+      "screen_px": [
+        103,
+        164,
+        355,
+        473
+      ]
+    }
+  }
+}

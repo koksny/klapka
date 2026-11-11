@@ -1,0 +1,127 @@
+{
+  "id": "sony-ericsson/yari",
+  "brand": "Sony Ericsson",
+  "model": "Yari",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 134,
+    "depth": 15.7
+  },
+  "size_note": "closed 100 x 48 x 15.7 mm (GSMArena); the open length is measured on the press photo (217 px wide, the bottom edge is a few px beyond the frame, estimated from the closed phone beside it)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.4,
+    "type": "TFT 16M colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.71,
+      "y": 11.8,
+      "w": 36.58,
+      "h": 48.77,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.0,
+      "y": 100.5,
+      "w": 36.0,
+      "h": 28.0
+    },
+    "seams": [
+      {
+        "y": 97.5,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "Each key shows its digit, a tiny dark dot and the small letters to its right, on a black keypad. The 1 key shows a small voicemail icon right of the 1; the * key shows '+'; the 0 key shows a small space symbol; the # key shows 'a/A' and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_yari-2809.php"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-yari-01.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, open and closed side by side (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      86,
+      156,
+      436,
+      581
+    ],
+    "mm": [
+      7.17,
+      13.0,
+      36.33,
+      48.42
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        32,
+        51,
+        128,
+        170
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        611,
+        1632
+      ],
+      "screen_px": [
+        86,
+        156,
+        436,
+        581
+      ]
+    }
+  }
+}

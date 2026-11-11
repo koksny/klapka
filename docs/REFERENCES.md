@@ -18,6 +18,9 @@ sets: `front_straight`, `front_slided_open`), esato.com (`/gfx/phones/sonyericss
 (`view_b` images, also CDMA models), Xataka Movil galleries (`xatakamovil.com/galeria/sony-ericsson-<model>`:
 official press sets such as `front_open`, up to 768 px tall), shop and archive listings (esfr.pl, imimg.com). GSMArena now answers
 automated clients with a paywall; specs also come from teltarif.de, devicebeast.com and phonescoop.com.
+GSMArena's mobile pages (`m.gsmarena.com/<phone>-pictures-<id>.php`) still list the image URLs, and
+its image server answers; the file names do not always follow the model (`se-xperia-pureness-1.jpg`).
+When an esato render is cropped tight, add a white margin before `photo`.
 Watch for reflections under press renders: they are not part of the phone. When no press render of
 the open phone exists, a review photo of an original unit works (mobile-review.com reviews show most
 phones open); paint out the site's watermark first.
@@ -28,7 +31,8 @@ Pick the appearance photo in this order:
 1. **Factory configuration.** The phone as it left the box: original badges and caps (K700i:
    "QuickShare"), no operator stickers or logos, no aftermarket covers, no plugs, caps or straps
    sticking out, no protective film. A sharper photo of a modified unit loses to a softer photo of an
-   original one.
+   original one. A model sold only through one operator with that operator's print on it (Sony
+   Ericsson F500i, vodafone) keeps the print: that is its factory configuration.
 2. **Sliders, flips and swivels photographed open** (keypad flips over a touchscreen: closed), the way the skin
    shows them.
 3. **Whole front visible**, labels and logos large and readable (the text pass fixes what is not,

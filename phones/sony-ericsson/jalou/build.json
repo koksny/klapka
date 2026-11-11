@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1696
+    ],
+    "px_per_mm": 11.498,
+    "body_px": [
+      29,
+      68,
+      545,
+      1627
+    ],
+    "screen_px": [
+      112,
+      208,
+      462,
+      675
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-jalou-1.jpg (official image, open; the site's watermark painted out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      273,
+      648
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.06,
+        "screen_rel_iou": 0.9723,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.5005,
+        "body_aspect": 0.3246,
+        "template_body_aspect": 0.3314,
+        "body": [
+          39,
+          81,
+          533,
+          1605
+        ],
+        "screen": [
+          114,
+          217,
+          457,
+          673
+        ],
+        "score": 1.1095,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.37,
+        "screen_rel_iou": 0.9562,
+        "screen_centre_error_pct": -0.52,
+        "mirror": 0.4321,
+        "body_aspect": 0.3202,
+        "template_body_aspect": 0.3314,
+        "body": [
+          49,
+          86,
+          529,
+          1587
+        ],
+        "screen": [
+          119,
+          220,
+          454,
+          677
+        ],
+        "score": 0.9518,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.74,
+        "screen_rel_iou": 0.9682,
+        "screen_centre_error_pct": -0.52,
+        "mirror": 0.4335,
+        "body_aspect": 0.319,
+        "template_body_aspect": 0.3314,
+        "body": [
+          45,
+          93,
+          527,
+          1606
+        ],
+        "screen": [
+          115,
+          228,
+          452,
+          682
+        ],
+        "score": 0.9463,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.91,
+        "screen_rel_iou": 0.9462,
+        "screen_centre_error_pct": -0.12,
+        "mirror": 0.5102,
+        "body_aspect": 0.2953,
+        "template_body_aspect": 0.3314,
+        "body": [
+          79,
+          141,
+          502,
+          1576
+        ],
+        "screen": [
+          142,
+          267,
+          438,
+          692
+        ],
+        "score": 0.6441,
+        "seed": 1
+      }
+    ],
+    "best_seed": 3,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        141,
+        1432,
+        156,
+        1448
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols under 1 came out garbled: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        131,
+        1262,
+        178,
+        1284
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' under * came out as a square, '/' and 'A': redrawn in Bahnschrift Regular at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        136,
+        1513,
+        170,
+        1534
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label under # came out as a dash and a garbled note: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        397,
+        1512,
+        439,
+        1535
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      97,
+      157,
+      464,
+      645
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      97,
+      157,
+      367,
+      488
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        30.58,
+        40.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.003,
+        1.001
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3314,
+      "spec_aspect": 0.3316,
+      "aspect_error_pct": -0.06,
+      "lean_deg": 0.02,
+      "taper_deg": 0.065,
+      "deskew_deg": -0.02,
+      "tilt_deg": 0.085,
+      "jitter_px": 3.11,
+      "symmetry_iou": 0.993,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.001,
+      "window_vs_spec_max": 1.003,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

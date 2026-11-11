@@ -1,0 +1,359 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.277,
+    "body_px": [
+      47,
+      59,
+      657,
+      1412
+    ],
+    "screen_px": [
+      152,
+      282,
+      552,
+      782
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonf500i.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      501
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.46,
+        "screen_rel_iou": 0.837,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6834,
+        "body_aspect": 0.4311,
+        "template_body_aspect": 0.4513,
+        "body": [
+          76,
+          75,
+          632,
+          1366
+        ],
+        "screen": [
+          149,
+          268,
+          559,
+          775
+        ],
+        "score": 0.9555,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.49,
+        "screen_rel_iou": 0.8596,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6834,
+        "body_aspect": 0.431,
+        "template_body_aspect": 0.4513,
+        "body": [
+          76,
+          84,
+          631,
+          1373
+        ],
+        "screen": [
+          149,
+          292,
+          559,
+          784
+        ],
+        "score": 0.968,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.83,
+        "screen_rel_iou": 0.8615,
+        "screen_centre_error_pct": -1.15,
+        "mirror": 0.6731,
+        "body_aspect": 0.4294,
+        "template_body_aspect": 0.4513,
+        "body": [
+          73,
+          75,
+          635,
+          1385
+        ],
+        "screen": [
+          146,
+          271,
+          549,
+          785
+        ],
+        "score": 0.8409,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.96,
+        "screen_rel_iou": 0.8977,
+        "screen_centre_error_pct": 1.14,
+        "mirror": 0.6755,
+        "body_aspect": 0.4289,
+        "template_body_aspect": 0.4513,
+        "body": [
+          68,
+          75,
+          637,
+          1403
+        ],
+        "screen": [
+          157,
+          290,
+          561,
+          795
+        ],
+        "score": 0.8736,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.1,
+        "screen_rel_iou": 0.8667,
+        "screen_centre_error_pct": -1.0,
+        "mirror": 0.6347,
+        "body_aspect": 0.4237,
+        "template_body_aspect": 0.4513,
+        "body": [
+          77,
+          95,
+          626,
+          1392
+        ],
+        "screen": [
+          150,
+          286,
+          542,
+          794
+        ],
+        "score": 0.779,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.17,
+        "screen_rel_iou": 0.8946,
+        "screen_centre_error_pct": 0.09,
+        "mirror": 0.6752,
+        "body_aspect": 0.4234,
+        "template_body_aspect": 0.4513,
+        "body": [
+          79,
+          77,
+          628,
+          1375
+        ],
+        "screen": [
+          164,
+          271,
+          544,
+          779
+        ],
+        "score": 0.9145,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.77,
+        "screen_rel_iou": 0.9218,
+        "screen_centre_error_pct": 0.18,
+        "mirror": 0.6776,
+        "body_aspect": 0.4207,
+        "template_body_aspect": 0.4513,
+        "body": [
+          71,
+          73,
+          627,
+          1396
+        ],
+        "screen": [
+          157,
+          288,
+          543,
+          789
+        ],
+        "score": 0.904,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.41,
+        "screen_rel_iou": 0.9159,
+        "screen_centre_error_pct": 0.18,
+        "mirror": 0.6726,
+        "body_aspect": 0.4178,
+        "template_body_aspect": 0.4513,
+        "body": [
+          79,
+          75,
+          627,
+          1388
+        ],
+        "screen": [
+          164,
+          287,
+          544,
+          788
+        ],
+        "score": 0.8634,
+        "seed": 5
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        127,
+        942,
+        543,
+        1254
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol after the envelope on the 1 key came out as a blob: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        226,
+        982,
+        244,
+        1002
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as a bow-tie shape and an 'A': redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        482,
+        1203,
+        536,
+        1225
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      88,
+      197,
+      390,
+      483
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        32.5,
+        40.25
+      ],
+      "edge_strength": {
+        "left": 15.5,
+        "right": 22.0,
+        "top": 16.9,
+        "bottom": 15.6
+      },
+      "window_vs_spec": [
+        1.078,
+        1.068
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4405,
+      "spec_aspect": 0.451,
+      "aspect_error_pct": -2.32,
+      "lean_deg": 0.008,
+      "taper_deg": 0.979,
+      "deskew_deg": -0.085,
+      "tilt_deg": 0.987,
+      "jitter_px": 1.79,
+      "symmetry_iou": 0.9811,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.068,
+      "window_vs_spec_max": 1.078,
+      "window_edge_min": 15.5
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

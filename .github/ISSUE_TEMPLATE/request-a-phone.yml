@@ -6,7 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks! Check the phone list on the front page first. Sliders and flips are always shown open.
+        Thanks! Check the phone list on the front page first. KLAPKA collects phones with a keypad
+        of number keys below the screen; touchscreen-only phones, full QWERTY phones and sideways
+        sliders are out.
+        Sliders and flips are always shown open.
   - type: input
     id: brand
     attributes: { label: Brand, placeholder: Sony Ericsson }

@@ -34,4 +34,7 @@ def server():
         raise SystemExit(f"KLIF System CGI is not online ({st.get('status')}); start it with: klif-cli launch cgi --yes --wait")
     if st.get("apiKey"):
         raise SystemExit("KLIF System CGI wants an API key; this tool does not handle keys.")
+    if st.get("preset") != "qwen-image-21":   # the standard renders on Qwen-Image 2.1 Turbo; CGI is shared and may run another model
+        raise SystemExit(f"KLIF System CGI runs preset {st.get('preset')!r} ({st.get('model')}); the standard needs qwen-image-21: "
+                         "klif-cli presets use cgi qwen-image-21, then klif-cli restart cgi --yes --wait")
     return st["baseUrl"].rstrip("/"), {"backend": "klif", "preset": st.get("preset"), "model": st.get("model")}

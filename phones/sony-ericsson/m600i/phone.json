@@ -1,0 +1,131 @@
+{
+  "id": "sony-ericsson/m600i",
+  "brand": "Sony Ericsson",
+  "model": "M600i",
+  "year": 2006,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 54,
+    "height": 105,
+    "depth": 15
+  },
+  "size_note": "105 x 54 x 15 mm (GSMArena, Wikipedia); teltarif gives 107 x 57, but the frontal press render measures 0.509 width/height (screen width 39.6 mm as scale: 53 x 104 mm), which fits 105 x 54",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.6,
+    "type": "TFT resistive touchscreen"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.19,
+      "y": 12.2,
+      "w": 39.62,
+      "h": 52.83,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 74.3,
+      "w": 47.0,
+      "h": 28.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "Q W",
+      "E 1 R",
+      "T 2 Y",
+      "U 3 I",
+      "O P"
+    ],
+    [
+      "A S",
+      "D 4 F",
+      "G 5 H",
+      "J 6 K",
+      "L ←"
+    ],
+    [
+      ", Z",
+      "X 7 C",
+      "V 8 B",
+      "N 9 M",
+      ". OK"
+    ],
+    [
+      "⇧",
+      "* ←",
+      "0",
+      "# →",
+      "ALT"
+    ]
+  ],
+  "key_icons": "A keyboard of 5 x 4 white rocker keys with grey outlines: each key has two black letters, one at its lower left and one at its lower right; the keys of the middle three columns also carry a large blue digit between the letters; small grey punctuation marks sit above the letters of the outer keys. The E/1 key also shows a small envelope. Bottom row: an up arrow (shift); a key with a left arrow, a blue '*' and a small key-lock symbol; a wide space key with a blue '0'; a key with a blue '#', a right arrow and a small music note; 'ALT'.",
+  "keypad_labels": "QWERTY rocker keys with blue digits 1-9, * and 0 on the middle keys",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_m600-1425.php",
+      "https://www.teltarif.de/h/sony-ericsson/m600i/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonm600.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 382, cropped tight; the left side keys show)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      114,
+      164,
+      462,
+      616
+    ],
+    "mm": [
+      9.5,
+      13.67,
+      38.5,
+      51.33
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        35,
+        116,
+        124,
+        166
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        680,
+        1284
+      ],
+      "screen_px": [
+        114,
+        164,
+        462,
+        616
+      ]
+    }
+  }
+}

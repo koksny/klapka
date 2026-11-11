@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/xperia-pureness",
+  "brand": "Sony Ericsson",
+  "model": "Xperia Pureness",
+  "year": 2009,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43,
+    "height": 102,
+    "depth": 13
+  },
+  "size_note": "102 x 43 x 13 mm (GSMArena spec sheet, teltarif, devicebeast); the GSMArena review text says 112 mm, but the frontal press render measures 0.425 width/height, which fits 102 mm",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 1.8,
+    "type": "transparent monochrome TFT"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.79,
+      "y": 7.4,
+      "w": 27.43,
+      "h": 36.58,
+      "note": "w/h from 1.8in at 240:320, x centred; y = top edge of the active area of the see-through display, measured on the frontal press render (esato)"
+    },
+    "keypad": {
+      "x": 1.0,
+      "y": 61.2,
+      "w": 41.0,
+      "h": 30.3
+    },
+    "seams": [
+      {
+        "y": 44.8,
+        "note": "lower edge of the clear glass display panel, top of the black keypad body"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "The keys are four full-width glossy black bars with white labels, the small letters printed under each digit, not beside it. The 1 key shows a small voicemail icon under the 1; the * key shows '+' and a small key-lock symbol under the *; the 0 key shows a small space symbol under the 0; the # key shows 'a/A' and a small silent (crossed note) symbol under the #.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ, letters under the digits",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_xperia_pureness-3015.php",
+      "https://www.teltarif.de/h/sony-ericsson/xperia-pureness/",
+      "https://devicebeast.com/phones/xperia-pureness"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonxperiapureness.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 471)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      108,
+      113,
+      329,
+      439
+    ],
+    "mm": [
+      9.0,
+      9.42,
+      27.42,
+      36.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        41,
+        73,
+        110,
+        147
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        546,
+        1248
+      ],
+      "screen_px": [
+        108,
+        113,
+        329,
+        439
+      ]
+    }
+  }
+}

@@ -21,6 +21,12 @@ but they stay experiments until he approves them.
 
 ## Rules
 
+0. **Which phones belong here (Koks, 2026-11-11): only phones with a keypad of number keys below
+   the screen** in the view that is shown. A keyboard whose middle keys carry the digits in a keypad
+   layout counts (Sony Ericsson P1i, M600i). Touchscreen-only phones are out, so are phones with a full
+   QWERTY keyboard instead of a keypad (Sony Ericsson txt, Aspen), and so are phones whose keyboard
+   slides out sideways and turns the phone landscape (Sony Ericsson Xperia X1, X2, X10 mini pro, mini
+   pro, pro and PLAY, txt pro, Vivaz pro).
 1. **Sliders, flips and swivels are always shown open** (keypad slid out, clamshell unfolded, swivel
    turned out; swivels added by Koks, 2026-11-09): `view: "open"`, `size_mm` is the open size,
    `layout_mm.seams` marks where the parts meet.
@@ -309,6 +315,39 @@ one side are part of the design, so these are not pass/fail.
   inpainted from the body around it. `skin-black.png` shows the opening black.
 - A black screen glass with a grey gloss reflection on one side (S302) makes the frame around the
   hole uneven. The glass outline is painted black and the brand print kept on it by brightness.
+
+## What the Xperia series taught (2026-11-11)
+
+- Of the seven Xperias with a keyboard only the Pureness qualifies (rule 0): the others slide their
+  keyboard out sideways and turn landscape.
+- A see-through display (Pureness) has no LCD border: the display panel is clear glass and only its
+  middle shows pixels. The window is the active area plus the 0.5 mm margin, read off the panel's
+  centre and the spec size (`--window --no-refine`), never the whole panel: painting the panel black
+  would show a black frame the phone never had. The rest of the panel stays as rendered.
+- Labels that came back wrong from two edits in a row (the voicemail symbol, 'a/A' and the silent
+  symbol, the activity-menu icon) were cleared to the key colour and drawn by hand
+  (`text_fixes` "patch" entries); a word fix that left ghosts of the old letters was redrawn the same
+  way, in Bahnschrift SemiBold at the size of the neighbouring labels.
+- KLIF System CGI is shared: another job had switched it to a different model. `tools/backend.py`
+  now refuses to render unless CGI runs preset `qwen-image-21`.
+
+## What the Aino, Yari, M600i and F series taught (2026-11-11)
+
+- GSMArena's official images (`fdn2.gsmarena.com/vv/pics/sonyericsson/se-<model>-01.jpg`) often
+  show the phone open and closed side by side, straight-on: the open length is measured against the
+  closed one (Aino, Yari).
+- The pass 1 ranking can reject every seed of a silver body on a white background (F500i: eight
+  seeds at -4.5% to -7.4%, the soft edge counts as background). The cutout of the best-looking seed
+  measured -2.3%: cut it out and measure the cutout before rendering more.
+- The Q of PQRS came out as an O on four of six phones; a short tail drawn by hand fixes it. The same
+  small symbols keep coming back wrong (voicemail, 'a/A', the silent note, the space symbol); they
+  were drawn by hand in the label colour (`text_fixes` "patch").
+- The automatic window missed on five of six phones (it took the glass panel or the print). The
+  windows were read off luminance profiles across each side of the screen: the edge of the content
+  where the brand is printed on the glass (Yari, Jalou), the whole dark panel where nothing is printed
+  on it (Aino).
+- The F500i is sold with the vodafone print (Koks): an operator print that the phone came with is
+  part of the phone; stickers and covers added later are not.
 
 ## Open items
 

@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 12.108,
+    "body_px": [
+      35,
+      65,
+      603,
+      1565
+    ],
+    "screen_px": [
+      127,
+      239,
+      511,
+      719
+    ]
+  },
+  "photo": {
+    "url": "https://i.blogs.es/9ea99d/f305_frontopen_polar_white/2560_3000.jpg (press render, Xataka Movil gallery; reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      352,
+      605
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.89,
+        "screen_rel_iou": 0.8176,
+        "screen_centre_error_pct": -1.06,
+        "mirror": 0.3433,
+        "body_aspect": 0.3643,
+        "template_body_aspect": 0.3791,
+        "body": [
+          72,
+          126,
+          588,
+          1544
+        ],
+        "screen": [
+          136,
+          254,
+          513,
+          722
+        ],
+        "score": 0.6885,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.62,
+        "screen_rel_iou": 0.8388,
+        "screen_centre_error_pct": -1.56,
+        "mirror": 0.2869,
+        "body_aspect": 0.3578,
+        "template_body_aspect": 0.3791,
+        "body": [
+          73,
+          132,
+          584,
+          1562
+        ],
+        "screen": [
+          136,
+          264,
+          505,
+          737
+        ],
+        "score": 0.5452,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.61,
+        "screen_rel_iou": 0.887,
+        "screen_centre_error_pct": -1.54,
+        "mirror": 0.2982,
+        "body_aspect": 0.354,
+        "template_body_aspect": 0.3791,
+        "body": [
+          72,
+          76,
+          590,
+          1541
+        ],
+        "screen": [
+          136,
+          240,
+          510,
+          735
+        ],
+        "score": 0.5514,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.93,
+        "screen_rel_iou": 0.7826,
+        "screen_centre_error_pct": 0.83,
+        "mirror": 0.2638,
+        "body_aspect": 0.3452,
+        "template_body_aspect": 0.3791,
+        "body": [
+          92,
+          123,
+          574,
+          1521
+        ],
+        "screen": [
+          151,
+          250,
+          523,
+          714
+        ],
+        "score": 0.3854,
+        "seed": 1
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 2
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        197,
+        1370,
+        210,
+        1391
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols after the 1 came out as '□3o': redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        182,
+        1235,
+        229,
+        1258
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' after * came out as 'n/A': redrawn in Bahnschrift SemiBold at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        183,
+        1428,
+        219,
+        1451
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the silent symbol after the space symbol of # came out garbled: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        480,
+        1427,
+        506,
+        1451
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      95,
+      179,
+      478,
+      665
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      95,
+      179,
+      383,
+      486
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 0.92
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.92,
+        "bottom": 0.92
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        31.92,
+        40.5
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.006,
+        1.021
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3708,
+      "spec_aspect": 0.379,
+      "aspect_error_pct": -2.17,
+      "lean_deg": 0.013,
+      "taper_deg": 0.043,
+      "deskew_deg": -0.014,
+      "tilt_deg": 0.056,
+      "jitter_px": 1.19,
+      "symmetry_iou": 0.9925,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 1.006,
+      "window_vs_spec_max": 1.021,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

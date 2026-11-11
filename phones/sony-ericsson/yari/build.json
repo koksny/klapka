@@ -1,0 +1,266 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      608,
+      1632
+    ],
+    "px_per_mm": 11.205,
+    "body_px": [
+      35,
+      65,
+      572,
+      1565
+    ],
+    "screen_px": [
+      99,
+      197,
+      508,
+      743
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-yari-01.jpg (official image, the open phone cut out, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      283,
+      648
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.75,
+        "screen_rel_iou": 0.9671,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.6819,
+        "body_aspect": 0.3611,
+        "template_body_aspect": 0.3584,
+        "body": [
+          37,
+          63,
+          569,
+          1538
+        ],
+        "screen": [
+          96,
+          189,
+          508,
+          735
+        ],
+        "score": 1.2519,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.78,
+        "screen_rel_iou": 0.9643,
+        "screen_centre_error_pct": -0.28,
+        "mirror": 0.603,
+        "body_aspect": 0.3556,
+        "template_body_aspect": 0.3584,
+        "body": [
+          37,
+          70,
+          568,
+          1565
+        ],
+        "screen": [
+          95,
+          196,
+          507,
+          750
+        ],
+        "score": 1.1984,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.32,
+        "screen_rel_iou": 0.9222,
+        "screen_centre_error_pct": -0.75,
+        "mirror": 0.5872,
+        "body_aspect": 0.3573,
+        "template_body_aspect": 0.3584,
+        "body": [
+          34,
+          63,
+          565,
+          1551
+        ],
+        "screen": [
+          83,
+          190,
+          508,
+          749
+        ],
+        "score": 1.1247,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 3.21,
+        "screen_rel_iou": 0.9639,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.6375,
+        "body_aspect": 0.3699,
+        "template_body_aspect": 0.3584,
+        "body": [
+          36,
+          66,
+          574,
+          1522
+        ],
+        "screen": [
+          95,
+          189,
+          513,
+          728
+        ],
+        "score": 1.1036,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        198,
+        1357,
+        213,
+        1376
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the label after # came out as 'wA' and a garbled note: redrawn as 'a/A' (Bahnschrift SemiBold at the labels' cap height) and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        445,
+        1431,
+        507,
+        1458
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the small dark dot between 5 and JKL came out as a faint line: the dot from the 4 key copied in (no image model)",
+      "box": [
+        290,
+        1278,
+        310,
+        1298
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      80,
+      149,
+      528,
+      745
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      80,
+      149,
+      448,
+      596
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.58,
+        "bottom": 0.67
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        37.33,
+        49.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.021,
+        1.018
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3652,
+      "spec_aspect": 0.3582,
+      "aspect_error_pct": 1.95,
+      "lean_deg": 0.029,
+      "taper_deg": 0.124,
+      "deskew_deg": 0.029,
+      "tilt_deg": 0.153,
+      "jitter_px": 0.82,
+      "symmetry_iou": 0.9909,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 1.018,
+      "window_vs_spec_max": 1.021,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

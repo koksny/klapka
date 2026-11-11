@@ -1,0 +1,335 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      736,
+      1376
+    ],
+    "px_per_mm": 12.056,
+    "body_px": [
+      42,
+      55,
+      692,
+      1320
+    ],
+    "screen_px": [
+      129,
+      202,
+      605,
+      837
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssonm600.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      430
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.87,
+        "screen_rel_iou": 0.9596,
+        "screen_centre_error_pct": 0.08,
+        "mirror": 0.6619,
+        "body_aspect": 0.5097,
+        "template_body_aspect": 0.5142,
+        "body": [
+          54,
+          68,
+          681,
+          1299
+        ],
+        "screen": [
+          131,
+          210,
+          605,
+          824
+        ],
+        "score": 1.239,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.49,
+        "screen_rel_iou": 0.9815,
+        "screen_centre_error_pct": -0.32,
+        "mirror": 0.5341,
+        "body_aspect": 0.5117,
+        "template_body_aspect": 0.5142,
+        "body": [
+          53,
+          67,
+          685,
+          1303
+        ],
+        "screen": [
+          133,
+          208,
+          601,
+          829
+        ],
+        "score": 1.1927,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 2.65,
+        "screen_rel_iou": 0.901,
+        "screen_centre_error_pct": 0.16,
+        "mirror": 0.608,
+        "body_aspect": 0.5278,
+        "template_body_aspect": 0.5142,
+        "body": [
+          67,
+          128,
+          673,
+          1277
+        ],
+        "screen": [
+          145,
+          225,
+          597,
+          824
+        ],
+        "score": 1.0562,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.86,
+        "screen_rel_iou": 0.8495,
+        "screen_centre_error_pct": 2.04,
+        "mirror": 0.2055,
+        "body_aspect": 0.4532,
+        "template_body_aspect": 0.5142,
+        "body": [
+          141,
+          113,
+          678,
+          1299
+        ],
+        "screen": [
+          239,
+          216,
+          602,
+          828
+        ],
+        "score": 0.1549,
+        "seed": 1
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "key row 1",
+      "text": "a single black question mark '?'",
+      "box": [
+        606,
+        946,
+        638,
+        978
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "key row 2",
+      "text": "a single black closing parenthesis ')'",
+      "box": [
+        151,
+        1037,
+        187,
+        1065
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 3,
+      "area": "key row 3",
+      "text": "a single small black comma ','",
+      "box": [
+        88,
+        1167,
+        144,
+        1185
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 4,
+      "area": "key row 3",
+      "text": "a single key: a small black '@' at the top left, a small black 'OK' at the top right, a small black '.' at the bottom left and a black return arrow at the bottom right",
+      "box": [
+        528,
+        1120,
+        660,
+        1189
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "key row 4",
+      "text": "a single key: one black upward arrow (shift) in the middle",
+      "box": [
+        130,
+        1206,
+        208,
+        1258
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 6,
+      "area": "key row 4",
+      "text": "a single key: a black left arrow at the top left, a small blue key-lock symbol at the bottom left, and a large blue '*' at the right",
+      "box": [
+        205,
+        1206,
+        283,
+        1258
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 7,
+      "area": "key row 4",
+      "text": "a single key: a large blue '#' at the left, a black right arrow at the top right and a small blue musical note at the bottom right",
+      "box": [
+        452,
+        1206,
+        530,
+        1258
+      ],
+      "prompt_id": "fix_key_row",
+      "seed": 1
+    },
+    {
+      "n": 8,
+      "area": "patch",
+      "note": "the Q of the Q/W key came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        108,
+        984,
+        125,
+        1010
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      103,
+      158,
+      587,
+      786
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      103,
+      158,
+      484,
+      628
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.92,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.92,
+        "right": 0.92,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.23,
+      "window_mm": [
+        40.33,
+        52.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.018,
+        0.991
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.5203,
+      "spec_aspect": 0.5143,
+      "aspect_error_pct": 1.17,
+      "lean_deg": 0.006,
+      "taper_deg": 0.235,
+      "deskew_deg": 0.177,
+      "tilt_deg": 0.242,
+      "jitter_px": 2.86,
+      "symmetry_iou": 0.9763,
+      "screen_aspect_error_pct": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.23,
+      "window_vs_spec_min": 0.991,
+      "window_vs_spec_max": 1.018,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "sony-ericsson/aino",
+  "brand": "Sony Ericsson",
+  "model": "Aino",
+  "year": 2009,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 50,
+    "height": 149,
+    "depth": 15.5
+  },
+  "size_note": "closed 104 x 50 x 15.5 mm (GSMArena); the open length is measured on the press photo of the open and the closed phone side by side (574 / 401 px, 104 mm closed)",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      432
+    ],
+    "diagonal_in": 3.0,
+    "type": "TFT touchscreen (limited use)"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.5,
+      "y": 18.9,
+      "w": 37.01,
+      "h": 66.61,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 7.0,
+      "y": 124.8,
+      "w": 36.0,
+      "h": 22.7
+    },
+    "seams": [
+      {
+        "y": 104.5,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* +",
+      "0",
+      "# a/A"
+    ]
+  ],
+  "key_icons": "Each key shows its digit with the small letters to its right, on a dark grey keypad divided into keys by thin lines. The 1 key shows a small voicemail icon right of the 1; the * key shows '+'; the 0 key shows a small space symbol; the # key shows 'a/A' and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_aino-2810.php"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-aino-01.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, open and closed side by side (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      70,
+      204,
+      480,
+      863
+    ],
+    "mm": [
+      5.83,
+      17.0,
+      40.0,
+      71.92
+    ],
+    "native_px": [
+      240,
+      432
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        32,
+        59,
+        127,
+        228
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        620,
+        1812
+      ],
+      "screen_px": [
+        70,
+        204,
+        480,
+        863
+      ]
+    }
+  }
+}

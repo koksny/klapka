@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 88,
+  "count": 95,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -539,6 +539,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/t610/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/t610/preview.png",
         "phone.json": "phones/sony-ericsson/t610/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/f500i",
+      "brand": "Sony Ericsson",
+      "model": "F500i",
+      "year": 2004,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 46,
+        "height": 102,
+        "depth": 14
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.9,
+        "type": "TFT 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          94,
+          203,
+          377,
+          471
+        ],
+        "mm": [
+          7.83,
+          16.92,
+          31.42,
+          39.25
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/f500i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/f500i/skin-black.png",
+        "body.png": "phones/sony-ericsson/f500i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/f500i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/f500i/preview.png",
+        "phone.json": "phones/sony-ericsson/f500i/phone.json"
       }
     },
     {
@@ -1470,6 +1519,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/k800i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/k800i/preview.png",
         "phone.json": "phones/sony-ericsson/k800i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/m600i",
+      "brand": "Sony Ericsson",
+      "model": "M600i",
+      "year": 2006,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 54,
+        "height": 105,
+        "depth": 15
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.6,
+        "type": "TFT resistive touchscreen"
+      },
+      "screen": {
+        "skin_px": [
+          114,
+          164,
+          462,
+          616
+        ],
+        "mm": [
+          9.5,
+          13.67,
+          38.5,
+          51.33
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/m600i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/m600i/skin-black.png",
+        "body.png": "phones/sony-ericsson/m600i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/m600i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/m600i/preview.png",
+        "phone.json": "phones/sony-ericsson/m600i/phone.json"
       }
     },
     {
@@ -2943,6 +3041,55 @@
       }
     },
     {
+      "id": "sony-ericsson/f305",
+      "brand": "Sony Ericsson",
+      "model": "F305",
+      "year": 2008,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 47,
+        "height": 124,
+        "depth": 14.6
+      },
+      "display": {
+        "native_px": [
+          176,
+          220
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 262,144 colours"
+      },
+      "screen": {
+        "skin_px": [
+          101,
+          190,
+          371,
+          464
+        ],
+        "mm": [
+          8.42,
+          15.83,
+          30.92,
+          38.67
+        ],
+        "native_px": [
+          176,
+          220
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/f305/skin.png",
+        "skin-black.png": "phones/sony-ericsson/f305/skin-black.png",
+        "body.png": "phones/sony-ericsson/f305/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/f305/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/f305/preview.png",
+        "phone.json": "phones/sony-ericsson/f305/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/k330i",
       "brand": "Sony Ericsson",
       "model": "K330",
@@ -3629,6 +3776,55 @@
       }
     },
     {
+      "id": "sony-ericsson/aino",
+      "brand": "Sony Ericsson",
+      "model": "Aino",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 50,
+        "height": 149,
+        "depth": 15.5
+      },
+      "display": {
+        "native_px": [
+          240,
+          432
+        ],
+        "diagonal_in": 3.0,
+        "type": "TFT touchscreen (limited use)"
+      },
+      "screen": {
+        "skin_px": [
+          70,
+          204,
+          480,
+          863
+        ],
+        "mm": [
+          5.83,
+          17.0,
+          40.0,
+          71.92
+        ],
+        "native_px": [
+          240,
+          432
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/aino/skin.png",
+        "skin-black.png": "phones/sony-ericsson/aino/skin-black.png",
+        "body.png": "phones/sony-ericsson/aino/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/aino/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/aino/preview.png",
+        "phone.json": "phones/sony-ericsson/aino/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/c510",
       "brand": "Sony Ericsson",
       "model": "C510",
@@ -3773,6 +3969,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/c903/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/c903/preview.png",
         "phone.json": "phones/sony-ericsson/c903/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/jalou",
+      "brand": "Sony Ericsson",
+      "model": "Jalou",
+      "year": 2009,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 45,
+        "height": 135.7,
+        "depth": 18.2
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.0,
+        "type": "TFT 256K colours (inner)"
+      },
+      "screen": {
+        "skin_px": [
+          103,
+          164,
+          355,
+          473
+        ],
+        "mm": [
+          8.58,
+          13.67,
+          29.58,
+          39.42
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/jalou/skin.png",
+        "skin-black.png": "phones/sony-ericsson/jalou/skin-black.png",
+        "body.png": "phones/sony-ericsson/jalou/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/jalou/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/jalou/preview.png",
+        "phone.json": "phones/sony-ericsson/jalou/phone.json"
       }
     },
     {
@@ -4214,6 +4459,104 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w995/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w995/preview.png",
         "phone.json": "phones/sony-ericsson/w995/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/xperia-pureness",
+      "brand": "Sony Ericsson",
+      "model": "Xperia Pureness",
+      "year": 2009,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 43,
+        "height": 102,
+        "depth": 13
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 1.8,
+        "type": "transparent monochrome TFT"
+      },
+      "screen": {
+        "skin_px": [
+          108,
+          113,
+          329,
+          439
+        ],
+        "mm": [
+          9.0,
+          9.42,
+          27.42,
+          36.58
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/xperia-pureness/skin.png",
+        "skin-black.png": "phones/sony-ericsson/xperia-pureness/skin-black.png",
+        "body.png": "phones/sony-ericsson/xperia-pureness/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/xperia-pureness/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/xperia-pureness/preview.png",
+        "phone.json": "phones/sony-ericsson/xperia-pureness/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/yari",
+      "brand": "Sony Ericsson",
+      "model": "Yari",
+      "year": 2009,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 48,
+        "height": 134,
+        "depth": 15.7
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.4,
+        "type": "TFT 16M colours"
+      },
+      "screen": {
+        "skin_px": [
+          86,
+          156,
+          436,
+          581
+        ],
+        "mm": [
+          7.17,
+          13.0,
+          36.33,
+          48.42
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/yari/skin.png",
+        "skin-black.png": "phones/sony-ericsson/yari/skin-black.png",
+        "body.png": "phones/sony-ericsson/yari/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/yari/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/yari/preview.png",
+        "phone.json": "phones/sony-ericsson/yari/phone.json"
       }
     },
     {

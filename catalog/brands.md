@@ -5,4 +5,4 @@
 
 | Brand | Phones | Years |
 |---|---|---|
-| [Sony Ericsson](../phones/sony-ericsson/) | 88 | 2002–2010 |
+| [Sony Ericsson](../phones/sony-ericsson/) | 95 | 2002–2010 |
