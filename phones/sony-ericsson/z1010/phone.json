@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z1010",
+  "brand": "Sony Ericsson",
+  "model": "Z1010",
+  "year": 2003,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 54.5,
+    "height": 192.5,
+    "depth": 29
+  },
+  "size_note": "closed 98.5 x 54.5 x 29 mm (teltarif). The open length is measured on the Mobile Phone Museum's straight-on shot of the open phone. The museum lays flips on their backs: the base lies flat and sets the scale (its width = the spec width); the lid is raised toward the camera, so it is corrected for its tilt (from the display window's proportions, cos 0.94) and its magnification (it shows 1.0x the base's width): about 192.5 mm",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.8,
+      "y": 32.5,
+      "w": 34.91,
+      "h": 43.63,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo (the window less its border)"
+    },
+    "keypad": {
+      "x": 10,
+      "y": 141,
+      "w": 38,
+      "h": 31
+    },
+    "seams": [
+      {
+        "y": 95.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 108.0,
+        "note": "top edge of the keypad half (the hinge barrel between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "VIDEO CALL"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval grey keys with a thin dark outline in three columns, each digit with its small letters to its right. The 1 key also shows a small envelope and voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/z1010/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-ericsson-z1010",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone, lid straightened, an Orange unit: the operator's logo and the model name beside it on the bottom pad painted out (the Sony Ericsson press render has a plain pad)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      118,
+      392,
+      438,
+      548
+    ],
+    "mm": [
+      9.83,
+      32.67,
+      36.5,
+      45.67
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        85,
+        89,
+        113
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        676,
+        2334
+      ],
+      "screen_px": [
+        118,
+        392,
+        438,
+        548
+      ]
+    }
+  }
+}

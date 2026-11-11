@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z200",
+  "brand": "Sony Ericsson",
+  "model": "Z200",
+  "year": 2003,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 52,
+    "height": 167,
+    "depth": 25.4
+  },
+  "size_note": "closed 96.4 x 52 x 25.4 mm (teltarif; GSMArena 96 x 52 x 25). The open length is measured on the Mobile Phone Museum's straight-on shot of the open phone. The museum lays flips on their backs: the base lies flat and sets the scale (its width = the spec width); the lid is raised toward the camera, so it is corrected for its tilt (from the display window's proportions, cos 0.92) and its magnification (it shows 1.035x the base's width): about 167 mm. No spec gives the display diagonal (teltarif: 128 x 128, 4096 colours); the window on the same shot measures about 32.5 mm square; less the border the other windows show (2-7%), about 1.75in",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      128,
+      128
+    ],
+    "diagonal_in": 1.75,
+    "type": "CSTN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 10.29,
+      "y": 31.8,
+      "w": 31.43,
+      "h": 31.43,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo (the window less its border)"
+    },
+    "keypad": {
+      "x": 7,
+      "y": 116.5,
+      "w": 40,
+      "h": 31
+    },
+    "seams": [
+      {
+        "y": 76.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 90.0,
+        "note": "top edge of the keypad half (the hinge barrel between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval silver keys in three columns, each digit with its small letters to its right. The 1 key also shows a small envelope and voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z200-523.php",
+      "https://www.teltarif.de/h/sony-ericsson/z200/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/z200",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone, lid straightened"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      137,
+      400,
+      377,
+      377
+    ],
+    "mm": [
+      11.42,
+      33.33,
+      31.42,
+      31.42
+    ],
+    "native_px": [
+      128,
+      128
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        52,
+        100,
+        89,
+        88
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        647,
+        2028
+      ],
+      "screen_px": [
+        137,
+        400,
+        377,
+        377
+      ]
+    }
+  }
+}

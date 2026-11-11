@@ -1,0 +1,351 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1920
+    ],
+    "px_per_mm": 9.679,
+    "body_px": [
+      35,
+      77,
+      508,
+      1842
+    ],
+    "screen_px": [
+      103,
+      368,
+      440,
+      789
+    ]
+  },
+  "photo": {
+    "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/ea120458-8cef-4a2f-9aa1-7e4032af27f7_xlarge.png (Mobile Phone Museum, phone-detail/z800; the raised lid straightened)",
+    "license": "",
+    "author": "Mobile Phone Museum",
+    "size_used": [
+      336,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.28,
+        "screen_rel_iou": 0.9242,
+        "screen_centre_error_pct": 0.65,
+        "mirror": 0.6146,
+        "body_aspect": 0.2596,
+        "template_body_aspect": 0.2684,
+        "body": [
+          38,
+          76,
+          497,
+          1847
+        ],
+        "screen": [
+          101,
+          355,
+          440,
+          796
+        ],
+        "score": 1.0022,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.84,
+        "screen_rel_iou": 0.903,
+        "screen_centre_error_pct": -1.71,
+        "mirror": 0.7748,
+        "body_aspect": 0.2581,
+        "template_body_aspect": 0.2684,
+        "body": [
+          54,
+          106,
+          492,
+          1806
+        ],
+        "screen": [
+          102,
+          366,
+          429,
+          789
+        ],
+        "score": 0.9273,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.46,
+        "screen_rel_iou": 0.8935,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.8157,
+        "body_aspect": 0.2564,
+        "template_body_aspect": 0.2684,
+        "body": [
+          53,
+          98,
+          491,
+          1809
+        ],
+        "screen": [
+          110,
+          352,
+          434,
+          792
+        ],
+        "score": 1.0783,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.21,
+        "screen_rel_iou": 0.864,
+        "screen_centre_error_pct": -1.8,
+        "mirror": 0.672,
+        "body_aspect": 0.2544,
+        "template_body_aspect": 0.2684,
+        "body": [
+          63,
+          138,
+          479,
+          1776
+        ],
+        "screen": [
+          102,
+          388,
+          425,
+          803
+        ],
+        "score": 0.7598,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.77,
+        "screen_rel_iou": 0.9202,
+        "screen_centre_error_pct": 0.11,
+        "mirror": 0.8034,
+        "body_aspect": 0.2529,
+        "template_body_aspect": 0.2684,
+        "body": [
+          46,
+          71,
+          500,
+          1869
+        ],
+        "screen": [
+          107,
+          350,
+          440,
+          790
+        ],
+        "score": 1.0224,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.79,
+        "screen_rel_iou": 0.8972,
+        "screen_centre_error_pct": 0.34,
+        "mirror": 0.7421,
+        "body_aspect": 0.2529,
+        "template_body_aspect": 0.2684,
+        "body": [
+          49,
+          79,
+          491,
+          1830
+        ],
+        "screen": [
+          106,
+          348,
+          437,
+          791
+        ],
+        "score": 0.9447,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.29,
+        "screen_rel_iou": 0.8739,
+        "screen_centre_error_pct": -1.32,
+        "mirror": 0.6299,
+        "body_aspect": 0.2515,
+        "template_body_aspect": 0.2684,
+        "body": [
+          60,
+          125,
+          476,
+          1782
+        ],
+        "screen": [
+          99,
+          385,
+          426,
+          795
+        ],
+        "score": 0.7422,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.51,
+        "screen_rel_iou": 0.8677,
+        "screen_centre_error_pct": -1.53,
+        "mirror": 0.7621,
+        "body_aspect": 0.2483,
+        "template_body_aspect": 0.2684,
+        "body": [
+          55,
+          79,
+          480,
+          1794
+        ],
+        "screen": [
+          93,
+          346,
+          429,
+          771
+        ],
+        "score": 0.7207,
+        "seed": 5
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 8
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s8.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as an O: its tail drawn by hand (drawn by hand in the label colour, no image model)",
+      "box": [
+        151,
+        1567,
+        168,
+        1593
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined and garbled: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        140,
+        1421,
+        183,
+        1442
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      97,
+      360,
+      512,
+      909
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      97,
+      360,
+      413,
+      548
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 2.0,
+        "bottom": 1.92
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 2.0,
+        "bottom": 1.92
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        34.42,
+        45.67
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.986,
+        1.047
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2669,
+      "spec_aspect": 0.2685,
+      "aspect_error_pct": -0.59,
+      "lean_deg": 0.002,
+      "taper_deg": 0.158,
+      "deskew_deg": -0.002,
+      "tilt_deg": 0.16,
+      "jitter_px": 4.86,
+      "symmetry_iou": 0.9916,
+      "screen_aspect_error_pct": 0.05,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.986,
+      "window_vs_spec_max": 1.047,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

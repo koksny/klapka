@@ -1,0 +1,375 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1920
+    ],
+    "px_per_mm": 9.684,
+    "body_px": [
+      35,
+      77,
+      509,
+      1842
+    ],
+    "screen_px": [
+      110,
+      261,
+      434,
+      693
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-z780-00.jpg (official image, the open phone cut out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      191,
+      539
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.58,
+        "screen_rel_iou": 0.9674,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.8337,
+        "body_aspect": 0.2647,
+        "template_body_aspect": 0.269,
+        "body": [
+          41,
+          106,
+          494,
+          1820
+        ],
+        "screen": [
+          110,
+          287,
+          427,
+          706
+        ],
+        "score": 1.2833,
+        "seed": 5
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.55,
+        "screen_rel_iou": 0.9495,
+        "screen_centre_error_pct": -0.22,
+        "mirror": 0.844,
+        "body_aspect": 0.2648,
+        "template_body_aspect": 0.269,
+        "body": [
+          39,
+          88,
+          499,
+          1828
+        ],
+        "screen": [
+          104,
+          268,
+          432,
+          698
+        ],
+        "score": 1.2722,
+        "seed": 8
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.47,
+        "screen_rel_iou": 0.9574,
+        "screen_centre_error_pct": 0.33,
+        "mirror": 0.8446,
+        "body_aspect": 0.2623,
+        "template_body_aspect": 0.269,
+        "body": [
+          39,
+          95,
+          496,
+          1840
+        ],
+        "screen": [
+          107,
+          278,
+          431,
+          706
+        ],
+        "score": 1.2232,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.4,
+        "screen_rel_iou": 0.95,
+        "screen_centre_error_pct": 0.78,
+        "mirror": 0.8072,
+        "body_aspect": 0.2625,
+        "template_body_aspect": 0.269,
+        "body": [
+          43,
+          108,
+          493,
+          1825
+        ],
+        "screen": [
+          111,
+          289,
+          432,
+          709
+        ],
+        "score": 1.1559,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.63,
+        "screen_rel_iou": 0.9508,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.8419,
+        "body_aspect": 0.2592,
+        "template_body_aspect": 0.269,
+        "body": [
+          38,
+          80,
+          495,
+          1846
+        ],
+        "screen": [
+          105,
+          264,
+          430,
+          701
+        ],
+        "score": 1.1682,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.08,
+        "screen_rel_iou": 0.9567,
+        "screen_centre_error_pct": -0.36,
+        "mirror": 0.7024,
+        "body_aspect": 0.258,
+        "template_body_aspect": 0.269,
+        "body": [
+          60,
+          146,
+          479,
+          1773
+        ],
+        "screen": [
+          119,
+          314,
+          417,
+          714
+        ],
+        "score": 1.068,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.39,
+        "screen_rel_iou": 0.9644,
+        "screen_centre_error_pct": 0.23,
+        "mirror": 0.8253,
+        "body_aspect": 0.2572,
+        "template_body_aspect": 0.269,
+        "body": [
+          49,
+          93,
+          488,
+          1803
+        ],
+        "screen": [
+          115,
+          272,
+          424,
+          692
+        ],
+        "score": 1.1348,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.1,
+        "screen_rel_iou": 0.9425,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.8542,
+        "body_aspect": 0.2526,
+        "template_body_aspect": 0.269,
+        "body": [
+          70,
+          184,
+          464,
+          1747
+        ],
+        "screen": [
+          125,
+          349,
+          409,
+          729
+        ],
+        "score": 1.0645,
+        "seed": 7
+      }
+    ],
+    "best_seed": 5,
+    "used_seed": 8
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s8.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        78,
+        1332,
+        462,
+        1680
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined and garbled: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        129,
+        1357,
+        174,
+        1377
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as a garbled crossed shape: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        401,
+        1627,
+        443,
+        1648
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "a stray tick before the S of the brand print painted out with the black around it (no image model)",
+      "box": [
+        161,
+        226,
+        167,
+        238
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      98,
+      241,
+      507,
+      777
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      97,
+      241,
+      410,
+      537
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.17,
+      "window_mm": [
+        34.17,
+        44.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.019,
+        1.001
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2691,
+      "spec_aspect": 0.2686,
+      "aspect_error_pct": 0.17,
+      "lean_deg": 0.041,
+      "taper_deg": 0.053,
+      "deskew_deg": 0.04,
+      "tilt_deg": 0.094,
+      "jitter_px": 2.59,
+      "symmetry_iou": 0.9679,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.17,
+      "window_vs_spec_min": 1.001,
+      "window_vs_spec_max": 1.019,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

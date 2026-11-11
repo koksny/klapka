@@ -1,0 +1,133 @@
+{
+  "id": "sony-ericsson/z770i",
+  "brand": "Sony Ericsson",
+  "model": "Z770i",
+  "year": 2008,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 168.5,
+    "depth": 16
+  },
+  "size_note": "closed 93 x 48 x 16 mm (GSMArena; teltarif 15.5 mm deep); the open length is measured on the official image of the open phone (135 x 474 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.23,
+      "y": 15.5,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 113,
+      "w": 41,
+      "h": 33
+    },
+    "seams": [
+      {
+        "y": 80.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 87.5,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Z770i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "A black keypad with keys outlined by thin red rounded rings, three columns, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z770-2252.php",
+      "https://www.teltarif.de/h/sony-ericsson/z770i/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-z770-00.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image of the open phone (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      104,
+      196,
+      400,
+      533
+    ],
+    "mm": [
+      8.67,
+      16.33,
+      33.33,
+      44.42
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        49,
+        51,
+        93,
+        124
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        606,
+        2046
+      ],
+      "screen_px": [
+        104,
+        196,
+        400,
+        533
+      ]
+    }
+  }
+}

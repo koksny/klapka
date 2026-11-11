@@ -415,6 +415,34 @@ one side are part of the design, so these are not pass/fail.
 - Shortcut-key icons (internet, camera, activity menu) came out garbled on the Z610i; they were drawn
   by hand from the official image.
 
+## What the last Z batch taught (2026-11-11)
+
+- The Mobile Phone Museum (`docs/REFERENCES.md`) had straight-on studio shots of the three phones
+  with no frontal photo anywhere else (Z530i, Z1010, Z800i), and better ones for Z200 and Z600.
+  Open flips lie on their backs there, so the lid is raised toward the camera: it is shortened
+  (cos 0.92-0.95, read off the display window's proportions against the native aspect) and
+  magnified (1.0-1.04x the base's width). The base lies flat and sets the scale. `tmp/mpm_prep.py`
+  rescales the lid only, no image model; every render from those sources came within 1.5% after
+  the cutout.
+- The two Commons photos leaning on a wall gave open lengths that disagreed by 7-11% between
+  methods (Z200: 161 mm from the first reading, 167 mm from the museum shot); the museum shot,
+  base flat and square to the camera, is the better ruler.
+- Pass 1 scores the aspect against the template box and misses dark or two-tone bodies: Z770i scored
+  5.6-12% narrow on every seed, while its raw silhouettes were within 1% on four of eight. Measure
+  the raw seeds (body box on white) before rendering more.
+- Museum units carry inventory stickers ("PTX-528") and operator logos (an Orange Z1010): painted
+  out on the source before pass 1, each row interpolated across the patch.
+- A keypad redraw gets the digits and letters right but draws the 1 key's envelope and voicemail
+  and the # key's space and silent symbols as nonsense on nearly every phone; they were drawn by
+  hand (`tmp/handlib.py`). Clear only the old glyph's box: clearing up to a red or yellow key ring
+  pulled the ring's colour into a stripe (Z770i, Z780i).
+- A brand print half lost under a reflection (Z770i: "Son" white, "y" missing) came back white
+  after a word fix too. Its "Sony" was wiped letter by letter and replaced with the Z800i's
+  (same logotype, dark on silver), in the grey of the E beside it.
+- The automatic window took in the bezel's side or the brand print on four of eight; all four
+  windows were given by hand from luminance profiles.
+- Zylo is the W20 already in the archive (W20 Zylo); not made again.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

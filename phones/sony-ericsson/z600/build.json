@@ -1,0 +1,340 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1920
+    ],
+    "px_per_mm": 10.152,
+    "body_px": [
+      28,
+      77,
+      514,
+      1842
+    ],
+    "screen_px": [
+      111,
+      332,
+      432,
+      733
+    ]
+  },
+  "photo": {
+    "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/20cab2f8-a49d-4f2b-9278-55f9834283b8_xlarge.png (Mobile Phone Museum, phone-detail/sony-ericsson-z600; the raised lid straightened, the inventory sticker painted out)",
+    "license": "",
+    "author": "Mobile Phone Museum",
+    "size_used": [
+      337,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.12,
+        "screen_rel_iou": 0.7955,
+        "screen_centre_error_pct": -0.76,
+        "mirror": 0.5438,
+        "body_aspect": 0.2616,
+        "template_body_aspect": 0.2758,
+        "body": [
+          41,
+          70,
+          495,
+          1808
+        ],
+        "screen": [
+          95,
+          302,
+          435,
+          740
+        ],
+        "score": 0.7352,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.89,
+        "screen_rel_iou": 0.7888,
+        "screen_centre_error_pct": -0.87,
+        "mirror": 0.582,
+        "body_aspect": 0.2595,
+        "template_body_aspect": 0.2758,
+        "body": [
+          42,
+          80,
+          498,
+          1840
+        ],
+        "screen": [
+          96,
+          313,
+          437,
+          761
+        ],
+        "score": 0.6982,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.95,
+        "screen_rel_iou": 0.7987,
+        "screen_centre_error_pct": -0.98,
+        "mirror": 0.5546,
+        "body_aspect": 0.2594,
+        "template_body_aspect": 0.2758,
+        "body": [
+          42,
+          75,
+          498,
+          1836
+        ],
+        "screen": [
+          96,
+          312,
+          436,
+          756
+        ],
+        "score": 0.6808,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.56,
+        "screen_rel_iou": 0.7942,
+        "screen_centre_error_pct": -0.8,
+        "mirror": 0.5598,
+        "body_aspect": 0.2577,
+        "template_body_aspect": 0.2758,
+        "body": [
+          58,
+          131,
+          485,
+          1791
+        ],
+        "screen": [
+          109,
+          353,
+          428,
+          773
+        ],
+        "score": 0.6658,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.6,
+        "screen_rel_iou": 0.7959,
+        "screen_centre_error_pct": -0.69,
+        "mirror": 0.5481,
+        "body_aspect": 0.2576,
+        "template_body_aspect": 0.2758,
+        "body": [
+          60,
+          137,
+          484,
+          1786
+        ],
+        "screen": [
+          111,
+          358,
+          428,
+          774
+        ],
+        "score": 0.6711,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.68,
+        "screen_rel_iou": 0.787,
+        "screen_centre_error_pct": -0.45,
+        "mirror": 0.6168,
+        "body_aspect": 0.2546,
+        "template_body_aspect": 0.2758,
+        "body": [
+          57,
+          119,
+          485,
+          1803
+        ],
+        "screen": [
+          110,
+          337,
+          429,
+          768
+        ],
+        "score": 0.6664,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.56,
+        "screen_rel_iou": 0.7971,
+        "screen_centre_error_pct": -0.9,
+        "mirror": 0.538,
+        "body_aspect": 0.2522,
+        "template_body_aspect": 0.2758,
+        "body": [
+          50,
+          88,
+          488,
+          1828
+        ],
+        "screen": [
+          102,
+          321,
+          429,
+          760
+        ],
+        "score": 0.548,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.18,
+        "screen_rel_iou": 0.7773,
+        "screen_centre_error_pct": -0.69,
+        "mirror": 0.5602,
+        "body_aspect": 0.2504,
+        "template_body_aspect": 0.2758,
+        "body": [
+          59,
+          102,
+          486,
+          1810
+        ],
+        "screen": [
+          111,
+          326,
+          429,
+          769
+        ],
+        "score": 0.5295,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the brand print came out with yellow and blue colour fringes: their colour removed, brightness kept (no image model)",
+      "box": [
+        145,
+        248,
+        385,
+        292
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      93,
+      294,
+      497,
+      817
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      92,
+      293,
+      406,
+      525
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.33
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.33
+      },
+      "window_centre_x_pct": 0.36,
+      "window_mm": [
+        33.83,
+        43.75
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.066,
+        1.103
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2718,
+      "spec_aspect": 0.2759,
+      "aspect_error_pct": -1.47,
+      "lean_deg": 0.004,
+      "taper_deg": 0.007,
+      "deskew_deg": 0.488,
+      "tilt_deg": 0.01,
+      "jitter_px": 4.6,
+      "symmetry_iou": 0.99,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.36,
+      "window_vs_spec_min": 1.066,
+      "window_vs_spec_max": 1.103,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

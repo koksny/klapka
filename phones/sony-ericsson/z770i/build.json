@@ -1,0 +1,394 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1856
+    ],
+    "px_per_mm": 10.134,
+    "body_px": [
+      29,
+      74,
+      514,
+      1781
+    ],
+    "screen_px": [
+      102,
+      231,
+      441,
+      683
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-z770-00.jpg (official image, the open phone cut out)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      197,
+      537
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.58,
+        "screen_rel_iou": 0.8797,
+        "screen_centre_error_pct": 0.35,
+        "mirror": 0.6326,
+        "body_aspect": 0.2687,
+        "template_body_aspect": 0.2845,
+        "body": [
+          60,
+          122,
+          491,
+          1729
+        ],
+        "screen": [
+          122,
+          298,
+          432,
+          682
+        ],
+        "score": 0.8821,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.64,
+        "screen_rel_iou": 0.8747,
+        "screen_centre_error_pct": -0.93,
+        "mirror": 0.6684,
+        "body_aspect": 0.2685,
+        "template_body_aspect": 0.2845,
+        "body": [
+          60,
+          126,
+          487,
+          1719
+        ],
+        "screen": [
+          111,
+          297,
+          428,
+          687
+        ],
+        "score": 0.8336,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.75,
+        "screen_rel_iou": 0.8978,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6645,
+        "body_aspect": 0.2682,
+        "template_body_aspect": 0.2845,
+        "body": [
+          53,
+          110,
+          491,
+          1746
+        ],
+        "screen": [
+          115,
+          290,
+          429,
+          688
+        ],
+        "score": 0.9424,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.95,
+        "screen_rel_iou": 0.8764,
+        "screen_centre_error_pct": 0.23,
+        "mirror": 0.6877,
+        "body_aspect": 0.2648,
+        "template_body_aspect": 0.2845,
+        "body": [
+          59,
+          117,
+          493,
+          1759
+        ],
+        "screen": [
+          120,
+          297,
+          434,
+          690
+        ],
+        "score": 0.8496,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.11,
+        "screen_rel_iou": 0.8945,
+        "screen_centre_error_pct": 0.37,
+        "mirror": 0.6487,
+        "body_aspect": 0.2643,
+        "template_body_aspect": 0.2845,
+        "body": [
+          74,
+          166,
+          475,
+          1686
+        ],
+        "screen": [
+          132,
+          332,
+          420,
+          701
+        ],
+        "score": 0.8258,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.24,
+        "screen_rel_iou": 0.8775,
+        "screen_centre_error_pct": 0.12,
+        "mirror": 0.702,
+        "body_aspect": 0.2582,
+        "template_body_aspect": 0.2845,
+        "body": [
+          71,
+          162,
+          477,
+          1737
+        ],
+        "screen": [
+          127,
+          329,
+          422,
+          708
+        ],
+        "score": 0.7542,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.44,
+        "screen_rel_iou": 0.8391,
+        "screen_centre_error_pct": -1.24,
+        "mirror": 0.6231,
+        "body_aspect": 0.2577,
+        "template_body_aspect": 0.2845,
+        "body": [
+          72,
+          181,
+          474,
+          1744
+        ],
+        "screen": [
+          118,
+          340,
+          418,
+          708
+        ],
+        "score": 0.5544,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.25,
+        "screen_rel_iou": 0.8453,
+        "screen_centre_error_pct": -1.0,
+        "mirror": 0.6603,
+        "body_aspect": 0.2497,
+        "template_body_aspect": 0.2845,
+        "body": [
+          73,
+          115,
+          474,
+          1724
+        ],
+        "screen": [
+          119,
+          286,
+          420,
+          670
+        ],
+        "score": 0.4635,
+        "seed": 8
+      }
+    ],
+    "best_seed": 5,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        78,
+        1206,
+        462,
+        1518
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined and garbled: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        131,
+        1232,
+        171,
+        1252
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as a garbled crossed shape: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        398,
+        1466,
+        439,
+        1488
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        142,
+        208,
+        398,
+        240
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "'Sony' in the brand print came out white over a reflection while 'Ericsson' is grey: wiped and replaced with the Z800i's own clean 'Sony' (same logotype), scaled to this print and laid in the grey of the E beside it (no image model)",
+      "box": [
+        156,
+        206,
+        246,
+        243
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the model label came out 'Z770I': the I cut into a dot and a stem at the x-height, giving 'Z770i' (no image model)",
+      "box": [
+        302,
+        807,
+        309,
+        808
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      98,
+      190,
+      413,
+      545
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        34.42,
+        45.42
+      ],
+      "edge_strength": {
+        "left": 13.4,
+        "right": 145.3,
+        "top": 122.7,
+        "bottom": 106.1
+      },
+      "window_vs_spec": [
+        1.026,
+        1.016
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2877,
+      "spec_aspect": 0.2849,
+      "aspect_error_pct": 0.99,
+      "lean_deg": 0.031,
+      "taper_deg": 0.497,
+      "deskew_deg": -0.031,
+      "tilt_deg": 0.528,
+      "jitter_px": 3.44,
+      "symmetry_iou": 0.9828,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.016,
+      "window_vs_spec_max": 1.026,
+      "window_edge_min": 13.4
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

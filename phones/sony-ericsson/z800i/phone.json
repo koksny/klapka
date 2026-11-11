@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z800i",
+  "brand": "Sony Ericsson",
+  "model": "Z800i",
+  "year": 2005,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 182.5,
+    "depth": 23.6
+  },
+  "size_note": "closed 102 x 49 x 23.6 mm (teltarif). The open length is measured on the Mobile Phone Museum's straight-on shot of the open phone. The museum lays flips on their backs: the base lies flat and sets the scale (its width = the spec width); the lid is raised toward the camera, so it is corrected for its tilt (from the display window's proportions, cos 0.952) and its magnification (it shows 1.03x the base's width): about 182.5 mm",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.05,
+      "y": 30.0,
+      "w": 34.91,
+      "h": 43.63,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo (the window less its border)"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 140,
+      "w": 39,
+      "h": 28
+    },
+    "seams": [
+      {
+        "y": 84.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 107.0,
+        "note": "bottom of the camera barrel (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "MOTION EYE"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Flat black keys in rows of three with white labels, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.teltarif.de/h/sony-ericsson/z800i/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/z800",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone, lid straightened"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      103,
+      384,
+      401,
+      501
+    ],
+    "mm": [
+      8.58,
+      32.0,
+      33.42,
+      41.75
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        53,
+        88,
+        86,
+        108
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        608,
+        2214
+      ],
+      "screen_px": [
+        103,
+        384,
+        401,
+        501
+      ]
+    }
+  }
+}

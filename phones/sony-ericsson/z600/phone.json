@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z600",
+  "brand": "Sony Ericsson",
+  "model": "Z600",
+  "year": 2003,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 48,
+    "height": 174,
+    "depth": 27
+  },
+  "size_note": "closed 90 x 48 x 27 mm (teltarif; GSMArena 28 mm deep). The open length is measured on the Mobile Phone Museum's straight-on shot of the open phone. The museum lays flips on their backs: the base lies flat and sets the scale (its width = the spec width); the lid is raised toward the camera, so it is corrected for its tilt (from the display window's proportions, cos 0.944) and its magnification (it shows 1.02x the base's width): about 174 mm. A photo of the open phone leaning on a wall (Wikimedia Commons, Beamish4) gives 170-173 mm",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 2.0,
+    "type": "CSTN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.13,
+      "y": 25.0,
+      "w": 31.73,
+      "h": 39.67,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo (the window less its border)"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 124.5,
+      "w": 39,
+      "h": 30
+    },
+    "seams": [
+      {
+        "y": 83.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 97.0,
+        "note": "top edge of the keypad half (the hinge barrel between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval silver-white keys with a thin outline in three columns, each digit with its small blue letters to its right. The 1 key also shows a small envelope and voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z600-524.php",
+      "https://www.teltarif.de/h/sony-ericsson/z600/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-ericsson-z600",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone, lid straightened, the inventory sticker 'PTX-528' on the speaker pad painted out"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      98,
+      310,
+      394,
+      492
+    ],
+    "mm": [
+      8.17,
+      25.83,
+      32.83,
+      41.0
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        75,
+        89,
+        112
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        591,
+        2112
+      ],
+      "screen_px": [
+        98,
+        310,
+        394,
+        492
+      ]
+    }
+  }
+}

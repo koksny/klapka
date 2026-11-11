@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z555i",
+  "brand": "Sony Ericsson",
+  "model": "Z555i",
+  "year": 2008,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 173.5,
+    "depth": 16.5
+  },
+  "size_note": "closed 95 x 49 x 16.5 mm (GSMArena; teltarif 17 mm deep); the open length is measured on the press photo of the open phone in the Trusted Reviews review (161 x 570 px)",
+  "corner_radius_mm": 7.0,
+  "display": {
+    "native_px": [
+      176,
+      220
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.43,
+      "y": 17.5,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 124,
+      "w": 41,
+      "h": 29.5
+    },
+    "seams": [
+      {
+        "y": 79.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 94.0,
+        "note": "top edge of the keypad half (the hinge barrel between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "A flat keypad in four rows of three keys with curved separators, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z555-2199.php",
+      "https://www.teltarif.de/h/sony-ericsson/z555i/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.trustedreviews.com/wp-content/uploads/sites/7/2008/06/7783-Z555open-1.jpg",
+      "license": "",
+      "author": "",
+      "note": "photo of the open phone (Trusted Reviews review)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      126,
+      220,
+      355,
+      444
+    ],
+    "mm": [
+      10.5,
+      18.33,
+      29.58,
+      37.0
+    ],
+    "native_px": [
+      176,
+      220
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        55,
+        55,
+        81,
+        100
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        612,
+        2106
+      ],
+      "screen_px": [
+        126,
+        220,
+        355,
+        444
+      ]
+    }
+  }
+}
