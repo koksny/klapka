@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/g705",
+  "brand": "Sony Ericsson",
+  "model": "G705",
+  "year": 2008,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 125.5,
+    "depth": 14.3
+  },
+  "size_note": "closed 95 x 47 x 14.3 mm (GSMArena, teltarif); the open length is measured on two press renders of the open phone (0.373 and 0.375 width/length)",
+  "corner_radius_mm": 3.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.4,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 5.21,
+      "y": 12.3,
+      "w": 36.58,
+      "h": 48.77,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 97.0,
+      "w": 34.0,
+      "h": 21.5
+    },
+    "seams": [
+      {
+        "y": 93.5,
+        "note": "lower edge of the sliding top part"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "G705"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "A flat black keypad: each digit with its small letters to its right, a thin grey line under each key. The 1 key also shows a small envelope and voicemail icon; the 3, 6 and 9 keys also show a small shortcut icon at their right end; the * key also shows a/A; the 0 key also shows '+'; the # key also shows a space symbol, a small silent (crossed note) symbol and a small icon at its right end.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_g705-2520.php",
+      "https://www.teltarif.de/h/sony-ericsson/g705/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-g705-2.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, the open phone between two side views (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      74,
+      166,
+      428,
+      571
+    ],
+    "mm": [
+      6.17,
+      13.83,
+      35.67,
+      47.58
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        28,
+        57,
+        134,
+        179
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        580,
+        1530
+      ],
+      "screen_px": [
+        74,
+        166,
+        428,
+        571
+      ]
+    }
+  }
+}

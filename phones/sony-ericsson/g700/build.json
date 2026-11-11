@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 12.776,
+    "body_px": [
+      39,
+      59,
+      664,
+      1412
+    ],
+    "screen_px": [
+      118,
+      214,
+      585,
+      837
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssong700.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      475
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -0.39,
+        "screen_rel_iou": 0.8014,
+        "screen_centre_error_pct": 4.75,
+        "mirror": 0.4885,
+        "body_aspect": 0.4605,
+        "template_body_aspect": 0.4623,
+        "body": [
+          63,
+          105,
+          651,
+          1383
+        ],
+        "screen": [
+          157,
+          273,
+          613,
+          879
+        ],
+        "score": 0.5506,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.11,
+        "screen_rel_iou": 0.8883,
+        "screen_centre_error_pct": 1.55,
+        "mirror": 0.5845,
+        "body_aspect": 0.4526,
+        "template_body_aspect": 0.4623,
+        "body": [
+          47,
+          58,
+          657,
+          1407
+        ],
+        "screen": [
+          145,
+          235,
+          578,
+          854
+        ],
+        "score": 0.9197,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.83,
+        "screen_rel_iou": 0.8244,
+        "screen_centre_error_pct": 4.91,
+        "mirror": 0.6582,
+        "body_aspect": 0.4446,
+        "template_body_aspect": 0.4623,
+        "body": [
+          69,
+          82,
+          638,
+          1363
+        ],
+        "screen": [
+          164,
+          246,
+          599,
+          841
+        ],
+        "score": 0.4707,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.44,
+        "screen_rel_iou": 0.8154,
+        "screen_centre_error_pct": -0.17,
+        "mirror": 0.5998,
+        "body_aspect": 0.4418,
+        "template_body_aspect": 0.4623,
+        "body": [
+          65,
+          79,
+          645,
+          1393
+        ],
+        "screen": [
+          104,
+          252,
+          604,
+          852
+        ],
+        "score": 0.8763,
+        "seed": 2
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the K of JKL came out as R: redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        364,
+        1139,
+        376,
+        1158
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        193,
+        1202,
+        207,
+        1224
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the X of WXYZ came out as A: redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        538,
+        1202,
+        551,
+        1221
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label after * came out as bars: redrawn as 'a/A' and a key lying on its side (key lock) (drawn by hand in the label colour, no image model)",
+      "box": [
+        177,
+        1264,
+        238,
+        1287
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      88,
+      146,
+      524,
+      745
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      88,
+      146,
+      436,
+      599
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.42
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.42,
+        "bottom": 1.42
+      },
+      "window_centre_x_pct": 0.0,
+      "window_mm": [
+        36.33,
+        49.92
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.993,
+        1.024
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4641,
+      "spec_aspect": 0.4623,
+      "aspect_error_pct": 0.4,
+      "lean_deg": 0.032,
+      "taper_deg": 0.019,
+      "deskew_deg": 0.05,
+      "tilt_deg": 0.051,
+      "jitter_px": 0.71,
+      "symmetry_iou": 0.9973,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.0,
+      "window_vs_spec_min": 0.993,
+      "window_vs_spec_max": 1.024,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

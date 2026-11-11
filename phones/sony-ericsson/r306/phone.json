@@ -1,0 +1,133 @@
+{
+  "id": "sony-ericsson/r306",
+  "brand": "Sony Ericsson",
+  "model": "R306 Radio",
+  "year": 2008,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 47.9,
+    "height": 169.5,
+    "depth": 15.8
+  },
+  "size_note": "closed 90 x 47.9 x 15.8 mm (GSMArena; teltarif 90 x 48 x 16); the open length is measured on the press render of the open phone (102 x 361 px, the reflection under it left out), checked against the closed phone in the same render",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.9,
+    "type": "TFT 262K colours (inner)"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.88,
+      "y": 19.3,
+      "w": 30.15,
+      "h": 37.68,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 123.5,
+      "w": 35.5,
+      "h": 36.5
+    },
+    "seams": [
+      {
+        "y": 77.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 94.5,
+        "note": "top edge of the keypad half (the hinge barrel between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "R306"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Round keys with a thin silver ring on a black keypad, three columns: each digit large in the middle with its small letters under it. The 1 key also shows a small voicemail icon under the 1; the * key shows a/A under it; the 0 key shows '+' under it; the # key shows a space symbol and a small silent (crossed note) symbol under it.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_r306_radio-2227.php",
+      "https://www.teltarif.de/h/sony-ericsson/r306/"
+    ],
+    "geometry_photo": {
+      "url": "https://s3images.coroflot.com/user_files/individual_files/22936_UYVc4NhLJZRMlzJmgz9ueF66B.jpg",
+      "license": "",
+      "author": "",
+      "note": "press render of the open, closed and back views (coroflot, link from Koks); the open phone cut out, the reflection under it left out"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      126,
+      228,
+      347,
+      434
+    ],
+    "mm": [
+      10.5,
+      19.0,
+      28.92,
+      36.17
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        55,
+        58,
+        80,
+        101
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        607,
+        2058
+      ],
+      "screen_px": [
+        126,
+        228,
+        347,
+        434
+      ]
+    }
+  }
+}

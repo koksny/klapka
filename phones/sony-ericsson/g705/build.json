@@ -1,0 +1,277 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      640,
+      1632
+    ],
+    "px_per_mm": 11.964,
+    "body_px": [
+      39,
+      65,
+      600,
+      1565
+    ],
+    "screen_px": [
+      101,
+      212,
+      538,
+      795
+    ]
+  },
+  "photo": {
+    "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/se-g705-2.jpg (official image, the open phone cut out, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      262,
+      596
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.24,
+        "screen_rel_iou": 0.9761,
+        "screen_centre_error_pct": -0.09,
+        "mirror": 0.567,
+        "body_aspect": 0.3698,
+        "template_body_aspect": 0.3744,
+        "body": [
+          46,
+          73,
+          593,
+          1554
+        ],
+        "screen": [
+          102,
+          217,
+          536,
+          796
+        ],
+        "score": 1.1884,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.63,
+        "screen_rel_iou": 0.9738,
+        "screen_centre_error_pct": -0.27,
+        "mirror": 0.5683,
+        "body_aspect": 0.3683,
+        "template_body_aspect": 0.3744,
+        "body": [
+          45,
+          68,
+          595,
+          1563
+        ],
+        "screen": [
+          100,
+          213,
+          537,
+          798
+        ],
+        "score": 1.1493,
+        "seed": 3
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.94,
+        "screen_rel_iou": 0.9764,
+        "screen_centre_error_pct": -0.19,
+        "mirror": 0.5611,
+        "body_aspect": 0.3672,
+        "template_body_aspect": 0.3744,
+        "body": [
+          50,
+          81,
+          588,
+          1548
+        ],
+        "screen": [
+          105,
+          225,
+          531,
+          799
+        ],
+        "score": 1.1416,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.66,
+        "screen_rel_iou": 0.965,
+        "screen_centre_error_pct": -0.29,
+        "mirror": 0.5765,
+        "body_aspect": 0.3607,
+        "template_body_aspect": 0.3744,
+        "body": [
+          63,
+          110,
+          576,
+          1534
+        ],
+        "screen": [
+          113,
+          248,
+          523,
+          807
+        ],
+        "score": 1.0409,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        183,
+        1373,
+        198,
+        1391
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "WXYZ came out as 'VAYYZ': redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        442,
+        1371,
+        490,
+        1389
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' after * came out as '&UA': redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        180,
+        1436,
+        214,
+        1457
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the silent symbol on the # key came out as a blob: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        466,
+        1436,
+        488,
+        1457
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      68,
+      158,
+      508,
+      746
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      68,
+      158,
+      440,
+      588
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.5,
+        "top": 0.75,
+        "bottom": 0.75
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 0.67,
+        "bottom": 0.75
+      },
+      "window_centre_x_pct": 0.36,
+      "window_mm": [
+        36.67,
+        49.0
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.002,
+        1.005
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3694,
+      "spec_aspect": 0.3745,
+      "aspect_error_pct": -1.36,
+      "lean_deg": 0.037,
+      "taper_deg": 0.038,
+      "deskew_deg": -0.037,
+      "tilt_deg": 0.075,
+      "jitter_px": 0.32,
+      "symmetry_iou": 0.9985,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.36,
+      "window_vs_spec_min": 1.002,
+      "window_vs_spec_max": 1.005,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

@@ -1,0 +1,268 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1856
+    ],
+    "px_per_mm": 10.074,
+    "body_px": [
+      31,
+      74,
+      513,
+      1781
+    ],
+    "screen_px": [
+      120,
+      268,
+      423,
+      647
+    ]
+  },
+  "photo": {
+    "url": "https://s3images.coroflot.com/user_files/individual_files/22936_UYVc4NhLJZRMlzJmgz9ueF66B.jpg (press render, the open phone cut out, reflection left out; link from Koks)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      170,
+      418
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": 0.26,
+        "screen_rel_iou": 0.8176,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.8195,
+        "body_aspect": 0.2835,
+        "template_body_aspect": 0.2828,
+        "body": [
+          66,
+          202,
+          488,
+          1693
+        ],
+        "screen": [
+          135,
+          395,
+          419,
+          682
+        ],
+        "score": 1.2042,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 1.04,
+        "screen_rel_iou": 0.8306,
+        "screen_centre_error_pct": -3.21,
+        "mirror": 0.8212,
+        "body_aspect": 0.2857,
+        "template_body_aspect": 0.2828,
+        "body": [
+          54,
+          144,
+          491,
+          1676
+        ],
+        "screen": [
+          128,
+          326,
+          388,
+          639
+        ],
+        "score": 0.8688,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.53,
+        "screen_rel_iou": 0.7876,
+        "screen_centre_error_pct": -3.41,
+        "mirror": 0.6068,
+        "body_aspect": 0.2671,
+        "template_body_aspect": 0.2828,
+        "body": [
+          64,
+          145,
+          476,
+          1690
+        ],
+        "screen": [
+          130,
+          344,
+          381,
+          644
+        ],
+        "score": 0.4736,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.51,
+        "screen_rel_iou": 0.7935,
+        "screen_centre_error_pct": -2.93,
+        "mirror": 0.8442,
+        "body_aspect": 0.2418,
+        "template_body_aspect": 0.2828,
+        "body": [
+          108,
+          231,
+          437,
+          1595
+        ],
+        "screen": [
+          163,
+          405,
+          362,
+          668
+        ],
+        "score": 0.1975,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        106,
+        1267,
+        454,
+        1663
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol under 1 came out as a cup-like glyph: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        155,
+        1326,
+        177,
+        1342
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label under # came out as a single crossed glyph: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        377,
+        1560,
+        403,
+        1578
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      108,
+      222,
+      492,
+      668
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      108,
+      222,
+      384,
+      446
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 1.5,
+        "right": 1.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 1.5,
+        "right": 1.58,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.52,
+      "window_mm": [
+        32.0,
+        37.17
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.061,
+        0.986
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2865,
+      "spec_aspect": 0.2826,
+      "aspect_error_pct": 1.38,
+      "lean_deg": 0.009,
+      "taper_deg": 0.021,
+      "deskew_deg": 0.01,
+      "tilt_deg": 0.031,
+      "jitter_px": 0.65,
+      "symmetry_iou": 0.9974,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.52,
+      "window_vs_spec_min": 0.986,
+      "window_vs_spec_max": 1.061,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

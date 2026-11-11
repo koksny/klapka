@@ -1,0 +1,303 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      704,
+      1472
+    ],
+    "px_per_mm": 13.148,
+    "body_px": [
+      50,
+      59,
+      654,
+      1412
+    ],
+    "screen_px": [
+      152,
+      212,
+      552,
+      746
+    ]
+  },
+  "photo": {
+    "url": "https://www.esato.com/gfx/phones/sonyericssong502.jpg (frontal press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      248,
+      489
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.45,
+        "screen_rel_iou": 0.8858,
+        "screen_centre_error_pct": -0.61,
+        "mirror": 0.6505,
+        "body_aspect": 0.4403,
+        "template_body_aspect": 0.4468,
+        "body": [
+          67,
+          79,
+          638,
+          1377
+        ],
+        "screen": [
+          153,
+          219,
+          545,
+          777
+        ],
+        "score": 1.0773,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.28,
+        "screen_rel_iou": 0.868,
+        "screen_centre_error_pct": -0.34,
+        "mirror": 0.5047,
+        "body_aspect": 0.4411,
+        "template_body_aspect": 0.4468,
+        "body": [
+          64,
+          69,
+          647,
+          1392
+        ],
+        "screen": [
+          149,
+          211,
+          558,
+          779
+        ],
+        "score": 1.0219,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.81,
+        "screen_rel_iou": 0.8797,
+        "screen_centre_error_pct": -0.55,
+        "mirror": 0.555,
+        "body_aspect": 0.4253,
+        "template_body_aspect": 0.4468,
+        "body": [
+          80,
+          75,
+          623,
+          1353
+        ],
+        "screen": [
+          160,
+          214,
+          537,
+          761
+        ],
+        "score": 0.8615,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.11,
+        "screen_rel_iou": 0.8022,
+        "screen_centre_error_pct": -0.64,
+        "mirror": 0.6307,
+        "body_aspect": 0.4195,
+        "template_body_aspect": 0.4468,
+        "body": [
+          75,
+          72,
+          624,
+          1382
+        ],
+        "screen": [
+          140,
+          184,
+          552,
+          753
+        ],
+        "score": 0.7484,
+        "seed": 1
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        188,
+        1207,
+        200,
+        1225
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the label after * came out garbled: redrawn as 'a/A' and a key lying on its side (key lock) (drawn by hand in the label colour, no image model)",
+      "box": [
+        175,
+        1270,
+        226,
+        1291
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the silent symbol on the # key came out as a '9'-like glyph: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        533,
+        1271,
+        556,
+        1292
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        190,
+        158,
+        510,
+        203
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "restored from p2",
+      "rows": [],
+      "boxes": [
+        [
+          205,
+          160,
+          495,
+          202
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "box": [
+        205,
+        163,
+        495,
+        205
+      ],
+      "note": "the gloss on every press render hides the 'ri' of Ericsson and dims the rest: the brand print inpainted away and the G900's own 'Sony Ericsson' print (same logotype, white) put in its place, scaled to the G502 print's box (no image model)"
+    }
+  ],
+  "screen_source": {
+    "window": [
+      95,
+      145,
+      468,
+      650
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      95,
+      145,
+      373,
+      505
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 1.0
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 1.0
+      },
+      "window_centre_x_pct": 0.46,
+      "window_mm": [
+        31.08,
+        42.08
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.02,
+        1.036
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.4434,
+      "spec_aspect": 0.4466,
+      "aspect_error_pct": -0.72,
+      "lean_deg": 0.012,
+      "taper_deg": 0.024,
+      "deskew_deg": -0.012,
+      "tilt_deg": 0.035,
+      "jitter_px": 0.69,
+      "symmetry_iou": 0.9892,
+      "screen_aspect_error_pct": 0.07,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.46,
+      "window_vs_spec_min": 1.02,
+      "window_vs_spec_max": 1.036,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

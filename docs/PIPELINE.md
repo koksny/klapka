@@ -349,6 +349,21 @@ one side are part of the design, so these are not pass/fail.
 - The F500i is sold with the vodafone print (Koks): an operator print that the phone came with is
   part of the phone; stickers and covers added later are not.
 
+## What the R and G series taught (2026-11-11)
+
+- The Sony Ericsson V series (V600i, V630i, V640i, V800) is skipped on Koks's decision: Vodafone colour
+  versions of phones already in the archive.
+- When the press render's gloss hides part of the brand print (G502: every render hides the 'ri' of
+  Ericsson), the print is inpainted away and the same logotype from another phone in the archive
+  (G900, white on dark glass) is put in its place, scaled to the print's box.
+- Word fixes need boxes read off a grid of `final.png` itself: three boxes read off a 2x zoom with the
+  wrong origin landed beside the words and smeared them; `pass2 --reuse` started those phones over.
+- The model kept drawing the same small symbols wrong on every phone of the batch (voicemail, the
+  key lock, the silent note, 'a/A'); they were drawn by hand, as were the Q of PQRS, the K of JKL and
+  the X of WXYZ (Bahnschrift SemiBold SemiCondensed at the labels' cap height).
+- Where the screen content runs up to the brand print (G700), give the window from the top of the
+  content (the status bar), or a strip of it stays above the hole.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

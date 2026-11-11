@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/g502",
+  "brand": "Sony Ericsson",
+  "model": "G502",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 103,
+    "depth": 13.5
+  },
+  "size_note": "103 x 46 x 13.5 mm (GSMArena); teltarif gives 109 mm, but the frontal press render measures 0.451 width/height, which fits 103",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.0,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.76,
+      "y": 11.6,
+      "w": 30.48,
+      "h": 40.64,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4.0,
+      "y": 76.8,
+      "w": 38.0,
+      "h": 22.0
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "G502"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Black keys in three columns separated by thin silver bars, each digit with its small letters to its right. The 1 key also shows a small envelope and voicemail icon; the 5 key has a small dot on each side; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_g502-2350.php",
+      "https://www.teltarif.de/h/sony-ericsson/g502/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssong502.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 441, cropped tight)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      101,
+      157,
+      361,
+      481
+    ],
+    "mm": [
+      8.42,
+      13.08,
+      30.08,
+      40.08
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        37,
+        93,
+        115,
+        154
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        572,
+        1260
+      ],
+      "screen_px": [
+        101,
+        157,
+        361,
+        481
+      ]
+    }
+  }
+}

@@ -3,4 +3,4 @@
 
 <a href="../catalog/years.md">By year</a> · <a href="../catalog/brands.md">By brand</a> · <a href="../catalog/types.md">By type</a> · <a href="../catalog/all.md">All phones</a>
 
-- [Sony Ericsson](sony-ericsson/) (95)
+- [Sony Ericsson](sony-ericsson/) (101)

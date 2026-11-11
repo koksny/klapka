@@ -1,0 +1,124 @@
+{
+  "id": "sony-ericsson/r300",
+  "brand": "Sony Ericsson",
+  "model": "R300 Radio",
+  "year": 2008,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 101,
+    "depth": 12
+  },
+  "size_note": "101 x 46 x 12 mm (GSMArena, teltarif)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 13.2,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.5,
+      "y": 69.0,
+      "w": 33.5,
+      "h": 23.5
+    },
+    "seams": []
+  },
+  "texts": [
+    "Sony Ericsson",
+    "radio"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Silver keys in three columns separated by black vertical bars, each digit with its small letters to its right in grey. The 1 key also shows a small envelope and voicemail icon; the * key also shows a/A and a small key-lock symbol; the # key also shows a space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_r300_radio-2228.php",
+      "https://www.teltarif.de/h/sony-ericsson/r300/"
+    ],
+    "geometry_photo": {
+      "url": "https://www.esato.com/gfx/phones/sonyericssonr300.jpg",
+      "license": "",
+      "author": "",
+      "note": "frontal press render (200 x 432, cropped tight)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      142,
+      178,
+      309,
+      386
+    ],
+    "mm": [
+      11.83,
+      14.83,
+      25.75,
+      32.17
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        49,
+        107,
+        97,
+        121
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        583,
+        1236
+      ],
+      "screen_px": [
+        142,
+        178,
+        309,
+        386
+      ]
+    }
+  }
+}
