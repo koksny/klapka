@@ -1,6 +1,6 @@
 {
   "standard": "v1",
-  "count": 114,
+  "count": 120,
   "phones": [
     {
       "id": "sony-ericsson/p800",
@@ -934,6 +934,55 @@
       }
     },
     {
+      "id": "sony-ericsson/z500a",
+      "brand": "Sony Ericsson",
+      "model": "Z500a",
+      "year": 2004,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 49,
+        "height": 172,
+        "depth": 24
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          118,
+          311,
+          370,
+          463
+        ],
+        "mm": [
+          9.83,
+          25.92,
+          30.83,
+          38.58
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z500a/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z500a/skin-black.png",
+        "body.png": "phones/sony-ericsson/z500a/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z500a/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z500a/preview.png",
+        "phone.json": "phones/sony-ericsson/z500a/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/j210i",
       "brand": "Sony Ericsson",
       "model": "J210i",
@@ -1571,6 +1620,55 @@
       }
     },
     {
+      "id": "sony-ericsson/z520i",
+      "brand": "Sony Ericsson",
+      "model": "Z520i",
+      "year": 2005,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 46,
+        "height": 152,
+        "depth": 24
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 262K colours"
+      },
+      "screen": {
+        "skin_px": [
+          114,
+          206,
+          343,
+          429
+        ],
+        "mm": [
+          9.5,
+          17.17,
+          28.58,
+          35.75
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z520i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z520i/skin-black.png",
+        "body.png": "phones/sony-ericsson/z520i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z520i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z520i/preview.png",
+        "phone.json": "phones/sony-ericsson/z520i/phone.json"
+      }
+    },
+    {
       "id": "sony-ericsson/j100i",
       "brand": "Sony Ericsson",
       "model": "J100i",
@@ -2156,6 +2254,55 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w850i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w850i/preview.png",
         "phone.json": "phones/sony-ericsson/w850i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/z310i",
+      "brand": "Sony Ericsson",
+      "model": "Z310i",
+      "year": 2006,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 46,
+        "height": 159.5,
+        "depth": 24.5
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "STN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          112,
+          257,
+          353,
+          441
+        ],
+        "mm": [
+          9.33,
+          21.42,
+          29.42,
+          36.75
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z310i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z310i/skin-black.png",
+        "body.png": "phones/sony-ericsson/z310i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z310i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z310i/preview.png",
+        "phone.json": "phones/sony-ericsson/z310i/phone.json"
       }
     },
     {
@@ -3283,6 +3430,153 @@
         "mi-band-192x490.png": "phones/sony-ericsson/w960i/mi-band-192x490.png",
         "preview.png": "phones/sony-ericsson/w960i/preview.png",
         "phone.json": "phones/sony-ericsson/w960i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/z250i",
+      "brand": "Sony Ericsson",
+      "model": "Z250i",
+      "year": 2007,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 47,
+        "height": 154,
+        "depth": 19.5
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "CSTN 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          122,
+          256,
+          322,
+          402
+        ],
+        "mm": [
+          10.17,
+          21.33,
+          26.83,
+          33.5
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z250i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z250i/skin-black.png",
+        "body.png": "phones/sony-ericsson/z250i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z250i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z250i/preview.png",
+        "phone.json": "phones/sony-ericsson/z250i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/z320i",
+      "brand": "Sony Ericsson",
+      "model": "Z320i",
+      "year": 2007,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 47,
+        "height": 154,
+        "depth": 20
+      },
+      "display": {
+        "native_px": [
+          128,
+          160
+        ],
+        "diagonal_in": 1.8,
+        "type": "TFT 65K colours"
+      },
+      "screen": {
+        "skin_px": [
+          129,
+          253,
+          329,
+          411
+        ],
+        "mm": [
+          10.75,
+          21.08,
+          27.42,
+          34.25
+        ],
+        "native_px": [
+          128,
+          160
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z320i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z320i/skin-black.png",
+        "body.png": "phones/sony-ericsson/z320i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z320i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z320i/preview.png",
+        "phone.json": "phones/sony-ericsson/z320i/phone.json"
+      }
+    },
+    {
+      "id": "sony-ericsson/z750i",
+      "brand": "Sony Ericsson",
+      "model": "Z750i",
+      "year": 2007,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-11",
+      "size_mm": {
+        "width": 49,
+        "height": 165,
+        "depth": 20
+      },
+      "display": {
+        "native_px": [
+          240,
+          320
+        ],
+        "diagonal_in": 2.2,
+        "type": "TFT 262K colours"
+      },
+      "screen": {
+        "skin_px": [
+          98,
+          195,
+          412,
+          550
+        ],
+        "mm": [
+          8.17,
+          16.25,
+          34.33,
+          45.83
+        ],
+        "native_px": [
+          240,
+          320
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony-ericsson/z750i/skin.png",
+        "skin-black.png": "phones/sony-ericsson/z750i/skin-black.png",
+        "body.png": "phones/sony-ericsson/z750i/body.png",
+        "mi-band-192x490.png": "phones/sony-ericsson/z750i/mi-band-192x490.png",
+        "preview.png": "phones/sony-ericsson/z750i/preview.png",
+        "phone.json": "phones/sony-ericsson/z750i/phone.json"
       }
     },
     {

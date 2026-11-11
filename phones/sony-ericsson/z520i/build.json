@@ -1,0 +1,385 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.846,
+    "body_px": [
+      39,
+      72,
+      537,
+      1720
+    ],
+    "screen_px": [
+      134,
+      244,
+      442,
+      629
+    ]
+  },
+  "photo": {
+    "url": "https://gsm.magazyn.pl/pic/b/sony-ericsson-z520.jpg (press render, white margin added)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      168,
+      418
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.23,
+        "screen_rel_iou": 0.8609,
+        "screen_centre_error_pct": -1.02,
+        "mirror": 0.7508,
+        "body_aspect": 0.2837,
+        "template_body_aspect": 0.3026,
+        "body": [
+          102,
+          204,
+          492,
+          1581
+        ],
+        "screen": [
+          161,
+          338,
+          425,
+          659
+        ],
+        "score": 0.8223,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.58,
+        "screen_rel_iou": 0.8582,
+        "screen_centre_error_pct": -0.35,
+        "mirror": 0.6838,
+        "body_aspect": 0.2797,
+        "template_body_aspect": 0.3026,
+        "body": [
+          75,
+          136,
+          498,
+          1651
+        ],
+        "screen": [
+          143,
+          277,
+          427,
+          639
+        ],
+        "score": 0.786,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.4,
+        "screen_rel_iou": 0.8799,
+        "screen_centre_error_pct": -1.39,
+        "mirror": 0.6849,
+        "body_aspect": 0.2711,
+        "template_body_aspect": 0.3026,
+        "body": [
+          74,
+          99,
+          506,
+          1695
+        ],
+        "screen": [
+          135,
+          260,
+          433,
+          640
+        ],
+        "score": 0.5637,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.21,
+        "screen_rel_iou": 0.8751,
+        "screen_centre_error_pct": -1.32,
+        "mirror": 0.7306,
+        "body_aspect": 0.2656,
+        "template_body_aspect": 0.3026,
+        "body": [
+          84,
+          118,
+          499,
+          1683
+        ],
+        "screen": [
+          143,
+          277,
+          429,
+          652
+        ],
+        "score": 0.4974,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -17.06,
+        "screen_rel_iou": 0.8479,
+        "screen_centre_error_pct": -0.26,
+        "mirror": 0.7563,
+        "body_aspect": 0.251,
+        "template_body_aspect": 0.3026,
+        "body": [
+          102,
+          130,
+          483,
+          1651
+        ],
+        "screen": [
+          164,
+          272,
+          419,
+          629
+        ],
+        "score": 0.3469,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -17.22,
+        "screen_rel_iou": 0.8621,
+        "screen_centre_error_pct": 0.13,
+        "mirror": 0.6669,
+        "body_aspect": 0.2505,
+        "template_body_aspect": 0.3026,
+        "body": [
+          105,
+          121,
+          483,
+          1633
+        ],
+        "screen": [
+          164,
+          266,
+          425,
+          633
+        ],
+        "score": 0.3213,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -20.52,
+        "screen_rel_iou": 0.8514,
+        "screen_centre_error_pct": -1.5,
+        "mirror": 0.7822,
+        "body_aspect": 0.2405,
+        "template_body_aspect": 0.3026,
+        "body": [
+          102,
+          137,
+          468,
+          1662
+        ],
+        "screen": [
+          154,
+          285,
+          405,
+          642
+        ],
+        "score": 0.0664,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -29.19,
+        "screen_rel_iou": 0.8725,
+        "screen_centre_error_pct": -1.38,
+        "mirror": 0.7643,
+        "body_aspect": 0.2143,
+        "template_body_aspect": 0.3026,
+        "body": [
+          125,
+          142,
+          451,
+          1667
+        ],
+        "screen": [
+          173,
+          292,
+          394,
+          650
+        ],
+        "score": -0.3424,
+        "seed": 4
+      }
+    ],
+    "best_seed": 8,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        84,
+        1182,
+        500,
+        1468
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out as a blob: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        172,
+        1216,
+        200,
+        1234
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as a dash and a crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        405,
+        1423,
+        445,
+        1445
+      ]
+    },
+    {
+      "n": 4,
+      "area": "text",
+      "text": "Sony Ericsson",
+      "box": [
+        189,
+        230,
+        381,
+        257
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    },
+    {
+      "n": 5,
+      "area": "text",
+      "text": "QuickShare",
+      "box": [
+        192,
+        710,
+        384,
+        743
+      ],
+      "prompt_id": "fix_text",
+      "seed": 1
+    }
+  ],
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      107,
+      200,
+      358,
+      441
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.58,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.58,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        29.83,
+        36.75
+      ],
+      "edge_strength": {
+        "left": 14.2,
+        "right": 19.9,
+        "top": 39.0,
+        "bottom": 129.5
+      },
+      "window_vs_spec": [
+        1.045,
+        1.029
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2992,
+      "spec_aspect": 0.3026,
+      "aspect_error_pct": -1.13,
+      "lean_deg": 0.005,
+      "taper_deg": 1.081,
+      "deskew_deg": 0.34,
+      "tilt_deg": 1.086,
+      "jitter_px": 5.79,
+      "symmetry_iou": 0.991,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.029,
+      "window_vs_spec_max": 1.045,
+      "window_edge_min": 14.2
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/z320i",
+  "brand": "Sony Ericsson",
+  "model": "Z320i",
+  "year": 2007,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 154,
+    "depth": 20
+  },
+  "size_note": "closed 87 x 47 x 20 mm (GSMArena, teltarif); the open length is measured on the press render of the open phone (153 x 501 px, the reflection under it left out)",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "TFT 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.22,
+      "y": 19.5,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 5.5,
+      "y": 110.5,
+      "w": 36.0,
+      "h": 29.5
+    },
+    "seams": [
+      {
+        "y": 74.0,
+        "note": "where the top half meets the keypad half (hinge)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Z320i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Rounded black keys in three columns, each digit large with its small letters at its upper right. The 1 key also shows a small envelope and voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z320-2006.php",
+      "https://www.teltarif.de/h/sony-ericsson/z320i/"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.nieuwemobiel.nl/media/z320i_front_open_crimson_red/z320i_front_open_crimson_red-a4f4fb97.webp",
+      "license": "",
+      "author": "",
+      "note": "press render z320i_front_open (newmobile.com press set), reflection left out"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      129,
+      253,
+      329,
+      411
+    ],
+    "mm": [
+      10.75,
+      21.08,
+      27.42,
+      34.25
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        54,
+        70,
+        83,
+        104
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        590,
+        1872
+      ],
+      "screen_px": [
+        129,
+        253,
+        329,
+        411
+      ]
+    }
+  }
+}

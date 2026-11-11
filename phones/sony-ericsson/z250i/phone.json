@@ -1,0 +1,129 @@
+{
+  "id": "sony-ericsson/z250i",
+  "brand": "Sony Ericsson",
+  "model": "Z250i",
+  "year": 2007,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 47,
+    "height": 154,
+    "depth": 19.5
+  },
+  "size_note": "closed 85 x 47 x 19.5 mm (GSMArena, teltarif); the open length is measured on the press render of the open phone (157 x 514 px, the reflection under it left out)",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "CSTN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.22,
+      "y": 19.6,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 5.0,
+      "y": 109.5,
+      "w": 37.0,
+      "h": 30.5
+    },
+    "seams": [
+      {
+        "y": 74.0,
+        "note": "where the top half meets the keypad half (hinge)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson",
+    "Z250i"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Black keys on a black keypad, each digit large with its small letters at its upper right. The 1 key also shows a small envelope and voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z250-2005.php",
+      "https://www.teltarif.de/h/sony-ericsson/z250i/"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.nieuwemobiel.nl/media/z250i_front_open_bothcolors/z250i_front_open_bothcolors-562b1221.webp",
+      "license": "",
+      "author": "",
+      "note": "press render z250i_front_open (newmobile.com press set), reflection left out; the print reads Z250a on it"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      122,
+      256,
+      322,
+      402
+    ],
+    "mm": [
+      10.17,
+      21.33,
+      26.83,
+      33.5
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        54,
+        70,
+        82,
+        103
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        572,
+        1872
+      ],
+      "screen_px": [
+        122,
+        256,
+        322,
+        402
+      ]
+    }
+  }
+}

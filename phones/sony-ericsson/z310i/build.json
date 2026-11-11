@@ -1,0 +1,381 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1824
+    ],
+    "px_per_mm": 10.521,
+    "body_px": [
+      30,
+      73,
+      513,
+      1750
+    ],
+    "screen_px": [
+      122,
+      300,
+      421,
+      674
+    ]
+  },
+  "photo": {
+    "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/09a06f19-7147-458a-9502-d425c1fbeec5_large.png (photo of the open phone, link from Koks; at&t marks painted out, D-pad centre made grey)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      218,
+      587
+    ]
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        86,
+        1235,
+        470,
+        1535
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out as a crossed blob: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        154,
+        1272,
+        177,
+        1293
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the label after # came out as one crossed box: redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        376,
+        1484,
+        418,
+        1508
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the bottom-left key was blank (the reference shows the AT&T globe there): the European Z310i's activity-menu icon drawn by hand, as on the Sony Ericsson press render (drawn by hand in the label colour, no image model)",
+      "box": [
+        140,
+        1543,
+        174,
+        1577
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the D-pad centre came out near-black red (the AT&T reference has a pink one): made the neutral dark grey of the Sony Ericsson press render, brightness kept (no image model)",
+      "box": [
+        233,
+        1115,
+        303,
+        1185
+      ]
+    }
+  ],
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.88,
+        "screen_rel_iou": 0.8077,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.7355,
+        "body_aspect": 0.2686,
+        "template_body_aspect": 0.2884,
+        "body": [
+          66,
+          122,
+          473,
+          1640
+        ],
+        "screen": [
+          124,
+          308,
+          415,
+          671
+        ],
+        "score": 0.8315,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.82,
+        "screen_rel_iou": 0.7986,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6317,
+        "body_aspect": 0.2659,
+        "template_body_aspect": 0.2884,
+        "body": [
+          62,
+          125,
+          471,
+          1666
+        ],
+        "screen": [
+          120,
+          309,
+          413,
+          681
+        ],
+        "score": 0.7235,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.03,
+        "screen_rel_iou": 0.8131,
+        "screen_centre_error_pct": -0.24,
+        "mirror": 0.7172,
+        "body_aspect": 0.2653,
+        "template_body_aspect": 0.2884,
+        "body": [
+          61,
+          112,
+          477,
+          1683
+        ],
+        "screen": [
+          120,
+          304,
+          416,
+          679
+        ],
+        "score": 0.7461,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.29,
+        "screen_rel_iou": 0.8041,
+        "screen_centre_error_pct": 0.12,
+        "mirror": 0.7675,
+        "body_aspect": 0.2645,
+        "template_body_aspect": 0.2884,
+        "body": [
+          62,
+          148,
+          471,
+          1697
+        ],
+        "screen": [
+          120,
+          334,
+          414,
+          702
+        ],
+        "score": 0.761,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.47,
+        "screen_rel_iou": 0.8055,
+        "screen_centre_error_pct": -0.12,
+        "mirror": 0.7317,
+        "body_aspect": 0.264,
+        "template_body_aspect": 0.2884,
+        "body": [
+          64,
+          120,
+          478,
+          1691
+        ],
+        "screen": [
+          123,
+          309,
+          418,
+          687
+        ],
+        "score": 0.7356,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.45,
+        "screen_rel_iou": 0.8234,
+        "screen_centre_error_pct": -0.12,
+        "mirror": 0.7324,
+        "body_aspect": 0.2612,
+        "template_body_aspect": 0.2884,
+        "body": [
+          63,
+          108,
+          471,
+          1673
+        ],
+        "screen": [
+          121,
+          304,
+          412,
+          672
+        ],
+        "score": 0.7048,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -16.76,
+        "screen_rel_iou": 0.8087,
+        "screen_centre_error_pct": 0.65,
+        "mirror": 0.6854,
+        "body_aspect": 0.2401,
+        "template_body_aspect": 0.2884,
+        "body": [
+          80,
+          110,
+          461,
+          1700
+        ],
+        "screen": [
+          139,
+          301,
+          407,
+          687
+        ],
+        "score": 0.248,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -22.23,
+        "screen_rel_iou": 0.8341,
+        "screen_centre_error_pct": 3.64,
+        "mirror": 0.2781,
+        "body_aspect": 0.2243,
+        "template_body_aspect": 0.2884,
+        "body": [
+          111,
+          132,
+          453,
+          1660
+        ],
+        "screen": [
+          183,
+          322,
+          406,
+          687
+        ],
+        "score": -0.5026,
+        "seed": 3
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 1
+  },
+  "screen_source": {
+    "window": null,
+    "manual": false,
+    "exact": false,
+    "window_px": [
+      101,
+      251,
+      374,
+      453
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.92,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.92,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.18,
+      "window_mm": [
+        31.17,
+        37.75
+      ],
+      "edge_strength": {
+        "left": 172.1,
+        "right": 164.0,
+        "top": 168.6,
+        "bottom": 189.0
+      },
+      "window_vs_spec": [
+        1.091,
+        1.057
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2886,
+      "spec_aspect": 0.2884,
+      "aspect_error_pct": 0.07,
+      "lean_deg": 0.005,
+      "taper_deg": 0.637,
+      "deskew_deg": -0.21,
+      "tilt_deg": 0.642,
+      "jitter_px": 11.12,
+      "symmetry_iou": 0.9935,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.18,
+      "window_vs_spec_min": 1.057,
+      "window_vs_spec_max": 1.091,
+      "window_edge_min": 164.0
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "added": "2026-11-11"
+}

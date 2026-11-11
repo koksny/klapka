@@ -1,0 +1,384 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.705,
+    "body_px": [
+      36,
+      72,
+      538,
+      1720
+    ],
+    "screen_px": [
+      135,
+      282,
+      439,
+      662
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.nieuwemobiel.nl/media/z250i_front_open_bothcolors/z250i_front_open_bothcolors-562b1221.webp (newmobile.com press set, reflection cropped off, white background)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      205,
+      562
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.66,
+        "screen_rel_iou": 0.9791,
+        "screen_centre_error_pct": 0.2,
+        "mirror": 0.6739,
+        "body_aspect": 0.303,
+        "template_body_aspect": 0.305,
+        "body": [
+          36,
+          73,
+          535,
+          1722
+        ],
+        "screen": [
+          136,
+          283,
+          437,
+          658
+        ],
+        "score": 1.2632,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.13,
+        "screen_rel_iou": 0.8277,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.7444,
+        "body_aspect": 0.2772,
+        "template_body_aspect": 0.305,
+        "body": [
+          61,
+          84,
+          511,
+          1710
+        ],
+        "screen": [
+          139,
+          261,
+          433,
+          681
+        ],
+        "score": 0.7437,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.33,
+        "screen_rel_iou": 0.8847,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.7374,
+        "body_aspect": 0.2735,
+        "template_body_aspect": 0.305,
+        "body": [
+          63,
+          77,
+          507,
+          1703
+        ],
+        "screen": [
+          141,
+          277,
+          431,
+          670
+        ],
+        "score": 0.7142,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.57,
+        "screen_rel_iou": 0.8254,
+        "screen_centre_error_pct": 0.45,
+        "mirror": 0.6967,
+        "body_aspect": 0.2728,
+        "template_body_aspect": 0.305,
+        "body": [
+          63,
+          79,
+          508,
+          1713
+        ],
+        "screen": [
+          141,
+          257,
+          434,
+          677
+        ],
+        "score": 0.6002,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -10.61,
+        "screen_rel_iou": 0.8912,
+        "screen_centre_error_pct": 0.23,
+        "mirror": 0.7082,
+        "body_aspect": 0.2727,
+        "template_body_aspect": 0.305,
+        "body": [
+          71,
+          115,
+          500,
+          1691
+        ],
+        "screen": [
+          146,
+          310,
+          427,
+          687
+        ],
+        "score": 0.6916,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -11.36,
+        "screen_rel_iou": 0.8866,
+        "screen_centre_error_pct": 0.24,
+        "mirror": 0.7484,
+        "body_aspect": 0.2704,
+        "template_body_aspect": 0.305,
+        "body": [
+          78,
+          93,
+          488,
+          1612
+        ],
+        "screen": [
+          150,
+          280,
+          418,
+          646
+        ],
+        "score": 0.6687,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -12.06,
+        "screen_rel_iou": 0.8669,
+        "screen_centre_error_pct": 0.35,
+        "mirror": 0.7013,
+        "body_aspect": 0.2682,
+        "template_body_aspect": 0.305,
+        "body": [
+          78,
+          83,
+          511,
+          1700
+        ],
+        "screen": [
+          155,
+          284,
+          437,
+          684
+        ],
+        "score": 0.5798,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -13.21,
+        "screen_rel_iou": 0.8294,
+        "screen_centre_error_pct": 0.23,
+        "mirror": 0.728,
+        "body_aspect": 0.2647,
+        "template_body_aspect": 0.305,
+        "body": [
+          72,
+          88,
+          498,
+          1700
+        ],
+        "screen": [
+          147,
+          264,
+          425,
+          680
+        ],
+        "score": 0.5092,
+        "seed": 6
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 7
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s7.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out joined into one shape: redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        154,
+        1262,
+        194,
+        1283
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        167,
+        1424,
+        181,
+        1440
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "'a/A' after * came out as 'NJA': redrawn in Bahnschrift SemiBold SemiCondensed at the labels' cap height (drawn by hand in the label colour, no image model)",
+      "box": [
+        158,
+        1496,
+        193,
+        1516
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the label after # came out as a space symbol and an 'S': redrawn as a space symbol and a crossed note (silent) (drawn by hand in the label colour, no image model)",
+      "box": [
+        406,
+        1495,
+        450,
+        1516
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the model print reads 'Z250a' on the press render (the American model): the a redrawn as i (stem and dot in the print's stroke width) for the Z250i (no image model)",
+      "box": [
+        326,
+        725,
+        348,
+        753
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      116,
+      244,
+      450,
+      669
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      116,
+      244,
+      334,
+      425
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 0.92
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 1.0,
+        "bottom": 0.92
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        27.83,
+        35.42
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.975,
+        0.992
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2968,
+      "spec_aspect": 0.3052,
+      "aspect_error_pct": -2.75,
+      "lean_deg": 0.026,
+      "taper_deg": 1.139,
+      "deskew_deg": -0.027,
+      "tilt_deg": 1.166,
+      "jitter_px": 8.25,
+      "symmetry_iou": 0.9841,
+      "screen_aspect_error_pct": 0.12,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 0.975,
+      "window_vs_spec_max": 0.992,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

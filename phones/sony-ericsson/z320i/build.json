@@ -1,0 +1,395 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 10.705,
+    "body_px": [
+      36,
+      72,
+      538,
+      1720
+    ],
+    "screen_px": [
+      135,
+      282,
+      439,
+      662
+    ]
+  },
+  "photo": {
+    "url": "https://cdn.nieuwemobiel.nl/media/z320i_front_open_crimson_red/z320i_front_open_crimson_red-a4f4fb97.webp (newmobile.com press set, reflection cropped off)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      201,
+      549
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.83,
+        "screen_rel_iou": 0.8383,
+        "screen_centre_error_pct": 0.11,
+        "mirror": 0.6499,
+        "body_aspect": 0.2903,
+        "template_body_aspect": 0.305,
+        "body": [
+          55,
+          115,
+          515,
+          1702
+        ],
+        "screen": [
+          140,
+          288,
+          431,
+          706
+        ],
+        "score": 0.9109,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.51,
+        "screen_rel_iou": 0.8221,
+        "screen_centre_error_pct": -0.66,
+        "mirror": 0.5154,
+        "body_aspect": 0.2882,
+        "template_body_aspect": 0.305,
+        "body": [
+          60,
+          92,
+          517,
+          1680
+        ],
+        "screen": [
+          138,
+          265,
+          433,
+          683
+        ],
+        "score": 0.7389,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.64,
+        "screen_rel_iou": 0.8885,
+        "screen_centre_error_pct": 0.23,
+        "mirror": 0.6091,
+        "body_aspect": 0.2848,
+        "template_body_aspect": 0.305,
+        "body": [
+          66,
+          100,
+          503,
+          1637
+        ],
+        "screen": [
+          144,
+          295,
+          427,
+          668
+        ],
+        "score": 0.8383,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.77,
+        "screen_rel_iou": 0.9001,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.644,
+        "body_aspect": 0.2844,
+        "template_body_aspect": 0.305,
+        "body": [
+          61,
+          95,
+          513,
+          1687
+        ],
+        "screen": [
+          143,
+          296,
+          433,
+          681
+        ],
+        "score": 0.8613,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -7.56,
+        "screen_rel_iou": 0.9011,
+        "screen_centre_error_pct": 0.43,
+        "mirror": 0.6498,
+        "body_aspect": 0.282,
+        "template_body_aspect": 0.305,
+        "body": [
+          48,
+          81,
+          510,
+          1722
+        ],
+        "screen": [
+          133,
+          290,
+          429,
+          687
+        ],
+        "score": 0.8047,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.25,
+        "screen_rel_iou": 0.829,
+        "screen_centre_error_pct": 0.77,
+        "mirror": 0.6225,
+        "body_aspect": 0.2799,
+        "template_body_aspect": 0.305,
+        "body": [
+          56,
+          75,
+          512,
+          1707
+        ],
+        "screen": [
+          141,
+          257,
+          434,
+          685
+        ],
+        "score": 0.6509,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -8.41,
+        "screen_rel_iou": 0.8464,
+        "screen_centre_error_pct": 0.66,
+        "mirror": 0.6342,
+        "body_aspect": 0.2794,
+        "template_body_aspect": 0.305,
+        "body": [
+          64,
+          82,
+          517,
+          1706
+        ],
+        "screen": [
+          150,
+          259,
+          437,
+          682
+        ],
+        "score": 0.677,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -13.01,
+        "screen_rel_iou": 0.8237,
+        "screen_centre_error_pct": 0.58,
+        "mirror": 0.6018,
+        "body_aspect": 0.2653,
+        "template_body_aspect": 0.305,
+        "body": [
+          73,
+          88,
+          500,
+          1700
+        ],
+        "screen": [
+          152,
+          265,
+          426,
+          691
+        ],
+        "score": 0.4156,
+        "seed": 6
+      }
+    ],
+    "best_seed": 4,
+    "used_seed": 4
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s4.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the envelope and voicemail symbols on the 1 key came out as 'E5e': redrawn as an envelope and two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        153,
+        1275,
+        194,
+        1293
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the Q of PQRS came out as O: a short tail drawn through its lower right (drawn by hand in the label colour, no image model)",
+      "box": [
+        167,
+        1430,
+        181,
+        1444
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "WXYZ came out as 'WAYZ': the second letter redrawn as X in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        418,
+        1428,
+        430,
+        1441
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "'a/A' after * came out as 'aM': redrawn in Bahnschrift SemiBold SemiCondensed (drawn by hand in the label colour, no image model)",
+      "box": [
+        158,
+        1502,
+        194,
+        1520
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the silent symbol on the # key came out garbled: redrawn as a crossed note (drawn by hand in the label colour, no image model)",
+      "box": [
+        424,
+        1498,
+        448,
+        1522
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the i of the model print came out as I: the stroke cut into a dot and a stem at the x-height, background colour from the same rows (no image model)",
+      "box": [
+        326,
+        747,
+        332,
+        750
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      121,
+      247,
+      466,
+      670
+    ],
+    "manual": true,
+    "exact": true,
+    "window_px": [
+      121,
+      247,
+      345,
+      423
+    ],
+    "checks": {
+      "dark_front": true,
+      "visible_border_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 0.67,
+        "right": 0.67,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        28.75,
+        35.25
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.007,
+        0.987
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3065,
+      "spec_aspect": 0.3052,
+      "aspect_error_pct": 0.43,
+      "lean_deg": 0.005,
+      "taper_deg": 1.123,
+      "deskew_deg": 0.094,
+      "tilt_deg": 1.128,
+      "jitter_px": 7.55,
+      "symmetry_iou": 0.9848,
+      "screen_aspect_error_pct": 0.06,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.987,
+      "window_vs_spec_max": 1.007,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-11"
+}

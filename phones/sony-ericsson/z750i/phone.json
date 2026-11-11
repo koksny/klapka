@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z750i",
+  "brand": "Sony Ericsson",
+  "model": "Z750i",
+  "year": 2007,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 165,
+    "depth": 20
+  },
+  "size_note": "closed 97.4 x 49 x 20 mm (GSMArena, teltarif); the open length is measured on the official image of the open phone next to the closed one (524 px open against 302 px closed and 160 px wide; the two ways give 160-169 mm)",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      240,
+      320
+    ],
+    "diagonal_in": 2.2,
+    "type": "TFT 262K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.73,
+      "y": 17.5,
+      "w": 33.53,
+      "h": 44.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.0,
+      "y": 117.0,
+      "w": 38.0,
+      "h": 32.5
+    },
+    "seams": [
+      {
+        "y": 75.0,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 82.0,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "A flat silver keypad in four rows separated by thin lines, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z750-1929.php",
+      "https://www.teltarif.de/h/sony-ericsson/z750i/"
+    ],
+    "geometry_photo": {
+      "url": "https://fdn2.gsmarena.com/vv/pics/sonyericsson/sonyericsson-z750-01.jpg",
+      "license": "",
+      "author": "",
+      "note": "official image, the open phone cut out of the open, closed and side views (GSMArena)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      98,
+      195,
+      412,
+      550
+    ],
+    "mm": [
+      8.17,
+      16.25,
+      34.33,
+      45.83
+    ],
+    "native_px": [
+      240,
+      320
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        45,
+        51,
+        98,
+        132
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        619,
+        2004
+      ],
+      "screen_px": [
+        98,
+        195,
+        412,
+        550
+      ]
+    }
+  }
+}

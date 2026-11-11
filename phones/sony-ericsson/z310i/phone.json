@@ -1,0 +1,132 @@
+{
+  "id": "sony-ericsson/z310i",
+  "brand": "Sony Ericsson",
+  "model": "Z310i",
+  "year": 2006,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 46,
+    "height": 159.5,
+    "depth": 24.5
+  },
+  "size_note": "closed 87 x 46 x 24.5 mm (GSMArena, teltarif); the open length is measured on a straight-on photo of the open phone (150 x 520 px, link from Koks), which shows the bottom of the keypad half without the distortion of the press render",
+  "corner_radius_mm": 8.0,
+  "display": {
+    "native_px": [
+      128,
+      160
+    ],
+    "diagonal_in": 1.8,
+    "type": "STN 65K colours"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.72,
+      "y": 21.6,
+      "w": 28.56,
+      "h": 35.7,
+      "note": "w/h from the diagonal at the native aspect, x centred; y centred in the white display frame (20.3-57.4 mm) on the geometry photo"
+    },
+    "keypad": {
+      "x": 6.0,
+      "y": 114.5,
+      "w": 34.0,
+      "h": 32.0
+    },
+    "seams": [
+      {
+        "y": 74.5,
+        "note": "lower edge of the top half"
+      },
+      {
+        "y": 86.5,
+        "note": "top edge of the keypad half (the hinge between)"
+      }
+    ]
+  },
+  "texts": [
+    "Sony Ericsson"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "* a/A",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Dark grey keys in three columns separated by thin lines, each digit with its small letters to its right. The 1 key also shows a small voicemail icon; the * key shows a/A; the 0 key shows '+'; the # key shows a small space symbol and a small silent (crossed note) symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmarena.com/sony_ericsson_z310-1811.php",
+      "https://www.teltarif.de/h/sony-ericsson/z310i/"
+    ],
+    "geometry_photo": {
+      "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/09a06f19-7147-458a-9502-d425c1fbeec5_large.png",
+      "license": "",
+      "author": "",
+      "note": "straight-on photo of the open phone (link from Koks; the AT&T Z310a): the at&t marks painted out and the pink D-pad centre made neutral grey before the render"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      112,
+      257,
+      353,
+      441
+    ],
+    "mm": [
+      9.33,
+      21.42,
+      29.42,
+      36.75
+    ],
+    "native_px": [
+      128,
+      160
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        52,
+        68,
+        87,
+        109
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        576,
+        1938
+      ],
+      "screen_px": [
+        112,
+        257,
+        353,
+        441
+      ]
+    }
+  }
+}

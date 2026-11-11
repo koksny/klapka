@@ -7,10 +7,10 @@
 |---|---|---|
 | [2002](years/2002.md) | 6 | P800, T100, T200, T206, T300, T68i |
 | [2003](years/2003.md) | 5 | P900, T230, T310, T606, T610 |
-| [2004](years/2004.md) | 8 | F500i, J200i, K500i, K700i, P910i, S700i, T290i, T630 |
-| [2005](years/2005.md) | 13 | J210i, J220i, J230i, J300i, K300i, K600i, K750i, P990i … |
-| [2006](years/2006.md) | 12 | J100i, K310i, K510i, K610i, K800i, M600i, W300i, W700i … |
-| [2007](years/2007.md) | 23 | J110i, J120i, K200i, K220i, K320i, K530i, K550i, K630i … |
+| [2004](years/2004.md) | 9 | F500i, J200i, K500i, K700i, P910i, S700i, T290i, T630 … |
+| [2005](years/2005.md) | 14 | J210i, J220i, J230i, J300i, K300i, K600i, K750i, P990i … |
+| [2006](years/2006.md) | 13 | J100i, K310i, K510i, K610i, K800i, M600i, W300i, W700i … |
+| [2007](years/2007.md) | 26 | J110i, J120i, K200i, K220i, K320i, K530i, K550i, K630i … |
 | [2008](years/2008.md) | 24 | C702, C902, C905, F305, G502, G700, G705, G900 … |
 | [2009](years/2009.md) | 18 | Aino, C510, C901, C903, J105i Naite, J132, Jalou, S312 … |
 | [2010](years/2010.md) | 5 | Cedar, Elm, Hazel, W100 Spiro, W20 Zylo |

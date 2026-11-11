@@ -387,6 +387,22 @@ one side are part of the design, so these are not pass/fail.
 - Where the screen content ends in soft-key labels (J105i), a profile through the middle column can
   stop on a letter; read the window's bottom edge between the words.
 
+## What the first Z batch taught (2026-11-11)
+
+- Open clamshells render 4-13% narrow on most seeds (the model shortens the wide hinge area); with
+  12 seeds each, every phone had at least one within 3%. Measure the body on each raw seed (the
+  pass 1 score misses on white bodies) and cut out the widest clean one.
+- newmobile.com press sets (`front_open`) are the cleanest straight-on open clamshells; they carry a
+  mirror reflection and sometimes the site's logo over a corner: crop above the reflection, mirror
+  the clean opposite corner over the logo.
+- A press render can carry another market's model print (the Z250i press set shows "Z250a"): the
+  print is corrected to the model the skin is named after.
+- Where the brand is printed on the glass above the display (Z250i, Z310i, Z320i), the automatic
+  window takes the whole glass; read the LCD rectangle off the profile instead.
+- The Z310i press render squashed the bottom of the keypad half (Koks spotted it); a straight-on photo
+  of the AT&T Z310a (Koks's link) gave the true shape. Its at&t marks were painted out before the
+  render, the pink D-pad centre made grey, and the European activity-menu key drawn back by hand.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.
