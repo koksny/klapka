@@ -1,0 +1,348 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 11.861,
+    "body_px": [
+      31,
+      72,
+      545,
+      1720
+    ],
+    "screen_px": [
+      117,
+      624,
+      459,
+      736
+    ]
+  },
+  "photo": {
+    "url": "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/095df907-6494-4585-ad25-bb33a7ffe88d_xlarge.png (Mobile Phone Museum, phone-detail/sony-cmd-c1; its bowed sides straightened row by row)",
+    "license": "",
+    "author": "Mobile Phone Museum",
+    "size_used": [
+      370,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.59,
+        "screen_rel_iou": 0.917,
+        "screen_centre_error_pct": 0.3,
+        "mirror": 0.3882,
+        "body_aspect": 0.3042,
+        "template_body_aspect": 0.3123,
+        "body": [
+          34,
+          65,
+          538,
+          1724
+        ],
+        "screen": [
+          120,
+          613,
+          455,
+          732
+        ],
+        "score": 0.9518,
+        "seed": 2
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.25,
+        "screen_rel_iou": 0.8625,
+        "screen_centre_error_pct": -0.1,
+        "mirror": 0.3787,
+        "body_aspect": 0.3053,
+        "template_body_aspect": 0.3123,
+        "body": [
+          43,
+          87,
+          539,
+          1714
+        ],
+        "screen": [
+          126,
+          624,
+          455,
+          752
+        ],
+        "score": 0.9293,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.32,
+        "screen_rel_iou": 0.864,
+        "screen_centre_error_pct": 0.2,
+        "mirror": 0.4126,
+        "body_aspect": 0.3019,
+        "template_body_aspect": 0.3123,
+        "body": [
+          40,
+          75,
+          536,
+          1720
+        ],
+        "screen": [
+          122,
+          617,
+          456,
+          745
+        ],
+        "score": 0.8842,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.47,
+        "screen_rel_iou": 0.9324,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.4293,
+        "body_aspect": 0.3015,
+        "template_body_aspect": 0.3123,
+        "body": [
+          44,
+          81,
+          535,
+          1712
+        ],
+        "screen": [
+          123,
+          623,
+          457,
+          737
+        ],
+        "score": 0.9634,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.61,
+        "screen_rel_iou": 0.8732,
+        "screen_centre_error_pct": 0.61,
+        "mirror": 0.4226,
+        "body_aspect": 0.301,
+        "template_body_aspect": 0.3123,
+        "body": [
+          44,
+          86,
+          531,
+          1706
+        ],
+        "screen": [
+          128,
+          621,
+          453,
+          745
+        ],
+        "score": 0.8427,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.83,
+        "screen_rel_iou": 0.8852,
+        "screen_centre_error_pct": 0.1,
+        "mirror": 0.3784,
+        "body_aspect": 0.3004,
+        "template_body_aspect": 0.3123,
+        "body": [
+          47,
+          70,
+          544,
+          1727
+        ],
+        "screen": [
+          131,
+          618,
+          461,
+          745
+        ],
+        "score": 0.8731,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.4,
+        "screen_rel_iou": 0.8632,
+        "screen_centre_error_pct": 0.11,
+        "mirror": 0.3961,
+        "body_aspect": 0.2986,
+        "template_body_aspect": 0.3123,
+        "body": [
+          60,
+          126,
+          523,
+          1679
+        ],
+        "screen": [
+          138,
+          639,
+          446,
+          761
+        ],
+        "score": 0.8307,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -6.12,
+        "screen_rel_iou": 0.8704,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.3783,
+        "body_aspect": 0.2932,
+        "template_body_aspect": 0.3123,
+        "body": [
+          46,
+          69,
+          527,
+          1712
+        ],
+        "screen": [
+          130,
+          610,
+          446,
+          737
+        ],
+        "score": 0.7223,
+        "seed": 4
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 6
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s6.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as an O: its tail drawn by hand (drawn by hand in the label colour, no image model)",
+      "box": [
+        145,
+        1323,
+        158,
+        1342
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      102,
+      537,
+      441,
+      746
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      106,
+      537,
+      336,
+      210
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 4.25,
+        "bottom": 4.33
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 4.25,
+        "bottom": 4.33
+      },
+      "window_centre_x_pct": 0.2,
+      "window_mm": [
+        28.0,
+        17.5
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.967,
+        1.832
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.31,
+      "spec_aspect": 0.3122,
+      "aspect_error_pct": -0.71,
+      "lean_deg": 0.054,
+      "taper_deg": 0.031,
+      "deskew_deg": 0.072,
+      "tilt_deg": 0.085,
+      "jitter_px": 1.89,
+      "symmetry_iou": 0.9703,
+      "screen_aspect_error_pct": 0.11,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.2,
+      "window_vs_spec_min": 0.967,
+      "window_vs_spec_max": 1.832,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "acceptance_exceptions": {
+    "window_vs_spec_max": {
+      "limit": 1.9,
+      "approved_by": "Koks",
+      "date": "2026-11-12",
+      "reason": "the LCD glass is 1.8 times the height of the 97 x 32 dot matrix: rows of icons above and below it; the hole is the exact native size, the rest of the glass painted dark"
+    }
+  },
+  "added": "2026-11-12"
+}

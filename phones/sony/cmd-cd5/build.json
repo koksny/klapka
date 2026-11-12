@@ -1,0 +1,422 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      544,
+      1824
+    ],
+    "px_per_mm": 11.106,
+    "body_px": [
+      31,
+      73,
+      512,
+      1750
+    ],
+    "screen_px": [
+      117,
+      685,
+      426,
+      786
+    ],
+    "body_rect_px": [
+      31,
+      207,
+      512,
+      1750
+    ]
+  },
+  "photo": {
+    "url": "https://www.picclickimg.com/XXwAAeSwvdFoQcr4/Sony-Mobile-Phone-CMD-CD5-Silver-Tested-Dealer-Warranty.webp (shop photo of an original unit, via Koks; cropped and upscaled 3x)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      399,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 0.02,
+        "screen_rel_iou": 0.83,
+        "screen_centre_error_pct": 2.42,
+        "mirror": 0.2679,
+        "body_aspect": 0.3122,
+        "template_body_aspect": 0.3122,
+        "body": [
+          59,
+          239,
+          492,
+          1628
+        ],
+        "screen": [
+          145,
+          662,
+          427,
+          764
+        ],
+        "score": 0.7211,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": 0.96,
+        "screen_rel_iou": 0.805,
+        "screen_centre_error_pct": 3.2,
+        "mirror": 0.3232,
+        "body_aspect": 0.3152,
+        "template_body_aspect": 0.3122,
+        "body": [
+          64,
+          304,
+          485,
+          1642
+        ],
+        "screen": [
+          150,
+          712,
+          426,
+          811
+        ],
+        "score": 0.5989,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -1.19,
+        "screen_rel_iou": 0.8022,
+        "screen_centre_error_pct": 2.99,
+        "mirror": 0.2605,
+        "body_aspect": 0.3085,
+        "template_body_aspect": 0.3122,
+        "body": [
+          81,
+          310,
+          481,
+          1609
+        ],
+        "screen": [
+          158,
+          706,
+          428,
+          803
+        ],
+        "score": 0.5737,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.43,
+        "screen_rel_iou": 0.8124,
+        "screen_centre_error_pct": 2.44,
+        "mirror": 0.2051,
+        "body_aspect": 0.3046,
+        "template_body_aspect": 0.3122,
+        "body": [
+          66,
+          260,
+          496,
+          1674
+        ],
+        "screen": [
+          145,
+          691,
+          438,
+          797
+        ],
+        "score": 0.5499,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.12,
+        "screen_rel_iou": 0.8485,
+        "screen_centre_error_pct": 1.96,
+        "mirror": 0.3267,
+        "body_aspect": 0.3024,
+        "template_body_aspect": 0.3122,
+        "body": [
+          72,
+          291,
+          479,
+          1639
+        ],
+        "screen": [
+          145,
+          705,
+          422,
+          803
+        ],
+        "score": 0.6599,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.43,
+        "screen_rel_iou": 0.9069,
+        "screen_centre_error_pct": 1.92,
+        "mirror": 0.367,
+        "body_aspect": 0.3015,
+        "template_body_aspect": 0.3122,
+        "body": [
+          77,
+          357,
+          467,
+          1653
+        ],
+        "screen": [
+          145,
+          757,
+          414,
+          844
+        ],
+        "score": 0.727,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -22.99,
+        "screen_rel_iou": 0.7861,
+        "screen_centre_error_pct": -0.12,
+        "mirror": 0.301,
+        "body_aspect": 0.2404,
+        "template_body_aspect": 0.3122,
+        "body": [
+          76,
+          0,
+          476,
+          1667
+        ],
+        "screen": [
+          128,
+          524,
+          423,
+          621
+        ],
+        "score": -0.2254,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -25.71,
+        "screen_rel_iou": 0.7575,
+        "screen_centre_error_pct": 0.12,
+        "mirror": 0.2837,
+        "body_aspect": 0.2319,
+        "template_body_aspect": 0.3122,
+        "body": [
+          66,
+          0,
+          488,
+          1823
+        ],
+        "screen": [
+          120,
+          573,
+          435,
+          676
+        ],
+        "score": -0.3981,
+        "seed": 5
+      }
+    ],
+    "best_seed": 2,
+    "used_seed": 2
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s2.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "keypad",
+      "text": null,
+      "box": [
+        80,
+        1036,
+        464,
+        1420
+      ],
+      "prompt_id": "fix_keypad_tpl",
+      "seed": 1
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out garbled: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        148,
+        1072,
+        183,
+        1092
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "the * key came out as a small *: redrawn as a large six-armed asterisk at the size of the digits, as on the CMD-C1 (drawn by hand in the label colour, no image model)",
+      "box": [
+        130,
+        1349,
+        158,
+        1376
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the 0 key's label came out as a large + only: redrawn as a space symbol and a small +, as on the CMD-C1 (drawn by hand in the label colour, no image model)",
+      "box": [
+        268,
+        1350,
+        299,
+        1381
+      ]
+    },
+    {
+      "n": 5,
+      "area": "patch",
+      "note": "the phonebook key's icon came out as 'II8': redrawn as two filled figures and one outlined, in the CMD-C1's icon cyan (drawn by hand in the label colour, no image model)",
+      "box": [
+        233,
+        1466,
+        308,
+        1502
+      ]
+    },
+    {
+      "n": 6,
+      "area": "patch",
+      "note": "the render turned the LCD 2.1 degrees and put it 3.5 px right of the centre of its silver frame (upright and centred on the photo): straightened and centred, the frame colour filled in where it was (no image model)",
+      "box": [
+        140,
+        625,
+        430,
+        806
+      ]
+    },
+    {
+      "n": 7,
+      "area": "patch",
+      "note": "the LCD moved 3 px further left so the glass sits on the body's axis (the render put the whole silver frame 0.6 mm right of it); the freed strip filled with the frame beside it (no image model)",
+      "box": [
+        135,
+        638,
+        428,
+        800
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      108,
+      666,
+      441,
+      848
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      110,
+      667,
+      330,
+      182
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 3.25,
+        "bottom": 3.17
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.5,
+        "right": 0.5,
+        "top": 3.25,
+        "bottom": 3.17
+      },
+      "window_centre_x_pct": 0.78,
+      "window_mm": [
+        27.5,
+        15.17
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        0.983,
+        1.643
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.2851,
+      "spec_aspect": 0.2872,
+      "aspect_error_pct": -0.74,
+      "lean_deg": 0.002,
+      "taper_deg": 0.229,
+      "deskew_deg": -0.196,
+      "tilt_deg": 0.23,
+      "jitter_px": 2.62,
+      "symmetry_iou": 0.9474,
+      "screen_aspect_error_pct": 0.09,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.78,
+      "window_vs_spec_min": 0.983,
+      "window_vs_spec_max": 1.643,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "acceptance_exceptions": {
+    "window_vs_spec_max": {
+      "limit": 1.7,
+      "approved_by": "Koks",
+      "date": "2026-11-12",
+      "reason": "the LCD glass is 1.6 times the height of the 97 x 32 dot matrix: rows of icons above and below it; the hole is the exact native size, the rest of the glass painted dark"
+    }
+  },
+  "added": "2026-11-12"
+}

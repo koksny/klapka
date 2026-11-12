@@ -36,6 +36,7 @@ Validated by [schema/phone.schema.json](../schema/phone.schema.json).
 | `layout_mm.screen` | display glass in mm from the body's top-left corner; `w`/`h` follow from the diagonal at the exact native aspect, `x` is centred unless set |
 | `layout_mm.keypad` | the block of number keys, in mm |
 | `layout_mm.seams` | for sliders and flips: `[{"y": mm}]` where the parts meet |
+| `layout_mm.parts` | optional; what sticks out of the body rectangle (an antenna, a flap swung out), in mm from the body's top-left corner, negative above / left of it: `{"name", "x", "y", "w", "h", "radius_mm"}` or `{"name", "polygon": [[x, y], ...]}`. `size_mm` stays the body; the template, the measure grid, the cutout's scale and the aspect check use the whole silhouette (body + parts) |
 | `texts` | printed words on the front, e.g. `["Sony Ericsson", "Cyber-shot"]` |
 | `keys` | key labels row by row, e.g. `[["1", "2 ABC", "3 DEF"], ...]` |
 | `key_icons` | icons next to labels, in words |

@@ -21,7 +21,9 @@ from PIL import Image
 MAX_ASPECT_ERR = 3.0  # % (Koks, 2026-11-08)
 MAX_CENTRE_ERR = 1.0  # % of the body width
 T = json.load(open(sys.argv[1], encoding="utf-8"))
-tb, ts = T["body_px"], T["screen_px"]   # [x0, y0, x1, y1] inclusive
+# a template with parts (antenna, flap) prints the silhouette as body_px and the body alone as body_rect_px;
+# the render's body_box() finds the body, so relative positions must use the body rectangle
+tb, ts = T.get("body_rect_px") or T["body_px"], T["screen_px"]   # [x0, y0, x1, y1] inclusive
 t_aspect = (tb[2] - tb[0] + 1) / (tb[3] - tb[1] + 1)
 
 

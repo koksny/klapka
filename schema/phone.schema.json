@@ -30,7 +30,13 @@
       "properties": {
         "screen": { "$ref": "#/$defs/rect" },
         "keypad": { "$ref": "#/$defs/rect" },
-        "seams": { "type": "array", "items": { "type": "object", "required": ["y"], "properties": { "y": { "type": "number" }, "note": { "type": "string" } } } }
+        "seams": { "type": "array", "items": { "type": "object", "required": ["y"], "properties": { "y": { "type": "number" }, "note": { "type": "string" } } } },
+        "parts": { "description": "parts sticking out of the body rectangle (antenna, a swung-out flap), mm from the body's top-left corner; negative = above / left of the body",
+          "type": "array", "items": { "type": "object", "required": ["name"],
+            "properties": { "name": { "type": "string" }, "x": { "type": "number" }, "y": { "type": "number" },
+              "w": { "type": "number", "exclusiveMinimum": 0 }, "h": { "type": "number", "exclusiveMinimum": 0 }, "radius_mm": { "type": "number", "minimum": 0 },
+              "polygon": { "type": "array", "minItems": 3, "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } } } },
+            "oneOf": [ { "required": ["x", "y", "w", "h"] }, { "required": ["polygon"] } ] } }
       }
     },
     "texts": { "type": "array", "items": { "type": "string" } },

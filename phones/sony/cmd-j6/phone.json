@@ -1,0 +1,135 @@
+{
+  "id": "sony/cmd-j6",
+  "brand": "Sony",
+  "model": "CMD-J6",
+  "year": 2001,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 44,
+    "height": 122,
+    "depth": 20
+  },
+  "size_note": "123 x 43 x 20 mm (GSMArena, devicebeast); gsmchoice's 141 mm includes the antenna. A photo of the J6 beside the J5 (1gr.cz, via Koks) shows them the same length and the J6 98% as wide at its widest (the display); with the J5 at 123 x 45 that is 122 x 44, and the museum's straight-on shot has the same proportions (2.77). The antenna stands 16 mm above the body (layout_mm.parts). No spec gives the display diagonal: the LCD window measures about 30 x 29 mm; 1.55in at the native 96 x 92",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      96,
+      92
+    ],
+    "diagonal_in": 1.55,
+    "type": "grayscale, 4 shades, 6 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.79,
+      "y": 24.7,
+      "w": 28.42,
+      "h": 27.24,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 78,
+      "w": 35,
+      "h": 31
+    },
+    "seams": [],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 33.4,
+        "y": -16.0,
+        "w": 7.2,
+        "h": 18.0,
+        "radius_mm": 3.5
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CMD-J6"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @"
+    ]
+  ],
+  "key_icons": "Oval dark keys in three columns, each digit large with its small letters to its right. The 1 key also shows a small voicemail icon (two rings joined along their bottoms); the 0 key shows a space symbol and '+'; the # key shows '@'; the * key shows only its symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_j6-270.php",
+      "https://devicebeast.com/phones/cmd-j6",
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdj6/"
+    ],
+    "geometry_photo": {
+      "url": "https://1gr.cz/imgs/telefony/A010824_SONYCMDJ6_N.JPG",
+      "license": "",
+      "author": "",
+      "note": "photo of the J5 and J6 side by side (via Koks); the image is squeezed sideways, stretched back by 1.078 so the J5 matches its 123 x 45 mm"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      104,
+      504,
+      352,
+      337
+    ],
+    "mm": [
+      8.67,
+      42.0,
+      29.33,
+      28.08
+    ],
+    "native_px": [
+      96,
+      92
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        45,
+        149,
+        100,
+        96
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        560,
+        1680
+      ],
+      "screen_px": [
+        104,
+        504,
+        352,
+        337
+      ]
+    }
+  }
+}

@@ -10,8 +10,10 @@ A phone needs two kinds of photo; one photo can serve both.
 Photos are input only: the image model redraws the phone from them, and the photos themselves stay
 out of the published repo (`refs/` is not published). **Any photo that shows the phone well can be
 used, whatever its licence** (Koks, 2026-11-08): press shots, shop photos, reviews, video frames.
-**Look first at the Mobile Phone Museum** (mobilephonemuseum.com, Koks 2026-11-11: it has nearly every
-model, photographed well). Each catalogued unit has its own page, `/phone-detail/<slug>` (slugs vary:
+**Press material first** (official renders and product shots, the sources below); **the Mobile Phone
+Museum** (mobilephonemuseum.com) **when nothing better exists** (Koks, 2026-11-12). It has nearly every
+model, photographed well, and covered the phones with no press render or frontal photo anywhere else
+(Z530i, Z800i, Z1010). Each catalogued unit has its own page, `/phone-detail/<slug>` (slugs vary:
 `sony-ericsson-k750i`, `c510`; the catalogue search runs in the browser), with straight-on studio
 shots on a transparent background: front, open, back, sides. The images are
 `static-mpm-optimized.s3.eu-west-2.amazonaws.com/<uuid>_large.png` (400 x 600); swap `_large` for

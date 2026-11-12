@@ -443,6 +443,30 @@ one side are part of the design, so these are not pass/fail.
   windows were given by hand from luminance profiles.
 - Zylo is the W20 already in the archive (W20 Zylo); not made again.
 
+## What the first Sony batch taught (2026-11-12)
+
+- Sony's own GSM phones (CMD series, 1997-2001) have antennas sticking out of the top, and the CMD-Z1 Plus a
+  microphone arm folded along its side. `layout_mm.parts` (docs/FORMAT.md) adds them to the template as
+  rounded rectangles or polygons; `size_mm` stays the body, and the template, the measure grid, the cutout's scale
+  and the aspect check use the whole silhouette. Phones without parts come out bit for bit as before.
+- Press renders of these phones are rare and small. The museum shots, a collector's photo and photos Koks found
+  covered them; most needed straightening first: the museum's C1 had bowed sides (straightened row by row), the
+  Z5 and Z1 Plus photos were keystoned (four-corner rectification; the open Z5 in two pieces, body and flap,
+  because the flap hung at its own angle), one photo of two phones side by side was squeezed sideways (stretched
+  back until the known phone matched its spec).
+- Old spec sheets mix lengths with and without the antenna (CMD-J5: 123 mm in one catalogue, 144 mm with the
+  antenna in another); a straight-on photo decides, and a figure that fits no photo is wrong. A width can count a
+  jog dial standing out of the side (C1/CD5: 45 mm, front face 43.4 mm).
+- Monochrome 97 x 32 displays sit in LCD glass about twice as tall as the dot matrix (icon rows above and below):
+  the hole keeps the native aspect and the rest of the glass is painted dark, so `window_vs_spec_max` needs a
+  recorded exception (1.6-2.4). Approved by Koks for X2000, C1, CD5 and Z1 Plus; `window_vs_spec_min` /
+  `_max` now honour `acceptance_exceptions` like the other per-phone limits.
+- The screen window must be the LCD glass alone: a window drawn on the bezel paints over the print beside the
+  glass (SONY, CMD-C1 cut in the first round). The automatic window took in the bezel on every phone of this
+  batch; all were given by hand.
+- The render can turn or shift an LCD inside its frame (CD5: 2.1 degrees, 0.3-0.6 mm off): straightened and
+  centred by hand on `final.png`, recorded in `text_fixes`.
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

@@ -25,7 +25,10 @@ ap.add_argument("--rim", type=int, default=2, help="px band at the outline where
 ap.add_argument("--deskew", action="store_true")
 ap.add_argument("--keep-holes", type=int, default=0, metavar="PX",
                 help="keep transparent openings inside the body of at least PX pixels (a slot through a flap); 0 = fill all")
+ap.add_argument("--body-rows", default="0,0", metavar="TOP,BOTTOM",
+                help="fractions of the alpha row span where the body starts / ends: side edges are fitted on the body rows only (parts above / below); 0,0 = whole alpha")
 a = ap.parse_args()
+TOP_FRAC, BOTTOM_FRAC = (float(v) for v in a.body_rows.split(","))
 
 src = Image.open(a.raw)
 rep = {"raw": a.raw, "raw_mode": src.mode}
@@ -39,7 +42,8 @@ if A.min() >= 255:
 def edge_tilt(mask):
     rows = np.where(mask.any(1))[0]
     r0, r1 = rows.min(), rows.max(); span = r1 - r0
-    ys = np.arange(int(r0 + 0.2 * span), int(r0 + 0.8 * span))
+    b0, b1 = r0 + TOP_FRAC * span, r1 - BOTTOM_FRAC * span   # body rows only when parts stick out
+    ys = np.arange(int(b0 + 0.2 * (b1 - b0)), int(b0 + 0.8 * (b1 - b0)))
     L = np.array([np.argmax(mask[y]) for y in ys]); R = np.array([mask.shape[1] - 1 - np.argmax(mask[y][::-1]) for y in ys])
     kl, bl = np.polyfit(ys, L, 1); kr, br = np.polyfit(ys, R, 1)
     return (float(np.degrees(np.arctan(kl))), float(np.degrees(np.arctan(kr))),

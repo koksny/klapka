@@ -1,7 +1,350 @@
 {
   "standard": "v1",
-  "count": 134,
+  "count": 141,
   "phones": [
+    {
+      "id": "sony/cmd-x2000",
+      "brand": "Sony",
+      "model": "CMD-X2000",
+      "year": 1997,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 46,
+        "height": 142.5,
+        "depth": 26
+      },
+      "display": {
+        "native_px": [
+          97,
+          33
+        ],
+        "diagonal_in": 1.21,
+        "type": "monochrome graphic, 5 lines"
+      },
+      "screen": {
+        "skin_px": [
+          106,
+          920,
+          365,
+          124
+        ],
+        "mm": [
+          8.83,
+          76.67,
+          30.42,
+          10.33
+        ],
+        "native_px": [
+          97,
+          33
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-x2000/skin.png",
+        "skin-black.png": "phones/sony/cmd-x2000/skin-black.png",
+        "body.png": "phones/sony/cmd-x2000/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-x2000/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-x2000/preview.png",
+        "phone.json": "phones/sony/cmd-x2000/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-z1-plus",
+      "brand": "Sony",
+      "model": "CMD-Z1 Plus",
+      "year": 1997,
+      "form": "flip",
+      "view": "closed",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 52.75,
+        "height": 98.5,
+        "depth": 24
+      },
+      "display": {
+        "native_px": [
+          97,
+          32
+        ],
+        "diagonal_in": 1.53,
+        "type": "monochrome graphic, 5 lines"
+      },
+      "screen": {
+        "skin_px": [
+          87,
+          731,
+          475,
+          157
+        ],
+        "mm": [
+          7.25,
+          60.92,
+          39.58,
+          13.08
+        ],
+        "native_px": [
+          97,
+          32
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-z1-plus/skin.png",
+        "skin-black.png": "phones/sony/cmd-z1-plus/skin-black.png",
+        "body.png": "phones/sony/cmd-z1-plus/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-z1-plus/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-z1-plus/preview.png",
+        "phone.json": "phones/sony/cmd-z1-plus/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-c1",
+      "brand": "Sony",
+      "model": "CMD-C1",
+      "year": 1999,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 43.4,
+        "height": 139,
+        "depth": 26
+      },
+      "display": {
+        "native_px": [
+          97,
+          32
+        ],
+        "diagonal_in": 1.2,
+        "type": "monochrome graphic"
+      },
+      "screen": {
+        "skin_px": [
+          112,
+          588,
+          324,
+          107
+        ],
+        "mm": [
+          9.33,
+          49.0,
+          27.0,
+          8.92
+        ],
+        "native_px": [
+          97,
+          32
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-c1/skin.png",
+        "skin-black.png": "phones/sony/cmd-c1/skin-black.png",
+        "body.png": "phones/sony/cmd-c1/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-c1/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-c1/preview.png",
+        "phone.json": "phones/sony/cmd-c1/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-cd5",
+      "brand": "Sony",
+      "model": "CMD-CD5",
+      "year": 2000,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 43.4,
+        "height": 139,
+        "depth": 26
+      },
+      "display": {
+        "native_px": [
+          97,
+          32
+        ],
+        "diagonal_in": 1.16,
+        "type": "monochrome graphic"
+      },
+      "screen": {
+        "skin_px": [
+          116,
+          706,
+          318,
+          105
+        ],
+        "mm": [
+          9.67,
+          58.83,
+          26.5,
+          8.75
+        ],
+        "native_px": [
+          97,
+          32
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-cd5/skin.png",
+        "skin-black.png": "phones/sony/cmd-cd5/skin-black.png",
+        "body.png": "phones/sony/cmd-cd5/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-cd5/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-cd5/preview.png",
+        "phone.json": "phones/sony/cmd-cd5/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-j5",
+      "brand": "Sony",
+      "model": "CMD-J5",
+      "year": 2000,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 45,
+        "height": 123,
+        "depth": 20
+      },
+      "display": {
+        "native_px": [
+          96,
+          92
+        ],
+        "diagonal_in": 1.6,
+        "type": "grayscale, 4 shades, 6 lines"
+      },
+      "screen": {
+        "skin_px": [
+          117,
+          646,
+          330,
+          316
+        ],
+        "mm": [
+          9.75,
+          53.83,
+          27.5,
+          26.33
+        ],
+        "native_px": [
+          96,
+          92
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-j5/skin.png",
+        "skin-black.png": "phones/sony/cmd-j5/skin-black.png",
+        "body.png": "phones/sony/cmd-j5/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-j5/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-j5/preview.png",
+        "phone.json": "phones/sony/cmd-j5/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-z5",
+      "brand": "Sony",
+      "model": "CMD-Z5",
+      "year": 2000,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 49,
+        "height": 138,
+        "depth": 21
+      },
+      "display": {
+        "native_px": [
+          96,
+          72
+        ],
+        "diagonal_in": 1.44,
+        "type": "grayscale, 4 shades, 5 lines"
+      },
+      "screen": {
+        "skin_px": [
+          134,
+          441,
+          355,
+          266
+        ],
+        "mm": [
+          11.17,
+          36.75,
+          29.58,
+          22.17
+        ],
+        "native_px": [
+          96,
+          72
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-z5/skin.png",
+        "skin-black.png": "phones/sony/cmd-z5/skin-black.png",
+        "body.png": "phones/sony/cmd-z5/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-z5/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-z5/preview.png",
+        "phone.json": "phones/sony/cmd-z5/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-j6",
+      "brand": "Sony",
+      "model": "CMD-J6",
+      "year": 2001,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 44,
+        "height": 122,
+        "depth": 20
+      },
+      "display": {
+        "native_px": [
+          96,
+          92
+        ],
+        "diagonal_in": 1.55,
+        "type": "grayscale, 4 shades, 6 lines"
+      },
+      "screen": {
+        "skin_px": [
+          104,
+          504,
+          352,
+          337
+        ],
+        "mm": [
+          8.67,
+          42.0,
+          29.33,
+          28.08
+        ],
+        "native_px": [
+          96,
+          92
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-j6/skin.png",
+        "skin-black.png": "phones/sony/cmd-j6/skin-black.png",
+        "body.png": "phones/sony/cmd-j6/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-j6/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-j6/preview.png",
+        "phone.json": "phones/sony/cmd-j6/phone.json"
+      }
+    },
     {
       "id": "sony-ericsson/p800",
       "brand": "Sony Ericsson",

@@ -1,0 +1,379 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1760
+    ],
+    "px_per_mm": 11.733,
+    "body_px": [
+      30,
+      70,
+      545,
+      1688
+    ],
+    "screen_px": [
+      121,
+      548,
+      454,
+      867
+    ],
+    "body_rect_px": [
+      30,
+      258,
+      545,
+      1688
+    ]
+  },
+  "photo": {
+    "url": "https://1gr.cz/imgs/telefony/A010824_SONYCMDJ6_N.JPG (photo of the J5 and J6 side by side, via Koks; stretched back 1.078 sideways, the J6 cropped and upscaled 3x)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      352,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -0.07,
+        "screen_rel_iou": 0.806,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.6529,
+        "body_aspect": 0.3603,
+        "template_body_aspect": 0.3606,
+        "body": [
+          65,
+          315,
+          509,
+          1549
+        ],
+        "screen": [
+          123,
+          557,
+          451,
+          856
+        ],
+        "score": 1.1288,
+        "seed": 6
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -1.54,
+        "screen_rel_iou": 0.8401,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.6221,
+        "body_aspect": 0.355,
+        "template_body_aspect": 0.3606,
+        "body": [
+          40,
+          275,
+          530,
+          1657
+        ],
+        "screen": [
+          107,
+          548,
+          466,
+          872
+        ],
+        "score": 1.0435,
+        "seed": 4
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.37,
+        "screen_rel_iou": 0.8226,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.6449,
+        "body_aspect": 0.3521,
+        "template_body_aspect": 0.3606,
+        "body": [
+          44,
+          262,
+          532,
+          1650
+        ],
+        "screen": [
+          110,
+          541,
+          469,
+          872
+        ],
+        "score": 0.996,
+        "seed": 5
+      },
+      {
+        "ok": true,
+        "background_white": true,
+        "aspect_error_pct": -2.83,
+        "screen_rel_iou": 0.7974,
+        "screen_centre_error_pct": 0.11,
+        "mirror": 0.6749,
+        "body_aspect": 0.3504,
+        "template_body_aspect": 0.3606,
+        "body": [
+          54,
+          265,
+          519,
+          1594
+        ],
+        "screen": [
+          116,
+          528,
+          458,
+          855
+        ],
+        "score": 0.9825,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.83,
+        "screen_rel_iou": 0.802,
+        "screen_centre_error_pct": 0.31,
+        "mirror": 0.6449,
+        "body_aspect": 0.3468,
+        "template_body_aspect": 0.3606,
+        "body": [
+          48,
+          255,
+          529,
+          1644
+        ],
+        "screen": [
+          114,
+          543,
+          466,
+          872
+        ],
+        "score": 0.9017,
+        "seed": 1
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.45,
+        "screen_rel_iou": 0.8575,
+        "screen_centre_error_pct": 0.0,
+        "mirror": 0.8119,
+        "body_aspect": 0.3445,
+        "template_body_aspect": 0.3606,
+        "body": [
+          79,
+          321,
+          498,
+          1539
+        ],
+        "screen": [
+          144,
+          547,
+          433,
+          844
+        ],
+        "score": 1.041,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -14.96,
+        "screen_rel_iou": 0.7906,
+        "screen_centre_error_pct": 0.22,
+        "mirror": 0.6142,
+        "body_aspect": 0.3066,
+        "template_body_aspect": 0.3606,
+        "body": [
+          63,
+          81,
+          514,
+          1554
+        ],
+        "screen": [
+          123,
+          403,
+          456,
+          721
+        ],
+        "score": 0.3277,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": false,
+        "aspect_error_pct": -9.24,
+        "screen_rel_iou": 0.7672,
+        "screen_centre_error_pct": 0.17,
+        "mirror": 0.6391,
+        "body_aspect": 0.3273,
+        "template_body_aspect": 0.3606,
+        "body": [
+          0,
+          0,
+          575,
+          1759
+        ],
+        "screen": [
+          76,
+          333,
+          501,
+          781
+        ],
+        "score": -9.3926,
+        "seed": 2
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 1
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s1.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the voicemail symbol on the 1 key came out garbled: redrawn as two rings joined along their bottoms (drawn by hand in the label colour, no image model)",
+      "box": [
+        147,
+        1142,
+        186,
+        1164
+      ]
+    },
+    {
+      "n": 2,
+      "area": "patch",
+      "note": "TUV came out as 'TVV': the U redrawn in Bahnschrift SemiBold SemiCondensed at the height of the T beside it (drawn by hand in the label colour, no image model)",
+      "box": [
+        300,
+        1336,
+        312,
+        1354
+      ]
+    },
+    {
+      "n": 3,
+      "area": "patch",
+      "note": "WXYZ came out with a broken W: the word redrawn in Bahnschrift SemiBold SemiCondensed at the height of the letters (51 px wide) (drawn by hand in the label colour, no image model)",
+      "box": [
+        409,
+        1336,
+        470,
+        1356
+      ]
+    },
+    {
+      "n": 4,
+      "area": "patch",
+      "note": "the @ on the # key came out as a (c): redrawn in Bahnschrift SemiBold (drawn by hand in the label colour, no image model)",
+      "box": [
+        440,
+        1429,
+        466,
+        1455
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      94,
+      498,
+      465,
+      845
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      93,
+      498,
+      373,
+      349
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 0.92,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.08,
+      "hole_centre_diff_mm": 0.08,
+      "margins_mm": {
+        "left": 0.92,
+        "right": 0.83,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.19,
+      "window_mm": [
+        31.08,
+        29.08
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.094,
+        1.068
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.324,
+      "spec_aspect": 0.3188,
+      "aspect_error_pct": 1.62,
+      "lean_deg": 0.0,
+      "taper_deg": 1.796,
+      "deskew_deg": -0.11,
+      "tilt_deg": 1.797,
+      "jitter_px": 3.93,
+      "symmetry_iou": 0.9539,
+      "screen_aspect_error_pct": 0.1,
+      "hole_centre_diff_mm": 0.08,
+      "visible_border_diff_mm": 0.08,
+      "window_centre_x_pct": 0.19,
+      "window_vs_spec_min": 1.068,
+      "window_vs_spec_max": 1.094,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

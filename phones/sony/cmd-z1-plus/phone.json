@@ -1,0 +1,155 @@
+{
+  "id": "sony/cmd-z1-plus",
+  "brand": "Sony",
+  "model": "CMD-Z1 Plus",
+  "year": 1997,
+  "form": "flip",
+  "view": "closed",
+  "size_mm": {
+    "width": 52.75,
+    "height": 98.5,
+    "depth": 24
+  },
+  "size_note": "98 x 60 x 26 mm (GSMArena, mobile-review). Shown closed, as Koks chose: the microphone arm folded along the right side. The body here is the front face (52.75 x 98.5 mm); the folded arm, the antenna and its base are layout_mm.parts, 59.25 mm wide in all, matching the spec's 60 mm. Measured on a straight-on photo of the CMD-Z1 (catawiki, the same body) and a photo of the Z1 Plus (aukro, via Koks; keystone corrected). No spec gives the display diagonal: the LCD window measures about 42 x 24 mm; 1.53in at the native 97 x 32",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      97,
+      32
+    ],
+    "diagonal_in": 1.53,
+    "type": "monochrome graphic, 5 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.92,
+      "y": 32.9,
+      "w": 36.91,
+      "h": 12.18,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4.5,
+      "y": 59.0,
+      "w": 44.0,
+      "h": 32.0
+    },
+    "seams": [],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 47.0,
+        "y": -26.5,
+        "w": 7.75,
+        "h": 28.5,
+        "radius_mm": 3.0
+      },
+      {
+        "name": "antenna base",
+        "x": 46.5,
+        "y": -2.0,
+        "w": 10.0,
+        "h": 26.0,
+        "radius_mm": 2.0
+      },
+      {
+        "name": "microphone arm (folded)",
+        "x": 52.0,
+        "y": 23.75,
+        "w": 7.25,
+        "h": 66.5,
+        "radius_mm": 3.2
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CMD-Z1PLUS"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF",
+      "MENU"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO",
+      "C"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ",
+      "call"
+    ],
+    [
+      "*",
+      "0 +",
+      "#",
+      "end"
+    ]
+  ],
+  "key_icons": "Oval dark keys in four columns, each digit with its small letters to its right; the fourth column reads MENU, C, a green handset (call) and a red handset (end). The 0 key shows '+'; the 1, * and # keys show only their symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_z1_plus-130.php",
+      "https://mobile-review.com/phonemodels/sony/sony-cmd-z1plus.shtml",
+      "https://mobilecollectors.net/phones/sony-cmd-z1"
+    ],
+    "geometry_photo": {
+      "url": "https://cdn.aukro.cz/images/sk1683039092348/730x548/sony-cmd-z1-plus-funkcni-retro-komplet-159351952.jpeg",
+      "license": "",
+      "author": "",
+      "note": "photo of the closed Z1 Plus (via Koks), keystone corrected; proportions checked on a straight-on photo of the CMD-Z1 (catawiki)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      87,
+      731,
+      475,
+      157
+    ],
+    "mm": [
+      7.25,
+      60.92,
+      39.58,
+      13.08
+    ],
+    "native_px": [
+      97,
+      32
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        27,
+        237,
+        119,
+        39
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        724,
+        1524
+      ],
+      "screen_px": [
+        87,
+        731,
+        475,
+        157
+      ]
+    }
+  }
+}

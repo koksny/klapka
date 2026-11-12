@@ -27,6 +27,8 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 TOOLS = Path(__file__).resolve().parent
+sys.path.insert(0, str(TOOLS))   # `-I` does not put the script's directory on sys.path
+from silhouette import silhouette
 ROOT = TOOLS.parent
 PHONES = ROOT / "phones"
 PROMPTS = TOOLS / "prompts.json"
@@ -149,37 +151,56 @@ def body_bbox_grabcut(rgb):
 
 
 def cmd_measure(a):
-    """Body cut from a frontal photo, stretched to the real size, with a millimetre grid: read the
-    screen top edge, keypad block and seams straight off it."""
+    """Silhouette cut from a frontal photo, stretched to the real size, with a millimetre grid: read
+    the screen top edge, keypad block and seams straight off it. With parts the whole silhouette is
+    cut; the grid keeps 0 at the body's top-left corner (negative numbers above / left of it)."""
     P = phone(a.id); wm, hm = P["size_mm"]["width"], P["size_mm"]["height"]
     if not (wm and hm): raise SystemExit("fill size_mm in phone.json first")
+    sil = silhouette(P); left, top, right, bottom = sil["left"], sil["top"], sil["right"], sil["bottom"]
     im = ImageOps.exif_transpose(Image.open(a.photo)).convert("RGBA")
     flat = Image.new("RGBA", im.size, (255, 255, 255, 255)); flat.alpha_composite(im); im = flat.convert("RGB"); rgb = np.asarray(im)
     box = [int(v) for v in a.bbox.split(",")] if a.bbox else body_bbox_grabcut(rgb)
     pre = im.copy(); ImageDraw.Draw(pre).rectangle(box, outline=(255, 0, 255), width=max(3, im.width // 300)); pre.thumbnail((1000, 1000))
     pre.save(wdir(a.id) / "measure_bbox.png")
-    S = 12; crop = im.crop((box[0], box[1], box[2] + 1, box[3] + 1)).resize((round(wm * S), round(hm * S)), Image.LANCZOS)
+    S = 12; crop = im.crop((box[0], box[1], box[2] + 1, box[3] + 1)).resize((round(sil["full_w"] * S), round(sil["full_h"] * S)), Image.LANCZOS)
     pad = 60; G = Image.new("RGB", (crop.width + pad, crop.height + pad), (20, 20, 20)); G.paste(crop, (pad, pad)); d = ImageDraw.Draw(G)
-    for mm in range(0, int(max(wm, hm)) + 1):
+    def gx(mm): return round(pad + left * S + mm * S)   # body-relative mm -> grid px
+    def gy(mm): return round(pad + top * S + mm * S)
+    parts = P.get("layout_mm", {}).get("parts") or []
+    lo, hi = int(math.floor(-left)), int(math.floor(max(wm + right, hm + bottom)))
+    for mm in range(lo, hi + 1):
         c = (255, 0, 255) if mm % 10 == 0 else ((0, 220, 255) if mm % 5 == 0 else (90, 90, 90))
-        if mm <= wm:
-            x = pad + mm * S; d.line([(x, pad), (x, G.height)], fill=c, width=1)
+        if mm <= wm + right:
+            x = gx(mm); d.line([(x, pad), (x, G.height)], fill=c, width=1)
             if mm % 5 == 0: d.text((x - 6, 18), str(mm), fill=(255, 255, 0), font=font(16))
-        if mm <= hm:
-            y = pad + mm * S; d.line([(pad, y), (G.width, y)], fill=c, width=1)
+        if mm <= hm + bottom:
+            y = gy(mm); d.line([(pad, y), (G.width, y)], fill=c, width=1)
             if mm % 5 == 0: d.text((4, y - 9), str(mm), fill=(255, 255, 0), font=font(16))
+    if parts:   # check the parts against the photo: body magenta, parts cyan
+        d.rectangle([gx(0), gy(0), gx(wm), gy(hm)], outline=(255, 0, 255), width=2)
+        for part in parts:
+            if "polygon" in part:
+                pts = [(gx(p[0]), gy(p[1])) for p in part["polygon"]]
+                d.line(pts + [pts[0]], fill=(0, 255, 255), width=2)
+            else:
+                d.rectangle([gx(part["x"]), gy(part["y"]), gx(part["x"] + part["w"]), gy(part["y"] + part["h"])],
+                            outline=(0, 255, 255), width=2)
     G.save(wdir(a.id) / "measure_grid.png")
     print(f"bbox {box} -> {wdir(a.id) / 'measure_grid.png'} (lines every mm, cyan 5 mm, magenta 10 mm); "
-          f"check {wdir(a.id) / 'measure_bbox.png'}; wrong body box? pass --bbox x0,y0,x1,y1")
+          f"check {wdir(a.id) / 'measure_bbox.png'}; wrong {'silhouette' if parts else 'body'} box? pass --bbox x0,y0,x1,y1")
 
 
 def cmd_template(a):
     P = resolve_screen(phone(a.id)); save(pdir(a.id) / "phone.json", P)
-    W, H, s = (int(a.size.split("x")[0]), int(a.size.split("x")[1]), a.px_per_mm) if a.size else canvas_for(P["size_mm"]["width"], P["size_mm"]["height"])
+    sil = silhouette(P)
+    W, H, s = (int(a.size.split("x")[0]), int(a.size.split("x")[1]), a.px_per_mm) if a.size else canvas_for(sil["full_w"], sil["full_h"])
     out = wdir(a.id) / "template.png"
     T = last_json(run("make_template.py", pdir(a.id) / "phone.json", out, "--size", f"{W}x{H}", "--px-per-mm", s))
     save(wdir(a.id) / "template.json", T)
-    b = build(a.id); b["template"] = {"size": [W, H], "px_per_mm": s, "body_px": T["body_px"], "screen_px": T["screen_px"]}; save_build(a.id, b)
+    tpl = {"size": [W, H], "px_per_mm": s, "body_px": T["body_px"], "screen_px": T["screen_px"]}
+    if T.get("body_rect_px") and T["body_rect_px"] != T["body_px"]:   # parts: keep the body rectangle too
+        tpl["body_rect_px"] = T["body_rect_px"]
+    b = build(a.id); b["template"] = tpl; save_build(a.id, b)
     print(json.dumps(T))
 
 
@@ -347,11 +368,13 @@ def cmd_restore(a):
 
 def cmd_finish(a):
     d, w = pdir(a.id), wdir(a.id); P = phone(a.id); b = build(a.id); T = load(w / "template.json")
-    wm, hm = P["size_mm"]["width"], P["size_mm"]["height"]
+    sil = silhouette(P); fw, fh = sil["full_w"], sil["full_h"]
+    parts = P.get("layout_mm", {}).get("parts") or []
     holes = ["--keep-holes", b["keep_holes"]] if b.get("keep_holes") else []   # px; a real opening through the body
-    rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", hm, "--width-mm", wm, "--px-per-mm", MASTER_PX_PER_MM, "--deskew", *holes))
+    body_rows = ["--body-rows", f"{sil['top'] / fh:.6f},{sil['bottom'] / fh:.6f}"] if parts else []
+    rep = last_json(run("clean_alpha.py", w / "final.png", d / "body.png", "--height-mm", fh, "--width-mm", fw, "--px-per-mm", MASTER_PX_PER_MM, "--deskew", *body_rows, *holes))
     prev_source = dict(b.get("screen_source", {}))
-    x0, y0, x1, y1 = alpha_bbox(w / "final.png"); k = hm * MASTER_PX_PER_MM / (y1 - y0 + 1); pad = MASTER_PX_PER_MM
+    x0, y0, x1, y1 = alpha_bbox(w / "final.png"); k = fh * MASTER_PX_PER_MM / (y1 - y0 + 1); pad = MASTER_PX_PER_MM
     # seed: the template's screen, placed relative to the render's own body box, in body.png pixels
     bx = T["body_px"]; tw, th = bx[2] - bx[0] + 1, bx[3] - bx[1] + 1; rw, rh = x1 - x0 + 1, y1 - y0 + 1
     sx0, sy0, sx1, sy1 = [x0 + (T["screen_px"][0] - bx[0]) * rw / tw, y0 + (T["screen_px"][1] - bx[1]) * rh / th,
@@ -375,9 +398,9 @@ def cmd_finish(a):
     bL, bT = ox + math.ceil(sx * f), oy + math.ceil(sy * f); bR, bB = ox + math.floor((sx + sw) * f), oy + math.floor((sy + sh) * f)
     band.save(d / "mi-band-192x490.png")
     prev = Image.new("RGBA", (BW, BH), (0, 0, 0, 255)); dr = ImageDraw.Draw(prev)
-    dr.rectangle([bL, bT, bR - 1, bB - 1], fill=(26, 40, 66, 255)); fw = bR - bL
-    dr.text(((bL + bR) / 2, bT + (bB - bT) * 0.42), "12:34", font=font(fw * 0.30), fill=(240, 240, 240, 255), anchor="mm")
-    dr.text(((bL + bR) / 2, bT + (bB - bT) * 0.66), "Mon 08.11", font=font(fw * 0.11), fill=(170, 200, 240, 255), anchor="mm")
+    dr.rectangle([bL, bT, bR - 1, bB - 1], fill=(26, 40, 66, 255)); frame_w = bR - bL
+    dr.text(((bL + bR) / 2, bT + (bB - bT) * 0.42), "12:34", font=font(frame_w * 0.30), fill=(240, 240, 240, 255), anchor="mm")
+    dr.text(((bL + bR) / 2, bT + (bB - bT) * 0.66), "Mon 08.11", font=font(frame_w * 0.11), fill=(170, 200, 240, 255), anchor="mm")
     prev.alpha_composite(band); prev.convert("RGB").resize((BW * 2, BH * 2), Image.NEAREST).save(d / "preview.png")
     g = with_glass(d / "skin.png"); g.thumbnail((10000, 240), Image.LANCZOS); g.save(d / "thumb.png")
     for old in ("band_preview.png", "band_preview_2x.png"):
@@ -387,8 +410,8 @@ def cmd_finish(a):
     P["exports"] = {"mi-band-192x490.png": {"size": [BW, BH], "screen_px": [bL, bT, bR - bL, bB - bT]},
                     "skin-black.png": black_export(d, [sx, sy, sw, sh])}
     save(d / "phone.json", P)
-    acc = {"aspect": round(rep["aspect_w_h"], 4), "spec_aspect": round(wm / hm, 4),
-           "aspect_error_pct": round(100 * (rep["aspect_w_h"] / (wm / hm) - 1), 2),
+    acc = {"aspect": round(rep["aspect_w_h"], 4), "spec_aspect": round(fw / fh, 4),
+           "aspect_error_pct": round(100 * (rep["aspect_w_h"] / (fw / fh) - 1), 2),
            "lean_deg": round(abs(sum(rep["side_tilt_deg"]) / 2), 3), "taper_deg": round(abs(rep["side_tilt_deg"][1] - rep["side_tilt_deg"][0]) / 2, 3),
            "deskew_deg": rep.get("deskew_deg", 0.0),
            "tilt_deg": max(abs(t) for t in rep["side_tilt_deg"]), "jitter_px": max(rep["side_jitter_px"]),
@@ -403,8 +426,8 @@ def cmd_finish(a):
           "screen_aspect_error_pct": acc["screen_aspect_error_pct"] <= THRESHOLDS["screen_aspect_error_pct"],
           "visible_border_diff_mm": acc["visible_border_diff_mm"] <= lim["visible_border_diff_mm"],
           "window_centre_x_pct": acc["window_centre_x_pct"] <= lim["window_centre_x_pct"],
-          "window_vs_spec_min": acc["window_vs_spec_min"] >= THRESHOLDS["window_vs_spec_min"],
-          "window_vs_spec_max": acc["window_vs_spec_max"] <= THRESHOLDS["window_vs_spec_max"],
+          "window_vs_spec_min": acc["window_vs_spec_min"] >= lim["window_vs_spec_min"],
+          "window_vs_spec_max": acc["window_vs_spec_max"] <= lim["window_vs_spec_max"],
           "window_edge_min": acc["window_edge_min"] >= THRESHOLDS["window_edge_min"]}
     manual = b.get("acceptance", {}).get("manual", {"text_ok": False, "approved": False})
     if b.get("screen_source", {}) != prev_source: manual["screen_ok"] = False   # a new hole needs a new look

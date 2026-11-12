@@ -1,0 +1,136 @@
+{
+  "id": "sony/cmd-x2000",
+  "brand": "Sony",
+  "model": "CMD-X2000",
+  "year": 1997,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 46,
+    "height": 142.5,
+    "depth": 26
+  },
+  "size_note": "147 x 46 x 26 mm (mobile-review, GSMArena); the body measures 142.5 mm at 46 mm wide on a straight-on museum shot; the antenna stub stands 24 mm above it (layout_mm.parts). No spec gives the display diagonal: the LCD window measures about 30 x 22 mm, the dot matrix fills its width; 1.21in at the native 97 x 33 (1.20in misses the hole aspect limit through pixel rounding)",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      97,
+      33
+    ],
+    "diagonal_in": 1.21,
+    "type": "monochrome graphic, 5 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 8.45,
+      "y": 53.0,
+      "w": 29.1,
+      "h": 9.9,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 91.5,
+      "w": 37,
+      "h": 32
+    },
+    "seams": [],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 36.6,
+        "y": -23.9,
+        "w": 8.1,
+        "h": 25.9,
+        "radius_mm": 2.5
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CMD-X2000",
+    "GSM"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval dark keys with a light rim in three columns, each digit large with its small letters to its right. The 0 key shows a space symbol and '+'; the 1, * and # keys show only their symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://mobile-review.com/phonemodels/sony/sony-cmd-x2000.shtml",
+      "https://m.gsmarena.com/x-128.php",
+      "https://mobilecollectors.net/phones/sony-cmd-x2000"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-cmd-x2000",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the front"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      106,
+      920,
+      365,
+      124
+    ],
+    "mm": [
+      8.83,
+      76.67,
+      30.42,
+      10.33
+    ],
+    "native_px": [
+      97,
+      33
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        53,
+        224,
+        86,
+        28
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        579,
+        2021
+      ],
+      "screen_px": [
+        106,
+        920,
+        365,
+        124
+      ]
+    }
+  }
+}

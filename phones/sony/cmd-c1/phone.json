@@ -1,0 +1,126 @@
+{
+  "id": "sony/cmd-c1",
+  "brand": "Sony",
+  "model": "CMD-C1",
+  "year": 1999,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43.4,
+    "height": 139,
+    "depth": 26
+  },
+  "size_note": "139 x 45 x 26 mm (GSMArena, the same numbers as the CMD-CD5, the C1 with an outside antenna). Two straight-on photos (the museum's C1, straightened: its sides bowed, and a CD5 shop photo) show the front face 3.2 times as long as wide: 43.4 x 139 mm; the 45 mm counts the jog dial standing out of the left side. No spec gives the display diagonal: the LCD window measures about 30 x 12 mm; 1.2in at the native 97 x 32",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      97,
+      32
+    ],
+    "diagonal_in": 1.2,
+    "type": "monochrome graphic"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.22,
+      "y": 46.5,
+      "w": 28.95,
+      "h": 9.55,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.4,
+      "y": 84.7,
+      "w": 34.7,
+      "h": 34.5
+    },
+    "seams": [],
+    "parts": []
+  },
+  "texts": [
+    "SONY",
+    "CMD-C1"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval grey keys in three columns, each digit large with its small letters to its right. The 1 key also shows a small voicemail icon (two rings joined along their bottoms); the 0 key shows a space symbol and '+'; the * and # keys show only their symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/x-131.php",
+      "https://mobile-review.com/phonemodels/sony/sony-cmd-c1.shtml",
+      "https://mobilecollectors.net/phones/sony-cmd-c1"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-cmd-c1",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the front"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      112,
+      588,
+      324,
+      107
+    ],
+    "mm": [
+      9.33,
+      49.0,
+      27.0,
+      8.92
+    ],
+    "native_px": [
+      97,
+      32
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        172,
+        92,
+        29
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        541,
+        1692
+      ],
+      "screen_px": [
+        112,
+        588,
+        324,
+        107
+      ]
+    }
+  }
+}

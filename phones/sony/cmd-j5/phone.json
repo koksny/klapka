@@ -1,0 +1,135 @@
+{
+  "id": "sony/cmd-j5",
+  "brand": "Sony",
+  "model": "CMD-J5",
+  "year": 2000,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 123,
+    "depth": 20
+  },
+  "size_note": "123 x 45 x 20 mm (GSMArena); gsmchoice's 144 x 46 x 19 mm includes the antenna. A straight-on photo of the phone (imei.info, via Koks) measures the body 2.733 times as long as wide, exactly 123 x 45; the antenna stands 23 mm above it (layout_mm.parts), 146 mm in all. No spec gives the display diagonal: the LCD window measures about 31 x 30 mm; 1.6in at the native 96 x 92",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      96,
+      92
+    ],
+    "diagonal_in": 1.6,
+    "type": "grayscale, 4 shades, 6 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.83,
+      "y": 28.2,
+      "w": 29.34,
+      "h": 28.12,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 79,
+      "w": 37,
+      "h": 31
+    },
+    "seams": [],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 31.9,
+        "y": -23.0,
+        "w": 7.7,
+        "h": 25.0,
+        "radius_mm": 3.5
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CMD-J5"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @"
+    ]
+  ],
+  "key_icons": "Oval dark keys in three columns, each digit large with its small letters to its right. The 1 key also shows a small voicemail icon (two rings joined along their bottoms); the 0 key shows a space symbol and '+'; the # key shows '@'; the * key shows only its symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/x-201.php",
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdj5/",
+      "https://mobilecollectors.net/phones/sony-cmd-j5"
+    ],
+    "geometry_photo": {
+      "url": "https://www.imei.info/media/t/8/j/1JWycc-ahgG.jpg",
+      "license": "",
+      "author": "",
+      "note": "straight-on photo of the phone (via Koks)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      117,
+      646,
+      330,
+      316
+    ],
+    "mm": [
+      9.75,
+      53.83,
+      27.5,
+      26.33
+    ],
+    "native_px": [
+      96,
+      92
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        180,
+        89,
+        85
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        563,
+        1776
+      ],
+      "screen_px": [
+        117,
+        646,
+        330,
+        316
+      ]
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "standard": "v1",
+  "template": {
+    "size": [
+      576,
+      1792
+    ],
+    "px_per_mm": 11.292,
+    "body_px": [
+      34,
+      72,
+      541,
+      1720
+    ],
+    "screen_px": [
+      122,
+      650,
+      453,
+      967
+    ],
+    "body_rect_px": [
+      34,
+      332,
+      541,
+      1720
+    ]
+  },
+  "photo": {
+    "url": "https://www.imei.info/media/t/8/j/1JWycc-ahgG.jpg (straight-on photo, via Koks)",
+    "license": "",
+    "author": "",
+    "size_used": [
+      369,
+      1024
+    ]
+  },
+  "pass1": {
+    "prompt_id": "koks_template",
+    "scores": [
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -2.85,
+        "screen_rel_iou": 0.8509,
+        "screen_centre_error_pct": 2.45,
+        "mirror": 0.2428,
+        "body_aspect": 0.3553,
+        "template_body_aspect": 0.3657,
+        "body": [
+          52,
+          323,
+          520,
+          1642
+        ],
+        "screen": [
+          137,
+          643,
+          458,
+          936
+        ],
+        "score": 0.5846,
+        "seed": 6
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.23,
+        "screen_rel_iou": 0.8863,
+        "screen_centre_error_pct": 0.95,
+        "mirror": 0.4421,
+        "body_aspect": 0.3539,
+        "template_body_aspect": 0.3657,
+        "body": [
+          51,
+          336,
+          526,
+          1680
+        ],
+        "screen": [
+          130,
+          659,
+          456,
+          958
+        ],
+        "score": 0.8511,
+        "seed": 3
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.64,
+        "screen_rel_iou": 0.8491,
+        "screen_centre_error_pct": 3.05,
+        "mirror": 0.2106,
+        "body_aspect": 0.3524,
+        "template_body_aspect": 0.3657,
+        "body": [
+          36,
+          314,
+          527,
+          1709
+        ],
+        "screen": [
+          127,
+          650,
+          466,
+          960
+        ],
+        "score": 0.4677,
+        "seed": 7
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -3.73,
+        "screen_rel_iou": 0.841,
+        "screen_centre_error_pct": 2.94,
+        "mirror": 0.2085,
+        "body_aspect": 0.3521,
+        "template_body_aspect": 0.3657,
+        "body": [
+          45,
+          332,
+          520,
+          1683
+        ],
+        "screen": [
+          133,
+          659,
+          460,
+          960
+        ],
+        "score": 0.4643,
+        "seed": 4
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.32,
+        "screen_rel_iou": 0.9006,
+        "screen_centre_error_pct": 2.95,
+        "mirror": 0.32,
+        "body_aspect": 0.3499,
+        "template_body_aspect": 0.3657,
+        "body": [
+          53,
+          352,
+          509,
+          1657
+        ],
+        "screen": [
+          139,
+          652,
+          450,
+          953
+        ],
+        "score": 0.5491,
+        "seed": 2
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -4.95,
+        "screen_rel_iou": 0.8235,
+        "screen_centre_error_pct": 3.33,
+        "mirror": 0.2177,
+        "body_aspect": 0.3476,
+        "template_body_aspect": 0.3657,
+        "body": [
+          35,
+          300,
+          529,
+          1723
+        ],
+        "screen": [
+          131,
+          644,
+          466,
+          965
+        ],
+        "score": 0.3513,
+        "seed": 5
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -5.92,
+        "screen_rel_iou": 0.8693,
+        "screen_centre_error_pct": 0.65,
+        "mirror": 0.417,
+        "body_aspect": 0.3441,
+        "template_body_aspect": 0.3657,
+        "body": [
+          67,
+          344,
+          525,
+          1677
+        ],
+        "screen": [
+          139,
+          665,
+          459,
+          961
+        ],
+        "score": 0.7164,
+        "seed": 8
+      },
+      {
+        "ok": false,
+        "background_white": true,
+        "aspect_error_pct": -9.25,
+        "screen_rel_iou": 0.8478,
+        "screen_centre_error_pct": 0.54,
+        "mirror": 0.3855,
+        "body_aspect": 0.3319,
+        "template_body_aspect": 0.3657,
+        "body": [
+          61,
+          324,
+          525,
+          1724
+        ],
+        "screen": [
+          129,
+          661,
+          462,
+          972
+        ],
+        "score": 0.5244,
+        "seed": 1
+      }
+    ],
+    "best_seed": 6,
+    "used_seed": 3
+  },
+  "model": {
+    "steps": 8,
+    "cfg_scale": 1.0,
+    "sampler_name": "euler",
+    "backend": "klif",
+    "preset": "qwen-image-21",
+    "model": "Qwen Image 2.1 Turbo"
+  },
+  "pass2": {
+    "from": "p1_s3.png",
+    "prompt_id": "cutout",
+    "seed": 1
+  },
+  "text_fixes": [
+    {
+      "n": 1,
+      "area": "patch",
+      "note": "the Q of PQRS came out as an O: its tail drawn by hand (drawn by hand in the label colour, no image model)",
+      "box": [
+        161,
+        1399,
+        176,
+        1420
+      ]
+    }
+  ],
+  "screen_source": {
+    "window": [
+      100,
+      639,
+      458,
+      965
+    ],
+    "manual": true,
+    "exact": false,
+    "window_px": [
+      103,
+      640,
+      358,
+      328
+    ],
+    "checks": {
+      "dark_front": false,
+      "visible_border_mm": {
+        "left": 1.17,
+        "right": 1.17,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "visible_border_diff_mm": 0.0,
+      "hole_centre_diff_mm": 0.0,
+      "margins_mm": {
+        "left": 1.17,
+        "right": 1.17,
+        "top": 0.5,
+        "bottom": 0.5
+      },
+      "window_centre_x_pct": 0.09,
+      "window_mm": [
+        29.83,
+        27.33
+      ],
+      "edge_strength": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null
+      },
+      "window_vs_spec": [
+        1.017,
+        0.972
+      ]
+    }
+  },
+  "acceptance": {
+    "measured": {
+      "aspect": 0.3078,
+      "spec_aspect": 0.3082,
+      "aspect_error_pct": -0.14,
+      "lean_deg": 0.005,
+      "taper_deg": 1.39,
+      "deskew_deg": -0.451,
+      "tilt_deg": 1.395,
+      "jitter_px": 2.35,
+      "symmetry_iou": 0.9307,
+      "screen_aspect_error_pct": 0.08,
+      "hole_centre_diff_mm": 0.0,
+      "visible_border_diff_mm": 0.0,
+      "window_centre_x_pct": 0.09,
+      "window_vs_spec_min": 0.972,
+      "window_vs_spec_max": 1.017,
+      "window_edge_min": 99
+    },
+    "pass": {
+      "aspect_error_pct": true,
+      "lean_deg": true,
+      "screen_aspect_error_pct": true,
+      "visible_border_diff_mm": true,
+      "window_centre_x_pct": true,
+      "window_vs_spec_min": true,
+      "window_vs_spec_max": true,
+      "window_edge_min": true
+    },
+    "manual": {
+      "text_ok": true,
+      "approved": true,
+      "screen_ok": true
+    }
+  },
+  "added": "2026-11-12"
+}

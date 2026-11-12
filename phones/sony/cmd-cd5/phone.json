@@ -1,0 +1,135 @@
+{
+  "id": "sony/cmd-cd5",
+  "brand": "Sony",
+  "model": "CMD-CD5",
+  "year": 2000,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 43.4,
+    "height": 139,
+    "depth": 26
+  },
+  "size_note": "139 x 45 x 26 mm (GSMArena; gsmchoice 139 x 45.5 x 26.5 mm). The CD5 is the CMD-C1's dual-band successor in the same shell with an outside antenna (mobile-review). A straight-on photo of the CD5 (via Koks) shows the front face 3.2 times as long as wide, as does the C1's: 43.4 x 139 mm; the 45 mm counts the jog dial standing out of the left side. The antenna stands 12 mm above the body (layout_mm.parts). No spec gives the display diagonal: the LCD window measures about 29 x 11 mm; 1.16in at the native 97 x 32",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      97,
+      32
+    ],
+    "diagonal_in": 1.16,
+    "type": "monochrome graphic"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 7.71,
+      "y": 43.0,
+      "w": 27.98,
+      "h": 9.23,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.9,
+      "y": 80.7,
+      "w": 34.7,
+      "h": 36.0
+    },
+    "seams": [],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 33.2,
+        "y": -12.1,
+        "w": 5.9,
+        "h": 14.1,
+        "radius_mm": 2.8
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "DUALBAND"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval dark keys in three columns, each digit large with its small letters to its right. The 1 key also shows a small voicemail icon (two rings joined along their bottoms); the 0 key shows a space symbol and '+'; the * and # keys show only their symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_cd5-132.php",
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdcd5/",
+      "https://mobile-review.com/review/sony-cmd-cd5.shtml"
+    ],
+    "geometry_photo": {
+      "url": "https://www.picclickimg.com/XXwAAeSwvdFoQcr4/Sony-Mobile-Phone-CMD-CD5-Silver-Tested-Dealer-Warranty.webp",
+      "license": "",
+      "author": "",
+      "note": "photo of an original unit, straight-on (via Koks)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      116,
+      706,
+      318,
+      105
+    ],
+    "mm": [
+      9.67,
+      58.83,
+      26.5,
+      8.75
+    ],
+    "native_px": [
+      97,
+      32
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        56,
+        190,
+        82,
+        26
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        541,
+        1837
+      ],
+      "screen_px": [
+        116,
+        706,
+        318,
+        105
+      ]
+    }
+  }
+}

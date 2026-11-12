@@ -1,0 +1,147 @@
+{
+  "id": "sony/cmd-z5",
+  "brand": "Sony",
+  "model": "CMD-Z5",
+  "year": 2000,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49,
+    "height": 138,
+    "depth": 21
+  },
+  "size_note": "closed 88 x 49 x 21 mm (GSMArena, gsmchoice). Shown open: the keypad flap hangs below the body; the open length is measured on a straight-on photo of the open phone (via Koks): 138 mm, the part above the flap's hinge 87 mm, close to the closed length. The antenna stands 16 mm above the body (layout_mm.parts). No spec gives the display diagonal: the LCD window measures about 33 x 23 mm; 1.44in at the native 96 x 72",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      96,
+      72
+    ],
+    "diagonal_in": 1.44,
+    "type": "grayscale, 4 shades, 5 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.87,
+      "y": 19.0,
+      "w": 29.26,
+      "h": 21.95,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 47.1,
+      "w": 45,
+      "h": 29.4
+    },
+    "seams": [
+      {
+        "y": 79.1,
+        "note": "lower edge of the body (the hinge below)"
+      },
+      {
+        "y": 87.1,
+        "note": "top edge of the open flap"
+      }
+    ],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 37.5,
+        "y": -16.0,
+        "w": 5.2,
+        "h": 18.0,
+        "radius_mm": 2.5
+      }
+    ]
+  },
+  "texts": [
+    "SONY"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF",
+      "call"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO",
+      "MEMO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ",
+      "C"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @",
+      "end"
+    ]
+  ],
+  "key_icons": "Small dark rounded keys in four columns, each digit with its small letters to its right; the fourth column reads a green handset (call), MEMO, C and a red handset (end). The 1 key also shows a small voicemail icon; the 0 key shows a space symbol and '+'; the # key shows '@'.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_z5-133.php",
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdz5/",
+      "https://mobilecollectors.net/phones/sony-cmd-z5"
+    ],
+    "geometry_photo": {
+      "url": "https://i.ytimg.com/vi/w7TPtBnjJSc/oardefault.jpg",
+      "license": "",
+      "author": "",
+      "note": "video frame of the open phone, straight-on (via Koks)"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      134,
+      441,
+      355,
+      266
+    ],
+    "mm": [
+      11.17,
+      36.75,
+      29.58,
+      22.17
+    ],
+    "native_px": [
+      96,
+      72
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        52,
+        118,
+        90,
+        68
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        613,
+        1872
+      ],
+      "screen_px": [
+        134,
+        441,
+        355,
+        266
+      ]
+    }
+  }
+}
