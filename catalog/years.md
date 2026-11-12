@@ -5,10 +5,10 @@
 
 | Year | Phones | |
 |---|---|---|
-| [1997](years/1997.md) | 2 | CMD-X2000, CMD-Z1 Plus |
+| [1997](years/1997.md) | 3 | CM-DX1000, CMD-X2000, CMD-Z1 Plus |
 | [1999](years/1999.md) | 1 | CMD-C1 |
 | [2000](years/2000.md) | 3 | CMD-CD5, CMD-J5, CMD-Z5 |
-| [2001](years/2001.md) | 1 | CMD-J6 |
+| [2001](years/2001.md) | 4 | CMD-J6, CMD-J70, CMD-MZ5, CMD-Z7 |
 | [2002](years/2002.md) | 6 | P800, T100, T200, T206, T300, T68i |
 | [2003](years/2003.md) | 8 | P900, T230, T310, T606, T610, Z1010, Z200, Z600 |
 | [2004](years/2004.md) | 9 | F500i, J200i, K500i, K700i, P910i, S700i, T290i, T630 … |

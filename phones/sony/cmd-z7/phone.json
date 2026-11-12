@@ -1,0 +1,163 @@
+{
+  "id": "sony/cmd-z7",
+  "brand": "Sony",
+  "model": "CMD-Z7",
+  "year": 2001,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 50,
+    "height": 144.3,
+    "depth": 25
+  },
+  "size_note": "closed 91 x 50 x 25 mm (GSMArena; Softpedia 26 mm deep); the museum's closed shot gives 91 mm at 50 mm wide. Shown open: the keypad cover hangs below the body. The open length is measured on the museum's straight-on shot of the open phone (the cover lies flat: its length matches the closed shot) at 50 mm wide: 144.3 mm. The jog dial on the left side and the cover's hinge ears stand out of the 50 mm (layout_mm.parts). No spec gives the display diagonal: the LCD measures about 32 x 28 mm; 1.6in at the native 96 x 92",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      96,
+      92
+    ],
+    "diagonal_in": 1.6,
+    "type": "grayscale, 4 shades, 6 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 10.33,
+      "y": 16.7,
+      "w": 29.34,
+      "h": 28.12,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 5,
+      "y": 54.5,
+      "w": 42,
+      "h": 30.5
+    },
+    "seams": [
+      {
+        "y": 88,
+        "note": "lower edge of the body (the hinge below)"
+      },
+      {
+        "y": 96,
+        "note": "top edge of the open keypad cover"
+      }
+    ],
+    "parts": [
+      {
+        "name": "jog dial",
+        "x": -1.9,
+        "y": 19.0,
+        "w": 3.4,
+        "h": 23.0,
+        "radius_mm": 1.5
+      },
+      {
+        "name": "cover hinge ear (left)",
+        "x": -1.0,
+        "y": 128.0,
+        "w": 2.5,
+        "h": 10.0,
+        "radius_mm": 1.0
+      },
+      {
+        "name": "cover hinge ear (right)",
+        "x": 48.7,
+        "y": 128.0,
+        "w": 2.5,
+        "h": 10.0,
+        "radius_mm": 1.0
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CMD-Z7"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF",
+      "call"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO",
+      "MEMO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ",
+      "C"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @",
+      "end"
+    ]
+  ],
+  "key_icons": "Oval light keys with a thin outline in four columns, each digit with its small letters to its right; the fourth column reads a green handset (call), MEMO, C and a red handset with a power symbol (end). The 1 key also shows a small voicemail icon; the 0 key shows a space symbol and '+'; the # key shows '@'.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_z7-281.php",
+      "https://mobile.softpedia.com/phones/Sony/Sony-CMD-Z7.shtml"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-cmd-z7",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      150,
+      238,
+      349,
+      334
+    ],
+    "mm": [
+      12.5,
+      19.83,
+      29.08,
+      27.83
+    ],
+    "native_px": [
+      96,
+      92
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        50,
+        70,
+        94,
+        91
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        636,
+        1756
+      ],
+      "screen_px": [
+        150,
+        238,
+        349,
+        334
+      ]
+    }
+  }
+}

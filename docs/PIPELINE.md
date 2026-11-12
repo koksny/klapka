@@ -467,6 +467,22 @@ one side are part of the design, so these are not pass/fail.
 - The render can turn or shift an LCD inside its frame (CD5: 2.1 degrees, 0.3-0.6 mm off): straightened and
   centred by hand on `final.png`, recorded in `text_fixes`.
 
+## What the last Sony batch taught (2026-11-12)
+
+- A press render shot slightly from below makes every seed short: the CMD-MZ5's GSMArena render measured
+  129 mm against the museum's 136.6 mm, and all 8 seeds kept it. Stretching the render lengthwise to the
+  straight-on proportions before pass 1 fixed it (seed within 2%).
+- The CMD-Z7 came out 3-9% narrow on all 16 seeds, though its size checks out on two museum shots; the best
+  seed was taken under a 4% exception (Koks). Parts that stick out (its jog dial and hinge ears) widen the
+  silhouette, so measure the body width at mid rows when judging seeds.
+- A museum unit can carry damage that is not the phone's design: the J70's dark band under the display was
+  covered by a scraped sticker. Painted back and the SONY print (seen on a collector's photo) laid in from
+  another phone's clean print of the same logotype.
+- The CM-DX1000 is a Siemens S4 made for Sony but with its own front and a sliding earpiece: shown open, as
+  sliders are. Its spec width (46 mm) counts the side keys; the front face is 43.9 mm.
+- The window's top edge must be the LCD's own edge: on the MZ5 the first window started on the bezel above
+  the glass and left a black band there (Koks caught it).
+
 ## Open items
 
 - Open lengths of sliders/flips are photo measurements (±3 mm), not manufacturer data.

@@ -1,0 +1,147 @@
+{
+  "id": "sony/cmd-mz5",
+  "brand": "Sony",
+  "model": "CMD-MZ5",
+  "year": 2001,
+  "form": "flip",
+  "view": "open",
+  "size_mm": {
+    "width": 49.5,
+    "height": 136.6,
+    "depth": 30
+  },
+  "size_note": "closed 90 x 49 x 30 mm (GSMArena; the service manual 90 x 50 x 30). Shown open: the keypad cover hangs below the body. The open length is measured on the Mobile Phone Museum's straight-on shot of the open phone (the cover lies flat: its length matches the closed shot), at 49.5 mm wide: 136.6 mm. The museum unit has lost its antenna cap; the antenna (layout_mm.parts) is measured on the press render. No spec gives the display diagonal: the LCD measures about 30 x 23 mm; 1.45in at the native 96 x 72",
+  "corner_radius_mm": 5.0,
+  "display": {
+    "native_px": [
+      96,
+      72
+    ],
+    "diagonal_in": 1.45,
+    "type": "grayscale, 4 shades, 5 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 10.02,
+      "y": 18.9,
+      "w": 29.46,
+      "h": 22.1,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 50,
+      "w": 42.5,
+      "h": 30
+    },
+    "seams": [
+      {
+        "y": 81,
+        "note": "lower edge of the body (the hinge below)"
+      },
+      {
+        "y": 88,
+        "note": "top edge of the open keypad cover"
+      }
+    ],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 38.6,
+        "y": -20.0,
+        "w": 8.0,
+        "h": 22.0,
+        "radius_mm": 3.5
+      }
+    ]
+  },
+  "texts": [
+    "SONY"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF",
+      "call"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO",
+      "MEMO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ",
+      "CLR"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @",
+      "end"
+    ]
+  ],
+  "key_icons": "Oval lavender keys in four columns, each digit with its small letters to its right in italic; the fourth column reads a green handset (call), MEMO, CLR and a red handset (end). The 1 key also shows a small voicemail icon; the 0 key shows a space symbol and '+'; the # key shows '@'.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://m.gsmarena.com/sony_cmd_mz5-232.php",
+      "https://devicebeast.com/phones/cmd-mz5",
+      "https://www.manualslib.com/manual/652799/Sony-Cmd-Mz5.html?page=107"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/cmd-mz5",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the open phone"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      133,
+      490,
+      355,
+      266
+    ],
+    "mm": [
+      11.08,
+      40.83,
+      29.58,
+      22.17
+    ],
+    "native_px": [
+      96,
+      72
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        50,
+        129,
+        89,
+        66
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        631,
+        1903
+      ],
+      "screen_px": [
+        133,
+        490,
+        355,
+        266
+      ]
+    }
+  }
+}

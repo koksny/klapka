@@ -1,7 +1,56 @@
 {
   "standard": "v1",
-  "count": 141,
+  "count": 145,
   "phones": [
+    {
+      "id": "sony/cm-dx1000",
+      "brand": "Sony",
+      "model": "CM-DX1000",
+      "year": 1997,
+      "form": "slider",
+      "view": "open",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 43.9,
+        "height": 162.2,
+        "depth": 34
+      },
+      "display": {
+        "native_px": [
+          97,
+          33
+        ],
+        "diagonal_in": 1.25,
+        "type": "monochrome, 4 lines of 16 characters"
+      },
+      "screen": {
+        "skin_px": [
+          80,
+          894,
+          376,
+          128
+        ],
+        "mm": [
+          6.67,
+          74.5,
+          31.33,
+          10.67
+        ],
+        "native_px": [
+          97,
+          33
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cm-dx1000/skin.png",
+        "skin-black.png": "phones/sony/cm-dx1000/skin-black.png",
+        "body.png": "phones/sony/cm-dx1000/body.png",
+        "mi-band-192x490.png": "phones/sony/cm-dx1000/mi-band-192x490.png",
+        "preview.png": "phones/sony/cm-dx1000/preview.png",
+        "phone.json": "phones/sony/cm-dx1000/phone.json"
+      }
+    },
     {
       "id": "sony/cmd-x2000",
       "brand": "Sony",
@@ -343,6 +392,153 @@
         "mi-band-192x490.png": "phones/sony/cmd-j6/mi-band-192x490.png",
         "preview.png": "phones/sony/cmd-j6/preview.png",
         "phone.json": "phones/sony/cmd-j6/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-j70",
+      "brand": "Sony",
+      "model": "CMD-J70",
+      "year": 2001,
+      "form": "candybar",
+      "view": "front",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 45,
+        "height": 113,
+        "depth": 22
+      },
+      "display": {
+        "native_px": [
+          96,
+          92
+        ],
+        "diagonal_in": 1.4,
+        "type": "grayscale, 6 lines"
+      },
+      "screen": {
+        "skin_px": [
+          130,
+          244,
+          316,
+          303
+        ],
+        "mm": [
+          10.83,
+          20.33,
+          26.33,
+          25.25
+        ],
+        "native_px": [
+          96,
+          92
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-j70/skin.png",
+        "skin-black.png": "phones/sony/cmd-j70/skin-black.png",
+        "body.png": "phones/sony/cmd-j70/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-j70/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-j70/preview.png",
+        "phone.json": "phones/sony/cmd-j70/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-mz5",
+      "brand": "Sony",
+      "model": "CMD-MZ5",
+      "year": 2001,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 49.5,
+        "height": 136.6,
+        "depth": 30
+      },
+      "display": {
+        "native_px": [
+          96,
+          72
+        ],
+        "diagonal_in": 1.45,
+        "type": "grayscale, 4 shades, 5 lines"
+      },
+      "screen": {
+        "skin_px": [
+          133,
+          490,
+          355,
+          266
+        ],
+        "mm": [
+          11.08,
+          40.83,
+          29.58,
+          22.17
+        ],
+        "native_px": [
+          96,
+          72
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-mz5/skin.png",
+        "skin-black.png": "phones/sony/cmd-mz5/skin-black.png",
+        "body.png": "phones/sony/cmd-mz5/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-mz5/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-mz5/preview.png",
+        "phone.json": "phones/sony/cmd-mz5/phone.json"
+      }
+    },
+    {
+      "id": "sony/cmd-z7",
+      "brand": "Sony",
+      "model": "CMD-Z7",
+      "year": 2001,
+      "form": "flip",
+      "view": "open",
+      "added": "2026-11-12",
+      "size_mm": {
+        "width": 50,
+        "height": 144.3,
+        "depth": 25
+      },
+      "display": {
+        "native_px": [
+          96,
+          92
+        ],
+        "diagonal_in": 1.6,
+        "type": "grayscale, 4 shades, 6 lines"
+      },
+      "screen": {
+        "skin_px": [
+          150,
+          238,
+          349,
+          334
+        ],
+        "mm": [
+          12.5,
+          19.83,
+          29.08,
+          27.83
+        ],
+        "native_px": [
+          96,
+          92
+        ],
+        "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+      },
+      "files": {
+        "skin.png": "phones/sony/cmd-z7/skin.png",
+        "skin-black.png": "phones/sony/cmd-z7/skin-black.png",
+        "body.png": "phones/sony/cmd-z7/body.png",
+        "mi-band-192x490.png": "phones/sony/cmd-z7/mi-band-192x490.png",
+        "preview.png": "phones/sony/cmd-z7/preview.png",
+        "phone.json": "phones/sony/cmd-z7/phone.json"
       }
     },
     {

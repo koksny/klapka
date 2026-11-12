@@ -1,0 +1,142 @@
+{
+  "id": "sony/cm-dx1000",
+  "brand": "Sony",
+  "model": "CM-DX1000",
+  "year": 1997,
+  "form": "slider",
+  "view": "open",
+  "size_mm": {
+    "width": 43.9,
+    "height": 162.2,
+    "depth": 34
+  },
+  "size_note": "150 x 46 x 34 mm (gsmchoice; the Siemens S4 it is built on: 150 x 45 x 28). A Siemens-made variant of the S4 with Sony's own front and a sliding earpiece. Shown open, the earpiece slid up. The museum's straight-on shots of the closed and open phone give the front face 3.42 times as long as wide closed: 43.9 x 150 mm (the 46 counts the side keys), and 162.2 mm open. The antenna stands 7.9 mm above the open earpiece (layout_mm.parts). No spec gives the display diagonal: the LCD measures about 32 x 18 mm; 1.25in at the native 97 x 33",
+  "corner_radius_mm": 4.0,
+  "display": {
+    "native_px": [
+      97,
+      33
+    ],
+    "diagonal_in": 1.25,
+    "type": "monochrome, 4 lines of 16 characters"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 6.92,
+      "y": 65.9,
+      "w": 30.06,
+      "h": 10.23,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 4,
+      "y": 103.5,
+      "w": 37,
+      "h": 39
+    },
+    "seams": [
+      {
+        "y": 38,
+        "note": "lower edge of the sliding earpiece (slid up)"
+      }
+    ],
+    "parts": [
+      {
+        "name": "antenna",
+        "x": 34.3,
+        "y": -7.9,
+        "w": 7.9,
+        "h": 10.0,
+        "radius_mm": 3.0
+      }
+    ]
+  },
+  "texts": [
+    "SONY",
+    "CELLULAR TELEPHONE",
+    "GSM",
+    "CM-DX1000"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "#"
+    ]
+  ],
+  "key_icons": "Oval dark keys in three columns, each digit large and white with its small letters to its right. The 0 key shows a space symbol and '+'; the 1, * and # keys show only their symbol.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdx1000/",
+      "https://m.gsmarena.com/sony_cm_dx_1000-127.php",
+      "https://mobilephonemuseum.com/phone-detail/s4"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/sony-cm-dx1000",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shots of the closed and the open phone"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      80,
+      894,
+      376,
+      128
+    ],
+    "mm": [
+      6.67,
+      74.5,
+      31.33,
+      10.67
+    ],
+    "native_px": [
+      97,
+      33
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        51,
+        213,
+        87,
+        29
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        542,
+        2065
+      ],
+      "screen_px": [
+        80,
+        894,
+        376,
+        128
+      ]
+    }
+  }
+}

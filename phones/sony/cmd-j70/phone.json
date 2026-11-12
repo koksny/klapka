@@ -1,0 +1,124 @@
+{
+  "id": "sony/cmd-j70",
+  "brand": "Sony",
+  "model": "CMD-J70",
+  "year": 2001,
+  "form": "candybar",
+  "view": "front",
+  "size_mm": {
+    "width": 45,
+    "height": 113,
+    "depth": 22
+  },
+  "size_note": "113 x 45 x 22 mm (gsmchoice); a straight-on museum shot gives 112.2 mm at 45 mm wide (its widest, the display). No spec gives the display diagonal: the LCD measures about 29 x 25 mm; 1.4in at the native 96 x 92",
+  "corner_radius_mm": 6.0,
+  "display": {
+    "native_px": [
+      96,
+      92
+    ],
+    "diagonal_in": 1.4,
+    "type": "grayscale, 6 lines"
+  },
+  "layout_mm": {
+    "screen": {
+      "x": 9.66,
+      "y": 21.2,
+      "w": 25.67,
+      "h": 24.6,
+      "note": "w/h from the diagonal at the native aspect, x centred; y = top edge, measured on the geometry photo"
+    },
+    "keypad": {
+      "x": 3.5,
+      "y": 69,
+      "w": 38,
+      "h": 33
+    },
+    "seams": []
+  },
+  "texts": [
+    "SONY",
+    "CMD-J70"
+  ],
+  "keys": [
+    [
+      "1",
+      "2 ABC",
+      "3 DEF"
+    ],
+    [
+      "4 GHI",
+      "5 JKL",
+      "6 MNO"
+    ],
+    [
+      "7 PQRS",
+      "8 TUV",
+      "9 WXYZ"
+    ],
+    [
+      "*",
+      "0 +",
+      "# @"
+    ]
+  ],
+  "key_icons": "Wide light silver keys with a dark outline in three columns, each digit large with its small letters to its right. The 1 key also shows a small voicemail icon; the 0 key shows a space symbol and '+'; the # key shows '@'.",
+  "keypad_labels": "2 ABC, 3 DEF, 4 GHI, 5 JKL, 6 MNO, 7 PQRS, 8 TUV, 9 WXYZ",
+  "sources": {
+    "specs": [
+      "https://www.gsmchoice.com/en/catalogue/sony/cmdj70/",
+      "https://mobilecollectors.net/phones/sony-cmd-j70"
+    ],
+    "geometry_photo": {
+      "url": "https://www.mobilephonemuseum.com/phone-detail/cmd-j70",
+      "license": "",
+      "author": "Mobile Phone Museum",
+      "note": "museum shot of the front"
+    }
+  },
+  "screen": {
+    "skin_px": [
+      130,
+      244,
+      316,
+      303
+    ],
+    "mm": [
+      10.83,
+      20.33,
+      26.33,
+      25.25
+    ],
+    "native_px": [
+      96,
+      92
+    ],
+    "note": "screen hole in skin.png (12 px/mm, 1 mm padding); exact native aspect"
+  },
+  "exports": {
+    "mi-band-192x490.png": {
+      "size": [
+        192,
+        490
+      ],
+      "screen_px": [
+        47,
+        99,
+        103,
+        99
+      ]
+    },
+    "skin-black.png": {
+      "size": [
+        562,
+        1380
+      ],
+      "screen_px": [
+        130,
+        244,
+        316,
+        303
+      ]
+    }
+  }
+}
